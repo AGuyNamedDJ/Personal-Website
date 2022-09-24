@@ -6,20 +6,20 @@
 
 /* Home-Page */
     /* Name Section */
-    #Home-Page {
+    .Home-Page {
         background-color: rgb(205, 127, 50);
     }
         /* Statement */
 
 
 /* About-Page */
-    #About-Page {
+    .About-Page {
         background-color: white;
     }
     
 
 /* Experience-Page */
-    #Experience-Page {
+    .Experience-Page {
         background-color: black;
     }    
 
@@ -32,27 +32,27 @@ Dates
 
 
 /* Skills-Page */
-    #Skills-Page {
+    .Skills-Page {
         background-color: white;
     }
 
 
 /* Portfolio-Page */
-    #Portfolio-Page {
+    .Portfolio-Page {
         background-color: black;
     }    
 
 
 
 /* Certifications-Page */
-    #Certifications-Page {
+    .Certifications-Page {
         background-color: white;
     }
 
 
 
 /* Contact-Page */
-    #Contact-Page {
+    .Contact-Page {
         background-color: black;
     }    
 
