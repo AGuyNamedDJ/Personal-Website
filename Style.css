@@ -1,73 +1,38 @@
-/* Header  */
-    /* Menu Bar */
-    #body {
-        background-color: burlywood;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content:center
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before { 
+    content: "";
+    position: absolute;
+    background-color: rgb(215, 153, 91);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    font-size: 25px;
+}
+.navbar ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover {
+    border-bottom: 2px grey;
+}
 
 /* Home-Page */
-/* Name Section */
-.Home-Page {
-    background-color: rgb(205, 127, 50);
-}
-    /* Statement */
-
-
-/* About-Page */
-.About-Page {
-    background-color: white;
-}
-
-
-/* Experience-Page */
-.Experience-Page {
-    background-color: black;
-}    
-
-Dates
-(BOLD)
-    Organization
-    (slightly heavier font than dates & BOLD)
-        Short Bio
-        (small font with light weight)
-
-
-/* Skills-Page */
-.Skills-Page {
-    background-color: white;
-}
-
-
-/* Portfolio-Page */
-.Portfolio-Page {
-    background-color: black;
-}    
-
-
-
-/* Certifications-Page */
-.Certifications-Page {
-    background-color: white;
-}
-
-
-
-/* Contact-Page */
-.Contact-Page {
-    background-color: black;
-}    
-
-
-
-
-/* Footer */
-/* Left Side */
-Copy right sign DJR.
-ALL RIGHTS RESERVED.
-
-/* Center */
-GitHub
-LinkedIn
-
-
-/* Right Side */
-Page number as a numberic
