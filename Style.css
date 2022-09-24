@@ -1,16 +1,29 @@
 /* Header  */
     /* Menu Bar */
+        #body {
+            background-color: burlywood;
+        }
 
 /* Home-Page */
     /* Name Section */
+    #Home-Page {
+        background-color: rgb(205, 127, 50);
+    }
         /* Statement */
 
 
 /* About-Page */
-
+    #About-Page {
+        background-color: white;
+    }
+    
 
 /* Experience-Page */
-    Dates
+    #Experience-Page {
+        background-color: black;
+    }    
+
+Dates
     (BOLD)
         Organization
         (slightly heavier font than dates & BOLD)
@@ -19,15 +32,30 @@
 
 
 /* Skills-Page */
+    #Skills-Page {
+        background-color: white;
+    }
 
 
 /* Portfolio-Page */
+    #Portfolio-Page {
+        background-color: black;
+    }    
+
 
 
 /* Certifications-Page */
+    #Certifications-Page {
+        background-color: white;
+    }
+
 
 
 /* Contact-Page */
+    #Contact-Page {
+        background-color: black;
+    }    
+
 
 
 
