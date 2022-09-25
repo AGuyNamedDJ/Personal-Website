@@ -6,7 +6,7 @@
 /* navbar */
 .navbar {
     display: flex;
-    justify-content:space;
+    justify-content:space-evenly;
     height: 50px;
     align-items: center;
     position: relative;
