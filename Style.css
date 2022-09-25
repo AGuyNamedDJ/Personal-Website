@@ -100,6 +100,36 @@ html{
 .name p {
     font-size: 1.2rem;
 }
+/* Skills */
+#education {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#educattion h1{
+    margin: 60px;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.box {
+    height: 200px;
+    width: 500px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 20px;
+    margin: 10px;
+}
+.box h2{
+    color: rgb(205, 127, 50);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+}
 
 /* Contact */
 #contact {
