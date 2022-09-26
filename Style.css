@@ -116,16 +116,17 @@ html{
     grid-template-columns: auto auto;
 }
 .box {
-    height: 200px;
-    width: 500px;
-    background-color: rgb(80, 80, 80);
-    border-radius: 20px;
-    margin: 10px;
+    height: 215px;
+    width: 550px;
+    background-color: rgb(120, 120, 120);
+    border-radius: 16px;
+    margin: 5px;
+    padding: 5px;
 }
 .box h2{
     color: rgb(205, 127, 50);
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .box p{
     color: white;
@@ -139,7 +140,7 @@ html{
     background-color: #000000dc;
 }
 #projects h1{
-    margin:60px;
+    margin: 15px;px;
 }
 .gallery{
     display:flex;
