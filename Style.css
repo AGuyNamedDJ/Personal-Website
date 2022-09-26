@@ -79,7 +79,14 @@ html{
 #about {
     display:flex;
     flex-direction: column;
-    height: 600px;
+    height: 400px;
+    padding: 10px;
+}
+#p-about {
+    display:flex;
+    flex-direction: column;
+    height: 400px;
+    width: 10px;
 }
 .about h1 {
     margin: 55px;
@@ -114,6 +121,7 @@ html{
 .columns{
     display: grid;
     grid-template-columns: auto auto;
+    margin: 5px;
 }
 .box {
     height: 215px;
@@ -137,36 +145,47 @@ html{
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+}
+
 /* Projects */
 #projects{
     display:Flex;
     flex-direction: column;
-    background-color: #000000dc;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #projects h1{
-    margin: 15px;px;
+    margin: 60px;
 }
-.gallery{
+
+/* Save for picture for this section */
+/* .gallery{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-.gallery img {
+} */
+/* .gallery img {
     width: 360px;
     height:640px;
     padding: 10px;
     margin: 10px;
 }
 .gallery img:hover{
-    background-color: white;
+    background-color: black;
     cursor: pointer;
-}
+} */
 
 /* Contact */
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: #000000dc;
+    background-color: black;
+    opacity: 90%;
+}
+.heading-c {
+    color:white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 #contact h1 {
     margin: 50px;
@@ -179,15 +198,21 @@ html{
 }
 .input {
     padding: 15px 20px;
-    margin: 15 px;
-    width: 40%;
+    margin: 30px;
+    width: 48%;
     border: none;
     outline: none;
     border-radius: 25px;
 }
+.heading-3 {
+    color:black;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
 #message {
     margin: 15px;
-    padding: 10 px;
+    padding: 10px;
     border-radius: 20px;
 }
 #submit {
@@ -215,6 +240,7 @@ html{
 }
 .footer-bottom p{
     font-size: 14px;
+    color: white;
     word-spacing: 2px;
     text-transform: capitalize;
 }
