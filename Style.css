@@ -18,7 +18,8 @@ html{
 .navbar::before { 
     content: "";
     position: absolute;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(20, 20, 20);
+    opacity: 95%;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -227,7 +228,7 @@ html{
     outline: none;
 }
 #submit:hover {
-    background-color: brown;
+    background-color: rgb(205, 127, 50);
     color: white;
     cursor: pointer;
 }
