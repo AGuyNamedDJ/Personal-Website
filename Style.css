@@ -12,7 +12,7 @@ html{
     justify-content:center;
     height: 50px;
     align-items: center;
-    position: sticky;
+    position: relative;
     top: 0;
 }
 .navbar::before { 
@@ -36,7 +36,7 @@ html{
     color:white;
 }
 .navbar ul li a:hover {
-    border-bottom: 2px rgb(80, 80, 80);
+    border-bottom: 2px rgb(205, 127, 50);
 }
 
 /* Home-Page */
