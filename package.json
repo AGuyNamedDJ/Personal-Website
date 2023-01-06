@@ -796,7 +796,7 @@
   "bugs": {
     "url": "https://github.com/DJRobertson95/Personal_Website/issues"
   },
-  "homepage": "https://github.com/DJRobertson95/Personal_Website#readme",
+  "homepage": "/",
   "browserslist": {
     "production": [
       ">0.2%",
