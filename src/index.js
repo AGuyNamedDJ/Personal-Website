@@ -3,8 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 // Imports
-import ErrorPage from "./components/utilities/ErrorPage";
-import HomePage from "./components/pages/HomePage";
+import HomePage from "./components/utilities/HomePage";
+import ErrorPage from "./components//utilities/ErrorPage";
+import Index from "./components/utilities/Index";
 
 const router = createBrowserRouter([
     {
@@ -14,13 +15,15 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <HomePage />
+                element: <Index />
             }
+
         ]
     }
 ])
 
 //version 18
+
 const app = document.getElementById("apps")
 const root = createRoot(app)
 root.render(<RouterProvider router={router} />)
