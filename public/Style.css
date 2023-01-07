@@ -94,6 +94,7 @@ font-family: 'Cedarville Cursive', cursive; */
 #footer-one-container{
     align-items: center;
     display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: space-between;
     position:relative;
     bottom: 20;
@@ -104,9 +105,13 @@ font-family: 'Cedarville Cursive', cursive; */
 }
 
 #footer-websites-container{
-    display: flex;
+    display: flexbox;
     flex-direction:row ;
     justify-content: space-between;
+}
+
+#footer-websites-bottom{
+    justify-content: right;
 }
 
 /* Fonts i've added */

@@ -21,13 +21,11 @@ const About = () => {
             
             <footer id="footer-one-container">
                 <div>
-                    2023 Dalron J. Robertson.  All Rights Reserved.
+                    &copy; 2023 Dalron J. Robertson.  All Rights Reserved.
                 </div>
                 <div id="footer-websites-container">
-                    <p class="footer-websites">CONTACT</p>
-                    <p class="footer-websites">GITHUB</p>
-                    <p class="footer-websites">INSTAGRAM</p>
-                    <p class="footer-websites">LINKEDIN</p>
+                    <p class="footer-websites">GITHUB INSTAGRAM LINKEDIN </p>
+                    <p class="footer-websites-bottom"> CODEWARS EMAIL</p>
                 </div>
             </footer>
         </div>
