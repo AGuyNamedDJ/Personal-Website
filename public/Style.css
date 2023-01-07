@@ -10,21 +10,25 @@ body {
 
 }
 
+#navbar-text{
+    color:black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
 #navbar-text:active {
     color: red;
 }
 /* this changes the color when clicked only (half a second) */
 
-#navbar-text:hover{
-    color: brown;
+#navbar-text:link{
+    color: black;
 }
 
-#navbar-text{
-    color: rgb(74, 44, 42);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    padding: 0 20px;
-    text-decoration: none;
+#navbar-text:hover{
+    color: red;
 }
 
 #about{
@@ -59,11 +63,50 @@ body {
 }
 
 #footer{
+    border: 1px solid brown;
+    border-radius: 8px;
+    display: flex;
     justify-content: space-between;
+    margin-left: 50px;
+    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 750px;
 }
 
 #footer-text{
     text-align: center;
+    font-size: 20px;
+    font-family: 'Moon Dance', cursive;
+/* font-family: 'Homemade Apple', cursive;
+font-family: 'Cedarville Cursive', cursive; */
+/* font-family: 'Oleo Script Swash Caps', cursive; */
+/* font-family: 'Romanesco', cursive; */
+/* font-family: 'Tangerine', cursive; */
+/* font-family: 'Zeyada', cursive; */
+}
+
+#footer-top-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#footer-one-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    bottom: 20;
+}
+.footer-websites{
+    font-family: Georgia, 'Times New Roman', Times, serif cursive;
+    font-weight: 500;
+}
+
+#footer-websites-container{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
 }
 
 /* Fonts i've added */
