@@ -22,12 +22,12 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Index />
-            },
-            {
-                path: "/about",
                 element: <About />
             },
+            // {
+            //     path: "/about",
+            //     element: <About />
+            // },
             {
                 path: "/journal",
                 element: <Journal />
@@ -55,4 +55,4 @@ const root = createRoot(app)
 root.render(<RouterProvider router={router} />)
 
 // Notes
-    // about page will change
+    // about page npm run start
