@@ -20,7 +20,7 @@ body {
 }
 
 #navbar-text{
-    color: black;
+    color: rgb(74, 44, 42);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     padding: 0 20px;
@@ -31,22 +31,39 @@ body {
     text-align: center;
 }
 
+#about-page-image{
+    height: 700px;
+    width: 700px;
+}
+
 #about-text{
-    /* font-family: 'Moon Dance', cursive; */
-    font-family: 'Homemade Apple', cursive;
+    color: rgb(74, 44, 42);
+    font-family: 'Tangerine', cursive;
     font-size: 75px;
-    font-weight: bold;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 #error-page {
-    font-family: 'Moon Dance', cursive;
+    font-family:'Courier New', Courier, monospace;
     font-size: 30px;
-    padding-top: 30px;
+    font-weight:lighter;
+    padding-top: 50px;
     text-align: center;
 }
 
-#error-page-text{
+#error-page-image{
+    height: 600px;
+    padding-top: 100px;
+    width: 600px;
+}
 
+#footer{
+    justify-content: space-between;
+}
+
+#footer-text{
+    text-align: center;
 }
 
 /* Fonts i've added */
@@ -54,3 +71,7 @@ body {
     /* font-family: 'Moon Dance', cursive; */
     /* font-family: 'Homemade Apple', cursive;
     font-family: 'Cedarville Cursive', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    /* font-family: 'Romanesco', cursive; */
+    /* font-family: 'Tangerine', cursive; */
+    /* font-family: 'Zeyada', cursive; */
