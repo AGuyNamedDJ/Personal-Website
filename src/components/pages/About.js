@@ -9,7 +9,7 @@ const About = () => {
                 <img src="/images/djr.jpg" alt="dj" id="about-page-image"></img>
             </div>
             <footer id="footer">
-                <p id="footer-text">Copyright 2023 My Website</p>
+                <p id="footer-text">2023 Dalron J. Robertson. All Rights Reserved</p>
             </footer>
         </div>
 
