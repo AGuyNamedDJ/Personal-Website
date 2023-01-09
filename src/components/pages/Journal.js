@@ -4,34 +4,12 @@ const Journal = () => {
 
     return (
         <div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <div id="title">Journal</div>
+
 
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
-                <p id="footer-top-text">SUBMIT</p>
+                <p id="footer-top-text">dalronj.robertson@gmail.com</p>
                 
             </footer>
             <br></br>

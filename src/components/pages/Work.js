@@ -4,7 +4,7 @@ const Work = () => {
 
     return (
         <div>
-            <br></br>
+            <div id="title">Portfolio</div>
             <br></br>
             <br></br>
             <br></br>
@@ -31,7 +31,7 @@ const Work = () => {
 
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
-                <p id="footer-top-text">SUBMIT</p>
+                <p id="footer-top-text">dalronj.robertson@gmail.com</p>
                 
             </footer>
             <br></br>
