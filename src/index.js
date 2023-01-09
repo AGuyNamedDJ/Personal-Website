@@ -11,6 +11,9 @@ import Index from "./components/utilities/Index";
 import About from "./components/pages/About";
 import Journal from "./components/pages/Journal";
 import Memoirs from "./components/pages/Memoirs";
+import MemoirsChicago from "./components/pages/MemoirsChicago";
+import MemoirsMontegoBay from "./components/pages/MemoirsMontegoBay";
+import MemoirsQuintanaRoo from "./components/pages/MemoirsQuintanaRoo";
 import Photography from "./components/pages/Photography";
 import Work from "./components/pages/Work";
 
@@ -24,10 +27,6 @@ const router = createBrowserRouter([
                 index: true,
                 element: <About />
             },
-            // {
-            //     path: "/about",
-            //     element: <About />
-            // },
             {
                 path: "/journal",
                 element: <Journal />
@@ -35,6 +34,18 @@ const router = createBrowserRouter([
             {
                 path: "/memoirs",
                 element: <Memoirs />
+            },
+            {
+                path: "/memoirs/chicago",
+                element: <MemoirsChicago />
+            },
+            {
+                path: "/memoirs/montegobay",
+                element: <MemoirsMontegoBay />
+            },
+            {
+                path: "/memoirs/quintanaroo",
+                element: <MemoirsQuintanaRoo />
             },
             {
                 path: "/photography",

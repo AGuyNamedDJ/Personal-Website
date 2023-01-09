@@ -1,5 +1,14 @@
 body {
     background-color: #eee8db;
+    max-width: 1000px;
+}
+
+#link{
+    color: black;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+
 }
 
 #navbar {
@@ -7,13 +16,14 @@ body {
     justify-content: space-between;
     padding: 65px;
     padding-top: 23px;
+    margin-top: 50px;
 
 }
 
 #navbar-text{
     color:black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 20px;
     text-decoration: none;
 }
@@ -38,14 +48,15 @@ body {
 #about-page-image{
     height: 700px;
     width: 700px;
+    margin-top: -118px;
 }
 
 #about-text{
     color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
-    font-size: 75px;
+    font-size: 130px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 #error-page {
@@ -77,10 +88,10 @@ body {
 #footer-text{
     text-align: center;
     font-size: 20px;
-    font-family: 'Moon Dance', cursive;
+    /* font-family: 'Moon Dance', cursive; */
 /* font-family: 'Homemade Apple', cursive;
 font-family: 'Cedarville Cursive', cursive; */
-/* font-family: 'Oleo Script Swash Caps', cursive; */
+font-family: 'Oleo Script Swash Caps', cursive;
 /* font-family: 'Romanesco', cursive; */
 /* font-family: 'Tangerine', cursive; */
 /* font-family: 'Zeyada', cursive; */
@@ -99,6 +110,10 @@ font-family: 'Cedarville Cursive', cursive; */
     position:relative;
     bottom: 20;
 }
+
+#footer-copyright{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
 .footer-websites{
     font-family: Georgia, 'Times New Roman', Times, serif cursive;
     font-weight: 500;
@@ -114,53 +129,65 @@ font-family: 'Cedarville Cursive', cursive; */
     justify-content: right;
 }
 
+#memoirs-date{
+    font-size: 13px;
+
+}
+
 #memoirs-trips{
     border: 2px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
-    gap: 5px;
+    gap: 0px;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: -90px;
 }
 
 #memoirs-trips > div {
-    flex: 0 0 50%;
+    flex: 0 0 46%;
 }
 
 #title{
-    font-family: 'Moon Dance', cursive;
+    /* font-family: 'Moon Dance', cursive; */
+    font-family: 'Tangerine', cursive;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 140px;
+    margin-top: -30px;
 }
 
 /* Images */
 #chicago-1{
-    flex-basis: 30%;
+    flex-basis: 20%;
     padding: 2rem;
-    width: 100%;
+    height: 283px;
+    width: 375px;
+    /* width: 300px; */
 }
 
 #montegobay-1{
-    flex-basis: 30%;
+    flex-basis: 20%;
     padding: 2rem;
-    width: 100%;
+    width: 375px;
 }
 
 #QuintanaRoo-1{
+    flex-basis: 20px;
     padding: 2rem;
-    width: 100%;
+    width: 375px;
 }
 
 
 /* Fonts i've added */
 
     /* font-family: 'Moon Dance', cursive; */
-    /* font-family: 'Homemade Apple', cursive;
-    font-family: 'Cedarville Cursive', cursive; */
+    /* font-family: 'Homemade Apple', cursive; */
+    /* font-family: 'Cedarville Cursive', cursive; */
     /* font-family: 'Oleo Script Swash Caps', cursive; */
     /* font-family: 'Romanesco', cursive; */
     /* font-family: 'Tangerine', cursive; */
     /* font-family: 'Zeyada', cursive; */
+    /* font-family: 'Josefin Slab', serif; */
