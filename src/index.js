@@ -16,6 +16,9 @@ import MemoirsMontegoBay from "./components/pages/MemoirsMontegoBay";
 import MemoirsQuintanaRoo from "./components/pages/MemoirsQuintanaRoo";
 import Photography from "./components/pages/Photography";
 import Work from "./components/pages/Work";
+import WorkCV from "./components/pages/WorkCV";
+import WorkResume from "./components/pages/WorkResume";
+import WorkWebsites from "./components/pages/WorkWebsites";
 
 const router = createBrowserRouter([
     {
@@ -54,6 +57,18 @@ const router = createBrowserRouter([
             {
                 path: "/work",
                 element: <Work />
+            },
+            {
+                path: "/work/cv",
+                element: <WorkCV />
+            },
+            {
+                path: "/work/resume",
+                element: <WorkResume />
+            },
+            {
+                path: "/work/websites",
+                element: <WorkWebsites />
             }
         ]
     }

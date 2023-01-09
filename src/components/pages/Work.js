@@ -1,16 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Work = () => {
 
     return (
         <div>
             <div id="title">Portfolio</div>
-            <div id="Portfolio">
-                <div>The websites I have made</div>
-                <div>This is for Resume</div>
-                <div>This is for my CV</div>
+            <div id="">
+
+                {/* CV */}
+                <div id="portfolio">
+                    <p>Browse my CV</p>
+                    <Link to="/work/cv" id="link">Browse Here</Link>
+                </div>
+
+                {/* Resume */}
+                <div id="portfolio">
+                    <p>Browse my Resume</p>
+                    <Link to="/work/resume" id="link">Browse Here</Link>
+                </div>
+
+                {/* Websites */}
+                <div id="portfolio">
+                    <p>Browse my Websites</p>
+                    <Link to="/work/websites" id="link">Browse Here</Link>
+                </div>
             </div>
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            {/* End of Page */}
 
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>

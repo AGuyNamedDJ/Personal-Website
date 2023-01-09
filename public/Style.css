@@ -1,6 +1,6 @@
 body {
     background-color: #eee8db;
-    max-width: 1000px;
+    max-width: 1440px;
 }
 
 #link{
@@ -78,11 +78,9 @@ body {
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
-    padding: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 750px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 33px;
 }
 
 #footer-text{
@@ -98,7 +96,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #footer-top-text{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:550;
     font-size: 18px;
 }
 
@@ -150,6 +149,20 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #memoirs-trips > div {
     flex: 0 0 46%;
+}
+
+#portfolio{
+    align-items: center;
+    border: 1px solid brown;
+    border-radius: 8px;
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 #title{
