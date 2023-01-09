@@ -3,10 +3,7 @@ import React from "react";
 const WorkResume = () => {
 
     return (
-        <div>
-
-        </div>
-
+        <div>Resume</div>
     )
 };
 

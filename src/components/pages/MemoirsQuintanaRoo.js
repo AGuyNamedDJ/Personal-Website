@@ -4,7 +4,7 @@ const MemoirsQuintanaRoo = () => {
 
     return (
         <div>
-
+            <h2>Quintana Roo</h2>
         </div>
 
     )

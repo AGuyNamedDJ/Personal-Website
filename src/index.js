@@ -79,6 +79,3 @@ const router = createBrowserRouter([
 const app = document.getElementById("apps")
 const root = createRoot(app)
 root.render(<RouterProvider router={router} />)
-
-// Notes
-    // about page npm run start

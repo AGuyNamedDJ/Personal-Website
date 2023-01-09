@@ -4,6 +4,7 @@ const MemoirsMontegoBay = () => {
 
     return (
         <div>
+            <h2>Montego Bay</h2>
 
         </div>
 

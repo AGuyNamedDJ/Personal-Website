@@ -3,10 +3,7 @@ import React from "react";
 const WorkCV = () => {
 
     return (
-        <div>
-
-        </div>
-
+        <div>CV</div>
     )
 };
 
