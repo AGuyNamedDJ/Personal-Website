@@ -145,6 +145,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -90px;
+    padding: 10px;
 }
 
 #memoirs-trips > div {
@@ -153,6 +154,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #title{
     /* font-family: 'Moon Dance', cursive; */
+    color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
     font-weight: bolder;
     font-size: 140px;

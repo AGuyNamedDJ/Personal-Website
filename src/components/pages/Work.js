@@ -5,28 +5,11 @@ const Work = () => {
     return (
         <div>
             <div id="title">Portfolio</div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <div id="Portfolio">
+                <div>The websites I have made</div>
+                <div>This is for Resume</div>
+                <div>This is for my CV</div>
+            </div>
             <br></br>
 
             <footer id="footer">
