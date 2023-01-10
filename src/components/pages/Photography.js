@@ -5,9 +5,19 @@ const Photography = () => {
     return (
         <div>
             <div class="title">Gallery</div>
-
-            <img src="/images/photo-1.jpg"  id="photo-1"></img>
-
+            <div>
+                <img src="/images/photo-1.jpg" id="photo-1"></img>
+                <p>"How the composer thrills, when softly glides</p>
+                <img src="/images/photo-8.jpg" id="photo-8"></img>
+                <img src="/images/photo-3.jpg" id="photo-3"></img>
+                <img src="/images/photo-5.jpg" id="photo-5"></img>
+                <img src="/images/photo-2.jpg" id="photo-2"></img>
+            </div>
+            <div>
+                <img src="/images/photo-4.jpg" id="photo-4"></img>
+                <img src="/images/photo-6.jpg" id="photo-6"></img>
+                <img src="/images/photo-7.jpeg" id="photo-7"></img>
+            </div>
 
             {/* End of Page */}
             <footer id="footer">

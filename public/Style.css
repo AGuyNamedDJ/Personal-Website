@@ -164,6 +164,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: right;
 }
 
+#gallery-poem-text{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    align-items: center;
+}
+
 #journal-date{
     font-size: 15px;
     position: relative;
@@ -398,7 +405,74 @@ font-family: 'Oleo Script Swash Caps', cursive;
     margin-right: auto;
     margin-top: -85px;
     transform: scale(0.75);
+}
 
+#photo-2{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.8);
+}
+
+#photo-3{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.8);
+}
+
+#photo-4{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.8);
+}
+
+#photo-5{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.85);
+}
+
+#photo-6{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.6);
+}
+
+#photo-7{
+    border-radius: 2%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    transform: scale(0.6);
+}
+
+#photo-8{
+    border-radius: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.5);
 }
 
 
