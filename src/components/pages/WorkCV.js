@@ -24,6 +24,7 @@ const WorkCV = () => {
                 <p id="sub-title">Development Projects:</p>
 
                 {/* Personal Website */}
+                
                 <p id="sub-sub-title">Personal Website | Lead Developer | Continuous</p>
                 <a href="https://dalronjrobertson.netlify.app/" target="_blank" id="sub-sub-title-link">dalronjrobertson.netlify.app/</a>
 
@@ -36,7 +37,7 @@ const WorkCV = () => {
                 <p id="sub-sub-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
-                <p id="cv-description">An e-commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
+                <p id="cv-description">A Full-Stack e-commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
                 <li>Collaboration and Planning</li>
                     <ul>Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
                 <li>User Functionality</li>
@@ -145,18 +146,59 @@ const WorkCV = () => {
             {/* Experience */}
             <div>
                 <p id="sub-title">Experience: </p>
-
+                
+                {/* Equities */}
                 <p id="work-title">Self-Employed</p>
                 <br></br>
                 <p id="work-jobs">Equities and Derivatives Analyst | Feb 2020</p>
-                <il> ● Generate and execute trade ideas using capital across range of advanced equity and options strategies </il>
-                <il>● Designed, back-tested, and validated a variety of trading systems based on long-term, moderate, and short-term approaches to price vitality. Furthermore, with the inclusion of credit signals, pricing volume signals, and underlying asset risk range distribution </il>
-                <il>● Expand technical factor investing models to include investment style definitions which statistically explain traditional market, quality, value, momentum, and securities demand equilibrium conditions and returns </il>
-                <il>● Analyze optimal leverage levels for given market conditions to maintain compliance with strict risk controls and capital requirements for different trading strategies across equities and options markets </il>
+                <ul id="work-description">
+                    <ul>● Generate and execute trade ideas using capital across range of advanced equity and options strategies </ul>
+                    <ul>● Designed, back-tested, and validated a variety of trading systems based on long-term, moderate, andshort-term approaches to price vitality. Furthermore, with the inclusion of credit signals, pricing volume signals, and underlying asset risk range distribution </ul>
+                    <ul>● Expand technical factor investing models to include investment style definitions which statistically explain traditional market, quality, value, momentum, and securities demand equilibrium conditions and returns </ul>
+                    <ul>● Analyze optimal leverage levels for given market conditions to maintain compliance with strict risk controls and capital requirements for different trading strategies across equities and options markets </ul>
+                </ul>
+                <br></br>
 
-                <p id="work-technical-skills-title">Knowledgable: </p>
-                <p>Python | Java | C | Flask | AWS</p>
+                {/* MMP */}
+                <p id="work-title">Data and Medical Records Analyst | Jan 2021 - Apr 2022</p>
+                <br></br>
+                <p id="work-jobs">Medication Management Partners</p>
+                <ul id="work-description">
+                    <ul>● Data entry into Framework LTC and DocuTrack systems </ul>
+                    <ul>● Prepared and executed cycle-fill (auto-fill) processes / fills </ul>
+                    <ul>● Created and managed records for over 100 facilities</ul>
+                    <ul>● Managed employee training for new hires, over a period of 3 months offering continuous guidance and mentorship on best practice while providing constructive feedback </ul>
+                    <ul>● eMR support</ul>
+                    <ul>● Adjudicated insurance claims and troubleshot rejected claims</ul>
+                    <ul>● Adjudicated electronic prescription claims</ul>
+                    <ul>● Uploaded and/or printed medical record</ul>
+                    <ul>● Profile-only data entry Interpreting and entering of prescription orders</ul>
+                    <ul>● Completed and/or followed-up on prior authorization form</ul>
+                    <ul>● Performed prospective drug utilization reviews</ul>
+                    <ul>● Investigated and solved community and/or resident issue</ul>
+                    <ul>● Efficiently worked both independently and as part of a cross-functional team</ul>
+                </ul>
+                <br></br>
+
+                {/* MMP */}
+                <p id="work-title">Dispensing and Toting Technician | Aug 2022 - Jan 2021</p>
+                <br></br>
+                <p id="work-jobs">Medication Management Partners</p>
+                <ul id="work-description">
+                    <ul>● Operated automated dispensing machine and verification machinery </ul>
+                    <ul>● Manual dispensing and packaging of prescriptions </ul>
+                    <ul>● Toted and / or packaged orders for shipping</ul>
+                    <ul>● Created and managed records for over 100 facilities</ul>
+                    <ul>● Received inventory</ul>
+                    <ul>● Prepared / applied correct shipping label, based on community, route, etc</ul>
+                    <ul>● Investigated and solved community and/or resident issue</ul>
+                    <ul>● Efficiently worked both independently and as part of a cross-functional team</ul>
+                </ul>
+                <br></br>
+
             </div>
+
+
 
             {/* End of Page */}
             <footer id="footer">

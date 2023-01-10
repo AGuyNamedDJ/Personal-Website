@@ -73,6 +73,19 @@ body {
     width: 600px;
 }
 
+#dev-box{
+    border: 1px solid brown;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#work-description{
+    margin-bottom: 45px;
+}
+
 #footer{
     border: 1px solid brown;
     border-radius: 8px;
@@ -196,6 +209,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: -40px;
+    margin-top: -20px;
 }
 
 #cv-description{
@@ -204,7 +218,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #work-jobs{
     font-weight: bold;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 #work-title{
