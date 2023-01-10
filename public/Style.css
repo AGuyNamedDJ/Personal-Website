@@ -164,12 +164,69 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: right;
 }
 
-#gallery-poem-text{
+.gallery-poem{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    align-items: center;
+    font-size: 30px;
+    margin-left: 10%;
 }
+
+.gallery-poem-1{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-2{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-3{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-4{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-5{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-6{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-7{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.gallery-poem-8{
+    color: rgb(74, 44, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
 
 #journal-date{
     font-size: 15px;
@@ -452,9 +509,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
     display: block;
     justify-content: center;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 75px;
     margin-top: -85px;
-    transform: scale(0.6);
+    width: 600px;
 }
 
 #photo-7{
@@ -471,8 +528,16 @@ font-family: 'Oleo Script Swash Caps', cursive;
     border-radius: 2%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 10px;
     transform: scale(0.5);
+}
+
+#photo-9{
+    border-radius: 2%;
+    display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    width: 500px;
 }
 
 
