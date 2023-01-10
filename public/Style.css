@@ -164,6 +164,30 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: right;
 }
 
+#journal-date{
+    font-size: 13px;
+    position: relative;
+    top: -15px;
+    left: 45px;
+
+}
+
+#journal-text{
+    border: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    gap: 0px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -35px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+
 #memoirs-date{
     font-size: 13px;
     position: relative;
@@ -296,6 +320,15 @@ font-family: 'Oleo Script Swash Caps', cursive;
     width: 375px;
     /* width: 300px; */
 }
+
+#journal-rejection{
+    border-radius: 13%;
+    flex-basis: 20%;
+    padding: 2rem;
+    height: 283px;
+    width: 375px;
+}
+
 
 #montegobay-1{
     border-radius: 13%;

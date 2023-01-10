@@ -5,9 +5,20 @@ const Journal = () => {
     return (
         <div>
             <div class="title">Journal</div>
+            <br></br>
+            <br></br>
 
+            <div id="memoirs-trips">
+                {/* Journal 1 */}
+                <div>
+                    <img src="/images/journal-1.jpeg" id="journal-rejection"></img>
+                    <div id="journal-text">Coping w/ Job Search Rejection</div>
+                    <p id="journal-date">`Jan 10, 2022 &#x2023; 2 min`</p>
+                </div>
+            </div>
 
             {/* End of Page */}
+
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
                 <p id="footer-top-text">dalronj.robertson@gmail.com</p>
