@@ -9,7 +9,7 @@ const WorkCV = () => {
 
             {/* Technical Skills */}
             <div>
-                <p id="sub-title">Technical Skills: </p>
+                <p class="sub-title">Technical Skills: </p>
 
                 <p id="work-technical-skills-title">Proficient</p>
                 <p>Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
@@ -21,11 +21,11 @@ const WorkCV = () => {
 
             {/* Development Projects */}
             <div>
-                <p id="sub-title">Development Projects:</p>
+                <p class="sub-title">Development Projects:</p>
 
                 {/* Personal Website */}
                 
-                <p id="sub-sub-title">Personal Website | Lead Developer | Continuous</p>
+                <p id="dev-title">Personal Website | Lead Developer | Continuous</p>
                 <a href="https://dalronjrobertson.netlify.app/" target="_blank" id="sub-sub-title-link">dalronjrobertson.netlify.app/</a>
 
                 <p id="cv-description">My personal Front-End website showcasing skills and experiences as a software engineer. Includes information about my background, education, and projects.</p>
@@ -34,7 +34,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* The Sweet Spot */}
-                <p id="sub-sub-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
+                <p id="dev-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
                 <p id="cv-description">A Full-Stack e-commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
@@ -49,7 +49,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Fitness Trackr */}
-                <p id="sub-sub-title">FitnessTrackr | Co-Developer | Nov 2022</p>
+                <p id="dev-title">FitnessTrackr | Co-Developer | Nov 2022</p>
                 <a href="https://fitnesstrackr.onrender.com" target="_blank" id="sub-sub-title-link">fitnesstrackr.onrender.com</a>
 
                 <p id="cv-description">A Front-End Fitness App using React.js to fetch data from a created API developed with a student developers.</p>
@@ -64,7 +64,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Juicebox */}
-                <p id="sub-sub-title">Juicebox | Lead Developer | Nov 2022</p>
+                <p id="dev-title">Juicebox | Lead Developer | Nov 2022</p>
                 <a href="https://juicebox-kz62.onrender.com/" target="_blank" id="sub-sub-title-link">juicebox-kz62.onrender.com/</a>
 
                 <p id="cv-description">A Back-End with a Database and Web server with a custom API showcasing knowledge of PostgreSQL and Node</p>
@@ -79,7 +79,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Stranger's Things */}
-                <p id="sub-sub-title">Strangers Things | Lead Developer | Oct 2022 - Nov 2022</p>
+                <p id="dev-title">Strangers Things | Lead Developer | Oct 2022 - Nov 2022</p>
                 <a href="shopstrangersthings.netlify.app/" target="_blank" id="sub-sub-title-link">shopstrangersthings.netlify.app/</a>
 
                 <p id="cv-description">A React-based single-page application showcasing how CRUD can improve fetching and user authentication via JSON Web Tokens. (JWT)</p>
@@ -97,7 +97,7 @@ const WorkCV = () => {
 
 
                 {/* Hacker News */}
-                <p id="sub-sub-title">Hacker News | Lead Developer | Oct 2022</p>
+                <p id="dev-title">Hacker News | Lead Developer | Oct 2022</p>
                 <a href="https://hackernews-7fqr.onrender.com/" target="_blank" id="sub-sub-title-link">hackernews-7fqr.onrender.com/</a>
 
                 <p id="cv-description">A consumer-focused Node application showcasing knowledge of Express.js features.</p>
@@ -110,7 +110,7 @@ const WorkCV = () => {
 
 
                 {/* Puppy Bowl */}
-                <p id="sub-sub-title">Puppy Bowl | Lead Developer | Oct 2022 </p>
+                <p id="dev-title">Puppy Bowl | Lead Developer | Oct 2022 </p>
                 <a href="https://chicagopuppybowl22.netlify.app/" target="_blank" id="sub-sub-title-link">chicagopuppybowl22.netlify.app/</a>
 
                 <p id="cv-description">A React-based single-page application showcasing focused on coding the front end by using a pre-existing API.</p>
@@ -120,7 +120,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Connect Four */}
-                <p id="sub-sub-title">Connect Four | Lead Developer | Sep 2022</p>
+                <p id="dev-title">Connect Four | Lead Developer | Sep 2022</p>
                 <a href="https://connect4our.netlify.app/" target="_blank" id="sub-sub-title-link">connect4our.netlify.app/</a>
 
                 <p id="cv-description">An interactive arcade game built, during a class hackathon, showcasing development of a good user experience through a clean interface.</p>
@@ -129,7 +129,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Real Estate Clicker Game */}
-                <p id="sub-sub-title">Connect Four | Lead Developer | Sep 2022</p>
+                <p id="dev-title">Connect Four | Lead Developer | Sep 2022</p>
                 <a href="https://realestateclickergame.netlify.app/" target="_blank" id="sub-sub-title-link">realestateclickergame.netlify.app/</a>
 
                 <p id="cv-description">An online clicker game showcasing knowledge of Javascript and the DOM with HTML/CSS.</p>
@@ -145,12 +145,12 @@ const WorkCV = () => {
 
             {/* Experience */}
             <div>
-                <p id="sub-title">Experience: </p>
+                <p class="sub-title">Experience: </p>
                 
                 {/* Equities */}
-                <p id="work-title">Self-Employed</p>
+                <p id="work-title">Equities and Derivatives Analyst | Feb 2020 -</p>
                 <br></br>
-                <p id="work-jobs">Equities and Derivatives Analyst | Feb 2020</p>
+                <p id="work-jobs">Self-Employed</p>
                 <ul id="work-description">
                     <ul>● Generate and execute trade ideas using capital across range of advanced equity and options strategies </ul>
                     <ul>● Designed, back-tested, and validated a variety of trading systems based on long-term, moderate, andshort-term approaches to price vitality. Furthermore, with the inclusion of credit signals, pricing volume signals, and underlying asset risk range distribution </ul>
@@ -231,7 +231,7 @@ const WorkCV = () => {
 
             {/* Certifications */}
             <div>
-                <p id="sub-title">Certifications: </p>
+                <p class="sub-title">Certifications: </p>
 
                 {/* HarvardX */}
                 <div>
@@ -285,7 +285,7 @@ const WorkCV = () => {
 
             {/* Licensure */}
             <div>
-                <p id="sub-title">Licensure: </p>
+                <p class="sub-title">Licensure: </p>
 
                 {/* Illinois */}
                 <div>
@@ -306,7 +306,7 @@ const WorkCV = () => {
 
             {/* Education */}
             <div>
-                <p id="sub-title">Education: </p>
+                <p class="sub-title">Education: </p>
 
                 {/* Fullstack */}
                 <div>
@@ -343,7 +343,7 @@ const WorkCV = () => {
 
             {/* Clership/Rotations */}
             <div>
-                <p id="sub-title">Clerkship/Rotations: </p>
+                <p class="sub-title">Clerkship/Rotations: </p>
 
                 {/* Drexler Pharmacy */}
                 <div>
@@ -379,7 +379,7 @@ const WorkCV = () => {
 
             {/* Professional Organizations */}
             <div>
-                <p id="sub-title">Professional Organizations: </p>
+                <p class="sub-title">Professional Organizations: </p>
 
                 {/* SnPHA */}
                 <div>
@@ -397,7 +397,7 @@ const WorkCV = () => {
 
             {/* Presentations */}
             <div>
-                <p id="sub-title">Presentations: </p>
+                <p class="sub-title">Presentations: </p>
 
                 {/* The Sweet Spot */}
                 <div>
@@ -452,7 +452,7 @@ const WorkCV = () => {
 
             {/* Community Service */}
             <div>
-                <p id="sub-title">Community Service: </p>
+                <p class="sub-title">Community Service: </p>
 
                 {/* Hot Chocolate Run */}
                 <div>
@@ -479,7 +479,49 @@ const WorkCV = () => {
 
             {/* References */}
             <div>
-                <p id="sub-title">References: </p>
+                <p class="sub-title">References: </p>
+
+                {/* Victor Allen */}
+                <div>
+                    <p id="sub-sub-title">Dr. Victor Allen, PharmD | Former Colleague</p>
+                    <ul id="work-certs">● Jackson State University</ul>
+                </div>
+
+                {/* Ariel Castex */}
+                <div>
+                    <p id="sub-sub-title">Dr. Ariel Castex-Defresne, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
+
+                {/* Herny Clay */}
+                <div>
+                    <p id="sub-sub-title">Henry C. Clay III, J.M.C., Esq | Mentor</p>
+                    <ul id="work-certs">● City of Jackson Municipal Court Judge and Assistant Attorney General, State of Mississippi</ul>
+                </div>
+
+                {/* Stephen Cook */}
+                <div>
+                    <p id="sub-sub-title">Rev, Dr. Stephen T. Cook | Mentor</p>
+                    <ul id="work-certs">● District Superintendent of the Mississippi Annual Conference of the United Methodist Church</ul>
+                </div>
+
+                {/* Veleka Grady */}
+                <div>
+                    <p id="sub-sub-title">Dr. Veleka Grady, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
+
+                {/* Dewey Handy */}
+                <div>
+                    <p id="sub-sub-title">Dr. Dewey Handy, OD | Mentor</p>
+                    <ul id="work-certs">● Handy Eye Care</ul>
+                </div>
+
+                {/* Jasmine Kinnard */}
+                <div>
+                    <p id="sub-sub-title">Dr. Jasmine Kinnard, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
 
                 {/* Elle Oshiro */}
                 <div>
@@ -500,48 +542,6 @@ const WorkCV = () => {
                     <p id="sub-sub-title">Matt Yard | Former Mentor</p>
                     <ul id="work-certs">● Fullstack Academy</ul>
                     <ul id="work-certs">● New York, NY</ul>
-                </div>
-
-                {/* Jasmine Kinnard */}
-                <div>
-                    <p id="sub-sub-title">Dr. Jasmine Kinnard, PharmD | Former Supervisor</p>
-                    <ul id="work-certs">● CVS Health</ul>
-                </div>
-
-                {/* Victor Allen */}
-                <div>
-                    <p id="sub-sub-title">Dr. Victor Allen, PharmD | Former Colleague</p>
-                    <ul id="work-certs">● Jackson State University</ul>
-                </div>
-
-                {/* Ariel Castex */}
-                <div>
-                    <p id="sub-sub-title">Dr. Ariel Castex-Defresne, PharmD | Former Supervisor</p>
-                    <ul id="work-certs">● CVS Health</ul>
-                </div>
-
-                {/* Veleka Grady */}
-                <div>
-                    <p id="sub-sub-title">Dr. Veleka Grady, PharmD | Former Supervisor</p>
-                    <ul id="work-certs">● CVS Health</ul>
-                </div>
-
-                {/* Herny Clay */}
-                <div>
-                    <p id="sub-sub-title">Henry C. Clay III, J.M.C., Esq | Mentor</p>
-                    <ul id="work-certs">● City of Jackson Municipal Court Judge and Assistant Attorney General, State of Mississippi</ul>
-                </div>
-
-                {/* Stephen Cook */}
-                <div>
-                    <p id="sub-sub-title">Rev, Dr. Stephen T. Cook | Mentor</p>
-                    <ul id="work-certs">● District Superintendent of the Mississippi Annual Conference of the United Methodist Church</ul>
-                </div>
-
-                {/* Dewey Handy */}
-                <div>
-                    <p id="sub-sub-title">Dr. Dewey Handy, OD | Mentor</p>
-                    <ul id="work-certs">● Handy Eye Care</ul>
                 </div>
             </div>
             <br></br>
