@@ -28,7 +28,7 @@ const WorkCV = () => {
                 <p id="sub-sub-title">Personal Website | Lead Developer | Continuous</p>
                 <a href="https://dalronjrobertson.netlify.app/" target="_blank" id="sub-sub-title-link">dalronjrobertson.netlify.app/</a>
 
-                <p id="cv-description">My personal website showcasing skills and experiences as a software engineer. Includes information about my background, education, and projects.</p>
+                <p id="cv-description">My personal Front-End website showcasing skills and experiences as a software engineer. Includes information about my background, education, and projects.</p>
                 <li>A living, growing webpage</li>
                 <li>An accumulation of all my creative work</li>
                 <br></br>
@@ -376,10 +376,177 @@ const WorkCV = () => {
                 </div>
             </div>
             <br></br>
+
+            {/* Professional Organizations */}
+            <div>
+                <p id="sub-title">Professional Organizations: </p>
+
+                {/* SnPHA */}
+                <div>
+                    <p id="sub-sub-title">Student National Pharmaceutical Association - (SnPHA)</p>
+                    <ul id="work-certs">● Sep 2019 - Aug 2022</ul>
+                </div>
+
+                {/* APHA */}
+                <div>
+                    <p id="sub-sub-title">American Pharmacist Association Academy of Student Pharmacists - (APhA - ASA)</p>
+                    <ul id="work-certs">● Sep 2019 - Aug 2021</ul>
+                </div>
+            </div>
+            <br></br>
+
+            {/* Presentations */}
+            <div>
+                <p id="sub-title">Presentations: </p>
+
+                {/* The Sweet Spot */}
+                <div>
+                    <p id="sub-sub-title">"The Sweet Spot” | December 2022</p>
+                    <ul id="work-certs">● Capstone Project</ul>
+                    <ul id="work-certs">● University of Illinois through Fullstack Academy</ul>
+                </div>
+
+                {/* “Factors Affecting the Mortality Rates of African American Patients w/ COVID-19 vs the Mortality Rates in All COVID-19 Patients” */}
+                <div>
+                    <p id="sub-sub-title">"Factors Affecting the Mortality Rates of African American Patients w/ COVID-19 vs the Mortality Rates in All COVID-19 Patients” | April 2020</p>
+                    <ul id="work-certs">● Professional Practice II</ul>
+                    <ul id="work-certs">● Chicago State University</ul>
+                </div>
+
+                {/* “Austin Anonymous Drive (AAD) Initiative Proposal” */}
+                <div>
+                    <p id="sub-sub-title">“Austin Anonymous Drive (AAD) Initiative Proposal” | April 2020</p>
+                    <ul id="work-certs">● Research Methods and Pharmacoepidemiology</ul>
+                    <ul id="work-certs">● Chicago State University</ul>
+                </div>
+
+                {/* "Hereditary Hemochromatosis” */}
+                <div>
+                    <p id="sub-sub-title">"Hereditary Hemochromatosis” | Nov 2019 </p>
+                    <ul id="work-certs">● Pharmaceutical Biochemistry I</ul>
+                    <ul id="work-certs">● Chicago State University</ul>
+                </div>
+
+                {/* “Culture of Patient Safety”  */}
+                <div>
+                    <p id="sub-sub-title">"Culture of Patient Safety” | Sept 2019</p>
+                    <ul id="work-certs">● Pharmacy Health Care Systems</ul>
+                    <ul id="work-certs">● Chicago State University</ul>
+                </div>
+
+                {/* “Tuberactinomycins” */}
+                <div>
+                    <p id="sub-sub-title">“Tuberactinomycins” | Dec 2018</p>
+                    <ul id="work-certs">● Molecular Machines of Health and Disease</ul>
+                    <ul id="work-certs">● Mississippi College</ul>
+                </div>
+
+                {/* “Glycolysis”  */}
+                <div>
+                    <p id="sub-sub-title">“Glycolysis” | December 2018</p>
+                    <ul id="work-certs">● Biochemistry: Macromolecules</ul>
+                    <ul id="work-certs">● Mississippi College</ul>
+                </div>
+            </div>
+            <br></br>
+
+            {/* Community Service */}
+            <div>
+                <p id="sub-title">Community Service: </p>
+
+                {/* Hot Chocolate Run */}
+                <div>
+                    <p id="sub-sub-title">Hot Chocolate 15K/5K Run</p>
+                    <ul id="work-certs">● Volunteer</ul>
+                    <ul id="work-certs">● Chicago, IL</ul>
+                </div>
+
+                {/* Chicago Heart Walk */}
+                <div>
+                    <p id="sub-sub-title">Chicago Heart Walk 2019</p>
+                    <ul id="work-certs">● Volunteer</ul>
+                    <ul id="work-certs">● Chicago, IL</ul>
+                </div>
+
+                {/* UMMC */}
+                <div>
+                    <p id="sub-sub-title">University of Mississippi Medical Center - Supervisor: Marsha Burton</p>
+                    <ul id="work-certs">● Volunteer</ul>
+                    <ul id="work-certs">● Jackson, MS</ul>
+                </div>
+            </div>
+            <br></br>
+
+            {/* References */}
+            <div>
+                <p id="sub-title">References: </p>
+
+                {/* Elle Oshiro */}
+                <div>
+                    <p id="sub-sub-title">Elle Oshiro | Former Teacher</p>
+                    <ul id="work-certs">● Fullstack Academy</ul>
+                    <ul id="work-certs">● New York, NY</ul>
+                </div>
+
+                {/* Jeremy Rogers */}
+                <div>
+                    <p id="sub-sub-title">Jeremy Rogers | Former Mentor</p>
+                    <ul id="work-certs">● Fullstack Academy</ul>
+                    <ul id="work-certs">● New York, NY</ul>
+                </div>
+
+                {/* Matt Yard */}
+                <div>
+                    <p id="sub-sub-title">Matt Yard | Former Mentor</p>
+                    <ul id="work-certs">● Fullstack Academy</ul>
+                    <ul id="work-certs">● New York, NY</ul>
+                </div>
+
+                {/* Jasmine Kinnard */}
+                <div>
+                    <p id="sub-sub-title">Dr. Jasmine Kinnard, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
+
+                {/* Victor Allen */}
+                <div>
+                    <p id="sub-sub-title">Dr. Victor Allen, PharmD | Former Colleague</p>
+                    <ul id="work-certs">● Jackson State University</ul>
+                </div>
+
+                {/* Ariel Castex */}
+                <div>
+                    <p id="sub-sub-title">Dr. Ariel Castex-Defresne, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
+
+                {/* Veleka Grady */}
+                <div>
+                    <p id="sub-sub-title">Dr. Veleka Grady, PharmD | Former Supervisor</p>
+                    <ul id="work-certs">● CVS Health</ul>
+                </div>
+
+                {/* Herny Clay */}
+                <div>
+                    <p id="sub-sub-title">Henry C. Clay III, J.M.C., Esq | Mentor</p>
+                    <ul id="work-certs">● City of Jackson Municipal Court Judge and Assistant Attorney General, State of Mississippi</ul>
+                </div>
+
+                {/* Stephen Cook */}
+                <div>
+                    <p id="sub-sub-title">Rev, Dr. Stephen T. Cook | Mentor</p>
+                    <ul id="work-certs">● District Superintendent of the Mississippi Annual Conference of the United Methodist Church</ul>
+                </div>
+
+                {/* Dewey Handy */}
+                <div>
+                    <p id="sub-sub-title">Dr. Dewey Handy, OD | Mentor</p>
+                    <ul id="work-certs">● Handy Eye Care</ul>
+                </div>
+            </div>
+            <br></br>
+
         </div>
-
-
-
             {/* End of Page */}
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
