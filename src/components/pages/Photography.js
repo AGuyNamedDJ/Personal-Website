@@ -6,6 +6,8 @@ const Photography = () => {
         <div>
             <div class="title">Gallery</div>
 
+            <img src="/images/photo-1.jpg"  id="photo-1"></img>
+
 
             {/* End of Page */}
             <footer id="footer">
