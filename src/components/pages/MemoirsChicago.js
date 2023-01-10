@@ -5,11 +5,41 @@ const MemoirsChicago = () => {
     return (
         <div>
             <h2 class="title">Chicago</h2>
+
+            <div id="detailed-container">
+
+                {/* Beginning Poetry */}
+                <img src="/images/chicago-2.jpeg" alt="SundaysOnState" id="SundaysOnState" />
+
+
+                {/* Quality of Life */}
+                <p class="detailed-text">"A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility."</p>
+
+                <img src="/images/chicago-5.jpeg" id="SundaysOnState"></img>
+
+                {/* Foodie Scene */}
+                <p class="detailed-text"></p>
+
+              
+                {/* Activities & Events */}
+              
+                <p class="detailed-text"></p>
+
+
+                {/* Diversity */}
+                <p class="detailed-text"></p>
+
+              
+                {/* Architecture */}
+                <p class="detailed-text"></p>
+
+                
+            </div>
+
                         {/* End of Page */}
                         <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
                 <p id="footer-top-text">dalronj.robertson@gmail.com</p>
-                
             </footer>
             <br></br>
             

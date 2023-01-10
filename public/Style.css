@@ -58,6 +58,21 @@ body {
     font-weight: 500;
     margin-top: 100px;
 }
+#detailed-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50% 1fr);
+    grid-gap: 1em;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.detailed-text{
+    color: rgb(74, 44, 42);
+    font-family: 'Tangerine', cursive;
+    font-size: 75px;
+}
 
 #error-page {
     font-family:'Courier New', Courier, monospace;
@@ -150,7 +165,20 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #memoirs-date{
     font-size: 13px;
+    position: relative;
+    top: -20px;
+    left: 30px;
 
+}
+
+#memoirs-link{
+    color: black;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 30px;
 }
 
 #memoirs-trips{
@@ -184,6 +212,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
     padding-left: 75px;
     padding-right: 75px;
 }
+
 
 #workcv{
     margin-left: 15px;
@@ -244,7 +273,22 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 /* Images */
+#detailed-images-center{
+    border-radius: 8%;
+
+}
+
+#detailed-images-left{
+    border-radius: 8%;    
+}
+
+#detailed-images-right{
+    border-radius: 8%;
+    
+}
+
 #chicago-1{
+    border-radius: 13%;
     flex-basis: 20%;
     padding: 2rem;
     height: 283px;
@@ -253,17 +297,27 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #montegobay-1{
+    border-radius: 13%;
     flex-basis: 20%;
     padding: 2rem;
     width: 375px;
 }
 
 #QuintanaRoo-1{
+    border-radius: 13%;
     flex-basis: 20px;
     padding: 2rem;
     width: 375px;
 }
 
+#SundaysOnState{
+    border-radius: 8%;
+    height: 400px;
+}
+
+#Shade{
+    border-radius: 8%;
+}
 
 /* Fonts i've added */
 

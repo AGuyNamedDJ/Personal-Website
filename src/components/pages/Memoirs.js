@@ -13,21 +13,21 @@ const Memoirs = () => {
                 {/* Chicago, IL */}
                 <div id="memoirs-Chicago">
                     <img src="/images/chicago-1.jpg" id="chicago-1" alt="chicago-1"></img>
-                    <Link to="/memoirs/chicago" id="link">Chicago</Link>
+                    <Link to="/memoirs/chicago" id="memoirs-link">Chicago</Link>
                     <p id="memoirs-date">`Beginning July 31, 2019 &#x2023; 5 min`</p>
                 </div>
 
                 {/* Montego Bay, Jamaica */}
                 <div id="memoirs-MontegoBay">
                     <img src="/images/montegobay-1.jpg" id="montegobay-1" alt="montegobay-1"></img>
-                    <Link to="/memoirs/montegobay" id="link">Montego Bay</Link>
+                    <Link to="/memoirs/montegobay" id="memoirs-link">Montego Bay</Link>
                     <p id="memoirs-date">`March 21, 2019 &#x2023; 2 min`</p>
                 </div>
 
                 {/* Quintana Roo, Mexico */}
                 <div id="memoirs-QuintanaRoo">
                     <img src="/images/QuintanaRoo-1.jpeg" id="QuintanaRoo-1" alt="QuintanaRoo-1"></img>
-                    <Link to="/memoirs/quintanaroo" id="link">Quintana Roo</Link>
+                    <Link to="/memoirs/quintanaroo" id="memoirs-link">Quintana Roo</Link>
                     <p id="memoirs-date">`December 21, 2019 &#x2023; 3 min`</p>
                 </div>
 
