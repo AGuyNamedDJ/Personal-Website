@@ -312,12 +312,17 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #SundaysOnState{
     border-radius: 8%;
-    height: 400px;
+    height: 800px;
 }
 
 #Shade{
     border-radius: 8%;
+    width: 900px;
+    margin-top: -75px;
 }
+
+
+
 
 /* Fonts i've added */
 

@@ -15,7 +15,10 @@ const MemoirsChicago = () => {
                 {/* Quality of Life */}
                 <p class="detailed-text">"A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility."</p>
 
-                <img src="/images/chicago-5.jpeg" id="SundaysOnState"></img>
+                <img src="/images/chicago-5.jpeg" id="Shade"></img>
+                <p class="detailed-text">"Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'."</p>
+
+
 
                 {/* Foodie Scene */}
                 <p class="detailed-text"></p>
