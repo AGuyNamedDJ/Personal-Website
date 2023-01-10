@@ -165,9 +165,17 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #journal-date{
-    font-size: 13px;
+    font-size: 15px;
     position: relative;
     top: -15px;
+    left: 45px;
+
+}
+
+#journal-date-detail{
+    font-size: 18px;
+    position: relative;
+    top: -20px;
     left: 45px;
 
 }
@@ -189,9 +197,17 @@ font-family: 'Oleo Script Swash Caps', cursive;
     text-decoration: none;
 }
 
+#journal-text-detail{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 
 #memoirs-date{
-    font-size: 13px;
+    font-size: 15px;
     position: relative;
     top: -20px;
     left: 30px;
@@ -329,6 +345,16 @@ font-family: 'Oleo Script Swash Caps', cursive;
     padding: 2rem;
     height: 283px;
     width: 375px;
+}
+
+#journal-rejection-detail{
+    justify-content: center;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    size: 60%;
+
 }
 
 
