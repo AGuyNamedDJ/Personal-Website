@@ -196,7 +196,187 @@ const WorkCV = () => {
                 </ul>
                 <br></br>
 
+                {/* CVS */}
+                <p id="work-title">Pharmacist Intern | Jul 2019 - Aug 2020</p>
+                <br></br>
+                <p id="work-jobs">CVS Health</p>
+                <ul id="work-description">
+                    <ul>● Answered customer questions via telephone and in-person </ul>
+                    <ul>● Preparation of medications for patients </ul>
+                    <ul>● Accurately tracked inventory levels within the pharmacy</ul>
+                    <ul>● Contacted insurance carriers as needed to resolve issues with orders</ul>
+                    <ul>● Received and verified the prescriptions</ul>
+                    <ul>● Monitored for drug interactions, therapy duplications</ul>
+                    <ul>● Conducted health and wellness screenings</ul>
+                    <ul>● Kept records and do other administrative tasks</ul>
+                    <ul>● Understood and followed applicable Federal and State laws (e.g., HIPAA), regulations (e.g., OSHA), and standards</ul>
+                    <ul>● Practiced and developed duties performed by pharmacists when applicable and according to law</ul>
+                </ul>
+                <br></br>
+
+                {/* CVS */}
+                <p id="work-title">Pharmacy Technician | Jul 2015 - Jul 2019</p>
+                <br></br>
+                <p id="work-jobs">CVS Health</p>
+                <ul id="work-description">
+                    <ul>● Prepared medications for patients </ul>
+                    <ul>● Maintained inventory </ul>
+                    <ul>● Accurately track inventory levels within the pharmacy</ul>
+                    <ul>● Contact insurance carriers as needed to resolve issues with orders</ul>
+                    <ul>● Process prescription orders for customers and collect payment</ul>
+                    <ul>● Answer customer questions via telephone and in-person</ul>
+                    <ul>● Operate the cash register and ring up customer purchases</ul>
+                </ul>
+                <br></br>
+
+            {/* Certifications */}
+            <div>
+                <p id="sub-title">Certifications: </p>
+
+                {/* HarvardX */}
+                <div>
+                    <p id="sub-sub-title">Harvard X - Intro to Computer Science CS50</p>
+
+                    <ul id="work-certs">●  In Progress</ul>
+                    <ul id="work-certs">●  Harvard University</ul>
+                </div>
+
+                {/* Genesis Plus */}
+                <div>
+                    <p id="sub-sub-title">Genesis Plus Trading Academy</p>
+
+                    <ul id="work-certs">● Completed September 2022</ul>
+                    <ul id="work-certs">● VJKXXL053</ul>
+                </div>
+
+                {/* CDL */}
+                <div>
+                    <p id="sub-sub-title">Commercial Driver’s License - Class A</p>
+
+                    <ul id="work-certs">● Issued Mar 2021</ul>
+                    <ul id="work-certs">● Issued by the State of Illinois</ul>
+                </div>
+
+                {/* AHA */}
+                <div>
+                    <p id="sub-sub-title">Standard – CPR / AED / First-Aid Certification Course</p>
+
+                    <ul id="work-certs">● Jan 2020 - Jan 2024</ul>
+                    <ul id="work-certs">● American Heart Association</ul>
+                </div>
+
+                {/* NHA */}
+                <div>
+                    <p id="sub-sub-title">National Healthcareer Association (NHA) - Certified Pharmacy Technician (CPhT)</p>
+
+                    <ul id="work-certs">● Jan 2016 - Jan 2024</ul>
+                    <ul id="work-certs">● T5RR4DP2</ul>
+                </div>
+
+                {/* PTCB */}
+                <div>
+                    <p id="sub-sub-title">Pharmacy Technician Certification Board (PTCB) - Certified Pharmacy Technician (CPhT)</p>
+
+                    <ul id="work-certs">● Mar 2016 - Apr 2022</ul>
+                    <ul id="work-certs">● 30067565</ul>
+                </div>
             </div>
+            <br></br>
+
+            {/* Licensure */}
+            <div>
+                <p id="sub-title">Licensure: </p>
+
+                {/* Illinois */}
+                <div>
+                    <p id="sub-sub-title">Illinois Board of Pharmacy - 049.566668</p>
+
+                    <ul id="work-certs">●  July 2019 - Apr 2024</ul>
+                </div>
+
+                {/* Mississippi */}
+                <div>
+                    <p id="sub-sub-title">Mississippi Board of Pharmacy - PT216601</p>
+
+                    <ul id="work-certs">● July 2015 - Apr 2020</ul>
+                </div>
+            </div>
+            <br></br>
+            
+
+            {/* Education */}
+            <div>
+                <p id="sub-title">Education: </p>
+
+                {/* Fullstack */}
+                <div>
+                    <p id="sub-sub-title">University of Illinois, through Fullstack Academy - Software Engineering Certificate</p>
+
+                    <ul id="work-certs">● Full-time, Immersive Full Stack Web Development Program</ul>
+                    <ul id="work-certs">● Graduated Dec 2022</ul>
+                </div>
+
+                {/* CSU */}
+                <div>
+                    <p id="sub-sub-title">Chicago State University - 55 Credits towards Doctor of Pharmacy</p>
+
+                    <ul id="work-certs">● Aug 2019 - Dec 2021</ul>
+                </div>
+
+                {/* MC */}
+                <div>
+                    <p id="sub-sub-title">Mississippi College - 24 Credits towards Masters of Biology, Medical Sciences</p>
+
+                    <ul id="work-certs">● Aug 2018 - July 2019</ul>
+                </div>
+
+                {/* JSU */}
+                <div>
+                    <p id="sub-sub-title">Jackson State University - Bachelors of Science</p>
+
+                    <ul id="work-certs">● Biology Pre-medicine/Pre-Pharmacy</ul>
+                    <ul id="work-certs">● Graduated Dec 2018</ul>
+                </div>
+            </div>
+            <br></br>
+
+
+            {/* Clership/Rotations */}
+            <div>
+                <p id="sub-title">Clerkship/Rotations: </p>
+
+                {/* Drexler Pharmacy */}
+                <div>
+                    <p id="sub-sub-title">Drexler Pharmacy | Aug 2021 - Dec 2021</p>
+
+                    <ul id="work-certs">● Preceptor: Dr. Tijuana Dixon, PharmD</ul>
+                    <ul id="work-certs">● Pharmacy Practice II Experience (IIPE’S) P2</ul>
+                    <ul id="work-certs">● Chicago, IL</ul>
+                    <ul id="work-certs">● "Conferred"</ul>
+                </div>
+
+                {/* Harbour Light Hospice */}
+                <div>
+                    <p id="sub-sub-title">Harbour Light Hospice | Jan 2020 - Mar 2020</p>
+
+                    <ul id="work-certs">● Preceptor: Larisa Calvanese</ul>
+                    <ul id="work-certs">● Pharmacy Practice I Experience (IIPE’S) P1</ul>
+                    <ul id="work-certs">● Winfield, IL</ul>
+                    <ul id="work-certs">● "Conferred"</ul>
+                </div>
+
+                {/* Walgreens */}
+                <div>
+                    <p id="sub-sub-title">Walgreens Pharmacy | Sep 2019 - Dec 2019</p>
+
+                    <ul id="work-certs">● Preceptor: Dr. Tujan Almasri, PharmD</ul>
+                    <ul id="work-certs">● Pharmacy Practice I Experience (IIPE’S) P1</ul>
+                    <ul id="work-certs">● Orland Park, IL</ul>
+                    <ul id="work-certs">● "Conferred"</ul>
+                </div>
+            </div>
+            <br></br>
+        </div>
 
 
 

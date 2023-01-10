@@ -216,6 +216,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
     font-style: italic;
 }
 
+#work-certs{
+    margin-top: -10px;
+}
 #work-jobs{
     font-weight: bold;
     margin-top: -30px;
