@@ -10,6 +10,7 @@ import Index from "./components/utilities/Index";
 // Imports-Pages
 import About from "./components/pages/About";
 import Journal from "./components/pages/Journal";
+import JournalRejection from "./components/pages/JournalRejection";
 import Memoirs from "./components/pages/Memoirs";
 import MemoirsChicago from "./components/pages/MemoirsChicago";
 import MemoirsMontegoBay from "./components/pages/MemoirsMontegoBay";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: "/journal",
                 element: <Journal />
+            },
+            {
+                path: "/journal/rejection",
+                element: <JournalRejection />
             },
             {
                 path: "/memoirs",
