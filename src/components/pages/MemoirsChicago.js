@@ -17,7 +17,12 @@ const MemoirsChicago = () => {
 
                 <img src="/images/chicago-5.jpeg" id="Shade"></img>
                 <p class="detailed-text">"Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'."</p>
+                <br></br>
+            </div>
 
+            <div>
+                <img src="/images/chicago-3.jpeg" id="mj"></img>
+            </div>
 
 
                 {/* Foodie Scene */}
@@ -36,8 +41,7 @@ const MemoirsChicago = () => {
                 {/* Architecture */}
                 <p class="detailed-text"></p>
 
-                
-            </div>
+        
 
                         {/* End of Page */}
                         <footer id="footer">
