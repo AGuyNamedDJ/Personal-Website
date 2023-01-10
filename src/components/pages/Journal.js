@@ -4,9 +4,10 @@ const Journal = () => {
 
     return (
         <div>
-            <div id="title">Journal</div>
+            <div class="title">Journal</div>
 
 
+            {/* End of Page */}
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
                 <p id="footer-top-text">dalronj.robertson@gmail.com</p>

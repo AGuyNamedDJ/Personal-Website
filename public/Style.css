@@ -165,13 +165,46 @@ font-family: 'Oleo Script Swash Caps', cursive;
     padding-right: 75px;
 }
 
-#title{
+#workcv{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.title{
     /* font-family: 'Moon Dance', cursive; */
     color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
     font-weight: bolder;
     font-size: 140px;
     margin-top: -30px;
+}
+
+#sub-title{
+    color: rgb(74, 44, 42);
+    font-size: 35px;
+
+}
+
+#sub-sub-title{
+    color: rgb(74, 44, 42);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sub-sub-title-link{
+    color: rgb(74, 44, 42);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -40px;
+}
+
+#cv-description{
+    font-style: italic;
+}
+
+#work-technical-skills-title{
+    margin-bottom: -20px;
+    font-weight: bold;
 }
 
 /* Images */

@@ -5,7 +5,7 @@ const Memoirs = () => {
 
     return (
         <div>
-            <div id="title">Memoirs</div>
+            <div class="title">Memoirs</div>
             <br></br>
             <br></br>
 
@@ -33,6 +33,7 @@ const Memoirs = () => {
 
             </div>
             <br></br>
+            
             {/* End of Page */}
 
             <footer id="footer">

@@ -12,6 +12,8 @@ const About = () => {
                 <br></br>
                 <br></br>
             </div>
+
+            {/* End of Page */}
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
                 <p id="footer-top-text">dalronj.robertson@gmail.com</p>

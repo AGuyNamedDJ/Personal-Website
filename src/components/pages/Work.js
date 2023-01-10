@@ -5,7 +5,7 @@ const Work = () => {
 
     return (
         <div>
-            <div id="title">Portfolio</div>
+            <div class="title">Portfolio</div>
             <div id="">
 
                 {/* CV */}
@@ -33,8 +33,8 @@ const Work = () => {
             <br></br>
             <br></br>
             <br></br>
-            {/* End of Page */}
 
+            {/* End of Page */}
             <footer id="footer">
                 <p id="footer-top-text">Stay connected with me here.</p>
                 <p id="footer-top-text">dalronj.robertson@gmail.com</p>
