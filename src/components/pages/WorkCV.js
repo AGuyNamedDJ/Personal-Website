@@ -28,7 +28,7 @@ const WorkCV = () => {
                 <p id="dev-title">Personal Website | Lead Developer | Continuous</p>
                 <a href="https://dalronjrobertson.netlify.app/" target="_blank" id="sub-sub-title-link">dalronjrobertson.netlify.app/</a>
 
-                <p id="cv-description">"Designed and developed a personal website showcasing my software engineering skills and experience, featuring a comprehensive portfolio of professional projects, education and personal interests, including a personal journal and photography collection."</p>
+                <p id="cv-description">Designed and developed a personal website showcasing my software engineering skills and experience, featuring a comprehensive portfolio of professional projects, education and personal interests, including a personal journal and photography collection.</p>
                 <li>A living, growing webpage</li>
                 <li>An accumulation of all my professional education and skills, highlighting my growing technical expertise</li>
                 <br></br>
