@@ -13,7 +13,7 @@ const MemoirsChicago = () => {
 
 
                 {/* Quality of Life */}
-                <p className="detailed-text">"A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility."</p>
+                <p className="detailed-text">" A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility. "</p>
 
                 <img src="/images/chicago-5.jpeg" id="Shade"></img>
             </div>
@@ -24,7 +24,7 @@ const MemoirsChicago = () => {
 
 
             <div id="detailed-container-1">
-                <p className="detailed-text">"Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'."</p>
+                <p className="detailed-text">" Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'. "</p>
             </div>
 
 

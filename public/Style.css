@@ -346,8 +346,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 
 #workcv{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .title{
@@ -469,7 +469,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #Shade{
     border-radius: 8%;
     width: 800px;
-    margin-top: -75px;
+    margin-top: -15px;
 }
 
 #mj{
