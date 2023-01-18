@@ -156,6 +156,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: space-between;
     position:relative;
     bottom: 20;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #footer-copyright{
