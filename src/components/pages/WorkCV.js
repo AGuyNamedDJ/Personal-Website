@@ -37,14 +37,14 @@ const WorkCV = () => {
                 <p id="dev-title">Dal-Recipe | Full Stack Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://dal-recipe.netlify.app" target="_blank" id="sub-sub-title-link">dal-recipe.netlify.app</a>
 
-                <p id="cv-description">"Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in"</p>
+                <p id="cv-description">"A Full-Stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in"</p>
                 <br></br>
 
                 {/* The Sweet Spot */}
                 <p id="dev-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
-                <p id="cv-description">A Full-Stack e-commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
+                <p id="cv-description">A Full-Stack E-Commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
                 <li>Collaboration and Planning</li>
                     <ul>Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
                 <li>User Functionality</li>

@@ -21,13 +21,14 @@ const WorkResume = () => {
 
             {/* Development Projects */}
             <div>
-                <p class="sub-title">Development Projects:</p>
+                <p className="sub-title">Development Projects:</p>
+                <p>As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
 
                 {/* The Sweet Spot */}
                 <p id="dev-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
-                <p id="cv-description">A Full-Stack e-commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
+                <p id="cv-description">A Full-Stack E-Commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
                 <li>Collaboration and Planning</li>
                     <ul>Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
                 <li>User Functionality</li>
