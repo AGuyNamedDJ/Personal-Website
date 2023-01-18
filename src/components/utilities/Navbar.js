@@ -18,4 +18,4 @@ export default Navbar;
 
 // Notes
     // the homepage will be the about page
-    // i want a drop down for the about page however similiar to quintonharris.com
+    // i want a drop down for the about page
