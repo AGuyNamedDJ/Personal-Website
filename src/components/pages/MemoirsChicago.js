@@ -3,7 +3,7 @@ import React from "react";
 const MemoirsChicago = () => {
 
     return (
-        <div>
+        <div className="chicago-page">
             <h2 class="title">Chicago</h2>
 
             <div id="detailed-container">
@@ -13,15 +13,18 @@ const MemoirsChicago = () => {
 
 
                 {/* Quality of Life */}
-                <p class="detailed-text">"A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility."</p>
+                <p className="detailed-text">"A symphony of steel and brick, a city pulsing with energy and diversity, where the skyscrapers kiss the sky and the windy streets are filled with possibility."</p>
 
                 <img src="/images/chicago-5.jpeg" id="Shade"></img>
-                <p class="detailed-text">"Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'."</p>
-                <br></br>
             </div>
 
             <div>
                 <img src="/images/chicago-3.jpeg" id="mj"></img>
+            </div>
+
+
+            <div id="detailed-container-1">
+                <p className="detailed-text">"Cubs and Sox, deep dish pie, Hot dogs with all the fixin's. Lively streets, music and art, Chi-Town's spirit never dimmin'."</p>
             </div>
 
 

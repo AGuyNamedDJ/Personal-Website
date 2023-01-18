@@ -15,7 +15,7 @@ const WorkCV = () => {
                 <p>Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
 
                 <p id="work-technical-skills-title">Knowledgable: </p>
-                <p>Python | Java | C | Flask | AWS</p>
+                <p>Python | Java | C | Flask | Tailwind CSS | AWS</p>
             </div>
             <br></br>
 
@@ -31,6 +31,13 @@ const WorkCV = () => {
                 <p id="cv-description">My personal Front-End website showcasing skills and experiences as a software engineer. Includes information about my background, education, and projects.</p>
                 <li>A living, growing webpage</li>
                 <li>An accumulation of all my creative work</li>
+                <br></br>
+
+                {/* Dal-Recipe */}
+                <p id="dev-title">Dal-Recipe | Full Stack Developer | Nov 2022 - Dec 2022 </p>
+                <a href="https://dal-recipe.netlify.app" target="_blank" id="sub-sub-title-link">dal-recipe.netlify.app</a>
+
+                <p id="cv-description">A Full-Stack development for a Full-Stack Cooking & Recipe website showcasing some of my favorite recipes.  Continually updated with new recipes.</p>
                 <br></br>
 
                 {/* The Sweet Spot */}
