@@ -37,7 +37,7 @@ const WorkCV = () => {
                 <p id="dev-title">Dal-Recipe | Full Stack Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://dal-recipe.netlify.app" target="_blank" id="sub-sub-title-link">dal-recipe.netlify.app</a>
 
-                <p id="cv-description">A Full-Stack development for a Full-Stack Cooking & Recipe website showcasing some of my favorite recipes.  Continually updated with new recipes.</p>
+                <p id="cv-description">"Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in"</p>
                 <br></br>
 
                 {/* The Sweet Spot */}
