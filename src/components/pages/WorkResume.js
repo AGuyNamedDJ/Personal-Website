@@ -24,6 +24,22 @@ const WorkResume = () => {
                 <p className="sub-title">Development Projects:</p>
                 <p>As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
 
+                {/* Car-Haven */}
+                <p id="dev-title">Car-Haven | Full Stack Developer | Jan 2023 - Jan 2023 </p>
+                <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
+
+                <p id="cv-description">A Full Stack personal website that provides car exotic car service & repair solutions.</p>
+                <li>User Functionality</li>
+                    <ul>Access and view all services and parts offered by the company</ul>
+                    <ul>Created API routes to handle CRUD operations for vehicle and service data</ul>
+                    <ul>Made a Server with static & dynamic routing using route parameters routes</ul>
+                    <ul>Created an extensive vehicle database using postgreSQL</ul>
+                    <ul>Implemented error handling and logging to ensure a smooth user experience.</ul>
+                <li>Built a web server that responds to client request & returns values from the database</li>
+                    <ul>Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
+                    <ul>Parameterized routes & subroutes</ul>
+                <br></br>
+
                 {/* The Sweet Spot */}
                 <p id="dev-title">Capstone, The Sweet Spot | Co-Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
@@ -52,21 +68,6 @@ const WorkResume = () => {
                 <li>Allows users to</li>
                     <ul>Login and build fitness routines from a list of activities</ul>
                     <ul>Have control over the public/private nature of their routines</ul>
-                <br></br>
-
-                {/* Juicebox */}
-                <p id="dev-title">Juicebox | Lead Developer | Nov 2022</p>
-                <a href="https://juicebox-kz62.onrender.com/" target="_blank" id="sub-sub-title-link">juicebox-kz62.onrender.com/</a>
-
-                <p id="cv-description">A Back-End with a Database and Web server with a custom API showcasing knowledge of PostgreSQL and Node</p>
-                <li>Basic PostgreSQL commands and Database creation</li>
-                    <ul>Primary and Foreign keys</ul>
-                    <ul>Inserted, Retrieved, and Updated data in the database and connected the database using PG</ul>
-                <li>Built a web server that responds to client request and returns values from the database</li>
-                    <ul>Provide HTTP Endpoints and Methods (GET/POST/PATCH/DELETE) and Body Parsing</ul>
-                    <ul>Parameterized routes and subroutes</ul>
-                    <ul>Implemented user authentication via JSON Web Tokens</ul>
-                <li>Made a Server with static and dynamic routing using route parameters routes</li>
             </div>            
 
             {/* Experience */}

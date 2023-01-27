@@ -33,6 +33,22 @@ const WorkCV = () => {
                 <li>An accumulation of all my professional education and skills, highlighting my growing technical expertise</li>
                 <br></br>
 
+                {/* Car-Haven */}
+                <p id="dev-title">Car-Haven | Full Stack Developer | Jan 2023 - Jan 2023 </p>
+                <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
+
+                <p id="cv-description">A Full Stack personal website that provides car exotic car service & repair solutions.</p>
+                <li>User Functionality</li>
+                    <ul>Access and view all services and parts offered by the company</ul>
+                    <ul>Created API routes to handle CRUD operations for vehicle and service data</ul>
+                    <ul>Made a Server with static & dynamic routing using route parameters routes</ul>
+                    <ul>Created an extensive vehicle database using postgreSQL</ul>
+                    <ul>Implemented error handling and logging to ensure a smooth user experience.</ul>
+                <li>Built a web server that responds to client request & returns values from the database</li>
+                    <ul>Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
+                    <ul>Parameterized routes & subroutes</ul>
+                <br></br>
+
                 {/* Dal-Recipe */}
                 <p id="dev-title">Dal-Recipe | Full Stack Developer | Nov 2022 - Dec 2022 </p>
                 <a href="https://dal-recipe.netlify.app" target="_blank" id="sub-sub-title-link">dal-recipe.netlify.app</a>
