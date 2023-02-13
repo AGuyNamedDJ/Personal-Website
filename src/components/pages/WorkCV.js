@@ -81,7 +81,7 @@ const WorkCV = () => {
                     <ul id="work-cv-text">Used useEffect to fetch data in the correct components while establishing inside code for potential async calls</ul>
                     <ul id="work-cv-text">Wrote async functions using try/catch to make API calls</ul>
                     <ul id="work-cv-text">Set correct headers and bodies for use by API, including the logged in user</ul>
-                <li> id="work-cv-text"Allows users to</li>
+                <li id="work-cv-text"> Allows users to</li>
                     <ul id="work-cv-text">Login and build fitness routines from a list of activities</ul>
                     <ul id="work-cv-text">Have control over the public/private nature of their routines</ul>
                 <br></br>
