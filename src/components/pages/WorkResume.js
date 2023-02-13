@@ -5,39 +5,39 @@ const WorkResume = () => {
 
     return (
         <div id="workcv">
-            <div class="title">Resume</div>
+            <div className="title">Resume</div>
 
             {/* Technical Skills */}
             <div>
-                <p class="sub-title">Technical Skills: </p>
+                <p className="sub-title">Technical Skills: </p>
 
                 <p id="work-technical-skills-title">Proficient</p>
-                <p>Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
+                <p> id="work-cv-text"Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
 
                 <p id="work-technical-skills-title">Knowledgable: </p>
-                <p>Python | Java | C | Flask | AWS</p>
+                <p id="work-cv-text">Python | Java | C | Flask | AWS</p>
             </div>
             <br></br>
 
             {/* Development Projects */}
             <div>
-                <p className="sub-title">Development Projects:</p>
-                <p>As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
+                <p classNameName="sub-title">Development Projects:</p>
+                <p id="work-cv-text">As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
 
                 {/* Car-Haven */}
                 <p id="dev-title">Car-Haven | Full Stack Developer | Jan 2023 - Jan 2023 </p>
                 <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
                 <p id="cv-description">A Full Stack personal website that provides car exotic car service & repair solutions.</p>
-                <li>User Functionality</li>
-                    <ul>Access and view all services and parts offered by the company</ul>
-                    <ul>Created API routes to handle CRUD operations for vehicle and service data</ul>
-                    <ul>Made a Server with static & dynamic routing using route parameters routes</ul>
-                    <ul>Created an extensive vehicle database using postgreSQL</ul>
-                    <ul>Implemented error handling and logging to ensure a smooth user experience.</ul>
-                <li>Built a web server that responds to client request & returns values from the database</li>
-                    <ul>Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
-                    <ul>Parameterized routes & subroutes</ul>
+                <li id="work-cv-text">User Functionality</li>
+                    <ul id="work-cv-text">Access and view all services and parts offered by the company</ul>
+                    <ul id="work-cv-text">Created API routes to handle CRUD operations for vehicle and service data</ul>
+                    <ul id="work-cv-text">Made a Server with static & dynamic routing using route parameters routes</ul>
+                    <ul id="work-cv-text">Created an extensive vehicle database using postgreSQL</ul>
+                    <ul id="work-cv-text">Implemented error handling and logging to ensure a smooth user experience.</ul>
+                <li id="work-cv-text">Built a web server that responds to client request & returns values from the database</li>
+                    <ul id="work-cv-text">Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
+                    <ul id="work-cv-text">Parameterized routes & subroutes</ul>
                 <br></br>
 
                 {/* The Sweet Spot */}
@@ -45,14 +45,14 @@ const WorkResume = () => {
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
                 <p id="cv-description">A Full-Stack E-Commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
-                <li>Collaboration and Planning</li>
-                    <ul>Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
-                <li>User Functionality</li>
-                    <ul>Access and view all products from multiple categories</ul>
-                    <ul>View individual product details, add them to cart, edit and removal, and check out</ul>
-                    <ul>Create accounts across multiple devices for persistent carts and view purchase history</ul>
-                    <ul>Admins can validate data to ensure reliability and view user information</ul>
-                    <ul>Admins have full rights to make backend request to add, edit, and remove products</ul>
+                <li id="work-cv-text">Collaboration and Planning</li>
+                    <ul id="work-cv-text">Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
+                <li id="work-cv-text">User Functionality</li>
+                    <ul id="work-cv-text">Access and view all products from multiple categories</ul>
+                    <ul id="work-cv-text">View individual product details, add them to cart, edit and removal, and check out</ul>
+                    <ul id="work-cv-text">Create accounts across multiple devices for persistent carts and view purchase history</ul>
+                    <ul id="work-cv-text">Admins can validate data to ensure reliability and view user information</ul>
+                    <ul id="work-cv-text">Admins have full rights to make backend request to add, edit, and remove products</ul>
                 <br></br>
 
                 {/* Fitness Trackr */}
@@ -60,26 +60,26 @@ const WorkResume = () => {
                 <a href="https://usefitnesstrackr.netlify.app" target="_blank" id="sub-sub-title-link">usefitnesstrackr.netlify.app</a>
 
                 <p id="cv-description">A Front-End Fitness App using React.js to fetch data from a created API developed with a student developers.</p>
-                <li>React.js Components and Hooks and Client-Side API Code</li>
-                    <ul>Correctly handled user interaction and state components</ul>
-                    <ul>Used useEffect to fetch data in the correct components while establishing inside code for potential async calls</ul>
-                    <ul>Wrote async functions using try/catch to make API calls</ul>
-                    <ul>Set correct headers and bodies for use by API, including the logged in user</ul>
-                <li>Allows users to</li>
-                    <ul>Login and build fitness routines from a list of activities</ul>
-                    <ul>Have control over the public/private nature of their routines</ul>
+                <li id="work-cv-text">React.js Components and Hooks and Client-Side API Code</li>
+                    <ul id="work-cv-text">Correctly handled user interaction and state components</ul>
+                    <ul id="work-cv-text">Used useEffect to fetch data in the correct components while establishing inside code for potential async calls</ul>
+                    <ul id="work-cv-text">Wrote async functions using try/catch to make API calls</ul>
+                    <ul id="work-cv-text">Set correct headers and bodies for use by API, including the logged in user</ul>
+                <li id="work-cv-text">Allows users to</li>
+                    <ul id="work-cv-text">Login and build fitness routines from a list of activities</ul>
+                    <ul id="work-cv-text">Have control over the public/private nature of their routines</ul>
             </div>            
 
             {/* Experience */}
             <div>
-                <p class="sub-title">Experience: </p>
+                <p className="sub-title">Experience: </p>
 
                 {/* MMP */}
                 <p id="work-title">Data and Medical Records Analyst | Jan 2021 - Apr 2022</p>
                 <br></br>
                 <p id="work-jobs">Medication Management Partners</p>
                 <ul id="work-description">
-                    <ul>● Created and managed records for over 100 facilities</ul>
+                    <ul >● Created and managed records for over 100 facilities</ul>
                     <ul>● Adjudicated insurance claims and troubleshot rejected claims</ul>
                     <ul>● Adjudicated electronic prescription claims</ul>
                     <ul>● Facilitated electronic medical administration record support</ul>
@@ -109,7 +109,7 @@ const WorkResume = () => {
 
             {/* Education */}
             <div>
-                <p class="sub-title">Education: </p>
+                <p className="sub-title">Education: </p>
 
                 {/* Fullstack */}
                 <div>
@@ -157,7 +157,7 @@ const WorkResume = () => {
                     &copy; 2023 Dalron J. Robertson.  All Rights Reserved.
                 </div>
                 <div id="footer-websites-container">
-                    <p class="footer-websites">
+                    <p classNameName="footer-websites">
                         <a href="https://github.com/DJRobertson95" target="_blank" id="link"> GITHUB |</a>
                         <a href="https://www.instagram.com/aguynameddj/" target="_blank" id="link"> INSTAGRAM |</a>
                         <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" id="link"> LINKEDIN |</a>
