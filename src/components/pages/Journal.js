@@ -33,7 +33,7 @@ const Journal = () => {
                     &copy; 2023 Dalron J. Robertson.  All Rights Reserved.
                 </div>
                 <div id="footer-websites-container">
-                    <p class="footer-websites">
+                    <p className="footer-websites">
                         <a href="https://github.com/DJRobertson95" target="_blank" id="link"> GITHUB |</a>
                         <a href="https://www.instagram.com/aguynameddj/" target="_blank" id="link"> INSTAGRAM |</a>
                         <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" id="link"> LINKEDIN |</a>

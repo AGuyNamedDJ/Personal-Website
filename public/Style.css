@@ -47,7 +47,7 @@ body {
 
 #about-page-image{
     height: 50vh;
-    width: 50vw;
+    width: 53vw;
     margin-top: -8vh;
 }
 
@@ -56,7 +56,9 @@ body {
     font-family: 'Tangerine', cursive;
     font-size: 12vw;
     font-weight: 500;
-    margin-top: 8vh;
+    margin-top: 7.5vh;
+    padding-bottom: 1.5vh;
+    z-index: 1;
 }
 #detailed-container{
     display: grid;
@@ -137,7 +139,7 @@ body {
 
 #footer-text{
     text-align: center;
-    font-size: 50px;
+    font-size: 1.5vw;
     /* font-family: 'Moon Dance', cursive; */
 /* font-family: 'Homemade Apple', cursive;
 font-family: 'Cedarville Cursive', cursive; */
@@ -171,6 +173,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 .footer-websites{
     font-family: Georgia, 'Times New Roman', Times, serif cursive;
     font-weight: 500;
+    font-size: 1.5vw;
 }
 
 #footer-websites-container{
