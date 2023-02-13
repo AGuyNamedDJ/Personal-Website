@@ -431,18 +431,18 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #chicago-1{
     border-radius: 13%;
     flex-basis: 20%;
-    padding: 2rem;
-    height: 283px;
-    width: 375px;
+    padding: 2vw;
+    height: 20vh;
+    width: 30vw;
     /* width: 300px; */
 }
 
 #journal-rejection{
     border-radius: 13%;
     flex-basis: 20%;
-    padding: 2rem;
-    height: 283px;
-    width: 375px;
+    padding: 2vw;
+    height: 20vh;
+    width: 30vw;
 }
 
 #journal-rejection-detail{
@@ -459,15 +459,17 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #montegobay-1{
     border-radius: 13%;
     flex-basis: 20%;
-    padding: 2rem;
-    width: 375px;
+    padding: 2vw;
+    height: 20vh;
+    width: 30vw;
 }
 
 #QuintanaRoo-1{
     border-radius: 13%;
-    flex-basis: 20px;
-    padding: 2rem;
-    width: 375px;
+    flex-basis: 20%;
+    padding: 2vw;
+    height: 20vh;
+    width: 30vw;
 }
 
 #SundaysOnState{
