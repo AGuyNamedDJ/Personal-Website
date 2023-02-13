@@ -12,7 +12,7 @@ const WorkResume = () => {
                 <p className="sub-title">Technical Skills: </p>
 
                 <p id="work-technical-skills-title">Proficient</p>
-                <p> id="work-cv-text"Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
+                <p id="work-cv-text"> Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
 
                 <p id="work-technical-skills-title">Knowledgable: </p>
                 <p id="work-cv-text">Python | Java | C | Flask | AWS</p>
