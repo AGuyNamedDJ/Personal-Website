@@ -255,9 +255,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
     margin-left: 20px;
 }
 
-
 #journal-date{
-    font-size: 1.25vh;
+    font-size: 1.3vh;
     position: relative;
     top: -1.3vh;
     left: 3vw;
@@ -281,11 +280,12 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: space-between;
     max-width: 85vw;
     margin: 0 auto;
-    margin-top: -35px;
-    margin-left: 30px;
-    padding: 10px;
+    margin-top: -2vh;
+    margin-left: 2vw;
+    padding: 1vw;
     text-decoration: none;
 }
+
 
 #journal-text-detail{
     color: black;
