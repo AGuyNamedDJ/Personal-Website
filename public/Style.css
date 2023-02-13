@@ -254,11 +254,10 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 
 #journal-date{
-    font-size: 15px;
+    font-size: 1.25vh;
     position: relative;
-    top: -15px;
-    left: 45px;
-
+    top: -1.3vh;
+    left: 3vw;
 }
 
 #journal-date-detail{
@@ -266,19 +265,18 @@ font-family: 'Oleo Script Swash Caps', cursive;
     position: relative;
     top: -20px;
     left: 45px;
-
 }
 
 #journal-text{
-    border: 2px;
+    border: 2vw;
     color: black;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     gap: 0px;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 85vw;
     margin: 0 auto;
     margin-top: -35px;
     margin-left: 30px;
@@ -315,17 +313,17 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #memoirs-trips{
-    border: 2px;
+    border: 1vw;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 4.5vw;
     gap: 0px;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 85vw;
     margin: 0 auto;
-    margin-top: -90px;
-    padding: 10px;
+    margin-top: -5vh;
+    padding: 2vh;
 }
 
 #memoirs-trips > div {
@@ -362,9 +360,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
     color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
     font-weight: bolder;
-    font-size: 140px;
-    margin-top: -30px;
-    margin-left: 45px;
+    font-size: 12.5vw;
+    margin-top: 1vh;
+    margin-left: 4vw;
 }
 
 .sub-title{
