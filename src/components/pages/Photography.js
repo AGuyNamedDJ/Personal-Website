@@ -22,8 +22,7 @@ const Photography = () => {
                     and be careful what you create 
                     using your character trait.</p>
                     <img src="/images/photo-6.jpg" id="photo-6"></img>
-                    <br></br>
-                    <br></br>
+
                 <p class="gallery-poem-6">Take a lesson from the other designs, 
                     but still use your creative guidelines.
                     Don't think your abilities come from your greatness; 
