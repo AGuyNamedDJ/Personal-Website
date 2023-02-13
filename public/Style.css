@@ -85,8 +85,8 @@ body {
 .detailed-text{
     color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
-    font-size: 75px;
-    margin-right: 50px;
+    font-size: 7vw;
+    margin-right: 8vw;
 }
 
 #error-page {
@@ -256,7 +256,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #journal-date{
-    font-size: 1.3vh;
+    font-size: 1.6vw;
     position: relative;
     top: -1.3vh;
     left: 3vw;
@@ -270,20 +270,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 #journal-text{
-    border: 2vw;
     color: black;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3vw;
-    gap: 0px;
-    justify-content: space-between;
-    max-width: 85vw;
-    margin: 0 auto;
-    margin-top: -2vh;
-    margin-left: 2vw;
-    padding: 1vw;
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
+    position: relative;
+    top: -1vh;
+    left: 3vw;
 }
 
 
@@ -476,18 +469,18 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #SundaysOnState{
     border-radius: 8%;
-    height: 800px;
+    height: 60vh;
 }
 
 #Shade{
     border-radius: 8%;
-    width: 800px;
+    width: 60vw;
     margin-top: -15px;
 }
 
 #mj{
     border-radius: 8%;
-    width: 1000px;
+    width: 85vw;
     margin-top: -300px;
 }
 
