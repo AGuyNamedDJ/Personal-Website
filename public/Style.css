@@ -46,17 +46,17 @@ body {
 }
 
 #about-page-image{
-    height: 700px;
-    width: 700px;
-    margin-top: -118px;
+    height: 50vh;
+    width: 50vw;
+    margin-top: -8vh;
 }
 
 #about-text{
     color: rgb(74, 44, 42);
     font-family: 'Tangerine', cursive;
-    font-size: 130px;
+    font-size: 12vw;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 8vh;
 }
 #detailed-container{
     display: grid;
@@ -126,18 +126,18 @@ body {
 }
 
 #footer{
-    border: 1px solid brown;
+    border: 0.15vh solid brown;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 33px;
+    padding: 2.5vw;
 }
 
 #footer-text{
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
     /* font-family: 'Moon Dance', cursive; */
 /* font-family: 'Homemade Apple', cursive;
 font-family: 'Cedarville Cursive', cursive; */
@@ -150,12 +150,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #footer-top-text{
     font-family: 'Montserrat', sans-serif;
     font-weight:550;
-    font-size: 18px;
+    font-size: 1.7vw;
 }
 
 #footer-one-container{
     align-items: center;
     display: flex;
+    font-size: 1.5vh;
     font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: space-between;
     position:relative;
