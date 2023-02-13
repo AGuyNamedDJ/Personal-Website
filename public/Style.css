@@ -189,70 +189,81 @@ font-family: 'Oleo Script Swash Caps', cursive;
 .gallery-poem{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
-    margin-top: -25px;
+    margin-right: 1.5%;
+    margin-top: 4vh;
 }
 
 .gallery-poem-1{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
+    margin-top: 2vh;
     margin-left: 10%;
 }
 
 .gallery-poem-2{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
+    margin-top: 2vh;
     margin-left: 10%;
 }
 
 .gallery-poem-3{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
-    margin-top: 90px;
+    margin-top: 2vh;
+    margin-right: 2%;
     text-align: right;
 }
 
 .gallery-poem-4{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
+    margin-top: 2vh;
 }
 
 .gallery-poem-5{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
+    margin-right: 2%;
+    margin-top: 2vh;
 }
 
 .gallery-poem-6{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
-    margin-top: 85px;
+    margin-right: 1%;
+    margin-top: 2vh;
+    text-align: right;
 }
 
 .gallery-poem-7{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     margin-left: 10%;
-    margin-top: -150px;
+    margin-right: 2%;
+    margin-top: 2vh;
 }
 
 .gallery-poem-8{
     color: rgb(74, 44, 42);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    margin-top: -250px;
-    margin-left: 20px;
+    font-size: 3vw;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    margin-right: .5vw;
 }
 
 #journal-date{
@@ -491,8 +502,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -85px;
-    transform: scale(0.75);
+    margin-top: 3vh;
+    height: 60vh;
+    width: 50vw;
 }
 
 #photo-2{
@@ -559,9 +571,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
     border-radius: 2%;
     display: block;
     margin-left: auto;
-    margin-right: 10px;
-    margin-top: -300px;
-    transform: scale(0.5);
+    margin-top: 3vh;
+    height: vh;
+    width: 45vw;
 }
 
 #photo-9{
