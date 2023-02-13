@@ -21,7 +21,7 @@ const WorkResume = () => {
 
             {/* Development Projects */}
             <div>
-                <p classNameName="sub-title">Development Projects:</p>
+                <p className="sub-title">Development Projects:</p>
                 <p id="work-cv-text">As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
 
                 {/* Car-Haven */}
@@ -157,7 +157,7 @@ const WorkResume = () => {
                     &copy; 2023 Dalron J. Robertson.  All Rights Reserved.
                 </div>
                 <div id="footer-websites-container">
-                    <p classNameName="footer-websites">
+                    <p className="footer-websites">
                         <a href="https://github.com/DJRobertson95" target="_blank" id="link"> GITHUB |</a>
                         <a href="https://www.instagram.com/aguynameddj/" target="_blank" id="link"> INSTAGRAM |</a>
                         <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" id="link"> LINKEDIN |</a>
