@@ -322,11 +322,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Courier New', Courier, monospace;
     font-size: 4.5vw;
     gap: 0px;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 85vw;
     margin: 0 auto;
     margin-top: -5vh;
-    padding: 2vh;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    /* padding: 2vh; */
 }
 
 #memoirs-trips > div {
