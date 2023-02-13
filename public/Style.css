@@ -118,13 +118,14 @@ body {
 
 #dev-title{
     color: rgb(74, 44, 42);
-    font-size: 22px;
+    font-size: 2.6vh;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 2vh;
 }
 
 #work-description{
     margin-bottom: 45px;
+    font-size: 2vh;
 }
 
 #footer{
@@ -349,7 +350,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
     border: 1px solid brown;
     border-radius: 8px;
     display: flex;
-    font-size: 2vw;
+    font-size: 2.5vw;
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
@@ -360,8 +361,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 
 #workcv{
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 .title{
@@ -376,19 +377,23 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 .sub-title{
     color: rgb(74, 44, 42);
-    font-size: 35px;
+    font-size: 3vw;
 
 }
 
 #sub-sub-title{
     color: rgb(74, 44, 42);
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: bold;
+}
+
+#work-cv-text{
+    font-size: 2vh;
 }
 
 #sub-sub-title-link{
     color: rgb(74, 44, 42);
-    font-size: 20px;
+    font-size: 1.6vh;
     font-weight: bold;
     margin-bottom: -40px;
     margin-top: -40px;
@@ -396,26 +401,29 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 #cv-description{
     font-style: italic;
-    font-size: 17px;
+    font-size: 2vh;
 }
 
 #work-certs{
     margin-top: -10px;
+    font-size: 2vh;
 }
 #work-jobs{
+    font-size: 2vh;
     font-weight: bold;
     margin-top: -30px;
 }
 
 #work-title{
     color: rgb(74, 44, 42);
-    font-size: 20px;
+    font-size: 2.6vh;
     font-weight: bold;
     margin-top: -20px;
 }
 
 #work-technical-skills-title{
     margin-bottom: -10px;
+    font-size: 2vw;
     font-weight: bold;
 }
 

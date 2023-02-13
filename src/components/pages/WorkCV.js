@@ -12,10 +12,10 @@ const WorkCV = () => {
                 <p class="sub-title">Technical Skills: </p>
 
                 <p id="work-technical-skills-title">Proficient</p>
-                <p>Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
+                <p id="work-cv-text">Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
 
                 <p id="work-technical-skills-title">Knowledgable: </p>
-                <p>Python | Java | C | Flask | Tailwind CSS | AWS</p>
+                <p id="work-cv-text">Python | Java | C | Flask | Tailwind CSS | AWS</p>
             </div>
             <br></br>
 
@@ -29,8 +29,8 @@ const WorkCV = () => {
                 <a href="https://dalronjrobertson.netlify.app/" target="_blank" id="sub-sub-title-link">dalronjrobertson.netlify.app/</a>
 
                 <p id="cv-description">Designed and developed a personal website showcasing my software engineering skills and experience, featuring a comprehensive portfolio of professional projects, education and personal interests, including a personal journal and photography collection.</p>
-                <li>A living, growing webpage</li>
-                <li>An accumulation of all my professional education and skills, highlighting my growing technical expertise</li>
+                <li id="work-cv-text">A living, growing webpage</li>
+                <li id="work-cv-text">An accumulation of all my professional education and skills, highlighting my growing technical expertise</li>
                 <br></br>
 
                 {/* Car-Haven */}
@@ -38,15 +38,15 @@ const WorkCV = () => {
                 <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
                 <p id="cv-description">A Full Stack personal website that provides car exotic car service & repair solutions.</p>
-                <li>User Functionality</li>
-                    <ul>Access and view all services and parts offered by the company</ul>
-                    <ul>Created API routes to handle CRUD operations for vehicle and service data</ul>
-                    <ul>Made a Server with static & dynamic routing using route parameters routes</ul>
-                    <ul>Created an extensive vehicle database using postgreSQL</ul>
-                    <ul>Implemented error handling and logging to ensure a smooth user experience.</ul>
-                <li>Built a web server that responds to client request & returns values from the database</li>
-                    <ul>Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
-                    <ul>Parameterized routes & subroutes</ul>
+                <li id="work-cv-text">User Functionality</li>
+                    <ul id="work-cv-text">Access and view all services and parts offered by the company</ul>
+                    <ul id="work-cv-text">Created API routes to handle CRUD operations for vehicle and service data</ul>
+                    <ul id="work-cv-text">Made a Server with static & dynamic routing using route parameters routes</ul>
+                    <ul id="work-cv-text">Created an extensive vehicle database using postgreSQL</ul>
+                    <ul id="work-cv-text">Implemented error handling and logging to ensure a smooth user experience.</ul>
+                <li id="work-cv-text">Built a web server that responds to client request & returns values from the database</li>
+                    <ul id="work-cv-text">Provide HTTP Endpoints & Methods (GET/POST/PATCH/DELETE) & Body Parsing</ul>
+                    <ul id="work-cv-text">Parameterized routes & subroutes</ul>
                 <br></br>
 
                 {/* Dal-Recipe */}
@@ -61,14 +61,14 @@ const WorkCV = () => {
                 <a href="https://thesweetspot.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
 
                 <p id="cv-description">A Full-Stack E-Commerce website selling bakeries and candy developed with an agile team of 4 students developers.</p>
-                <li>Collaboration and Planning</li>
-                    <ul>Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
-                <li>User Functionality</li>
-                    <ul>Access and view all products from multiple categories</ul>
-                    <ul>View individual product details, add them to cart, edit and removal, and check out</ul>
-                    <ul>Create accounts across multiple devices for persistent carts and view purchase history</ul>
-                    <ul>Admins can validate data to ensure reliability and view user information</ul>
-                    <ul>Admins have full rights to make backend request to add, edit, and remove products</ul>
+                <li id="work-cv-text">Collaboration and Planning</li>
+                    <ul id="work-cv-text">Held daily stand-ups, kept a planning board, and used pull requests to modify the code base on code reviews with the project manager</ul>
+                <li id="work-cv-text">User Functionality</li>
+                    <ul id="work-cv-text">Access and view all products from multiple categories</ul>
+                    <ul id="work-cv-text">View individual product details, add them to cart, edit and removal, and check out</ul>
+                    <ul id="work-cv-text">Create accounts across multiple devices for persistent carts and view purchase history</ul>
+                    <ul id="work-cv-text">Admins can validate data to ensure reliability and view user information</ul>
+                    <ul id="work-cv-text">Admins have full rights to make backend request to add, edit, and remove products</ul>
                 <br></br>
 
                 {/* Fitness Trackr */}
@@ -76,14 +76,14 @@ const WorkCV = () => {
                 <a href="https://usefitnesstrackr.netlify.app" target="_blank" id="sub-sub-title-link">usefitnesstrackr.netlify.app</a>
 
                 <p id="cv-description">A Front-End Fitness App using React.js to fetch data from a created API developed with a student developers.</p>
-                <li>React.js Components and Hooks and Client-Side API Code</li>
-                    <ul>Correctly handled user interaction and state components</ul>
-                    <ul>Used useEffect to fetch data in the correct components while establishing inside code for potential async calls</ul>
-                    <ul>Wrote async functions using try/catch to make API calls</ul>
-                    <ul>Set correct headers and bodies for use by API, including the logged in user</ul>
-                <li>Allows users to</li>
-                    <ul>Login and build fitness routines from a list of activities</ul>
-                    <ul>Have control over the public/private nature of their routines</ul>
+                <li id="work-cv-text">React.js Components and Hooks and Client-Side API Code</li>
+                    <ul id="work-cv-text">Correctly handled user interaction and state components</ul>
+                    <ul id="work-cv-text">Used useEffect to fetch data in the correct components while establishing inside code for potential async calls</ul>
+                    <ul id="work-cv-text">Wrote async functions using try/catch to make API calls</ul>
+                    <ul id="work-cv-text">Set correct headers and bodies for use by API, including the logged in user</ul>
+                <li> id="work-cv-text"Allows users to</li>
+                    <ul id="work-cv-text">Login and build fitness routines from a list of activities</ul>
+                    <ul id="work-cv-text">Have control over the public/private nature of their routines</ul>
                 <br></br>
 
                 {/* Juicebox */}
@@ -91,14 +91,14 @@ const WorkCV = () => {
                 <a href="https://juicebox-kz62.onrender.com/" target="_blank" id="sub-sub-title-link">juicebox-kz62.onrender.com/</a>
 
                 <p id="cv-description">A Back-End with a Database and Web server with a custom API showcasing knowledge of PostgreSQL and Node</p>
-                <li>Basic PostgreSQL commands and Database creation</li>
-                    <ul>Primary and Foreign keys</ul>
-                    <ul>Inserted, Retrieved, and Updated data in the database and connected the database using PG</ul>
-                <li>Built a web server that responds to client request and returns values from the database</li>
-                    <ul>Provide HTTP Endpoints and Methods (GET/POST/PATCH/DELETE) and Body Parsing</ul>
-                    <ul>Parameterized routes and subroutes</ul>
-                    <ul>Implemented user authentication via JSON Web Tokens</ul>
-                <li>Made a Server with static and dynamic routing using route parameters routes</li>
+                <li id="work-cv-text">Basic PostgreSQL commands and Database creation</li>
+                    <ul id="work-cv-text">Primary and Foreign keys</ul>
+                    <ul id="work-cv-text">Inserted, Retrieved, and Updated data in the database and connected the database using PG</ul>
+                <li id="work-cv-text">Built a web server that responds to client request and returns values from the database</li>
+                    <ul id="work-cv-text">Provide HTTP Endpoints and Methods (GET/POST/PATCH/DELETE) and Body Parsing</ul>
+                    <ul id="work-cv-text">Parameterized routes and subroutes</ul>
+                    <ul id="work-cv-text">Implemented user authentication via JSON Web Tokens</ul>
+                <li id="work-cv-text">Made a Server with static and dynamic routing using route parameters routes</li>
                 <br></br>
 
                 {/* Stranger's Things */}
@@ -106,16 +106,16 @@ const WorkCV = () => {
                 <a href="shopstrangersthings.netlify.app/" target="_blank" id="sub-sub-title-link">shopstrangersthings.netlify.app/</a>
 
                 <p id="cv-description">A React-based single-page application showcasing how CRUD can improve fetching and user authentication via JSON Web Tokens. (JWT)</p>
-                <li>AJAX Basics</li>
-                    <ul>Usage of HTTP Methods (GET/POST/PATCH/DELETE) and Body Parsing</ul>
-                    <ul>Handled asynchronous coding for request</ul>
-                    <ul>Usage of try/catch blocks within async functions</ul>
-                    <ul>Updated the DOM with results of data request</ul>
-                <li>Front-End Basics</li>
-                    <ul>Well developed React Components</ul>
-                    <ul>Proper usage of props to share data and functions between components</ul>
-                    <ul>Proper usage of event listeners and state and effects</ul>
-                    <ul>Well implemented routers (React Router)</ul>
+                <li id="work-cv-text">AJAX Basics</li>
+                    <ul id="work-cv-text">Usage of HTTP Methods (GET/POST/PATCH/DELETE) and Body Parsing</ul>
+                    <ul id="work-cv-text">Handled asynchronous coding for request</ul>
+                    <ul id="work-cv-text">Usage of try/catch blocks within async functions</ul>
+                    <ul id="work-cv-text">Updated the DOM with results of data request</ul>
+                <li id="work-cv-text">Front-End Basics</li>
+                    <ul id="work-cv-text">Well developed React Components</ul>
+                    <ul id="work-cv-text">Proper usage of props to share data and functions between components</ul>
+                    <ul id="work-cv-text">Proper usage of event listeners and state and effects</ul>
+                    <ul id="work-cv-text">Well implemented routers (React Router)</ul>
                 <br></br>
 
 
@@ -124,11 +124,11 @@ const WorkCV = () => {
                 <a href="https://hackernews-7fqr.onrender.com/" target="_blank" id="sub-sub-title-link">hackernews-7fqr.onrender.com/</a>
 
                 <p id="cv-description">A consumer-focused Node application showcasing knowledge of Express.js features.</p>
-                <li>Non-persistent Server-Side Data Storage</li>
-                <li>Made a Server with static and dynamic routing using route parameters routes</li>
-                <li>Logged Middleware and Streamlining</li>
-                <li>HTML Document String Refactor</li>
-                <li>Tagged Template Literals and Date Formatting</li>
+                <li id="work-cv-text">Non-persistent Server-Side Data Storage</li>
+                <li id="work-cv-text">Made a Server with static and dynamic routing using route parameters routes</li>
+                <li id="work-cv-text">Logged Middleware and Streamlining</li>
+                <li id="work-cv-text">HTML Document String Refactor</li>
+                <li id="work-cv-text">Tagged Template Literals and Date Formatting</li>
                 <br></br>
 
 
@@ -137,8 +137,8 @@ const WorkCV = () => {
                 <a href="https://chicagopuppybowl22.netlify.app/" target="_blank" id="sub-sub-title-link">chicagopuppybowl22.netlify.app/</a>
 
                 <p id="cv-description">A React-based single-page application showcasing focused on coding the front end by using a pre-existing API.</p>
-                <li>Created functional React Components, include state management, JSX code blocks, and hook usage</li>
-                <li>Fetched data from API, set it to state, and rendered the state onto the website</li>
+                <li id="work-cv-text">Created functional React Components, include state management, JSX code blocks, and hook usage</li>
+                <li id="work-cv-text">Fetched data from API, set it to state, and rendered the state onto the website</li>
 
                 <br></br>
 
@@ -147,8 +147,8 @@ const WorkCV = () => {
                 <a href="https://connect4our.netlify.app/" target="_blank" id="sub-sub-title-link">connect4our.netlify.app/</a>
 
                 <p id="cv-description">An interactive arcade game built, during a class hackathon, showcasing development of a good user experience through a clean interface.</p>
-                <li>Organized and coherent flow, cleanly written, and aesthetically pleasing user interface (UI)</li>
-                <li>Expressive variable, function, and class names with no unused functions or variables</li>
+                <li id="work-cv-text">Organized and coherent flow, cleanly written, and aesthetically pleasing user interface (UI)</li>
+                <li id="work-cv-text">Expressive variable, function, and class names with no unused functions or variables</li>
                 <br></br>
 
                 {/* Real Estate Clicker Game */}
@@ -156,9 +156,9 @@ const WorkCV = () => {
                 <a href="https://realestateclickergame.netlify.app/" target="_blank" id="sub-sub-title-link">realestateclickergame.netlify.app/</a>
 
                 <p id="cv-description">An online clicker game showcasing knowledge of Javascript and the DOM with HTML/CSS.</p>
-                <li>DOM Manipulation, including template and rendering, element queries, event listeners, and the update state to render state process</li>
-                <li>Best CSS practices including flexboxes, grids, and proper cascading</li>
-                <li>Usage of basic and complex data types, like arrays and objects</li>
+                <li id="work-cv-text">DOM Manipulation, including template and rendering, element queries, event listeners, and the update state to render state process</li>
+                <li id="work-cv-text">Best CSS practices including flexboxes, grids, and proper cascading</li>
+                <li id="work-cv-text">Usage of basic and complex data types, like arrays and objects</li>
                 <br></br>
 
 
