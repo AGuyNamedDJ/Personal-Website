@@ -8,7 +8,7 @@ const WorkWebsites = () => {
             <div class="title">Websites</div>
 
             <div className="website-list">
-
+                {/* Health Hive */}
 
                 {/* Car-Haven */}
                 <div className="website-item">
@@ -28,7 +28,7 @@ const WorkWebsites = () => {
                 {/* Dal-Recipe */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/Dal-Recipe.png" alt="Website Preview 1"/>
+                        <img src="/images/Dal-Recipe.png" alt="Website Preview 3"/>
                     </div>
                     <div className="website-description">
                         <p>Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in.</p>
@@ -39,8 +39,47 @@ const WorkWebsites = () => {
                         </div>
                     </div>
                 </div>
-            </div>
 
+                {/* Capstone The Sweet Spot */}
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/SweetSpot.png" alt="Website Preview 3"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The Sweet Spot is a full-stack e-commerce website offering a wide variety of baked goods and candy. The website features a user-friendly interface with access to multiple categories of products, and users can create accounts to store items in their cart and view purchase history. Admins can manage product information, including adding, editing, and removing products. Built with React, Node.js, and PostgreSQL, The Sweet Spot was developed with agile methodology, providing an efficient and streamlined platform for buying baked goods and candy.</p>
+                        <div className="website-links">
+                            <a href="https://carhaven.netlify.app" target="_blank" id="link">TheSweetSpot.com</a>
+                            <a href="https://github.com/The-Sweet-Spot/CandyBackEnd" target="_blank" id="link">Github Back-End</a>
+                            <a href="https://github.com/The-Sweet-Spot/CandyFrontEnd" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* Fitness Trackr */}
+
+
+                {/* Juicebox */}
+
+
+                {/* Stranger's Things */}
+
+
+                {/* Hacker's News */}
+
+
+                {/* Puppy Bowl */}
+
+
+                {/* Connect Four */}
+
+
+                {/* Real Estate Clicker Game */}
+            
+
+
+                
+            </div>
                 
             {/* End of Page */}
             <footer id="footer">

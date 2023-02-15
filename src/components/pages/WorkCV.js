@@ -152,7 +152,7 @@ const WorkCV = () => {
                 <br></br>
 
                 {/* Real Estate Clicker Game */}
-                <p id="dev-title">Connect Four | Lead Developer | Sep 2022</p>
+                <p id="dev-title">Real Estate Clicker | Lead Developer | Sep 2022</p>
                 <a href="https://realestateclickergame.netlify.app/" target="_blank" id="sub-sub-title-link">realestateclickergame.netlify.app/</a>
 
                 <p id="cv-description">An online clicker game showcasing knowledge of Javascript and the DOM with HTML/CSS.</p>
