@@ -277,7 +277,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #journal-date-detail{
     font-size: 1.6vw;
     position: relative;
-    top: 0.5vh;
+    top: -3vh;
     left: 8vw;
 }
 
@@ -341,8 +341,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .chicago-page{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 #portfolio{
@@ -465,8 +465,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 30vh;
-    width: 55vw;
+    height: 25vh;
+    width: 45vw;
 
 }
 
@@ -495,13 +495,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
 #Shade{
     border-radius: 8%;
     width: 60vw;
-    margin-top: -15px;
+    margin-top: -2vh;
 }
 
 #mj{
     border-radius: 8%;
     width: 85vw;
-    margin-top: -300px;
+    margin-top: -5vh;
 }
 
 #car-video{
