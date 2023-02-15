@@ -16,10 +16,11 @@ const WorkWebsites = () => {
                         <img src="/images/carhaven.png" alt="Website Preview 1"/>
                     </div>
                     <div className="website-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor, diam id tempus egestas, risus velit faucibus ligula, vel commodo tellus velit vel velit.</p>
-                        <p className="website-name">Car-Haven</p>
+                        <p>Car Haven is a full-stack web application for luxury car enthusiasts. It includes a database of manufacturers, models, and unique features for specific cars. Built using React.js, Node.js, and Tailwind CSS, it offers a visually stunning user interface and a seamless user experience for browsing and searching for luxury cars.</p>
                         <div className="website-links">
-                        <Link to="https://carhaven.netlify.app" target="_blank">Car-Haven</Link>
+                            <a href="https://carhaven.netlify.app" target="_blank">car-haven.netlify.app</a>
+                            <a href="https://github.com/DJRobertson95/Car-Haven-Front" target="_blank">Github Front-End</a>
+                            <a href="https://github.com/DJRobertson95/Car-Haven-Back" target="_blank">Github Back-End</a>
                         </div>
                     </div>
                 </div>
@@ -30,8 +31,8 @@ const WorkWebsites = () => {
                         <img src="/images/Dal-Recipe.png" alt="Website Preview 1"/>
                     </div>
                     <div className="website-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor, diam id tempus egestas, risus velit faucibus ligula, vel commodo tellus velit vel velit.</p>
-                        <p className="website-name">Website 1</p>
+                        <p>
+Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in.</p>
                         <div className="website-links">
                             <a href="#" target="_blank">GitHub Repo (Front End)</a>
                             <a href="#" target="_blank">GitHub Repo (Back End)</a>
