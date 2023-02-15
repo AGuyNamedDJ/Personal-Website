@@ -10,12 +10,20 @@ const Journal = () => {
             <br></br>
 
             <div id="memoirs-trips">
+                {/* Journal 2 */}
+                <div>
+                    <img src="/images/journal-2.jpg" id="journal-rejection"></img>
+                    {/* <div id="journal-text">Coping w/ Job Search Rejection</div> */}
+                    <Link to="/journal/ai" id="journal-text">AI: Unlocking Potential</Link>
+                    <p id="journal-date">`Feb 15, 2023 &#x2023; 4 min`</p>
+                </div>
+
                 {/* Journal 1 */}
                 <div>
                     <img src="/images/journal-1.jpeg" id="journal-rejection"></img>
                     {/* <div id="journal-text">Coping w/ Job Search Rejection</div> */}
                     <Link to="/journal/rejection" id="journal-text">Coping w/ Job Search Rejection</Link>
-                    <p id="journal-date">`Jan 10, 2022 &#x2023; 2 min`</p>
+                    <p id="journal-date">`Jan 10, 2023 &#x2023; 2 min`</p>
                 </div>
             </div>
 
