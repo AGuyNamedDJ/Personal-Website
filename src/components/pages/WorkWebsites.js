@@ -9,11 +9,24 @@ const WorkWebsites = () => {
 
             <div className="website-list">
                 {/* Health Hive */}
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/construction.webp" alt="Website Preview 11"/>
+                    </div>
+                    <div className="website-description">
+                        <p>Built using Node.js and Express, the HealthHive system provides a fast and efficient API for accessing and managing hospital data stored in a PostgreSQL database. The app features secure authentication and authorization with JSON Web Tokens and logs incoming HTTP requests for monitoring and debugging purposes with Morgan. The app also utilizes dotenv to manage environment variables and the built-in crypto module for cryptographic functionality. Overall, the HealthHive backend provides an efficient and secure solution for managing and accessing hospital data.</p>
+                        <div className="website-links">
+                            <a href="https://.netlify.app" target="_blank" id="link">HealthHive.com</a>
+                            <a href="https://github.com/DJRobertson95/Health-Hive-Back-End" target="_blank" id="link">Github Back-End</a>
+                            {/* <a href="https://github.com/DJRobertson95/Health-Hive-Front-End" target="_blank" id="link">Github Front-End</a> */}
+                        </div>
+                    </div>
+                </div>
 
                 {/* Car-Haven */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/carhaven.png" alt="Website Preview 1"/>
+                        <img src="/images/carhaven.png" alt="Website Preview 10"/>
                     </div>
                     <div className="website-description">
                         <p>Car Haven is a full-stack web application for luxury car enthusiasts. It includes a database of manufacturers, models, and unique features for specific cars. Built using React.js, Node.js, and Tailwind CSS, it offers a visually stunning user interface and a seamless user experience for browsing and searching for luxury cars.</p>
@@ -28,7 +41,7 @@ const WorkWebsites = () => {
                 {/* Dal-Recipe */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/Dal-Recipe.png" alt="Website Preview 3"/>
+                        <img src="/images/Dal-Recipe.png" alt="Website Preview 9"/>
                     </div>
                     <div className="website-description">
                         <p>Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in.</p>
@@ -43,7 +56,7 @@ const WorkWebsites = () => {
                 {/* Capstone The Sweet Spot */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/SweetSpot.png" alt="Website Preview 3"/>
+                        <img src="/images/SweetSpot.png" alt="Website Preview 8"/>
                     </div>
                     <div className="website-description">
                         <p>The Sweet Spot is a full-stack e-commerce website offering a wide variety of baked goods and candy. The website features a user-friendly interface with access to multiple categories of products, and users can create accounts to store items in their cart and view purchase history. Admins can manage product information, including adding, editing, and removing products. Built with React, Node.js, and PostgreSQL, The Sweet Spot was developed with agile methodology, providing an efficient and streamlined platform for buying baked goods and candy.</p>
@@ -58,7 +71,7 @@ const WorkWebsites = () => {
                 {/* Fitness Trackr */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/FitnessTrackr.png" alt="Website Preview 4"/>
+                        <img src="/images/FitnessTrackr.png" alt="Website Preview 7"/>
                     </div>
                     <div className="website-description">
                         <p>The Front-End Fitness App is a React-based fitness application with a custom API. Developed by a student team, the app includes React components and hooks, handles user interaction, and manages state components. It users to create custom fitness routines from a list of activities, control the privacy of their routines, and login using their credentials. The API code includes headers and bodies for API calls, including the logged-in user, making it an efficient and streamlined solution for building and managing custom fitness routines.</p>
@@ -73,7 +86,7 @@ const WorkWebsites = () => {
                 {/* Juicebox */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/PostgreSQL.svg" alt="Website Preview 4"/>
+                        <img src="/images/PostgreSQL.svg" alt="Website Preview 6"/>
                     </div>
                     <div className="website-description">
                         <p>The Back-End with a Database and Web Server is a custom API built with PostgreSQL and Node.js. The app includes HTTP endpoints and methods, body parsing, parameterized routes, and user authentication via JSON Web Tokens. The API allows for inserting, retrieving, and updating data in the database and features a web server that responds to client requests, making it an efficient solution for building custom APIs.</p>
@@ -86,7 +99,7 @@ const WorkWebsites = () => {
                 {/* Stranger's Things */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/StrangersThings.png" alt="Website Preview 4"/>
+                        <img src="/images/StrangersThings.png" alt="Website Preview 5"/>
                     </div>
                     <div className="website-description">
                         <p>The React-based single-page app showcases CRUD, fetching, and JWT authentication. It includes AJAX basics, HTTP methods, body parsing, async coding, and React components with proper usage of props, event listeners, state, and effects. Additionally, the app has well-implemented routers using React Router, making it an efficient solution for demonstrating these features with React.</p>
@@ -114,7 +127,7 @@ const WorkWebsites = () => {
                 {/* Puppy Bowl */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/PuppyBowl.png" alt="Website Preview 4"/>
+                        <img src="/images/PuppyBowl.png" alt="Website Preview 3"/>
                     </div>
                     <div className="website-description">
                         <p>Puppy Bowl is a React-based single-page app that uses a pre-existing API to fetch data, manage state, and render data onto the website. The app features functional React components with hooks and JSX code blocks, providing an efficient and streamlined front-end solution for displaying puppy-related data.</p>
@@ -128,7 +141,7 @@ const WorkWebsites = () => {
                 {/* Connect Four */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/Connect4our.png" alt="Website Preview 4"/>
+                        <img src="/images/Connect4our.png" alt="Website Preview 2"/>
                     </div>
                     <div className="website-description">
                         <p>The interactive arcade game is an excellent example of a well-designed user experience. Developed during a class hackathon, it features a clean and aesthetically pleasing interface with an organized and coherent flow. The game includes expressive variable, function, and class names with no unused functions or variables, ensuring that the game code is streamlined and efficient. Overall, the interactive arcade game is a successful example of how a well-designed interface and good naming conventions can contribute to the success of an application.</p>
@@ -142,7 +155,7 @@ const WorkWebsites = () => {
                 {/* Real Estate Clicker Game */}
                 <div className="website-item">
                     <div className="website-image">
-                        <img src="/images/RealEstateClicker.png" alt="Website Preview 4"/>
+                        <img src="/images/RealEstateClicker.png" alt="Website Preview 1"/>
                     </div>
                     <div className="website-description">
                         <p>The interactive arcade game is an excellent example of a well-designed user experience. Developed during a class hackathon, it features a clean and aesthetically pleasing interface with an organized and coherent flow. The game includes expressive variable, function, and class names with no unused functions or variables, ensuring that the game code is streamlined and efficient. Overall, the interactive arcade game is a successful example of how a well-designed interface and good naming conventions can contribute to the success of an application.</p>
