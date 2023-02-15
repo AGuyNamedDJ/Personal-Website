@@ -456,7 +456,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
     flex-basis: 20%;
     padding: 2vw;
     height: 19vh;
-    width: 32vw;
+    width: 30vw;
 }
 
 #journal-rejection-detail{
@@ -465,7 +465,8 @@ font-family: 'Oleo Script Swash Caps', cursive;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    size: 60%;
+    height: 30vh;
+    width: 55vw;
 
 }
 
