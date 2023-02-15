@@ -18,9 +18,9 @@ const WorkWebsites = () => {
                     <div className="website-description">
                         <p>Car Haven is a full-stack web application for luxury car enthusiasts. It includes a database of manufacturers, models, and unique features for specific cars. Built using React.js, Node.js, and Tailwind CSS, it offers a visually stunning user interface and a seamless user experience for browsing and searching for luxury cars.</p>
                         <div className="website-links">
-                            <a href="https://carhaven.netlify.app" target="_blank">car-haven.netlify.app</a>
-                            <a href="https://github.com/DJRobertson95/Car-Haven-Front" target="_blank">Github Front-End</a>
-                            <a href="https://github.com/DJRobertson95/Car-Haven-Back" target="_blank">Github Back-End</a>
+                            <a href="https://carhaven.netlify.app" target="_blank" id="link">car-haven.com</a>
+                            <a href="https://github.com/DJRobertson95/Car-Haven-Front" target="_blank" id="link">Github Front-End</a>
+                            <a href="https://github.com/DJRobertson95/Car-Haven-Back" target="_blank" id="link">Github Back-End</a>
                         </div>
                     </div>
                 </div>
@@ -31,12 +31,11 @@ const WorkWebsites = () => {
                         <img src="/images/Dal-Recipe.png" alt="Website Preview 1"/>
                     </div>
                     <div className="website-description">
-                        <p>
-Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in.</p>
+                        <p>Developed a full-stack web application for a recipe website, utilizing React, Node.js, and PostgreSQL. Implemented CRUD functionality for various recipes and departments, as well as search and navigation features. Utilized useState, useEffect, and useContext hooks to manage the application's state and implemented routing using React Router. Incorporated responsive design using CSS. The project provides an easy to use platform for users to search and find recipes they are interested in.</p>
                         <div className="website-links">
-                            <a href="#" target="_blank">GitHub Repo (Front End)</a>
-                            <a href="#" target="_blank">GitHub Repo (Back End)</a>
-                            <a href="#" target="_blank">Deployed Website</a>
+                            <a href="https://carhaven.netlify.app" target="_blank" id="link">Dal-Recipe.com</a>
+                            <a href="https://github.com/DJRobertson95/Dal-Recipe-Front" target="_blank" id="link">Github Front-End</a>
+                            <a href="https://github.com/DJRobertson95/Dal-Recipe-Back" target="_blank" id="link">Github Back-End</a>
                         </div>
                     </div>
                 </div>
