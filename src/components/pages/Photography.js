@@ -12,19 +12,10 @@ const Photography = () => {
         <div>
             <div class="title">Gallery</div>
 
-            <div>
-                <p class="gallery-poem-8">Creativity, a boundless sea of ideas, Infinite waves crashing, a world it creates.</p>
-                <iframe
-                    id="car-video"
-                    src="https://www.youtube.com/embed/UQy4OJ_klRQ"
-                    frameBorder={0}
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-            </div>
 
-            {/* Four */}
+            {/* Five */}
             <div>
-            <p class="gallery-poem-8">With the limitless possibilities it provides, Creativity allows the mind to take a ride, Exploring uncharted territories with glee, Free to roam, and set the imagination free.</p>
+            <p class="gallery-poem-8">Creativity, a boundless sea of ideas, Infinite waves crashing, a world it creates.</p>
                 <iframe
                     id="car-video"
                     src="https://www.youtube.com/embed/-XBN8_dCtxM"
@@ -34,7 +25,7 @@ const Photography = () => {
                 ></iframe>
             </div>
 
-            {/* Three */}
+            {/* Four */}
             <div>
                 <p class="gallery-poem-3">The sands of time
                         will bring about inspiration 
@@ -47,6 +38,17 @@ const Photography = () => {
                     and the guidance of his hand 
                     to recreate his promised land.</p>
                 <img src="/images/photo-7.jpeg" id="photo-7"></img>
+            </div>
+
+            {/* Three */}
+            <div>
+            <p class="gallery-poem-8">With the limitless possibilities it provides, Creativity allows the mind to take a ride, Exploring uncharted territories with glee, Free to roam, and set the imagination free.</p>
+                <iframe
+                    id="car-video"
+                    src="https://www.youtube.com/embed/UQy4OJ_klRQ"
+                    frameBorder={0}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
             </div>
 
             {/* Two */}
