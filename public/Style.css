@@ -503,6 +503,13 @@ font-family: 'Oleo Script Swash Caps', cursive;
     margin-top: -300px;
 }
 
+#car-video{
+    height: 40vh;
+    width: 55vw;
+    margin: auto;
+    display: block;
+}
+
 #photo-1{
     border-radius: 2%;
     /* box-shadow: 7px 6px rgba(74, 44, 42, 0.75); */

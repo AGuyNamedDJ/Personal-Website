@@ -1,6 +1,12 @@
 import React from "react";
 
 const Photography = () => {
+    // useEffect(() => {
+    //     const video = document.getElementById('car-video');
+    //     if (video) {
+    //       video.src += '&autoplay=1';
+    //     }
+    //   }, []);
 
     return (
         <div>
@@ -39,7 +45,7 @@ const Photography = () => {
                 {/* <img src="/images/photo-2.jpg" id="photo-2"></img> */}
             </div>
             <div>
-            <img src="/images/photo-7.jpeg" id="photo-7"></img>
+                <img src="/images/photo-7.jpeg" id="photo-7"></img>
                 <p class="gallery-poem-7">Use the love God has given
                     and the guidance of his hand 
                     to recreate his promised land.</p>
@@ -51,6 +57,19 @@ const Photography = () => {
                     a reflection of you,
                     and a journey that you must pursue."</p>
             </div>
+            <div>
+                <iframe
+                    id="car-video"
+                    src="https://www.youtube.com/embed/UQy4OJ_klRQ"
+                    frameBorder={0}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
+                <p class="gallery-poem-8">Creativity, a boundless sea of ideas,
+Infinite waves crashing, a world it creates.</p>
+            </div>
+
+
+
             <br></br>
 
             {/* End of Page */}
