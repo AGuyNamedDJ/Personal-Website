@@ -55,30 +55,104 @@ const WorkWebsites = () => {
                     </div>
                 </div>
 
-
                 {/* Fitness Trackr */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/FitnessTrackr.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The Front-End Fitness App is a React-based fitness application with a custom API. Developed by a student team, the app includes React components and hooks, handles user interaction, and manages state components. It users to create custom fitness routines from a list of activities, control the privacy of their routines, and login using their credentials. The API code includes headers and bodies for API calls, including the logged-in user, making it an efficient and streamlined solution for building and managing custom fitness routines.</p>
+                        <div className="website-links">
+                            <a href="https://usefitnesstrackr.netlify.app" target="_blank" id="link">FitnessTrackr.com</a>
+                            <a href="https://github.com/Tori-Dalron-Team/FitnessTrackr." target="_blank" id="link">Github Back-End</a>
+                            <a href="https://github.com/Tori-Dalron-Team/FitnessTrackrFrontend" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Juicebox */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/PostgreSQL.svg" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The Back-End with a Database and Web Server is a custom API built with PostgreSQL and Node.js. The app includes HTTP endpoints and methods, body parsing, parameterized routes, and user authentication via JSON Web Tokens. The API allows for inserting, retrieving, and updating data in the database and features a web server that responds to client requests, making it an efficient solution for building custom APIs.</p>
+                        <div className="website-links">
+                            <a href="https://github.com/DJRobertson95/JuiceBox" target="_blank" id="link">Github Back-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Stranger's Things */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/StrangersThings.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The React-based single-page app showcases CRUD, fetching, and JWT authentication. It includes AJAX basics, HTTP methods, body parsing, async coding, and React components with proper usage of props, event listeners, state, and effects. Additionally, the app has well-implemented routers using React Router, making it an efficient solution for demonstrating these features with React.</p>
+                        <div className="website-links">
+                            <a href="https://shopstrangersthings.netlify.app" target="_blank" id="link">ShopStrangersThings.com</a>
+                            <a href="https://github.com/DJRobertson95/Strangers-Things-2" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Hacker's News */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/WizardNews.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The consumer-focused Node app features non-persistent server-side data storage, static and dynamic routing, middleware logging and streamlining, and HTML document string refactor. The app also includes tagged template literals and date formatting, making it an efficient solution for showcasing knowledge of Express.js features.</p>
+                        <div className="website-links">
+                            <a href="https://hackernews-7fqr.onrender.com" target="_blank" id="link">HackerNews.com</a>
+                            <a href="https://github.com/DJRobertson95/Hacker-News" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Puppy Bowl */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/PuppyBowl.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>Puppy Bowl is a React-based single-page app that uses a pre-existing API to fetch data, manage state, and render data onto the website. The app features functional React components with hooks and JSX code blocks, providing an efficient and streamlined front-end solution for displaying puppy-related data.</p>
+                        <div className="website-links">
+                            <a href="https://chicagopuppybowl22.netlify.app" target="_blank" id="link">ChicagoPuppyBowl22.com</a>
+                            <a href="https://github.com/DJRobertson95/Puppy-Bowl" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Connect Four */}
-
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/Connect4our.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The interactive arcade game is an excellent example of a well-designed user experience. Developed during a class hackathon, it features a clean and aesthetically pleasing interface with an organized and coherent flow. The game includes expressive variable, function, and class names with no unused functions or variables, ensuring that the game code is streamlined and efficient. Overall, the interactive arcade game is a successful example of how a well-designed interface and good naming conventions can contribute to the success of an application.</p>
+                        <div className="website-links">
+                            <a href="https://connect4our.netlify.app" target="_blank" id="link">Connect4our.com</a>
+                            <a href="https://github.com/DJRobertson95/Connect-Four" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Real Estate Clicker Game */}
-            
-
-
-                
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/RealEstateClicker.png" alt="Website Preview 4"/>
+                    </div>
+                    <div className="website-description">
+                        <p>The interactive arcade game is an excellent example of a well-designed user experience. Developed during a class hackathon, it features a clean and aesthetically pleasing interface with an organized and coherent flow. The game includes expressive variable, function, and class names with no unused functions or variables, ensuring that the game code is streamlined and efficient. Overall, the interactive arcade game is a successful example of how a well-designed interface and good naming conventions can contribute to the success of an application.</p>
+                        <div className="website-links">
+                            <a href="https://realestateclickergame.netlify.app" target="_blank" id="link">RealEstateClickerGame.com</a>
+                            <a href="https://github.com/DJRobertson95/Real-Estate-Clicker-Game" target="_blank" id="link">Github Front-End</a>
+                        </div>
+                    </div>
+                </div>
+                         
             </div>
                 
             {/* End of Page */}

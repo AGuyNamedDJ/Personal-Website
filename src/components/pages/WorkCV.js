@@ -103,7 +103,7 @@ const WorkCV = () => {
 
                 {/* Stranger's Things */}
                 <p id="dev-title">Strangers Things | Lead Developer | Oct 2022 - Nov 2022</p>
-                <a href="shopstrangersthings.netlify.app/" target="_blank" id="sub-sub-title-link">shopstrangersthings.netlify.app/</a>
+                <a href="https://shopstrangersthings.netlify.app" target="_blank" id="sub-sub-title-link">shopstrangersthings.netlify.app/</a>
 
                 <p id="cv-description">A React-based single-page application showcasing how CRUD can improve fetching and user authentication via JSON Web Tokens. (JWT)</p>
                 <li id="work-cv-text">AJAX Basics</li>
