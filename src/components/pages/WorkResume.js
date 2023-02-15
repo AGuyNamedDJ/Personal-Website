@@ -26,7 +26,7 @@ const WorkResume = () => {
 
                 {/* Car-Haven */}
                 <p id="dev-title">Car-Haven | Full Stack Developer | Jan 2023 - Jan 2023 </p>
-                <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">thesweetspot.netlify.app/</a>
+                <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">carhaven.netlify.app/</a>
 
                 <p id="cv-description">A Full Stack personal website that provides car exotic car service & repair solutions.</p>
                 <li id="work-cv-text">User Functionality</li>

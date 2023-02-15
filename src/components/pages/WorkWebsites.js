@@ -1,10 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WorkWebsites = () => {
 
     return (
         <div>
             <div class="title">Websites</div>
+
+            <div className="website-list">
+
+
+                {/* Car-Haven */}
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/carhaven.png" alt="Website Preview 1"/>
+                    </div>
+                    <div className="website-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor, diam id tempus egestas, risus velit faucibus ligula, vel commodo tellus velit vel velit.</p>
+                        <p className="website-name">Car-Haven</p>
+                        <div className="website-links">
+                        <Link to="https://carhaven.netlify.app" target="_blank">Car-Haven</Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Dal-Recipe */}
+                <div className="website-item">
+                    <div className="website-image">
+                        <img src="/images/Dal-Recipe.png" alt="Website Preview 1"/>
+                    </div>
+                    <div className="website-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor, diam id tempus egestas, risus velit faucibus ligula, vel commodo tellus velit vel velit.</p>
+                        <p className="website-name">Website 1</p>
+                        <div className="website-links">
+                            <a href="#" target="_blank">GitHub Repo (Front End)</a>
+                            <a href="#" target="_blank">GitHub Repo (Back End)</a>
+                            <a href="#" target="_blank">Deployed Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
                 
             {/* End of Page */}
             <footer id="footer">
@@ -28,8 +64,7 @@ const WorkWebsites = () => {
                     </p>
                 </div>
             </footer>
-
-    </div>
+        </div>
     )
 };
 
