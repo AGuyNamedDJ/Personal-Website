@@ -430,8 +430,9 @@ font-family: 'Oleo Script Swash Caps', cursive;
 
 /* Website */
 .website-list{
-    margin-right: 8vw;
-    margin-left: 8vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vw;
 }
 
 .website-item {
@@ -440,7 +441,10 @@ font-family: 'Oleo Script Swash Caps', cursive;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    width: 100vw;
+    width: 85vw;
+    margin: 0 auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   .website-image {
     height: 40vh;
@@ -460,12 +464,14 @@ font-family: 'Oleo Script Swash Caps', cursive;
   
   .website-description {
     height: 40vh;
-    width: 60vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 65vw;
     text-align: center;
+    line-height: 1.5;
     font-size: 2.4vw;
   }
   
