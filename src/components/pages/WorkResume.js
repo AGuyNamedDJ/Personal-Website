@@ -24,6 +24,17 @@ const WorkResume = () => {
                 <p className="sub-title">Development Projects:</p>
                 <p id="work-cv-text">As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
 
+                {/* Health Hive */}
+                <p id="dev-title">Health Hive | Back-End Developer | Feb 2022 - Current</p>
+                <a href="https://usefitnesstrackr.netlify.app" target="_blank" id="sub-sub-title-link">usefitnesstrackr.netlify.app</a>
+
+                <p id="cv-description">A Full-Stack Web App using Node.js, Express.js, and PostgreSQL to store and manage patient health records. Implemented RESTful API endpoints for CRUD operations on patient, staff, and treatment plan data</p>
+                <li id="work-cv-text">Designed and developed a PostgreSQL database with over 10,000 lines of code to store and maintain patient data</li>
+                <li id="work-cv-text"> Implemented secure user authentication and authorization using bcrypt and JWT</li>
+                <li id="work-cv-text"> Developed middleware for input validation and error handling to ensure the reliability and safety of user input</li>
+                <li id="work-cv-text"> Optimized API endpoints for performance and efficiency</li>
+                <br></br>
+
                 {/* Car-Haven */}
                 <p id="dev-title">Car-Haven | Full Stack Developer | Jan 2023 - Jan 2023 </p>
                 <a href="https://carhaven.netlify.app/" target="_blank" id="sub-sub-title-link">carhaven.netlify.app/</a>

@@ -14,7 +14,7 @@ const WorkWebsites = () => {
                         <img src="/images/construction.webp" alt="Website Preview 11"/>
                     </div>
                     <div className="website-description">
-                        <p>Built using Node.js and Express, the HealthHive system provides a fast and efficient API for accessing and managing hospital data stored in a PostgreSQL database. The app features secure authentication and authorization with JSON Web Tokens and logs incoming HTTP requests for monitoring and debugging purposes with Morgan. The app also utilizes dotenv to manage environment variables and the built-in crypto module for cryptographic functionality. Overall, the HealthHive backend provides an efficient and secure solution for managing and accessing hospital data.</p>
+                        <p>A Full-Stack Web App using Node.js, Express.js, and PostgreSQL to store and manage patient health records. Implemented RESTful API endpoints for CRUD operations on patient, staff, and treatment plan data</p>
                         <div className="website-links">
                             <a href="https://.netlify.app" target="_blank" id="link">HealthHive.com</a>
                             <a href="https://github.com/DJRobertson95/Health-Hive-Back-End" target="_blank" id="link">Github Back-End</a>
