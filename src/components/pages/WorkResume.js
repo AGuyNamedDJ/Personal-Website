@@ -26,7 +26,7 @@ const WorkResume = () => {
 
                 {/* Health Hive */}
                 <p id="dev-title">Health Hive | Back-End Developer | Feb 2022 - Current</p>
-                <a href="https://usefitnesstrackr.netlify.app" target="_blank" id="sub-sub-title-link">usefitnesstrackr.netlify.app</a>
+                <a href="https://github.com/DJRobertson95/Health-Hive-Back-End" target="_blank" id="sub-sub-title-link">Github Repository</a>
 
                 <p id="cv-description">A Full-Stack Web App using Node.js, Express.js, and PostgreSQL to store and manage patient health records. Implemented RESTful API endpoints for CRUD operations on patient, staff, and treatment plan data</p>
                 <li id="work-cv-text">Designed and developed a PostgreSQL database with over 10,000 lines of code to store and maintain patient data</li>
