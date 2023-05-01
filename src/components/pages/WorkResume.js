@@ -12,7 +12,7 @@ const WorkResume = () => {
                 <p className="sub-title">Technical Skills: </p>
 
                 <p id="work-technical-skills-title">Proficient</p>
-                <p id="work-cv-text"> Javascript | Node.js | PostgreSQL | React.js | Express.js | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
+                <p id="work-cv-text"> Javascript | Node.js | PostgreSQL | React.js | Express.js | PineScript | Git | HTML | CSS | AJAX | DOM | Framework LTC | DocuTrack</p>
 
                 <p id="work-technical-skills-title">Knowledgable: </p>
                 <p id="work-cv-text">Python | Java | C | Flask | AWS</p>
@@ -22,10 +22,20 @@ const WorkResume = () => {
             {/* Development Projects */}
             <div>
                 <p className="sub-title">Development Projects:</p>
-                <p id="work-cv-text">As of Jan 2023, I have deployed 12 Front-End or Back-End projects. View any of my above links to view them all.</p>
+                <p id="work-cv-text">As of Jan 2023, I have deployed 15 Front-End or Back-End projects. View any of my above links to view them all.</p>
+
+                {/* TradingView Strategies & Indicators #1  (Open Source) */}
+                <p id="dev-title">TradingView Strategies & Indicators #1 | Open Source | May 2023 - Current</p>
+                <a href="https://github.com/DJRobertson95/TradingView-Scripts-1" target="_blank" id="sub-sub-title-link">Github Repository</a>
+
+                <p id="cv-description">Developed open-source TradingView strategies and indicators using Pine Script, catering to retail and institutional traders, enhancing decision-making in various financial markets.</p>
+                <li id="work-cv-text">Developed custom trading strategies & indicators using PineScript for the TradingView platform</li>
+                <li id="work-cv-text"> Implemented algorithms to generate buy & sell signals based on technical analysis techniques.</li>
+                <li id="work-cv-text"> Optimized input parameters to improve performance across timeframes & different financial instruments.</li>
+                <br></br>
 
                 {/* Health Hive */}
-                <p id="dev-title">Health Hive | Back-End Developer | Feb 2022 - Current</p>
+                <p id="dev-title">Health Hive | Back-End Developer | Feb 2023 - Current</p>
                 <a href="https://github.com/DJRobertson95/Health-Hive-Back-End" target="_blank" id="sub-sub-title-link">Github Repository</a>
 
                 <p id="cv-description">A Full-Stack Web App using Node.js, Express.js, and PostgreSQL to store and manage patient health records. Implemented RESTful API endpoints for CRUD operations on patient, staff, and treatment plan data</p>
