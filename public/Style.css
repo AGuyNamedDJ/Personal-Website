@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 10vh;
     background-color: black;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     z-index: 1;
     padding: 1vh 0; 
     right: -4.5vw;
@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0vw; 
     position: absolute;
     left: 0vw;
+    top: 0vh;
 }
 
 #navbar a:hover {
