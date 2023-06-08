@@ -61,11 +61,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     color: white;
     background-color: black;
-    padding: 2vw;
+    padding: 12vw;
 }
 
-#error-page-text-1, #error-page-text-2 {
-    font-size: 3.5vw;
+#error-page-text-1, #error-page-text-2, #error-page-text-3 {
+    font-size: 2.3vw;
     text-align: center;
     margin-bottom: 2vw;
 }
@@ -73,5 +73,39 @@ h1, h2, h3, h4, h5, h6 {
 #error-page-image {
     max-width: 50vw;
     height: auto;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
 }
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    z-index: 1;
+    padding: 1vh 0; 
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5vw;
+}
+
+#navbar-home img {
+    height: 50%; 
+    width: auto;
+    margin-right: 0vw; 
+    position: absolute;
+    left: -3vw;
+}
+
+
+#navbar a:hover {
+    color: tan;
+}
+

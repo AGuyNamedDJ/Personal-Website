@@ -4,7 +4,7 @@ import { Outlet, useNavigate, useOutletContext, useParams} from "react-router-do
 
 const HomePage = () => {
     return (
-        <div>
+        <div class="content">
             
             <Navbar />
             <Outlet />
