@@ -88,12 +88,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5vw;
     z-index: 1;
     padding: 1vh 0; 
+    right: -4.5vw;
 }
 
 #navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 0.5vw;
+    margin: 1vw;
 }
 
 #navbar-home img {
@@ -101,9 +102,8 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     margin-right: 0vw; 
     position: absolute;
-    left: -3vw;
+    left: 0vw;
 }
-
 
 #navbar a:hover {
     color: tan;
