@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const ErrorPage = () => {
@@ -12,6 +13,7 @@ const ErrorPage = () => {
                 <h2 id="error-page-text-2">Our servers are experiencing issues, but rest assured, our team is on it.</h2>
                 <h2 id="error-page-text-2">Thank you for your patience!</h2>
             </div>
+            <Footer />
         </div>
     )
 };
