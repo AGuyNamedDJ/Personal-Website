@@ -12,6 +12,8 @@ const Footer = () => {
         <div id="footer-center">
             <Link to="/about">Dalron J. Robertson © 2023</Link>
             <Link to="/privacy">Privacy & Legal</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/faq">FAQ</Link>
             <Link to="/contact">Contact</Link>
         </div>
         <div id="footer-right">

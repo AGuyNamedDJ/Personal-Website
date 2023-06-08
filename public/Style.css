@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6vw;
     z-index: 1;
     padding: 1vh 0; 
-    /* right: -4.5vw; */
+    right: -4.5vw;
 }
 
 #navbar a {
@@ -114,36 +114,44 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
     width: 90%;
     position: fixed;
-    bottom: 0;
+    bottom: 1.25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
     background-color: black;
     color: white;
+    left: 4.5vw;
 }
 
 #footer a {
     color: white;
     text-decoration: none;
-    margin: 0 1vw;
+    margin: 0 1.5vw;
 }
 
-#footer-left img, #footer-right img {
+#footer-left img{
     width: 3vw;
     height: 3vw;
 }
 
-#footer-center{
-    font-size: 1.25vh;
-    display: flex;
-    justify-content: center;
-    left: 3vw;
+#footer-right img{
+    width: 3.25vw;
+    height: 3.25vw;
+    opacity: 80%;
 }
 
+#footer-center{
+    font-size: 1.4vh;
+    display: flex;
+    justify-content: center;
+}
 
 #footer-right button {
     background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
     cursor: pointer;
 }
-
