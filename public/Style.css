@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root HTML */
+html {
+    font-size: 1vw;
+}
+
+/* Root body */
+body {
+    font-family: 'San Francisco', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #ccc; /* Off white / gray */
+    background-color: #000; /* black background */
+}
+
+/* Set overall body content w/ margin */
+.content {
+    width: 90vw;
+    margin: auto;
+    overflow: hidden; 
+    padding: 2vh 3vw;
+}
+
+/* Default link styles */
+a {
+    color: #ccc; 
+    text-decoration: none;
+}
+
+/* Default link hover styles */
+a:hover {
+    color: #fff; /* Change to white on hover */
+}
+
+/* For heading tags */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+/* Example component */
+.component {
+    font-size: 2rem; 
+}
+
