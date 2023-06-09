@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Outlet, useNavigate, useOutletContext, useParams} from "react-router-dom"
 
-const HomePage = () => {
+const FetchForHomePage = () => {
     return (
-        <div class="content">
+        <div className="content">
             
             <Navbar />
             <Outlet />
@@ -14,6 +14,4 @@ const HomePage = () => {
     )
 }
 
-
-
-export default HomePage;
+export default FetchForHomePage;

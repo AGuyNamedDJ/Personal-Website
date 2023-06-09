@@ -12,6 +12,9 @@ html {
 
 /* Root body */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'San Francisco', sans-serif;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -25,6 +28,7 @@ body {
     margin: auto;
     overflow: hidden; 
     padding: 2vh 3vw;
+    flex: 1 0 auto;
 }
 
 /* Default link styles */
@@ -48,7 +52,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem; 
 }
 
+
 /* Pages Parameters */
+/* Homepage */
+#homepage {
+    font-size: 10vw;
+    color: white;
+}
+
+#about {
+    font-size: 5vw;
+    color: white;
+}
 
 
 /* Utilities Parameters */
@@ -82,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     background-color: black;
     color: white;
     font-size: 1.6vw;
@@ -121,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1vw;
     background-color: black;
     color: white;
+    flex-shrink: 0;
     left: 4.5vw;
 }
 
@@ -155,3 +171,4 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
     cursor: pointer;
 }
+
