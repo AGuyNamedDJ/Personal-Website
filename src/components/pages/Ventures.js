@@ -33,7 +33,7 @@ const Ventures = () => {
                 </div>
             </div>
 
-            <div id="ventures-4" className="ventures-4-container">
+            <div id="ventures-4" className="ventures-4">
                 <div className="ventures-4-text">
                     <h2 className="ventures-4-title">Real Estate</h2>
                     <p className="ventures-4-description">Short description about your real estate ventures.</p>
