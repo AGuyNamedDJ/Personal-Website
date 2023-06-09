@@ -238,6 +238,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     padding: 1vh 0vw; 
+    padding-top: 3vw;
   }
   
   .ventures-4-text {
@@ -254,15 +255,14 @@ h1, h2, h3, h4, h5, h6 {
       overflow: hidden;
   }
   
-  .ventures-4-middle, .ventures-4-right {
+  .ventures-4-middle,
+  .ventures-4-right {
+      overflow: hidden; /* add this line */
       flex-basis: 40%; 
-      overflow: auto; 
       height: 80vh; 
-      margin-right: 1vw; 
-      padding: 1vw;
-      margin-left: 1vw;
-    }
-    
+      padding: 2vw;
+  }
+  
   .ventures-4-middle img,
   .ventures-4-right img {
       width: 100%;
