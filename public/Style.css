@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12vw;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 250;
+    letter-spacing: -0.5vw;
     position: absolute;
     color: #cec9c9; /* Grey */
     top: 8vh;
@@ -112,16 +113,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2vw;
     padding: 2vh 3vw;
     margin-top: 22vh;
-  }
+}
   
-  .ventures-2-container {
+.ventures-2-container {
     display: flex;
     justify-content: space-between;
     align-items: start;
     gap: 3vw;
-  }
+}
   
-  .ventures-2-text {
+.ventures-2-text {
     flex: 1 1 50%; /* change this */
     padding-right: 2vw;
     text-align: justify;
@@ -132,29 +133,29 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1 1 50%; /* change this */
 }
   
-  .ventures-2-image img {
+.ventures-2-image img {
     width: 100%;
     height: auto;
     margin-left: 3vw;
-    margin-top: 12.5vh;
-  }
+    margin-top: 10vh;
+}
   
-  .ventures-2-title {
+.ventures-2-title {
     font-size: 2.7vw;
     font-weight: bold;
     margin-bottom: 0.8vh;
     line-height: 1;
     position: relative;
     top: -0.5vh;
-  }
+}
   
-  .ventures-2-title span {
+.ventures-2-title span {
     font-size: 8vw;
     display: inline-block;
     position: relative;
-  }
+}
   
-  .dot {
+.dot {
     width: 2vw;
     height: 2vw;
     background-color: #C2B19C;
@@ -163,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 1vh;
     transform: translate(-50%, -50%);
     left: 2vw;
-  }
+}
   
   
 /* Utilities Parameters */
