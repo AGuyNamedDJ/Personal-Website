@@ -4,6 +4,11 @@ const HomePage = () => {
     return (
         <div id="homepage">
             <p id="homepage-maintaince">Undergoing Maintenance</p>
+            <p id="homepage-maintaince">Undergoing Maintenance</p>
+            <p id="homepage-maintaince">Undergoing Maintenance</p>
+            <p id="homepage-maintaince">Undergoing Maintenance</p>
+            <p id="homepage-maintaince">Undergoing Maintenance</p>
+            <p id="homepage-maintaince">Undergoing Maintenance</p>
         </div>
     )
 };

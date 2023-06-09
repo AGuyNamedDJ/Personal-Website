@@ -17,6 +17,8 @@ body {
     min-height: 100vh;
     font-family: 'San Francisco', sans-serif;
     font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
     line-height: 1.5;
     color: #ccc; /* Off white / gray */
     background-color: #000; /* black background */
@@ -58,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 #homepage {
     font-size: 10vw;
     color: white;
+    text-align: center;
 }
 
 #about {
@@ -102,14 +105,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 1.6vw;
     z-index: 1;
-    padding: 1vh 0; 
+    padding: 0;  /* Change here */
     right: -4.5vw;
+    top: 0vw;
 }
+
 
 #navbar a {
     color: white;
     text-decoration: none;
     margin: 1vw;
+    padding-top: 1.5vh;
 }
 
 #navbar-home img {
@@ -118,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0vw; 
     position: absolute;
     left: 0vw;
-    top: 0vh;
+    top: 1.5vh;
 }
 
 #navbar a:hover {
@@ -128,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 #footer {
     width: 93%;
-    position: fixed;
+    position: static;
     bottom: 1.25vh;
     display: flex;
     justify-content: space-between;
