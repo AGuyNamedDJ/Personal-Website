@@ -95,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -2vh; /* change this after content is added */
 }
 
-/* CSS file or style block */
 #ventures-1 .ventures-1-title {
     font-size: 12vw;
     font-family: 'Josefin Sans', sans-serif;
@@ -106,66 +105,67 @@ h1, h2, h3, h4, h5, h6 {
     left: 5vw;
 }
 
+/* Adjusted CSS code */
 #ventures-2 {
-    height: auto;  /* make the height auto so it can grow with the content */
-    margin: auto;
-    overflow: hidden; 
-    font-size: 1.8vh;
-    padding: 2vh 3vw;  
-    margin-top: 22vh; 
-}
-
-.ventures-2-container {
+    height: auto;
+    margin: 5vh auto;
+    overflow: hidden;
+    font-size: 2vw;
+    padding: 2vh 3vw;
+    margin-top: 22vh;
+  }
+  
+  .ventures-2-container {
     display: flex;
-    justify-content: space-between;  /* evenly space the child elements */
-    align-items: start;  /* align the child elements to the start of the container */
-    gap: 3vw;  /* add some gap between the child elements */
-}
-
-.ventures-2-text {
-    flex: 1 1 50%;  
-    padding-right: 2vw; 
+    justify-content: space-between;
+    align-items: start;
+    gap: 3vw;
+  }
+  
+  .ventures-2-text {
+    flex: 1 1 50%;
+    padding-right: 2vw;
     text-align: justify;
     text-justify: inter-word;
-}
-
-.ventures-2-image {
-    flex: 1 1 46%;  /* take up 50% of the container's width */
-}
-
-.ventures-2-image img {
-    width: 100%;  
-    height: auto; 
-    margin-left: 3vh;
-    margin-top: 25%;
-}
-/* Additional CSS code */
-.ventures-2-title {
-  font-size: 2.5vh;
-  font-weight: bold;
-  margin-bottom: .8vh;
-  line-height: 1;
-  position: relative;
-  top: -0.5vh; /* Adjust the value as needed */
-}
-
-.ventures-2-title span {
-  font-size: 8vh;
-  display: inline-block;
-  position: relative;
-}
-
-.dot {
-  width: 1.8vw;
-  height: 1.8vw;
-  background-color: #C2B19C; 
-  border-radius: 50%;
-  position: absolute;
-  top: 1vh;
-  transform: translate(-50%, -50%);
-  left: 1.5vw; 
-}
-
+  }
+  
+  .ventures-2-image {
+    flex: 1 1 46%;
+  }
+  
+  .ventures-2-image img {
+    width: 100%;
+    height: auto;
+    margin-left: 3vw;
+    margin-top: 12.5vh;
+  }
+  
+  .ventures-2-title {
+    font-size: 2.7vw;
+    font-weight: bold;
+    margin-bottom: 0.8vh;
+    line-height: 1;
+    position: relative;
+    top: -0.5vh;
+  }
+  
+  .ventures-2-title span {
+    font-size: 8vw;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dot {
+    width: 2vw;
+    height: 2vw;
+    background-color: #C2B19C;
+    border-radius: 50%;
+    position: absolute;
+    top: 1vh;
+    transform: translate(-50%, -50%);
+    left: 2vw;
+  }
+  
   
 /* Utilities Parameters */
 /* Error Page */
