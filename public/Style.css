@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CSS file or style block */
 #ventures-1 .ventures-1-title {
-    font-size: 10vw;
+    font-size: 12vw;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 250;
     position: absolute;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden; 
     font-size: 1.8vh;
     padding: 2vh 3vw;  
-    margin-top: 20vh; 
+    margin-top: 22vh; 
 }
 
 .ventures-2-container {
@@ -130,18 +130,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ventures-2-image {
-    flex: 1 1 45%;  /* take up 50% of the container's width */
+    flex: 1 1 46%;  /* take up 50% of the container's width */
 }
 
 .ventures-2-image img {
     width: 100%;  
     height: auto; 
     margin-left: 3vh;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 /* Additional CSS code */
 .ventures-2-title {
-  font-size: 2.8vh;
+  font-size: 2.5vh;
   font-weight: bold;
   margin-bottom: .8vh;
   line-height: 1;
@@ -150,14 +150,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ventures-2-title span {
-  font-size: 9vh;
+  font-size: 8vh;
   display: inline-block;
   position: relative;
 }
 
 .dot {
-  width: 2vw;
-  height: 2vw;
+  width: 1.8vw;
+  height: 1.8vw;
   background-color: #C2B19C; 
   border-radius: 50%;
   position: absolute;
