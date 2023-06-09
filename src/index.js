@@ -10,6 +10,7 @@ import ErrorPage from "./components/utilities/ErrorPage";
 // Imports-Pages
 import About from "./components/pages/About";
 import HomePage from "./components/pages/HomePage";
+import Ventures from "./components/pages/Ventures";
 
 // Browser Router
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
                 path: "/about",
                 element: <About />
             },
+            {
+                path: "/ventures",
+                element: <Ventures />
+            },
         ]
     }
 ])
@@ -34,4 +39,3 @@ const router = createBrowserRouter([
 const app = document.getElementById("apps")
 const root = createRoot(app)
 root.render(<RouterProvider router={router} />)
-

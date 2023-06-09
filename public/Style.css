@@ -49,11 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-/* Example component */
-.component {
-    font-size: 2rem; 
-}
-
 
 /* Pages Parameters */
 /* Homepage */
@@ -61,6 +56,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 10vw;
     color: white;
     text-align: center;
+}
+
+#homepage-1 {
+    height: 65vh;
+    width: 100vw;
+    margin: auto;
+    overflow: hidden; 
+    padding: 10vh 3vw 2vh;  /* add 8vh (height of the navbar) + 2vh (existing padding) to the top padding */
+    flex: 1 0 auto;
 }
 
 #about {
