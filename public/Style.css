@@ -52,24 +52,61 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Pages Parameters */
 /* Homepage */
-#homepage {
-    font-size: 10vw;
+.homepage {
+    font-size: 8vw;
     color: white;
     text-align: center;
 }
 
 #homepage-1 {
     height: 65vh;
-    width: 100vw;
     margin: auto;
     overflow: hidden; 
-    padding: 10vh 3vw 2vh;  /* add 8vh (height of the navbar) + 2vh (existing padding) to the top padding */
+    font-size: 4vh;
+    padding: 10vh 3vw 2vh;  
+    flex: 1 0 auto;
+    margin-top: 15vh; /* change this after content is added */
+}
+
+#homepage-2 {
+    height: 65vh;
+    margin: auto;
+    overflow: hidden; 
     flex: 1 0 auto;
 }
 
+/* About */
 #about {
     font-size: 5vw;
     color: white;
+}
+
+/* Ventures */
+.ventures {
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+}
+
+#ventures-1 {
+    height: 65vh;
+    margin: auto;
+    overflow: hidden; 
+    font-size: 4vh;
+    padding: 10vh 3vw 2vh;  
+    flex: 1 0 auto;
+    margin-top: 15vh; /* change this after content is added */
+}
+
+/* CSS file or style block */
+#ventures-1 .ventures-1-title {
+    font-size: 10vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 250;
+    position: absolute;
+    color: #cec9c9; /* Grey */
+    top: 8vh;
+    left: 5vw;
 }
 
 
@@ -116,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #navbar a {
-    color: white;
+    color: #cec9c9; /* Grey */
     text-decoration: none;
     margin: 1vw;
     padding-top: 1.5vh;
@@ -132,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar a:hover {
-    color: tan;
+    color: #C2B19C;
 }
 
 /* Footer */
