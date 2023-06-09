@@ -11,6 +11,7 @@ import ErrorPage from "./components/utilities/ErrorPage";
 import About from "./components/pages/About";
 import Business from "./components/pages/Business";
 import HomePage from "./components/pages/HomePage";
+import RealEstate from "./components/pages/RealEstate";
 import Ventures from "./components/pages/Ventures";
 
 // Browser Router
@@ -33,8 +34,12 @@ const router = createBrowserRouter([
                 element: <Ventures />
             },
             {
-                path: "/business",
+                path: "/ventures/business",
                 element: <Business />
+            },
+            {
+                path: "/ventures/realestate",
+                element: <RealEstate />
             },
         ]
     }

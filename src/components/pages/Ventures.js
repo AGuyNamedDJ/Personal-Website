@@ -26,7 +26,7 @@ const Ventures = () => {
                     <h2 className="ventures-3-title">Business</h2>
                     <h2 className="ventures-3-title">Private Equity &</h2>
                     <h2 className="ventures-3-title">Venture Capital</h2>
-                    <Link to="/business" className="learn-more">Learn More</Link>
+                    <Link to="/ventures/business" className="learn-more">Learn More</Link>
                 </div>
                 <div className="ventures-3-description">
                     <p>My commitment is to serve as a launchpad for dreamers, and doers. Through providing quality spaces, resources, education, and support, I aim to empower individuals and uplift entire communities. Success is not measured in profits, but in the number of dreams ignited, businesses launched, and lives transformed. This journey is all about debunking the myth of the word "impossible". Welcome to our collective pursuit of progress and empowerment.</p>
@@ -37,7 +37,7 @@ const Ventures = () => {
                 <div className="ventures-4-text">
                     <h2 className="ventures-4-title">Real Estate</h2>
                     <p className="ventures-4-description">These architectural marvels offer a glimpse into the inner workings of my mind, where the realms of possibilities are shattered. Immerse yourself in the tapestry of inspiration woven within each image, a testament to my unyielding passion for redefiningand reshaping the very fabric of this transofmrative industry.</p>
-                    <Link to="/realestate" className="learn-more-2">Learn More</Link>
+                    <Link to="/ventures/realestate" className="learn-more-2">Learn More</Link>
                 </div>
                 <div className="ventures-4-middle">
                     <div className="ventures-4-image-1">
