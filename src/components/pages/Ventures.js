@@ -3,20 +3,43 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Ventures = () => {
-    const imageRef1 = useRef();
-    const imageRef2 = useRef();
+    const imageRefs1 = useRef([]);
+    const imageRefs2 = useRef([]);
     const [imagePos1, setImagePos1] = useState(0);
     const [imagePos2, setImagePos2] = useState(0);
 
+    const images1 = [
+        "/images/chi-Image/chi1.jpg",
+        "/images/chi-Image/chi3.jpg",
+        "/images/chi-Image/chi5.jpg",
+        "/images/chi-Image/chi7.jpg",
+        "/images/chi-Image/chi9.png",
+        "/images/chi-Image/chi11.jpg",
+        "/images/chi-Image/chi13.jpg",
+    ];
+
+    const images2 = [
+        "/images/chi-Image/chi2.jpg",
+        "/images/chi-Image/chi4.jpg",
+        "/images/chi-Image/chi6.jpg",
+        "/images/chi-Image/chi8.jpg",
+        "/images/chi-Image/chi10.png",
+        "/images/chi-Image/chi12.jpg",
+    ];
+
     useEffect(() => {
+        const totalHeight1 = imageRefs1.current.reduce((sum, img) => sum + img.clientHeight, 0);
+        const totalHeight2 = imageRefs2.current.reduce((sum, img) => sum + img.clientHeight, 0);
+
         const scrollImage = () => {
-            setImagePos1(prev => (prev - 1 < -imageRef1.current.clientHeight) ? 0 : prev - 1);
-            setImagePos2(prev => (prev - 1 < -imageRef2.current.clientHeight) ? 0 : prev - 1);
+            setImagePos1(prev => (prev - 1 < -totalHeight1) ? 0 : prev - 1);
+            setImagePos2(prev => (prev - 1 < -totalHeight2) ? 0 : prev - 1);
             requestAnimationFrame(scrollImage);
         }
-        
+
         scrollImage();
     }, []);
+
 
     return(
         <div className="ventures">
@@ -62,46 +85,30 @@ const Ventures = () => {
 
                 {/* Middle Container */}
                 <div className="ventures-4-middle" style={{position: "relative", overflow: "hidden"}}>
-                    <motion.div className="ventures-4-image-1" 
-                        style={{position: "absolute", top: imagePos1}}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}>
-                        <img ref={imageRef1} src="/images/chi-Image/chi1.jpg" alt="Descriptive Image Text 1" />
-                    </motion.div>
-
-                    {/* Duplicate image for infinite scroll effect */}
-                    <motion.div className="ventures-4-image-1" 
-                        style={{position: "absolute", top: imagePos1 + imageRef1.current?.clientHeight}}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}>
-                        <img ref={imageRef1} src="/images/chi-Image/chi1.jpg" alt="Descriptive Image Text 1" />
-                    </motion.div>
-
-                    {/* Your other components */}
+                    {images1.map((src, index) => (
+                        <motion.div className="ventures-4-image-1" 
+                            style={{position: "absolute", top: imagePos1}}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            key={src}>
+                            <img ref={el => imageRefs1.current[index] = el} src={src} alt={`Descriptive Image Text ${index * 2 + 1}`} />
+                        </motion.div>
+                    ))}
                 </div>
 
                 {/* Right Container */}
                 <div className="ventures-4-right" style={{position: "relative", overflow: "hidden"}}>
-                    <motion.div className="ventures-4-image-2" 
-                        style={{position: "absolute", top: imagePos2}}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}>
-                        <img ref={imageRef2} src="/images/chi-Image/chi2.jpg" alt="Descriptive Image Text 2" />
-                    </motion.div>
-
-                    {/* Duplicate image for infinite scroll effect */}
-                    <motion.div className="ventures-4-image-2" 
-                        style={{position: "absolute", top: imagePos2 + imageRef2.current?.clientHeight}}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}>
-                        <img ref={imageRef2} src="/images/chi-Image/chi2.jpg" alt="Descriptive Image Text 2" />
-                    </motion.div>
-
-                    {/* Your other components */}
+                    {images2.map((src, index) => (
+                        <motion.div className="ventures-4-image-2" 
+                            style={{position: "absolute", top: imagePos2}}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            key={src}>
+                            <img ref={el => imageRefs2.current[index] = el} src={src} alt={`Descriptive Image Text ${index * 2 + 2}`} />
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </div>
