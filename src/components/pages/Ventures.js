@@ -36,7 +36,7 @@ const Ventures = () => {
             <div id="ventures-4" className="ventures-4">
                 <div className="ventures-4-text">
                     <h2 className="ventures-4-title">Real Estate</h2>
-                    <p className="ventures-4-description">Short description about your real estate ventures.</p>
+                    <p className="ventures-4-description">These architectural marvels offer a glimpse into the inner workings of my mind, where the realms of possibilities are shattered. Immerse yourself in the tapestry of inspiration woven within each image, a testament to my unyielding passion for redefiningand reshaping the very fabric of this transofmrative industry.</p>
                     <Link to="/realestate" className="learn-more-2">Learn More</Link>
                 </div>
                 <div className="ventures-4-middle">
