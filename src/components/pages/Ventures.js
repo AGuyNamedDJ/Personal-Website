@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const Ventures = () => {
     return(
@@ -31,6 +33,25 @@ const Ventures = () => {
                 </div>
             </div>
 
+            <div id="ventures-4" className="ventures-4-container">
+                <div className="ventures-4-text">
+                    <h2 className="ventures-4-title">Real Estate</h2>
+                    <p className="ventures-4-description">Short description about your real estate ventures.</p>
+                    <Link to="/realestate" className="learn-more-2">Learn More</Link>
+                </div>
+                <div className="ventures-4-middle">
+                    <div className="ventures-4-image-1">
+                        <img src="/images/chi-Image/chi1.jpg" alt="Descriptive Image Text 1" />
+                    </div>
+                     {/* Add more images here as needed */}
+                </div>
+                <div className="ventures-4-right">
+                    <div className="ventures-4-image-2">
+                        <img src="/images/chi-Image/chi2.jpg" alt="Descriptive Image Text 2" />
+                    </div>
+                {/* Add more images here as needed */}
+                </div>
+            </div>
         </div>
     )
 };
