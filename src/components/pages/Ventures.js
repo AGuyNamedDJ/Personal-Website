@@ -20,6 +20,7 @@ const Ventures = () => {
 
             <div id="ventures-3" className="ventures-3-container">
                 <div className="ventures-3-text">
+                    <h3 className="ventures-3-subtitle">Dream Incubation:</h3>
                     <h2 className="ventures-3-title">Business</h2>
                     <h2 className="ventures-3-title">Private Equity &</h2>
                     <h2 className="ventures-3-title">Venture Capital</h2>

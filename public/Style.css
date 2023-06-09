@@ -204,6 +204,17 @@ h1, h2, h3, h4, h5, h6 {
     top: -0.5vh;
 }
 
+.ventures-3-subtitle {
+    font-size: 1.6vw;
+    letter-spacing: 0.1vw;
+    margin-top: 1vw;
+    padding-bottom: 2.5vw;
+    color: #C2B19C; /* Brown */
+    padding-right: 1vw;
+    margin-left: 0.25vw;
+}
+
+
 .ventures-3-title span {
     font-size: 8vw;
     display: inline-block;
