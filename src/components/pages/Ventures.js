@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Ventures = () => {
     return(
@@ -19,8 +20,10 @@ const Ventures = () => {
 
             <div id="ventures-3" className="ventures-3-container">
                 <div className="ventures-3-text">
-                    <h2 className="ventures-3-title">Business<br />Private Equity &amp;<br />Venture Capital</h2>
-                    <a href="/businesses">Learn More</a>
+                    <h2 className="ventures-3-title">Business</h2>
+                    <h2 className="ventures-3-title">Private Equity &</h2>
+                    <h2 className="ventures-3-title">Venture Capital</h2>
+                    <Link to="/business" className="learn-more">Learn More</Link>
                 </div>
                 <div className="ventures-3-description">
                     <p>My entrepreneurial journey spans various sectors, each venture conceived with the drive to innovate, uplift, and inspire change. This collective pursuit is not simply about creating successful businesses; it's about fostering a culture of innovation and resilience that spans beyond the walls of each enterprise. Click on 'Learn More' to dive deeper into the individual journeys of these ventures.</p>

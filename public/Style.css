@@ -129,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
     text-justify: inter-word;
 }
 
+.ventures-2-text p {
+    opacity: 0.77;
+}
+
 .ventures-2-image {
     flex: 1 1 50%; /* change this */
 }
@@ -187,14 +191,15 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1 1 46%;
     text-align: justify;
     text-justify: inter-word;
+    opacity: 77%;
 }
 
 .ventures-3-title {
-    font-size: 4.4vw;
+    font-size: 4.0vw;
     font-weight: bold;
     text-align: left;
     margin-bottom: 0.8vh;
-    line-height: 1;
+    line-height: 3vw;
     position: relative;
     top: -0.5vh;
 }
@@ -204,6 +209,18 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     position: relative;
 }
+
+.learn-more {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #C2B19C; /* Brown */
+    border-bottom: 0.25vw solid #C2B19C;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    margin-left: 0.5vw;
+    letter-spacing: 0.25vw;
+}
+
   
 /* Utilities Parameters */
 /* Error Page */
