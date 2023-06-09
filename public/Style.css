@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 5vw;
 }
 
-/* Adjusted CSS code */
 #ventures-2 {
     height: auto;
     margin: 5vh auto;
@@ -123,15 +122,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .ventures-2-text {
-    flex: 1 1 50%;
+    flex: 1 1 50%; /* change this */
     padding-right: 2vw;
     text-align: justify;
     text-justify: inter-word;
-  }
-  
-  .ventures-2-image {
-    flex: 1 1 46%;
-  }
+}
+
+.ventures-2-image {
+    flex: 1 1 50%; /* change this */
+}
   
   .ventures-2-image img {
     width: 100%;
