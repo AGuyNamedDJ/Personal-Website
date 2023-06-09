@@ -165,7 +165,45 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     left: 2vw;
 }
-  
+
+#ventures-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3vw;
+    font-size: 2vw;
+    margin: 5vh auto;
+    padding: 2vh 3vw;
+}
+
+.ventures-3-text {
+    flex: 1 1 50%;
+    padding-right: 2vw;
+    font-size: 4vw; /* Learn more */
+    text-align: left;
+}
+
+.ventures-3-description {
+    flex: 1 1 46%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ventures-3-title {
+    font-size: 4.4vw;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.8vh;
+    line-height: 1;
+    position: relative;
+    top: -0.5vh;
+}
+
+.ventures-3-title span {
+    font-size: 8vw;
+    display: inline-block;
+    position: relative;
+}
   
 /* Utilities Parameters */
 /* Error Page */
