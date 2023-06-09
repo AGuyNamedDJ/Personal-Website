@@ -26,7 +26,7 @@ const Ventures = () => {
                     <Link to="/business" className="learn-more">Learn More</Link>
                 </div>
                 <div className="ventures-3-description">
-                    <p>My entrepreneurial journey spans various sectors, each venture conceived with the drive to innovate, uplift, and inspire change. This collective pursuit is not simply about creating successful businesses; it's about fostering a culture of innovation and resilience that spans beyond the walls of each enterprise. Click on 'Learn More' to dive deeper into the individual journeys of these ventures.</p>
+                    <p>My commitment is to serve as a launchpad for dreamers, and doers. Through providing quality spaces, resources, education, and support, I aim to empower individuals and uplift entire communities. Success is not measured in profits, but in the number of dreams ignited, businesses launched, and lives transformed. This journey is all about debunking the myth of the word "impossible". Welcome to our collective pursuit of progress and empowerment.</p>
                 </div>
             </div>
 
