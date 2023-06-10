@@ -36,6 +36,28 @@ const Ventures = () => {
         };
     }, []);
 
+    useEffect(() => {
+        let lastScrollY = window.pageYOffset;
+        const handleScroll = () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY) {
+                // scrolling down
+                setImageIndex1((prev) => (prev + 1) % images1.length);
+                setImageIndex2((prev) => (prev + 1) % images2.length);
+            } else if (currentScrollY < lastScrollY) {
+                // scrolling up
+                setImageIndex1((prev) => (prev - 1 + images1.length) % images1.length);
+                setImageIndex2((prev) => (prev - 1 + images2.length) % images2.length);
+            }
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return(
         <div className="ventures">
@@ -106,6 +128,5 @@ const Ventures = () => {
         </div>
     );
 };
-
 
 export default Ventures;
