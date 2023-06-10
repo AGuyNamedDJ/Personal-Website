@@ -18,7 +18,8 @@ const slidesData = [
 const Slide = ({content, link, username, description, img}) => (
     <div className="slide">
         <div className="slide-content" style={{ paddingRight: '5vw' }}>
-            <h2>{content}</h2>
+        <h2><span className="underline">{content}</span></h2>
+
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
             <p>{description}</p>
         </div>
@@ -46,6 +47,12 @@ const Connect = () => {
             {/* Title */}
             <div id="titleSection">
                 <h1>Connect</h1>
+            </div>
+
+            <div id="social-title">
+                <div className="underline">
+                    <h2>Social Media</h2>
+                </div>
             </div>
 
             {/* Social Media */}
