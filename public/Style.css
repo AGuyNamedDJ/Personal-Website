@@ -300,6 +300,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0.5vw;
     letter-spacing: 0.25vw;
 }
+
+/* Business & Real Estate Pages*/
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    color: #cec9c9; /* Grey */
+    background-color: #000; 
+}
+
+.coming-soon-container h1 {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.coming-soon-container p {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
   
 /* Utilities Parameters */
 /* Error Page */
