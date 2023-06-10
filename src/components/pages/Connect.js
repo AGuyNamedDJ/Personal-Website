@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Lottie } from 'lottie-react';
+import Coding from ".../animations/Coding"
 
 const slidesData = [
-    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: 'https://assets7.lottiefiles.com/packages/lf20_jjsrh4we.json' },
+    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: "/animations/coding.json" },
     // Other slides data...
 ];
 
@@ -11,9 +13,12 @@ const Slide = ({content, link, username, img}) => (
             <h2>{content}</h2>
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
         </div>
-        <img src={img} alt={content} className="slide-image" />
+        <div className="slide-image">
+            <Lottie animationData={img} style={{ height: 400, width: 400 }} />
+        </div>
     </div>
 );
+
 
 
 const Connect = () => {
@@ -28,27 +33,35 @@ const Connect = () => {
 
     return (
         <div className="page">
-          <div id="titleSection">
-            <h1>Connect</h1>
-          </div>
-          <div id="socialSection" className="section">
-            {slidesData.map((slide, index) => (
-              <Slide 
+
+            {/* Title */}
+            <div id="titleSection">
+                <h1>Connect</h1>
+            </div>
+
+            {/* Social Media */}
+            <div id="socialSection" className="section">
+                {slidesData.map((slide, index) => (
+                <Slide 
                 content={slide.content}
                 link={slide.link}
                 username={slide.username}
                 key={slide.id}
-                className={current === index ? 'active' : ''}
-              />
-            ))}
-          </div>
-          <div id="emailSection" className="section">
-            {/* email content goes here */}
-          </div>
-          <div id="scheduleSection" className="section">
-            {/* schedule content goes here */}
-          </div>
+                className={current === index ? 'active' : ''}/>
+                ))}
+            </div>
+
+            {/* Schedule Meeting */}
+            <div id="scheduleSection" className="section">
+                {/* schedule content goes here */}
+            </div>
+
+            {/* Email */}
+            <div id="emailSection" className="section">
+                {/* email content goes here */}
+            </div>
         </div>
       );
     };
+
 export default Connect;
