@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Ventures = () => {
-    const imageRefs1 = useRef([]);
-    const imageRefs2 = useRef([]);
-    const [imagePos1, setImagePos1] = useState(0);
-    const [imagePos2, setImagePos2] = useState(0);
+    const [imageIndex1, setImageIndex1] = useState(0);
+    const [imageIndex2, setImageIndex2] = useState(0);
 
     const images1 = [
         "/images/chi-Image/chi1.jpg",
@@ -28,16 +26,14 @@ const Ventures = () => {
     ];
 
     useEffect(() => {
-        const totalHeight1 = imageRefs1.current.reduce((sum, img) => sum + img.clientHeight, 0);
-        const totalHeight2 = imageRefs2.current.reduce((sum, img) => sum + img.clientHeight, 0);
+        const interval = setInterval(() => {
+            setImageIndex1((prev) => (prev + 1) % images1.length);
+            setImageIndex2((prev) => (prev + 1) % images2.length);
+        }, 3000); // change images every 3 seconds
 
-        const scrollImage = () => {
-            setImagePos1(prev => (prev - 1 < -totalHeight1) ? 0 : prev - 1);
-            setImagePos2(prev => (prev - 1 < -totalHeight2) ? 0 : prev - 1);
-            requestAnimationFrame(scrollImage);
-        }
-
-        scrollImage();
+        return () => {
+            clearInterval(interval);
+        };
     }, []);
 
 
@@ -84,35 +80,32 @@ const Ventures = () => {
                 </div>
 
                 {/* Middle Container */}
-                <div className="ventures-4-middle" style={{position: "relative", overflow: "hidden"}}>
-                    {images1.map((src, index) => (
-                        <motion.div className="ventures-4-image-1" 
-                            style={{position: "absolute", top: imagePos1}}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            key={src}>
-                            <img ref={el => imageRefs1.current[index] = el} src={src} alt={`Descriptive Image Text ${index * 2 + 1}`} />
-                        </motion.div>
-                    ))}
+                <div className="ventures-4-middle">
+                    <motion.img
+                        key={images1[imageIndex1]}
+                        src={images1[imageIndex1]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        alt={`Descriptive Image Text ${imageIndex1 * 2 + 1}`}
+                    />
                 </div>
 
                 {/* Right Container */}
-                <div className="ventures-4-right" style={{position: "relative", overflow: "hidden"}}>
-                    {images2.map((src, index) => (
-                        <motion.div className="ventures-4-image-2" 
-                            style={{position: "absolute", top: imagePos2}}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            key={src}>
-                            <img ref={el => imageRefs2.current[index] = el} src={src} alt={`Descriptive Image Text ${index * 2 + 2}`} />
-                        </motion.div>
-                    ))}
+                <div className="ventures-4-right">
+                    <motion.img
+                        key={images2[imageIndex2]}
+                        src={images2[imageIndex2]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        alt={`Descriptive Image Text ${imageIndex2 * 2 + 2}`}
+                    />
                 </div>
             </div>
         </div>
-    )
+    );
 };
+
 
 export default Ventures;
