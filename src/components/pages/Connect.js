@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import Coding from "../animations/Coding.json";
+import Coding1 from "../animations/Coding1.json";
+import Macbook from "../animations/Macbook.json";
 
 const slidesData = [
-    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: Coding },
+    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: Coding1 },
     // Other slides data...
 ];
 
@@ -14,7 +16,7 @@ const Slide = ({content, link, username, img}) => (
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
         </div>
         <div className="slide-image">
-            <Lottie animationData={img} style={{ height: 400, width: 400 }} />
+            <Lottie animationData={img} style={{ height: 400, width: 400 }} loop autoplay />
         </div>
     </div>
 );
