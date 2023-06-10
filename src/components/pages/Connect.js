@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Lottie } from 'lottie-react';
-import Coding from ".../animations/Coding"
+import Lottie from 'lottie-react';
+import Coding from "../animations/Coding.json";
 
 const slidesData = [
-    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: "/animations/coding.json" },
+    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: Coding },
     // Other slides data...
 ];
 
@@ -18,8 +18,6 @@ const Slide = ({content, link, username, img}) => (
         </div>
     </div>
 );
-
-
 
 const Connect = () => {
     const [current, setCurrent] = useState(0);
@@ -46,6 +44,7 @@ const Connect = () => {
                 content={slide.content}
                 link={slide.link}
                 username={slide.username}
+                img={slide.img}
                 key={slide.id}
                 className={current === index ? 'active' : ''}/>
                 ))}
