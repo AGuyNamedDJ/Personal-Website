@@ -324,39 +324,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Connect */
-.connect-social {
-    width: 100vw;
-    height: 20vh;
+.page {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 10vh;
-}
-
-.connect-social h2 {
-    font-size: 3vw;
-    color: #333;
-    text-align: center;
-}
-
-.social-icon {
-    font-size: 5vw;
-    color: #333;
-    transition: color 0.5s;
-}
-
-.social-icon:hover {
-    color: #007bff;
-}
-
-.carousel-item {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+    flex-direction: column;
+  }
   
+  #titleSection {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #cec9c9;
+    font-size: 5.8vw;
+    font-weight: 250;
+    letter-spacing: -0.5vw;
+    padding: 2vh 2vw;
+    margin-top: 5.5vh;
+    margin-left: -5vw;
+  }
+  
+  /* font-size: 12vw;
+
+  letter-spacing: -0.5vw;
+  position: absolute;
+  color: #cec9c9;
+  top: 8vh;
+  left: 5vw; */
+
+.section {
+    background: grey;
+    padding: 5vh 5vw;
+    margin-top: 2vh;
+}
+  
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.slide.active {
+    display: block;
+  }
+  
+#socialSection {
+    height: 45vh;
+}
+
+#emailSection {
+    height: 25vh;
+}
+
+#scheduleSection {
+    height: 25vh;
+}
+
 /* Utilities Parameters */
 /* Error Page */
 #error-page {

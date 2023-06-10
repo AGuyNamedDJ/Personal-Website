@@ -1,52 +1,54 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const socials = [
-    { id: 1, icon: <faGithub />, link: 'https://github.com/DJRobertson95' },
-    { id: 2, icon: <faInstagram />, link: 'https://www.instagram.com/aguynameddj/' },
-    { id: 3, icon: <faLinkedinIn />, link: 'https://www.linkedin.com/in/dalronjrobertson/' },
-    { id: 4, icon: <faTwitter />, link: 'https://twitter.com/AGuyNamedDJ_' },
-    { id: 5, icon: <faYoutube />, link: 'https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w' },
-    { id: 6, icon: <faYoutube />, link: 'https://www.youtube.com/@AGNDJGaming' },
+const slidesData = [
+    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: 'https://assets7.lottiefiles.com/packages/lf20_jjsrh4we.json' },
+    // Other slides data...
 ];
+
+const Slide = ({content, link, username, img}) => (
+    <div className="slide">
+        <div className="slide-content">
+            <h2>{content}</h2>
+            <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
+        </div>
+        <img src={img} alt={content} className="slide-image" />
+    </div>
+);
+
 
 const Connect = () => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent((current + 1) % socials.length);
+            setCurrent((current + 1) % slidesData.length);
         }, 3000);
         return () => clearInterval(interval);
     }, [current]);
 
     return (
-        <div style={{ height: '40vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <h1>Social Media</h1>
-            <div className="carousel-container">
-                <a href="https://github.com/DJRobertson95" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-                <a href="https://www.instagram.com/aguynameddj/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
-                </a>
-                <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                </a>
-                <a href="https://twitter.com/AGuyNamedDJ_" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" />
-                </a>
-                <a href="https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
-                <a href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
-            </div>
+        <div className="page">
+          <div id="titleSection">
+            <h1>Connect</h1>
+          </div>
+          <div id="socialSection" className="section">
+            {slidesData.map((slide, index) => (
+              <Slide 
+                content={slide.content}
+                link={slide.link}
+                username={slide.username}
+                key={slide.id}
+                className={current === index ? 'active' : ''}
+              />
+            ))}
+          </div>
+          <div id="emailSection" className="section">
+            {/* email content goes here */}
+          </div>
+          <div id="scheduleSection" className="section">
+            {/* schedule content goes here */}
+          </div>
         </div>
-    );
-};
-
-
+      );
+    };
 export default Connect;
