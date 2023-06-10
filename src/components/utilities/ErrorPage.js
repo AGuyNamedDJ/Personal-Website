@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const ErrorPage = () => {
 
     return (
-        <div class="content">
+        <div className="content">
             <Navbar />
             <div id="error-page">
                 <img src="/images/peterg.webp" alt="peterg" id="error-page-image"/>

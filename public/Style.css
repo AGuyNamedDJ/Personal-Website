@@ -323,6 +323,39 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1vw;
 }
 
+/* Connect */
+.connect-social {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+
+.connect-social h2 {
+    font-size: 3vw;
+    color: #333;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 5vw;
+    color: #333;
+    transition: color 0.5s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.carousel-item {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
   
 /* Utilities Parameters */
 /* Error Page */
