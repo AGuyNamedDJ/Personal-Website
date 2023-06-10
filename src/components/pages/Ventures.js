@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 const Ventures = () => {
     const [imageIndex1, setImageIndex1] = useState(0);
     const [imageIndex2, setImageIndex2] = useState(0);
+    const [isLocked, setIsLocked] = useState(false);
+    const carouselRef = useRef(null);
 
     const images1 = [
         "/images/chi-Image/chi1.jpg",
