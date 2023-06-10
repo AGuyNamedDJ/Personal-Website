@@ -5,21 +5,30 @@ import Coding1 from "../animations/Coding1.json";
 import Macbook from "../animations/Macbook.json";
 
 const slidesData = [
-    { id: 1, content: 'GitHub', link: 'https://github.com/DJRobertson95', username: 'DJRobertson95', img: Coding1 },
-    // Other slides data...
+    { 
+      id: 1, 
+      content: 'GitHub', 
+      link: 'https://github.com/DJRobertson95', 
+      username: '@AGuyNamedDJ', 
+      description: 'A playground for code, where every line tells a story. An open canvas where innovation takes form, collaboration fuels progress, and ideas come to life.',
+      img: Coding1 
+    },
 ];
 
-const Slide = ({content, link, username, img}) => (
+const Slide = ({content, link, username, description, img}) => (
     <div className="slide">
-        <div className="slide-content">
+        <div className="slide-content" style={{ paddingRight: '5vw' }}>
             <h2>{content}</h2>
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
+            <p>{description}</p>
         </div>
         <div className="slide-image">
-            <Lottie animationData={img} style={{ height: 400, width: 400 }} loop autoplay />
+            <Lottie animationData={img} style={{ height: '40vh', width: '40vw' }} loop autoplay />
         </div>
     </div>
 );
+
+
 
 const Connect = () => {
     const [current, setCurrent] = useState(0);
@@ -46,6 +55,7 @@ const Connect = () => {
                 content={slide.content}
                 link={slide.link}
                 username={slide.username}
+                description={slide.description}
                 img={slide.img}
                 key={slide.id}
                 className={current === index ? 'active' : ''}/>

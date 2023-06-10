@@ -327,9 +327,9 @@ h1, h2, h3, h4, h5, h6 {
 .page {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  #titleSection {
+#titleSection {
     font-family: 'Josefin Sans', sans-serif;
     color: #cec9c9;
     font-size: 5.8vw;
@@ -338,32 +338,43 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2vh 2vw;
     margin-top: 5.5vh;
     margin-left: -5vw;
-  }
+}
   
-  /* font-size: 12vw;
-
-  letter-spacing: -0.5vw;
-  position: absolute;
-  color: #cec9c9;
-  top: 8vh;
-  left: 5vw; */
-
 .section {
-    background: grey;
-    padding: 5vh 5vw;
-    margin-top: 2vh;
+    background: #000;
+    padding: 6vh 6vw;
+    margin-top: 4vh;
 }
   
 .slide {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
   
 .slide.active {
     display: block;
-  }
-  
+}
+
+.slide-content h2 {
+    color: white;
+    font-size: 4vw;
+}
+
+.slide-content p {
+    color: white;
+    font-size: 2vw;
+    padding-top: 2vh;
+}
+
+.slide-content a {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold; 
+    padding-top: 2vw;
+}
+
 #socialSection {
     height: 45vh;
 }
