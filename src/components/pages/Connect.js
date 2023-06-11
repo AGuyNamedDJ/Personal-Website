@@ -227,16 +227,16 @@ const Connect = () => {
             </div>
 
             {/* Email */}
-            <div id="emailSection" className="section" style={{ height: '50vh' }}> {/* Adjust the height here */}
-                <div id="emailContentSection" style={{ width: '80vw', height: '80vh' }}>
-                    <div className="emailContentContainer" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <h2 style={{ fontSize: '5vw' }}>Contact Me</h2>
-                        <p style={{ fontSize: '3vw' }}>Fill out the form below to send me a message.</p>
-                        <form name="contact" method="POST" data-netlify="true" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <input type="text" id="contactNameInput" name="name" placeholder="Enter your name" required style={{ width: '80%', height: '5vh', marginBottom: '2vh' }} />
-                            <input type="email" id="contactEmailInput" name="email" placeholder="Enter your email address" required style={{ width: '80%', height: '5vh', marginBottom: '2vh' }} />
-                            <textarea id="contactMessageInput" name="message" placeholder="Enter your message" required style={{ width: '80%', height: '15vh', marginBottom: '2vh' }}></textarea>
-                            <button type="submit" style={{ width: '30%', height: '5vh' }}>Send Message</button>
+            <div id="emailSection" className="email-section">
+                <div id="emailContentSection" className="email-content-section">
+                    <div className="email-content-container">
+                        <h2 className="contact-me">Contact Me</h2>
+                        <p className="form-instructions">Fill out the form below to send me a message.</p>
+                        <form name="contact" method="POST" data-netlify="true" className="contact-form">
+                            <input type="text" id="contactNameInput" name="name" placeholder="Enter your name" required className="input-field"/>
+                            <input type="email" id="contactEmailInput" name="email" placeholder="Enter your email address" required className="input-field"/>
+                            <textarea id="contactMessageInput" name="message" placeholder="Enter your message" required className="message-field"></textarea>
+                            <button type="submit" className="submit-button">Send Message</button>
                         </form>
                     </div>
                 </div>
