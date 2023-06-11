@@ -7,7 +7,7 @@ import YouTube from 'react-youtube';
 const API_KEY = 'AIzaSyDVj3lrXsiU3hVjskSOC-kYlmVaJc6VjlM';
 const CHANNEL_ID = 'UCDUahDaIaCmrWOTA90Qr34Q';
 
-let slidesData = [
+let initialSlidesData = [
     { 
         id: 1, 
         content: 'GitHub', 
@@ -47,23 +47,47 @@ let slidesData = [
     },
 ];
 
-const Slide = ({content, link, username, description, img}) => (
-    <div className="slide">
-        <div className="slide-content" style={{ paddingRight: '5vw' }}>
-        <h2><span className="underline">{content}</span></h2>
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        overflow: 'hidden',
+        position: 'relative',
+        marginBottom: '2rem',
+    },
+    slide: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        opacity: 0,
+        transition: 'opacity 1s ease-in-out',
+    },
+    activeSlide: {
+        opacity: 1,
+        transition: 'opacity 1s ease-in-out',
+    }
+};
 
+
+// Slide component
+const Slide = ({content, link, username, description, img, active}) => (
+    <div className={`slide ${active ? 'active' : ''}`}> 
+        <div className="slide-content" style={{ paddingRight: '5vw' }}>
+            <h2><span className="underline">{content}</span></h2>
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
             <p>{description}</p>
-            
         </div>
         <div className="slide-image">
-            <Lottie animationData={img} style={{ height: '40vh', width: '40vw' }} loop autoplay />
+            {img && <Lottie animationData={img} style={{ height: '40vh', width: '40vw' }} loop autoplay />}
         </div>
     </div>
 );
 
-const YoutubeSlide = ({content, link, username, description, videoId}) => (
-    <div className="slide">
+// YoutubeSlide component
+const YoutubeSlide = ({content, link, username, description, videoId, active}) => (
+    <div className={`slide ${active ? 'active' : ''}`}> 
         <div className="slide-content" style={{ paddingRight: '5vw' }}>
             <h2><span className="underline">{content}</span></h2>
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
@@ -81,6 +105,7 @@ const YoutubeSlide = ({content, link, username, description, videoId}) => (
     </div>
 );
 
+
 async function getLatestYoutubeVideo() {
     try {
         const response = await axios.get(
@@ -97,30 +122,33 @@ async function getLatestYoutubeVideo() {
 
 const Connect = () => {
     const [current, setCurrent] = useState(0);
+    const [slidesData, setSlidesData] = useState(initialSlidesData);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((current + 1) % slidesData.length);
-        }, 3000);
-        
+        }, 5000);
+    
         getLatestYoutubeVideo().then(video => {
             if (video) {
                 setSlidesData(prevSlidesData => [
                     ...prevSlidesData,
                     {
                         id: prevSlidesData.length + 1,
-                        content: video.snippet.title,
+                        content: 'YouTube',  
                         link: `https://www.youtube.com/watch?v=${video.id.videoId}`,
-                        username: '@YourYoutubeUsername',
+                        username: video.snippet.channelTitle,
                         description: video.snippet.description,
-                        img: video.snippet.thumbnails.high.url
+                        img: null, 
+                        videoId: video.id.videoId  
                     }
                 ]);
             }
         });
+    
         return () => clearInterval(interval);
-    }, [current]);
-
+    }, [current, slidesData.length]); 
+   
     return (
         <div className="page">
 
@@ -136,7 +164,7 @@ const Connect = () => {
             </div>
 
             {/* Social Media */}
-            <div id="socialSection" className="section">
+            <div id="socialSection" className="section" style={styles.container}>
                 {slidesData.map((slide, index) => {
                     if (slide.content === 'YouTube') {
                         return <YoutubeSlide 
@@ -144,18 +172,18 @@ const Connect = () => {
                             link={slide.link}
                             username={slide.username}
                             description={slide.description}
-                            videoId={slide.videoId} // use videoId here
-                            key={slide.id}
-                            className={current === index ? 'active' : ''}/>;
+                            videoId={slide.videoId}
+                            active={current === index} // Set the 'active' class conditionally
+                            key={slide.id} />;
                     } else {
                         return <Slide 
-                            content={slide.content}
-                            link={slide.link}
-                            username={slide.username}
-                            description={slide.description}
-                            img={slide.img}
-                            key={slide.id}
-                            className={current === index ? 'active' : ''}/>;
+                        content={slide.content}
+                        link={slide.link}
+                        username={slide.username}
+                        description={slide.description}
+                        img={slide.img}
+                        active={current === index} // Set the 'active' class conditionally
+                        key={slide.id} />;
                     }
                 })}
             </div>

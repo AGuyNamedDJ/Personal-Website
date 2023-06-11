@@ -374,17 +374,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -1vw;
 }
 
-
 .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* background-color: grey; */
     color: #cec9c9; /* Grey */
 }
   
 .slide.active {
-    display: block;
+    /* display: flex; */
+    opacity: 1;
 }
 
 .slide-content h2 {
@@ -409,6 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 #socialSection {
     height: 40vh;
     padding-top: 0vw;
+    position: relative;
 }
 
 #emailSection {
