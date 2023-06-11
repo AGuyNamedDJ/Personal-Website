@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import Coding1 from "../animations/Coding1.json";
+import Gaming from "../animations/Gaming.json";
+import iPhone from "../animations/iPhone.json";
+import iPhone1 from "../animations/iPhone1.json";
+import Macbook2 from "../animations/Macbook2.json";
+import Youtube from "../animations/Youtube.json";
 import axios from 'axios';
 import YouTube from 'react-youtube';
-
-const API_KEY = 'AIzaSyDVj3lrXsiU3hVjskSOC-kYlmVaJc6VjlM';
-const CHANNEL_ID = 'UCDUahDaIaCmrWOTA90Qr34Q';
 
 let initialSlidesData = [
     { 
@@ -13,37 +15,48 @@ let initialSlidesData = [
         content: 'GitHub', 
         link: 'https://github.com/DJRobertson95', 
         username: '@AGuyNamedDJ', 
-        description: 'A playground for code, where every line tells a story. An open canvas where innovation takes form, collaboration fuels progress, and ideas come to life.',
+        description: 'My playground for code, where every line tells a story. An open canvas where innovation takes form, collaboration fuels progress, and ideas come to life.',
         img: Coding1 
     },
     {
         id: 2, 
         content: 'YouTube', 
-        link: 'https://www.youtube.com', 
-        username: 'AGNDJ Gaming', 
-        img: null, 
-        description: 'A realm of visual storytelling, where ideas are brought to life in motion. An eclectic collection of insights, adventures, and moments captured on film.'
+        link: 'https://www.youtube.com/@AGNDJ', 
+        username: 'A Guy Named DJ', 
+        description: 'Exploring digital frontiers, one game at a time. A destination for thrilling adventures, strategic battles, and unique narratives. Every video, a new world waiting to be discovered.',
+        img: Youtube
     },
     { 
         id: 3, 
         content: 'Instagram', 
         link: 'https://www.instagram.com/aguynameddj/', 
         username: '@AGuyNamedDJ', 
-        description: 'Instagram.'
+        description: 'My curated collection of life moments. Here, creativity bridges the gap between cultures and languages, showcasing the world through a different lens.',
+        img: iPhone
     },
     { 
         id: 4, 
         content: 'LinkedIn', 
         link: 'https://www.linkedin.com/in/dalronjrobertson/', 
-        username: 'DalronJRobertson', 
-        description: 'LinkedIn.'
+        username: 'Dalron J. Robertson', 
+        description: 'My professional journey articulated through achievements, experiences, and connections. A hub where insights meet aspirations, fostering growth and fostering collaborations.',
+        img: Macbook2
+    },
+    {
+        id: 5, 
+        content: 'YouTube', 
+        link: 'https://www.youtube.com/channel/UCDUahDaIaCmrWOTA90Qr34Q', 
+        username: 'AGNDJ Gaming', 
+        description: 'Exploring digital frontiers, one game at a time. A destination for thrilling adventures, strategic battles, and unique narratives. Every video, a new world waiting to be discovered.',
+        img: Gaming
     },
     { 
-        id: 5, 
+        id: 6, 
         content: 'Twitter', 
         link: 'https://twitter.com/AGuyNamedDJ_', 
         username: '@AGuyNamedDJ_', 
-        description: 'Twitter.'
+        description: 'My personal news ticker, a source of real-time insights, and a platform for engaging with a global audience. Where I share thoughts, track trends, and connect with influencers and innovators.',
+        img: iPhone1
     },
 ];
 
@@ -67,17 +80,27 @@ const styles = {
     activeSlide: {
         opacity: 1,
         transition: 'opacity 1s ease-in-out',
-    }
+    },
+    slideContent: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        paddingRight: '5vw',
+    },
+    slideDescription: {
+        textAlign: 'justify',
+        textJustify: 'inter-word',
+    },
 };
 
 
 // Slide component
 const Slide = ({content, link, username, description, img, active}) => (
     <div className={`slide ${active ? 'active' : ''}`}> 
-        <div className="slide-content" style={{ paddingRight: '5vw' }}>
+        <div className="slide-content" style={styles.slideContent}>
             <h2><span className="underline">{content}</span></h2>
             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
-            <p>{description}</p>
+            <p style={styles.slideDescription}>{description}</p>
         </div>
         <div className="slide-image">
             {img && <Lottie animationData={img} style={{ height: '40vh', width: '40vw' }} loop autoplay />}
@@ -85,40 +108,43 @@ const Slide = ({content, link, username, description, img, active}) => (
     </div>
 );
 
-// YoutubeSlide component
-const YoutubeSlide = ({content, link, username, description, videoId, active}) => (
-    <div className={`slide ${active ? 'active' : ''}`}> 
-        <div className="slide-content" style={{ paddingRight: '5vw' }}>
-            <h2><span className="underline">{content}</span></h2>
-            <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
-            <p>{description}</p>
-        </div>
-        <div className="slide-image">
-            <YouTube videoId={videoId} opts={{
-                height: '40vh',
-                width: '40vw',
-                playerVars: {
-                    autoplay: 1,
-                },
-            }} />
-        </div>
-    </div>
-);
+// // YoutubeSlide component
+// const YoutubeSlide = ({content, link, username, description, videoId, active}) => (
+//     <div className={`slide ${active ? 'active' : ''}`} style={styles.slide}> 
+//         <div className="slide-content" style={{ paddingRight: '5vw' }}>
+//             <h2><span className="underline">{content}</span></h2>
+//             <a href={link} target="_blank" rel="noopener noreferrer">{username}</a>
+//             <p>{description}</p>
+//         </div>
+//         <div className="slide-image">
+//             <YouTube videoId={videoId} opts={{
+//                 height: '40vh',
+//                 width: '40vw',
+//                 playerVars: {
+//                     autoplay: 1,
+//                     mute: 1, // mute the video
+//                 },
+//             }} style={{opacity: 1}} /> {/* set opacity to 1 */}
+//         </div>
+//     </div>
+// );
 
 
-async function getLatestYoutubeVideo() {
-    try {
-        const response = await axios.get(
-            `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDVj3lrXsiU3hVjskSOC-kYlmVaJc6VjlM&channelId=UCDUahDaIaCmrWOTA90Qr34Q&part=snippet,id&order=date&maxResults=1`
-        );
-        if (response.data.items.length > 0) {
-            return response.data.items[0];
-        }
-    } catch (error) {
-        console.error(error);
-    }
-    return null;
-}
+// async function getLatestYoutubeVideo() {
+//     try {
+//         const response = await axios.get(
+//             `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=1`
+//         );
+//         if (response.data.items.length > 0) {
+//             console.log(response.data.items[0]);
+//             return response.data.items[0];
+//         }
+//     } catch (error) {
+//         console.error(error);
+//     }
+//     return null;
+// }
+
 
 const Connect = () => {
     const [current, setCurrent] = useState(0);
@@ -129,22 +155,23 @@ const Connect = () => {
             setCurrent((current + 1) % slidesData.length);
         }, 5000);
     
-        getLatestYoutubeVideo().then(video => {
-            if (video) {
-                setSlidesData(prevSlidesData => [
-                    ...prevSlidesData,
-                    {
-                        id: prevSlidesData.length + 1,
-                        content: 'YouTube',  
-                        link: `https://www.youtube.com/watch?v=${video.id.videoId}`,
-                        username: video.snippet.channelTitle,
-                        description: video.snippet.description,
-                        img: null, 
-                        videoId: video.id.videoId  
-                    }
-                ]);
-            }
-        });
+    
+        // getLatestYoutubeVideo().then(video => {
+        //     if (video) {
+        //         setSlidesData(prevSlidesData => [
+        //             ...prevSlidesData,
+        //             {
+        //                 id: prevSlidesData.length + 1,
+        //                 content: 'YouTube',  
+        //                 link: `https://www.youtube.com/watch?v=${video.id.videoId}`,
+        //                 username: video.snippet.channelTitle,
+        //                 description: video.snippet.description,
+        //                 img: null, 
+        //                 videoId: video.id.videoId  
+        //             }
+        //         ]);
+        //     }
+        // });
     
         return () => clearInterval(interval);
     }, [current, slidesData.length]); 
@@ -165,27 +192,16 @@ const Connect = () => {
 
             {/* Social Media */}
             <div id="socialSection" className="section" style={styles.container}>
-                {slidesData.map((slide, index) => {
-                    if (slide.content === 'YouTube') {
-                        return <YoutubeSlide 
-                            content={slide.content}
-                            link={slide.link}
-                            username={slide.username}
-                            description={slide.description}
-                            videoId={slide.videoId}
-                            active={current === index} // Set the 'active' class conditionally
-                            key={slide.id} />;
-                    } else {
-                        return <Slide 
-                        content={slide.content}
-                        link={slide.link}
-                        username={slide.username}
-                        description={slide.description}
-                        img={slide.img}
-                        active={current === index} // Set the 'active' class conditionally
-                        key={slide.id} />;
-                    }
-                })}
+                {slidesData.map((slide, index) => (
+                    <Slide 
+                    content={slide.content}
+                    link={slide.link}
+                    username={slide.username}
+                    description={slide.description}
+                    img={slide.img}
+                    active={current === index} // Set the 'active' class conditionally
+                    key={slide.id} />
+                ))}
             </div>
 
             {/* Schedule Meeting */}
