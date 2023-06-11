@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 .section {
-    background: grey;
+    background: #000;
     padding: 6vh 6vw;
     margin-top: 0vh;
     color: #cec9c9; /* Grey */
