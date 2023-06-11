@@ -434,6 +434,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1vw;
 }
 
+.learn-more-3 {
+    text-decoration: none;
+    font-size: 0.5vw;
+    color: #C2B19C; /* Brown */
+    border-bottom: 0.25vw solid #C2B19C;
+    padding-bottom: 0.75vw;
+    padding-right: 0vw;
+    margin-left: 0.5vw;
+    letter-spacing: 0.25vw;
+}
+
 
 /* Utilities Parameters */
 /* Error Page */
@@ -443,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: white;
+    color: #cec9c9; /* Grey */
     background-color: black;
     padding: 12vw;
 }

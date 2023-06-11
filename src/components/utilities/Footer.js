@@ -14,7 +14,7 @@ const Footer = () => {
             <Link to="/privacy">Privacy & Legal</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/faq">FAQ</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/connect">Contact</Link>
         </div>
         <div id="footer-right">
             <button onClick={() => window.scrollTo(0, 0)}>

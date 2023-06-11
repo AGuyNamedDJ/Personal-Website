@@ -11,8 +11,11 @@ import ErrorPage from "./components/utilities/ErrorPage";
 import About from "./components/pages/About";
 import Business from "./components/pages/Business";
 import Connect from "./components/pages/Connect";
+import Credentials from "./components/pages/Credentials";
 import HomePage from "./components/pages/HomePage";
+import Projects from "./components/pages/Projects";
 import RealEstate from "./components/pages/RealEstate";
+import Resume from "./components/pages/Resume";
 import Ventures from "./components/pages/Ventures";
 
 // Browser Router
@@ -33,6 +36,18 @@ const router = createBrowserRouter([
             {
                 path: "/connect",
                 element: <Connect />
+            },
+            {
+                path: "/credentials",
+                element: <Credentials />
+            },
+            {
+                path: "/credentials/resume",
+                element: <Resume />
+            },
+            {
+                path: "/projects",
+                element: <Projects />
             },
             {
                 path: "/ventures",
