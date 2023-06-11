@@ -373,9 +373,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 1.5vw; 
     background: #C2B19C; 
     border-radius: 50%;  
-    top: 3.2vh; 
-    left: 26.5vw;  
-    transform: translateY(-50%);
+    top: 3.5vh; 
+    left: 27.5vw;  
+    transform: translate(-50%, -50%);
 }
 
 .underline {
