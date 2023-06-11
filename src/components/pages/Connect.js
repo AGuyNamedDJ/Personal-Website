@@ -202,7 +202,6 @@ const Connect = () => {
                 </div>
             </div>
 
-
             {/* Social Media */}
             <div id="socialSection" className="section" style={styles.container}>
                 {slidesData.map((slide, index) => (
@@ -227,10 +226,20 @@ const Connect = () => {
                 ></div>
             </div>
 
-
             {/* Email */}
-            <div id="emailSection" className="section">
-                {/* email content goes here */}
+            <div id="scheduleSection" className="section">
+                <div id="emailSection">
+                    <div class="email-container">
+                        <h2>Contact Me</h2>
+                        <p>Fill out the form below to send me a message.</p>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="text" id="nameInput" name="name" placeholder="Enter your name" required />
+                            <input type="email" id="emailInput" name="email" placeholder="Enter your email address" required />
+                            <textarea id="messageInput" name="message" placeholder="Enter your message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );
