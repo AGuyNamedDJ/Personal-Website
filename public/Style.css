@@ -345,9 +345,9 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 .section {
-    background: #000;
+    background: grey;
     padding: 6vh 6vw;
-    margin-top: -2vh;
+    margin-top: 0vh;
     color: #cec9c9; /* Grey */
 }
 
@@ -361,6 +361,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #cec9c9; /* Grey */
 }
 
+.social-media-title {
+    position: relative;
+}
+
+
 .social-media-title::after {
     content: "";
     position: absolute;  
@@ -368,8 +373,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 1.5vw; 
     background: #C2B19C; 
     border-radius: 50%;  
-    top: 80%; 
-    left: 34.5vw;  
+    top: 82%; 
+    left: 26.5vw;  
     transform: translateY(-50%);
 }
 
@@ -401,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5vw;
+    padding: 0vw 6vw;
 }
   
 .slide.active {
