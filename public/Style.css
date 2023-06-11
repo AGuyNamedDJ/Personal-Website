@@ -483,6 +483,58 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.25vw;
 }
 
+#scheduleSection {
+    padding: 3vw;
+    text-align: center;
+}
+
+#scheduleSection h2 {
+    text-align: center;
+}
+
+
+.schedule-title {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.schedule-content {
+    font-size: 1.5vw;
+}
+
+.schedule-content button {
+    background-color: #C2B19C;
+    color: #000;
+    border: none;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-content button:hover {
+    background-color: #a09283;
+}
+
+.underline-calendly {
+    text-align: center;
+    font-size: 4.5vw;
+    position: relative; 
+}
+
+.underline-calendly::after {
+    content: ""; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 0;
+    width: 50%;
+    border-bottom: 0.25vw solid #C2B19C;
+    padding-bottom: 0.5vw;
+}
+
+
 
 /* Utilities Parameters */
 /* Error Page */

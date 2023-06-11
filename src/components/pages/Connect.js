@@ -4,6 +4,7 @@ import Coding1 from "../animations/Coding1.json";
 import Gaming from "../animations/Gaming.json";
 import iPhone from "../animations/iPhone.json";
 import iPhone1 from "../animations/iPhone1.json";
+import { InlineWidget } from 'react-calendly';
 import Macbook2 from "../animations/Macbook2.json";
 import Youtube from "../animations/Youtube.json";
 import axios from 'axios';
@@ -175,6 +176,17 @@ const Connect = () => {
     
         return () => clearInterval(interval);
     }, [current, slidesData.length]); 
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        }
+    }, []);
    
     return (
         <div className="page">
@@ -207,8 +219,14 @@ const Connect = () => {
 
             {/* Schedule Meeting */}
             <div id="scheduleSection" className="section">
-                {/* schedule content goes here */}
+                <h2 className="underline-calendly" style={{ textAlign: 'center' }}>Schedule a Meeting</h2>
+                <div
+                    className="calendly-inline-widget"
+                    data-url="https://calendly.com/dalronjrobertson?background_color=000000&text_color=cec9c9&primary_color=c2b19c"
+                    style={{ minWidth: '50vw', height: '50vh' }} // adjust these values as needed
+                ></div>
             </div>
+
 
             {/* Email */}
             <div id="emailSection" className="section">
