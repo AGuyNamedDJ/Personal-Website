@@ -217,7 +217,7 @@ const Connect = () => {
             </div>
 
             {/* Schedule Meeting */}
-            <div id="scheduleSection" className="section">
+            <div id="meetingSection" className="section" style={{ height: '50vh' }}> {/* Adjust the height here */}
                 <h2 className="underline-calendly" style={{ textAlign: 'center' }}>Schedule a Meeting</h2>
                 <div
                     className="calendly-inline-widget"
@@ -227,16 +227,16 @@ const Connect = () => {
             </div>
 
             {/* Email */}
-            <div id="scheduleSection" className="section">
-                <div id="emailSection">
-                    <div class="email-container">
-                        <h2>Contact Me</h2>
-                        <p>Fill out the form below to send me a message.</p>
-                        <form name="contact" method="POST" data-netlify="true">
-                            <input type="text" id="nameInput" name="name" placeholder="Enter your name" required />
-                            <input type="email" id="emailInput" name="email" placeholder="Enter your email address" required />
-                            <textarea id="messageInput" name="message" placeholder="Enter your message" required></textarea>
-                            <button type="submit">Send Message</button>
+            <div id="emailSection" className="section" style={{ height: '50vh' }}> {/* Adjust the height here */}
+                <div id="emailContentSection" style={{ width: '80vw', height: '80vh' }}>
+                    <div className="emailContentContainer" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                        <h2 style={{ fontSize: '5vw' }}>Contact Me</h2>
+                        <p style={{ fontSize: '3vw' }}>Fill out the form below to send me a message.</p>
+                        <form name="contact" method="POST" data-netlify="true" style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <input type="text" id="contactNameInput" name="name" placeholder="Enter your name" required style={{ width: '80%', height: '5vh', marginBottom: '2vh' }} />
+                            <input type="email" id="contactEmailInput" name="email" placeholder="Enter your email address" required style={{ width: '80%', height: '5vh', marginBottom: '2vh' }} />
+                            <textarea id="contactMessageInput" name="message" placeholder="Enter your message" required style={{ width: '80%', height: '15vh', marginBottom: '2vh' }}></textarea>
+                            <button type="submit" style={{ width: '30%', height: '5vh' }}>Send Message</button>
                         </form>
                     </div>
                 </div>
