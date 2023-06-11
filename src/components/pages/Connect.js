@@ -185,10 +185,11 @@ const Connect = () => {
             </div>
 
             <div id="social-title">
-                <div className="underline">
-                    <h2>Social Media</h2>
-                </div>
-            </div>
+    <div className="underline social-media-title">
+        <h2>Social Media</h2>
+    </div>
+</div>
+
 
             {/* Social Media */}
             <div id="socialSection" className="section" style={styles.container}>
