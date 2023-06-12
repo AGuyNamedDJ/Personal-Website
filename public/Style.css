@@ -247,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     perspective: 100vw;
     position: relative;
     background-color: #C2B19C;
+    background: linear-gradient(to right, #ffffff, #e1e1e1);
 }
 
 article {
@@ -261,19 +262,33 @@ article {
     background: #dacebf;
     border-radius: 1vw;
     box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.2);
+    column-count: 2;
+    column-gap: 3vh;
+    column-rule: 0.5vh solid #cfbbbb;
 }
 
 article h2 {
     margin-bottom: 1vh;
-    color: #daa25e;
-    font-size: 5.5vw;  
+    color: #4f310c;
+    font-size: 5.2vw;  
 }
 
 article p {
-    font-size: 3vw;  /
+    font-size: 2vw;  
     text-align: justify;
-    color: #daa25e;
+    color: #4f310c;
 }
+
+.bookFooter {
+    position: absolute;
+    bottom: 2vh;
+    right: 50%;
+    transform: translateX(50%);
+    color: #4f310c;
+    font-size: 2vw;
+}
+
+
 
 
 /* Ventures */
