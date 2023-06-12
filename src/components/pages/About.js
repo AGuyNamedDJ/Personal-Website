@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return(
@@ -26,14 +27,9 @@ const About = () => {
                     </div>
             </div>
 
-                {/* Story Section */}
+            {/* Story Section */}
             <div id="storySection" className="section-about">
-                // Content here...
-            </div>
-
-            {/* Sabbatical Section */}
-            <div id="sabbaticalSection" className="section-about">
-                // Content here...
+                <Link to="/about/mystory">- Read My Story -</Link>
             </div>
 
             {/* Creation Section */}
