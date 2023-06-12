@@ -277,6 +277,16 @@ article p {
     font-size: 2vw;  
     text-align: justify;
     color: #4f310c;
+    text-indent: 3.5vw;
+}
+
+.bookTitle {
+    position: absolute;
+    top: 1.25vh; 
+    right: 4.5vw; 
+    font-size: 1.8vw; 
+    font-style: italic;
+    color: #4f310c; 
 }
 
 .bookFooter {

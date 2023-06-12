@@ -39,34 +39,38 @@ const MyStory = () => {
                         pageBackground="#fff"
                     >
                     <article>
+                        <div className="bookTitle">Example Name</div>
                         <h2>The Beginnings</h2>
                         <div>
+                            <br></br>
                             <p>I can't even blieevis happeniamus in interor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsuerdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consit amet. </p>
-                            <p>I can't even blieevis happeniamus in interor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsuerdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipisamet. </p>
-                            <p>I can't even blieevis happeniamus in interor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsuerdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, um dolor sit ame amet. </p>
+                            <br></br>
+                            <p>I can't even blieevis happeniamit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsuerdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipisamet. </p>
+                            <br></br>
+                            <p>I can'etur adipiscimus in interdum ipsum, sit amet. Lorem imet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsuerdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in interdum ipsum, um dolor sit ame amet. </p>
                         </div>
-                        <div class="bookFooter">Page 1</div>
+                        <div className="bookFooter">Page 1</div>
                     </article>
                     <article>
                         <h2>Something's Off</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
                         </div>
-                        <div class="bookFooter">Page 2</div>
+                        <div className="bookFooter">Page 2</div>
                     </article>
                     <article>
                         <h2>The Sabbatical</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
                         </div>
-                        <div class="bookFooter">Page 3</div>
+                        <div className="bookFooter">Page 3</div>
                     </article>
                     <article>
                         <h2>The Future</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
                         </div>
-                        <div class="bookFooter">Page 4</div>
+                        <div className="bookFooter">Page 4</div>
                     </article>
                     </FlipPage>
                 </div>
