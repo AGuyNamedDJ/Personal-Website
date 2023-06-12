@@ -377,10 +377,11 @@ h2 {
     margin-top: 2vw;
 }
 
-.resumeButton {
+.resumeButton, .cvButton, .certificationButton, .notorietyButton {
     padding: 1vw 2vw;
     background-color: #000;
-    color: #fff;
+    color: #cec9c9;
+    opacity: 77%;
     text-decoration: none;
     text-align: center;
     border-radius: 1vw;
@@ -389,7 +390,6 @@ h2 {
 .resumeButton:hover {
     background-color: #C2B19C;
 }
-
 
 
 /* Connect */
