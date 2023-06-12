@@ -583,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
   
 #contactNameInput,
 #contactEmailInput {
-    width: 50%;
+    width: 70%;
     height: 3vh;
     padding: 0.5vh;
     margin-bottom: 2vh;
@@ -593,8 +593,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contactMessageInput {
-    width: 50%;
-    height: 13vh;
+    width: 70%;
+    height: 15vh;
     padding: 0.5vh;
     margin-bottom: 2vh;
     border: none;
