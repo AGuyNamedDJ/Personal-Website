@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-bottom: 4vh;
+    margin-bottom: 8vh;
     padding: 2vh 5vw;
     text-align: center;
 }
@@ -226,6 +226,54 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1vw;
 }
 
+/* My Story */
+.my-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 8vh;
+    right: 20vh;
+    width: 100vw;
+    height: 80vh;
+    background: #000;
+    /* padding: 5vh 0; */
+}
+
+.book {
+    width: 60vw;  
+    height: 75vh; 
+    margin-right: 28vh;
+    perspective: 100vw;
+    position: relative;
+    background-color: #C2B19C;
+}
+
+article {
+    width: 100%;  
+    height: 100%; 
+    position: absolute;
+    will-change: transform;
+    color: #cec9c9;
+    overflow: scroll;
+    padding: 4.5vw;
+    box-sizing: border-box;
+    background: #dacebf;
+    border-radius: 1vw;
+    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    margin-bottom: 1vh;
+    color: #daa25e;
+    font-size: 5.5vw;  
+}
+
+article p {
+    font-size: 3vw;  /
+    text-align: justify;
+    color: #daa25e;
+}
 
 
 /* Ventures */
