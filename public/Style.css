@@ -103,9 +103,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     /* border: 1px solid #ccc; */
     border-radius: 1vw;
-    padding: 2vw;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
 }
 
 #about-text {
@@ -139,6 +136,57 @@ h1, h2, h3, h4, h5, h6 {
     color: #C2B19C;
     letter-spacing: 1vw;
 }
+
+#creationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 2vh 5vw;
+    text-align: center;
+}
+
+#creation-title {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+#creation-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#creation-text-left, #creation-text-right {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    width: 30%;
+}
+
+#creationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% + 2*2vw);  /* Add twice the absolute value of negative margin to the width */
+    height: auto;
+    padding: 2vh 1vw;
+    text-align: center;
+    margin-left: -2vw;  /* Negative margin value */
+    margin-right: 2vw;  /* Negative margin value */
+}
+
+#creation-animation {
+    width: auto;
+    height: 20vh;
+    align-self: flex-start;
+}
+
 
 /* Ventures */
 .ventures {
