@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 .ventures-2-text {
-    flex: 1 1 50%; /* change this */
+    flex: 1 1 50%; 
     padding-right: 2vw;
     text-align: justify;
     text-justify: inter-word;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ventures-2-image {
-    flex: 1 1 50%; /* change this */
+    flex: 1 1 50%; 
 }
   
 .ventures-2-image img {
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   
 .ventures-4-middle,
 .ventures-4-right {
-    overflow: hidden; /* add this line */
+    overflow: hidden; 
     flex-basis: 40%; 
     height: 80vh; 
     padding: 2vw;
@@ -326,6 +326,72 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1vw;
 }
 
+/* Crendentials */
+#credentialsPage {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#titleSection-credentials {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #cec9c9;
+    font-size: 5.8vw;
+    font-weight: 250;
+    letter-spacing: -0.5vw;
+    padding: 2vh 2vw;
+    margin-top: 4.4vh;
+    margin-left: 0;
+}
+
+#titleSection-credentials h1 {
+    font-size: 10vh;
+    margin-left: -7vw;
+}
+
+
+.section-credentials {
+    width: 80vw;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+    padding: 2vw;
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+h2 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.resumeButton {
+    padding: 1vw 2vw;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.resumeButton:hover {
+    background-color: #C2B19C;
+}
+
+
+
 /* Connect */
 .page {
     display: flex;
@@ -354,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 #social-title {
     display: flex;
     justify-content: center;
-    font-size: 3vw; /* adjust size as necessary */
+    font-size: 3vw; 
     align-items: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -644,24 +710,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::placeholder {
-    font-size: 1.6vw; /* your desired size */
+    font-size: 1.6vw; 
 }
 
 #contactNameInput::placeholder {
-    font-size: 1.6vw; /* your desired size */
+    font-size: 1.6vw; 
 }
 
 #contactEmailInput::placeholder {
-    font-size: 1.6vw; /* your desired size */
+    font-size: 1.6vw; 
 }
 
 #contactMessageInput::placeholder {
-    font-size: 1.6vw; /* your desired size */
+    font-size: 1.6vw; 
 }
 
 .form-instructions {
     font-size: 2vw;
     padding-bottom: .8vh;
+    opacity: 77%;
 }
 
 .contact-form {
@@ -693,7 +760,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
   
-
 /* Utilities Parameters */
 /* Error Page */
 #error-page {
@@ -730,7 +796,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 1.6vw;
     z-index: 1;
-    padding: 0;  /* Change here */
+    padding: 0; 
     right: -4.5vw;
     top: 0vw;
 }
