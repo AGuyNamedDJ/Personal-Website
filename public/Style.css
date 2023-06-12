@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'San Francisco', sans-serif;
+    font-family: 'Playfair', serif;
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4vh;
     padding: 10vh 3vw 2vh;  
     flex: 1 0 auto;
-    margin-top: 15vh; /* change this after content is added */
+    margin-top: 15vh; 
 }
 
 #homepage-2 {
@@ -88,24 +88,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #titleSection-template {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair', serif;
     color: #cec9c9;
-    font-size: 6vw;  /* Adjust to your preference */
+    font-size: 4.4vw; 
     font-weight: 250;
-    letter-spacing: -0.5vw;
+    letter-spacing: -0.2vw;
     padding: 2vh 2vw;
     margin-top: 5.5vh;
     margin-left: -5vw;
 }
 
 .section-about {
-    background: #000;
-    padding: 1vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #ccc; */
+    border-radius: 1vw;
+    padding: 2vw;
+    margin-bottom: 2vh;
     margin-top: 2vh;
-    color: #cec9c9;
-    background-color: #000;
 }
 
+#about-text {
+    width: 50%;
+    padding: 1vw;
+    opacity: 77%;
+}
+
+#about-image {
+    width: 50%;
+    height: 50vh;
+    object-fit: cover;
+    margin-left: 4vw;
+    border-radius: 1vw;
+}
+
+#indented-paragraph {
+    text-indent: 2vw;
+}
 
 /* Ventures */
 .ventures {
@@ -468,7 +487,7 @@ h2 {
     background: #C2B19C; 
     border-radius: 50%;  
     top: 82%; 
-    left: 26.5vw;  
+    left: 24.5vw;  
     transform: translateY(-50%);
 }
 
