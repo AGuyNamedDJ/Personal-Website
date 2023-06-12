@@ -2,8 +2,11 @@ import React from "react";
 
 const Projects = () => {
     return(
-        <div>
-            <p>Here is your Projects</p>
+        <div id="projectsPage" className="page">
+            {/* Page Title */}
+            <div id="titleSection-template">
+                <h1>Projects</h1>
+            </div>
         </div>
     )
 };

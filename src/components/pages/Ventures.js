@@ -62,10 +62,10 @@ const Ventures = () => {
     }, []);
 
     return(
-        <div className="ventures">
+        <div id="ventures" ClassName="page">
             {/* Block 1 */}
-            <div id="ventures-1">
-                <p className ="ventures-1-title">Ventures</p>
+            <div id="titleSection-template">
+                <h1>Ventures</h1>
             </div>
 
             {/* Block 2 */}

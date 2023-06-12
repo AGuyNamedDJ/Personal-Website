@@ -192,7 +192,7 @@ const Connect = () => {
         <div className="page">
 
             {/* Title */}
-            <div id="titleSection">
+            <div id="titleSection-template">
                 <h1>Connect</h1>
             </div>
 
