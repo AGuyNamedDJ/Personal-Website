@@ -345,9 +345,10 @@ h1, h2, h3, h4, h5, h6 {
   
 .section {
     background: #000;
-    padding: 4vh 4vw;
+    padding: 1vh 1vw;
     margin-top: 0vh;
     color: #cec9c9; /* Grey */
+    background-color: #000;
 }
 
 #social-title {
@@ -391,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slide {
     position: absolute;
-    top: 0;
+    top: 45%;
     left: 0;
     width: 100%;
     opacity: 0;
@@ -405,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     padding: 0vw 6vw;
+    transform: translateY(-50%);
 }
   
 .slide.active {
@@ -416,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1vw;
+    margin-top: -2vh;
 }
 
 .slide-content h2 {
@@ -442,7 +444,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #socialSection {
-    height: 40vh;
+    height: 35vh;
+    background-color: #000;
+    /* margin-top: 1vh; */
     padding-top: 0vw;
     position: relative;
 }
