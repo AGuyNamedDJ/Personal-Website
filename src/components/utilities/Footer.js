@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div id="footer">
         <div id="footer-left">
-            <Link to="/contact">
+            <Link to="/connect#emailSection">
                 <img src="/images/message-icon.png" alt="description of image" />
             </Link>
         </div>
         <div id="footer-center">
-            <Link to="/about">Dalron J. Robertson © 2023</Link>
+            <Link to="/">Dalron J. Robertson © 2023</Link>
             <Link to="/privacy">Privacy & Legal</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/faq">FAQ</Link>
