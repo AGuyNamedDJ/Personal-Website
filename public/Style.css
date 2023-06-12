@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-bottom: 4vh;
     padding: 2vh 5vw;
     text-align: center;
 }
