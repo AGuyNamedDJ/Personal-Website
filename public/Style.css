@@ -175,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: calc(100% + 2*2vw);  /* Add twice the absolute value of negative margin to the width */
     height: auto;
+    opacity: 77%;
     padding: 2vh 1vw;
     text-align: center;
     margin-left: -2vw;  /* Negative margin value */
@@ -186,6 +187,44 @@ h1, h2, h3, h4, h5, h6 {
     height: 20vh;
     align-self: flex-start;
 }
+
+#personalInterestsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+#personalInterestsSection h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+#personalInterestsSection p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    width: 80%;
+    opacity: 77%;
+    margin-bottom: 2vh;
+}
+
+#slideshow {
+    width: 60%;
+    height: auto;
+}
+
+#slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
 
 
 /* Ventures */

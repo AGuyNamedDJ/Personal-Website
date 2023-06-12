@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import Mac1 from "../animations/Mac1.json";
@@ -13,7 +13,51 @@ const defaultOptions = {
     }
 };
 
+// Placeholders for image sources
+const imgSources = [
+    '/images/Chi2/Img1.jpeg', '/images/Chi2/Img2.JPG',
+    '/images/Chi2/Img3.jpg','/images/Chi2/Img4.jpeg',
+    '/images/Chi2/Img5.JPG','/images/Chi2/Img6.jpg',
+    '/images/Chi2/Img7.jpeg','/images/Chi2/Img8.jpg',
+    '/images/Chi2/Img9.jpeg','/images/Chi2/Img10.jpg',
+    '/images/Chi2/Img11.JPG','/images/Chi2/Img12.jpeg',
+    '/images/Chi2/Img13.jpeg','/images/Chi2/Img14.jpeg',
+    '/images/Chi2/Img15.jpg','/images/Chi2/Img16.JPG',
+    '/images/Chi2/Img17.jpeg','/images/Chi2/Img18.jpeg',
+    '/images/Chi2/Img19.jpeg','/images/Chi2/Img20.jpeg'
+]; 
+
+// Shuffle Images
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
 const About = () => {
+    // useState and useEffect for controlling the slideshow
+    const [shuffledImages, setShuffledImages] = useState(shuffle([...imgSources]));
+    const [currentImg, setCurrentImg] = React.useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImg((currentImg + 1) % shuffledImages.length);
+        }, 3000); // change image every 3 seconds
+        return () => clearInterval(timer);
+    }, [currentImg, shuffledImages]);
+
     return(
         <div id="aboutPage" className="page">
             {/* Page Title */}
@@ -63,10 +107,13 @@ const About = () => {
 
             {/* Personal Interests Section */}
             <div id="personalInterestsSection" className="section-about">
-                // Content here...
+                <h2>Personal Interests</h2>
+                <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
+                <div id="slideshow">
+                    <img src={shuffledImages[currentImg]} alt="Slideshow" />
+                </div>
             </div>
         </div>
     )
 };
-
 export default About;
