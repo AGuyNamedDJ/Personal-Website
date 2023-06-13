@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 8vh;
-    /* right: 20vh; */
+    right: auto;
     width: 100vw;
     height: 80vh;
     background: #000;
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 .book {
     width: 60vw;  
     height: 75vh; 
-    margin-right: 28vh;
+    margin: auto;
     perspective: 100vw;
     position: relative;
     background-color: #C2B19C;
