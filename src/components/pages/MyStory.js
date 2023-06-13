@@ -104,13 +104,13 @@ const MyStory = () => {
                         <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Future</h2>
                         <div>
-                            <p>Lorem ipsum dolor sit amet...</p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                            <p>"From Here to Eternity" - This is where the story of our past folds into the promise of tomorrow, where the narrative thread weaves onward into the future. A future not merely dreamt of, but one meticulously crafted in a divine design."</p>
+                            <p>I look ahead with a zeal in my spirit, burning like a beacon guiding my every step. I see a future where I stand resolute as the man God sees me to be, a leader, a trailblazer, a creator, a visionary. A man who bends the laws of normative understanding, transcending boundaries, making the seemingly impossible a reality. As a software engineer, I continue to evolve, to unravel the codes that construct our digital world. In tandem, my journey in the derivatives market goes on, as I learn to dance with the rhythmic fluctuations of economic currents further gaining wisdom.</p>
+                            <p>Yet, a new call echoes in my spirit, like the low rumble of thunder on a distant horizon. God speaks to me about new territories - entrepreneurship and real estate, new lands to conquer, new dreams to manifest. I have an ardent vision of creating a safe haven, a platform where aspiring entrepreneurs can breathe life into their dreams. A space marked by quality, stability, and innovation.</p>
+                            <p>Chicago's skyline - my next canvas. My plan: to acquire multi-family properties within this vibrant city. A low hands-on venture to begin, to allow my work in software engineering to continue unfettered. But make no mistake, my transition away from this field will only be dictated by the voice of God.  For now, my instructions call for an even deeper commitment to this field of work.</p>
+                            <p>However, amid all these ventures and aspirations, the most enthralling prospect awaits - the arrival of my partner, my soulmate, my wife. A chapter of life that holds more promise than any business venture could. To share this magnificent journey, to weave our tales together in a tapestry uniquely ours. To create our family, a living testament to our shared dreams and faith.</p>
+                            <p>In this narrative of the future, every line is laced with a powerful truth: If you dare to dream it, you have the capacity to bring it into fruition. The grandeur of our dreams is simply a mirror to the greatness that lies within us.</p>
+                            <p>And so, as I stand on the brink of tomorrow, I am filled with anticipation and excitement, ready to embrace the blessings and challenges that await. Yet, I know that this is merely the beginning. The journey continues, for the path is eternal, and the future unwritten.</p>
                         </div>
                         <div className="bookFooter">Page 5</div>
                     </article>
