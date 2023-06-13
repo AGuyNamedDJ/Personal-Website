@@ -7,6 +7,39 @@ const Projects = () => {
             <div id="titleSection-template">
                 <h1>Projects</h1>
             </div>
+
+            {/* Coding Section */}
+            <div id="CodingSection">
+                <h1>Coding</h1>
+                <div className="buttonContainer">
+                    <a>
+                        sdfgfff
+                    </a>
+                </div>
+            </div>
+
+            {/* Derivatives Section */}
+            <div id="DerivativesSection">
+                <h1>Derivatives</h1>
+                <div className="buttonContainer">
+                    <a>
+                        sdfgfff
+                    </a>
+                </div>
+            </div>
+
+            {/* Writings Section */}
+            <div id="WritingsSection">
+                <h1>Writings</h1>
+                <div className="buttonContainer">
+                    <a>
+                        sdfgfff
+                    </a>
+                </div>
+            </div>
+
+
+
         </div>
     )
 };

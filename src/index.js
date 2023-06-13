@@ -9,15 +9,18 @@ import ErrorPage from "./components/utilities/ErrorPage";
 
 // Imports-Pages
 import About from "./components/pages/About";
+import Books from "./components/pages/Books";
 import Business from "./components/pages/Business";
 import Connect from "./components/pages/Connect";
 import Credentials from "./components/pages/Credentials";
 import HomePage from "./components/pages/HomePage";
+import Journal from "./components/pages/Journal";
 import MyStory from "./components/pages/MyStory";
 import Projects from "./components/pages/Projects";
 import RealEstate from "./components/pages/RealEstate";
 import Resume from "./components/pages/Resume";
 import Ventures from "./components/pages/Ventures";
+import Websites from "./components/pages/Websites";
 
 // Browser Router
 const router = createBrowserRouter([
@@ -53,6 +56,18 @@ const router = createBrowserRouter([
             {
                 path: "/projects",
                 element: <Projects />
+            },
+            {
+                path: "/projects/books",
+                element: <Books />
+            },
+            {
+                path: "/projects/journal",
+                element: <Journal />
+            },
+            {
+                path: "/projects/websites",
+                element: <Websites />
             },
             {
                 path: "/ventures",
