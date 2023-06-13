@@ -455,6 +455,65 @@ article p {
     margin-top: 0;
 }
 
+/* Websites */
+.websites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vh;
+    margin-top: 5vh;
+}
+
+.website-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40vw; /* change this value to modify the card width */
+    margin-bottom: 4vh;
+    background-color: #fff; /* change this to whatever color you prefer for the card background */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3vh;
+}
+
+.website-card h2 {
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+}
+
+.website-card img {
+    width: 100%; /* this makes the image take up the full width of the card */
+    height: auto;
+    object-fit: cover;
+}
+
+.website-card p {
+    font-size: 2vh;
+    color: #cec9c9; /* adjust this for the color of the text */
+    line-height: 1.6;
+    margin-top: 2vh;
+}
+
+.website-card a {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    font-size: 2vh;
+    text-decoration: none;
+    color: #cec9c9; /* adjust this for the color of the link text */
+    background-color: #333; /* adjust this for the color of the link background */
+    opacity: 88%;
+    border-radius: 2vh;
+    transition: background-color 0.3s ease;
+}
+
+.website-card a:hover {
+    background-color: #666;
+}
+
 
 /* Ventures */
 .ventures {
