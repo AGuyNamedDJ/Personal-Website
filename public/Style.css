@@ -301,6 +301,112 @@ article p {
     font-size: 2vw;
 }
 
+/* Projects */
+#projectsPage {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-section {
+    width: 100vw;
+    height: 100vh;
+    color: #cec9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#codingSection {
+    width: 80vw;
+    height: 40vh; 
+    padding: 5vh 5vw;
+    box-sizing: border-box;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#codingSection h2 {
+    font-size: 4vh;
+}
+
+#codingSection p {
+    font-size: 2vh;
+    max-width: 90%;
+    text-align: center;
+    opacity: 77%;
+}
+
+#codingSection a {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    font-size: 2vh;
+    text-decoration: none;
+    color: #cec9c9;
+    background-color: #000;
+}
+
+#tradingSection {
+    width: 80vw;
+    height: auto;
+    padding: 5vh 5vw;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tradingSection h2 {
+    font-size: 4vh;
+}
+
+#tradingSection p {
+    font-size: 2vh;
+    max-width: 90%;
+    opacity: 77%;
+    text-align: center;
+}
+
+#tradingVideo {
+    width: 80vw;
+    height: 45vw; 
+    margin-top: 6vh;
+    left: 8vw;
+}
+
+#writingSection {
+    width: 80vw;
+    height: auto;
+    padding: 5vh 5vw;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#writingSection h2 {
+    font-size: 4vh;
+}
+
+#writingSection p {
+    font-size: 2vh;
+    max-width: 90%;
+    opacity: 7=77%;
+    text-align: center;
+}
+
+
 /* Ventures */
 .ventures {
     font-size: 8vw;
