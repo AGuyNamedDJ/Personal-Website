@@ -235,7 +235,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 8vh;
-    right: auto;
     width: 100vw;
     height: 80vh;
     background: #000;
@@ -243,13 +242,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .book {
-    width: 60vw;  
+    width: 90vw;  
     height: 75vh; 
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     perspective: 100vw;
     position: relative;
-    background-color: #C2B19C;
-    background: linear-gradient(to right, #ffffff, #e1e1e1);
+    /* background-color: #C2B19C; */
+    /* background: linear-gradient(to right, #ffffff, #e1e1e1); */
 }
 
 article {
