@@ -333,7 +333,7 @@ article p {
 }
 
 #codingSection h2 {
-    font-size: 4vh;
+    font-size: 3.4vh;
 }
 
 #codingSection p {
@@ -366,7 +366,7 @@ article p {
 }
 
 #tradingSection h2 {
-    font-size: 4vh;
+    font-size: 3.4vh;
 }
 
 #tradingSection p {
@@ -396,14 +396,35 @@ article p {
 }
 
 #writingSection h2 {
-    font-size: 4vh;
+    font-size: 3.4vh;
 }
 
 #writingSection p {
     font-size: 2vh;
     max-width: 90%;
-    opacity: 7=77%;
+    opacity: 77%;
     text-align: center;
+}
+
+.image-links {
+    display: flex;
+    justify-content: center; 
+    width: 80vw;
+    margin-top: 4vh;
+}
+
+.image-links a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-links img {
+    width: 30vw;  
+    height: 32vh; 
+    object-fit: cover;
+    margin: 0 -1vw; /* Negative margin value to overlap images */
 }
 
 

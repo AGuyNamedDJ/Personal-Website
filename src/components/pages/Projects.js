@@ -21,7 +21,7 @@ const Projects = () => {
                 {/* Trading Section */}
                 <div className="project-section" id="tradingSection">
                     <h2>Trading. Beyond boundaries.</h2>
-                    <p>Embark on a journey into the nuanced world of trading. Explore my strategic approaches, witness calculated risks in action, and gain insights from my real-time market maneuvers. Below you'll find the most recent video from my YouTube channel, providing a tangible window into my trading practices and thought processes.</p>
+                    <p>Embark on a journey into the nuanced world of trading. Explore my approaches, witness calculated risks in action, and gain insights from my real-time market maneuvers. Below you'll find the most recent video from my YouTube channel, providing a tangible window into my trading practices and thought processes.</p>
 
                     {/* Video of Trading  */}
                     <iframe 
@@ -36,9 +36,17 @@ const Projects = () => {
                 {/* Writing Section */}
                 <div className="project-section" id="writingSection">
                     <h2>Writing. Beyond boundaries imagined.</h2>
-                    <p>Dive into a realm where thoughts and emotions take form, a display of my creative endeavors in writing. Each piece is a part of me, unfettered and expressed freely.</p>
-                    {/* Link to Writing Page */}
-                    <Link to="/writing" className="learn-more">Learn More</Link>
+                    <p>Immerse in the realm of expression where I pour my thoughts, experiences, and imaginations into words. Venture through my journal entries, which are glimpses into my perspectives and learnings. Or, lose yourself in the vivid realms I construct within my book series. The canvas of writing awaits below, each image a gateway to a different narrative journey.</p>
+
+                    {/* Link to Writing Pages */}
+                    <div className="image-links">
+                        <Link to="/projects/journal">
+                            <img src="/images/Writings/Book.AVIF" alt="Journal entries" />
+                        </Link>
+                        <Link to="/projects/books">
+                            <img src="/images/Writings/AI.JPG" alt="Book series" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
