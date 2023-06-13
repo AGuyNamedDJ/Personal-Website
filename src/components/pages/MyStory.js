@@ -38,6 +38,7 @@ const MyStory = () => {
                         direction="rtl"
                         pageBackground="#fff"
                     >
+                    {/* Page 1 */}
                     <article>
                         <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Beginnings</h2>
@@ -51,6 +52,8 @@ const MyStory = () => {
                         </div>
                         <div className="bookFooter">Page 1</div>
                     </article>
+
+                    {/* Page 2 */}
                     <article>
                         <div className="bookTitle">Chasing Purpose</div>
                         <h2>Something's Off</h2>
@@ -66,20 +69,37 @@ const MyStory = () => {
                         </div>
                         <div className="bookFooter">Page 2</div>
                     </article>
+
+                    {/* Page 3 */}
                     <article>
                         <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Sabbatical</h2>
                         <div>
-                            <p>Lorem ipsum dolor sit amet...</p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                            <p>Stepping into this new season felt like stepping into an unknown abyss. The period began with a peculiar romance. She was a pharmacist, but not of the conventional sort. Her lifestyle.  Her mannerisms.  Older, yes, but more importantly, remarkably mature. She operated on an entirely different level, akin to my experience at the startup, but with a gravity of profundity that eclipsed my realm of familiarity. She was an enigma, framed by the worldly title of a pharmacist but fueled by an uncanny, almost divine revelation.</p>
+                            <p>As our connection deepened, she introduced me to her spiritual world. Our first visit to her church gave my introduction to a prophetic figure, who, unbeknownst to me, was the church's apostolic head. His first words to me were an ominous forecast of a looming choice that I'd soon face. The coincidence of it all left me perplexed, for the concept of prophets was alien to me. I knew of God from childlike innocence and Easter speaches, but the workings of an active, involved deity was foreign to my life.</p>
+                            <p>The shifting tides of my life began to batter the ship of our relationship. It sank under the pressure of my immaturity and lack of spiritual pursuit. This breakup shattered me in a manner unprecedented. As my mental state started to wane, I made a pact with God. I felt unfulfilled and lost. With my back against the wall, I resolved to surrender to His guidance, seeking a path out of my own foggy labyrinth.</p>
+                            <p>And so, it began. My life, as I knew it, started to crumble. I took a break from school. Friends became scarce. I left my job. On top of this, COVID didn't make social interaction any easier. Solitude, the most fearsome beast, had me cornered. Health issues crept in, surgeries took their toll, and depression swallowed me whole. No one came to my aid, prompting me to lean even harder into God.  He was all I had.  He was the ony one there.</p>
+                            <p>In this pursuit, layers of my past started to peel off, exposing childhood traumas, offenses of my young adulthood, and buried pain. I grappled with my spiritual beliefs and values. Amid this chaos, a divine whisper nudged me to return to derivatives. Though familiar, this time I felt an urge to go all in. And so I did.</p>
+                            <p>Failure was my companion at first, teaching me more about the markets than any book ever could, any course. Little did I know, that was the acquirement of wisdom. Slowly, the failures turned into small victories and then significant wins. My first $1000 day was a revelation, shattering my previous notions about life's possibilities.</p>
                         </div>
                         <div className="bookFooter">Page 3</div>
                     </article>
+
+                    {/* Page 4 */}
+                    <article>
+                        <div className="bookTitle">Chasing Purpose</div>
+                        {/* <h2>The Future</h2> */}
+                        <div>
+                            <p>Then, God steered me towards another path – Software Engineering. The realm of the most brilliant minds on the planet seemed daunting at first. I felt like an outsider who didn't belong. But remembering my pact with God, I took the leap, enrolling in a software development bootcamp. To my surprise, I thrived. The thrill of creating websites filled me with awe and reignited my innate creativity.  I soon understood that every course of life i came from prepared me for this moment.  My trainings in the arts taught me how to unlock my creativity.  My extensive time in the life sciences taught me how to look for solutions outside of the ordinary.  I knew how to see things in ways the average couldn't.</p>
+                            <p>All the while, my relationship with God remained my compass. The fruits of surrendering to His will were manifesting in my life. I was gaining wisdom, experiencing revelations, and achieving tangible results. And then, a watershed moment arrived. I decided to get baptized again, but this time, as an adult, with a full understanding of the commitment I was making.</p>
+                            <p>Following the completion of my program, I found myself on the precipice of a new journey. A search for my next professional haven was underway, but the economic landscape was far from inviting. The tech industry was experiencing an economic shake-up. A looming recession cast a long shadow, with massive layoffs becoming a harsh reality. In this new environment, merely having knowledge wasn't enough, for it was as ubiquitous as air. The market demanded perfection, specialists who were master craftsmen in their respective domains.</p>
+                            <p>In response, I committed myself to a radical transformation. I didn't aim to augment my skill set, but to reconstruct the image I projected to the world. The task at hand wasn't about job hunting; it was about identity reformation. As I endeavored to reshape how the world perceived me, I realized the mirror I needed to peer into was the one held by God. His vision of me was my compass. The man He envisaged was the man I needed to become. He had guided me thus far; it was time to trust Him completely once again.</p>
+                            <p>During this transformative period, one company stood out from the rest. I made a concerted effort to foster relationships with senior members and leaders within the organization. At the same time, I expanded my networking sphere to include a range of influential figures in the tech industry. My professional web was growing, and with it, a beacon of hope started to emerge. In the process, I was becoming the man I was destined to be, the man God had seen in me all along.</p>
+                        </div>
+                        <div className="bookFooter">Page 4</div>
+                    </article>
+
+                    {/* Page 5 */}
                     <article>
                         <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Future</h2>
@@ -92,7 +112,7 @@ const MyStory = () => {
                             <p></p>
                             <p></p>
                         </div>
-                        <div className="bookFooter">Page 4</div>
+                        <div className="bookFooter">Page 5</div>
                     </article>
                     </FlipPage>
                 </div>
