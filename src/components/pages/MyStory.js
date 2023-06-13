@@ -54,7 +54,12 @@ const MyStory = () => {
                     <article>
                         <h2>Something's Off</h2>
                         <div>
-                            <p>Lorem ipsum dolor sit amet...</p>
+                            <br></br>
+                            <p>With proficiency etched in my veins, I stood in the fortress of retail pharmacy where I had spent six rewarding years. But the air carried a hint of unease, the scent of change. A disagreement over my contract marked an unexpected crossroads, leading me to venture into a new journey with a fledgling mail-order pharmacy startup.</p>
+                            <p>This was a different landscape, exposing me to the intricate tapestry of the pharmaceutical industry. I learned to maneuver through every role, gained intimate knowledge of robotic technology, and how to wield it as if an extension of myself. I transitioned into a hybrid role of a data analyst and saw an unfamiliar horizon extend before me - technology, an endless sea of possibilities.</p>
+                            <p>And then, like a sudden, dissonant chord in a melody, COVID swept across the globe. The ripple of its impact reached my shores, making remote learning our new norm. My pursuit of a pharmaceutical career seemed like a flickering candle in the gusts of this global storm. I found myself questioning my path, feeling unfulfilled, and standing on the precipice of settling. I was good at it, but was it me? Was it what I truly yearned for?</p>
+                            <p>No, the artist in me wanted to create. To mold ideas into reality, to craft new narratives, to paint a canvas of endless possibilities. So, with a heavy heart and a mind full of dreams, I decided to pause my pharmaceutical journey, stepping into the vast unknown with no blueprint in hand.</p>
+                            <p></p>
                         </div>
                         <div className="bookFooter">Page 2</div>
                     </article>
@@ -62,6 +67,12 @@ const MyStory = () => {
                         <h2>The Sabbatical</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
                         </div>
                         <div className="bookFooter">Page 3</div>
                     </article>
@@ -69,6 +80,12 @@ const MyStory = () => {
                         <h2>The Future</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
                         </div>
                         <div className="bookFooter">Page 4</div>
                     </article>
