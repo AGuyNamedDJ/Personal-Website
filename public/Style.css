@@ -296,11 +296,10 @@ article p {
     bottom: 2vh;
     right: 50%;
     transform: translateX(50%);
+    text-decoration: line-through;
     color: #4f310c;
     font-size: 2vw;
 }
-
-
 
 
 /* Ventures */

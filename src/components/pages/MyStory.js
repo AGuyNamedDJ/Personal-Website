@@ -39,7 +39,7 @@ const MyStory = () => {
                         pageBackground="#fff"
                     >
                     <article>
-                        <div className="bookTitle">Example Name</div>
+                        <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Beginnings</h2>
                         <div>
                             <br></br>
@@ -52,18 +52,22 @@ const MyStory = () => {
                         <div className="bookFooter">Page 1</div>
                     </article>
                     <article>
+                        <div className="bookTitle">Chasing Purpose</div>
                         <h2>Something's Off</h2>
                         <div>
                             <br></br>
-                            <p>With proficiency etched in my veins, I stood in the fortress of retail pharmacy where I had spent six rewarding years. But the air carried a hint of unease, the scent of change. A disagreement over my contract marked an unexpected crossroads, leading me to venture into a new journey with a fledgling mail-order pharmacy startup.</p>
-                            <p>This was a different landscape, exposing me to the intricate tapestry of the pharmaceutical industry. I learned to maneuver through every role, gained intimate knowledge of robotic technology, and how to wield it as if an extension of myself. I transitioned into a hybrid role of a data analyst and saw an unfamiliar horizon extend before me - technology, an endless sea of possibilities.</p>
-                            <p>And then, like a sudden, dissonant chord in a melody, COVID swept across the globe. The ripple of its impact reached my shores, making remote learning our new norm. My pursuit of a pharmaceutical career seemed like a flickering candle in the gusts of this global storm. I found myself questioning my path, feeling unfulfilled, and standing on the precipice of settling. I was good at it, but was it me? Was it what I truly yearned for?</p>
-                            <p>No, the artist in me wanted to create. To mold ideas into reality, to craft new narratives, to paint a canvas of endless possibilities. So, with a heavy heart and a mind full of dreams, I decided to pause my pharmaceutical journey, stepping into the vast unknown with no blueprint in hand.</p>
-                            <p></p>
+                            <p>I found myself navigating the familiar terrains of retail pharmacy. A field I had become proficient in over half a decade, akin to a seasoned maestro directing an orchestra, fluently conducting every role and every scenario. Yet, an invisible question mark loomed over the horizon, the symphony of routine began to sound off-key. A minor disagreement over my contract transformed into a major pivot in my professional journey, leading me to an entirely different stage - a mail-order pharmacy startup.</p>
+                            <p>The realm of this startup offered me a panoramic view of the inner workings of pharmacy. No longer just playing a single instrument, I was immersed in a world that required me to understand the entire orchestra - from administrative tasks to the technical intricacies of robotic technology. I began to operate these robots, turning gears and calibrating programs until they moved as an extension of my will. The plot then thickened as I found myself evolving into a hybrid role of a data analyst, my narrative converging with technology in a way I hadn’t anticipated.</p>
+                            <p>Yet, the tale took an unexpected turn. The advent of COVID-19, a plot twist on a global scale, seeped into every corner of our lives. Its tendrils reached into my pharmacy school, morphing the traditional educational system into a remote learning model. This era of upheaval cast a deep shadow on my once assured path. Suddenly, the pursuit of a pharmaceutical career began to feel like an ill-fitting costume. There was a void, a longing for something more. I was competent, yes, but was I content? Was this the script I wanted for my life?</p>
+                            <br></br>
+                            <p>"Ten years from now, make sure you can say that you CHOSE your life, you didn't SETTLE for it."</p>
+                            <br></br>
+                            <p>The answer lay in the creative pulse that drummed through my veins. I yearned to not just operate, but to innovate. I longed to create, to immerse myself in the vibrant spectrum of possibility, to unleash the artist within. Therefore, I decided to embrace the unknown. I stepped away from pharmacy school, and set sail into the uncharted waters of my future, armed with nothing but a heart full of dreams and a spirit yearning to create.</p>
                         </div>
                         <div className="bookFooter">Page 2</div>
                     </article>
                     <article>
+                        <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Sabbatical</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
@@ -77,6 +81,7 @@ const MyStory = () => {
                         <div className="bookFooter">Page 3</div>
                     </article>
                     <article>
+                        <div className="bookTitle">Chasing Purpose</div>
                         <h2>The Future</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet...</p>
