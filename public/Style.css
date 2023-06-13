@@ -176,13 +176,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(100% + 2*2vw);  /* Add twice the absolute value of negative margin to the width */
+    width: calc(100% + 2*2vw); 
     height: auto;
     opacity: 77%;
     padding: 2vh 1vw;
     text-align: center;
-    margin-left: -2vw;  /* Negative margin value */
-    margin-right: 2vw;  /* Negative margin value */
+    margin-left: -2vw; 
+    margin-right: 2vw; 
 }
 
 #creation-animation {
@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 8vh;
+    right: 20vh;
     width: 100vw;
     height: 80vh;
     background: #000;
@@ -242,15 +243,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .book {
-    width: 90vw;  
+    width: 60vw;  
     height: 75vh; 
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    margin-right: 28vh;
     perspective: 100vw;
     position: relative;
-    /* background-color: #C2B19C; */
-    /* background: linear-gradient(to right, #ffffff, #e1e1e1); */
+    background-color: #C2B19C;
+    background: linear-gradient(to right, #ffffff, #e1e1e1);
 }
 
 article {
@@ -273,7 +272,7 @@ article {
 article h2 {
     margin-bottom: 1vh;
     color: #4f310c;
-    font-size: 5.2vw;  
+    font-size: 4vw;  
 }
 
 article p {
@@ -301,7 +300,6 @@ article p {
     color: #4f310c;
     font-size: 2vw;
 }
-
 
 /* Ventures */
 .ventures {
