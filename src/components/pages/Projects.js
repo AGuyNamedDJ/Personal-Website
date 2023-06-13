@@ -40,11 +40,17 @@ const Projects = () => {
 
                     {/* Link to Writing Pages */}
                     <div className="image-links">
-                        <Link to="/projects/journal">
-                            <img src="/images/Writings/Book.AVIF" alt="Journal entries" />
+                        <Link to="/projects/journal" className="image-link">
+                            <img src="/images/Writings/AI.JPG" alt="Journal entries" />
+                            <div className="overlay">
+                            <p className="label">View Journals</p>
+                            </div>
                         </Link>
-                        <Link to="/projects/books">
-                            <img src="/images/Writings/AI.JPG" alt="Book series" />
+                        <Link to="/projects/books" className="image-link">
+                            <img src="/images/Writings/Book.JPG" alt="Book series" />
+                            <div className="overlay">
+                            <p className="label">View Books</p>
+                            </div>
                         </Link>
                     </div>
                 </div>

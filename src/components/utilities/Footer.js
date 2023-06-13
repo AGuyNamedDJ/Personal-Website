@@ -12,7 +12,7 @@ const Footer = () => {
         <div id="footer-center">
             <Link to="/">Dalron J. Robertson © 2023</Link>
             <Link to="/privacy">Privacy & Legal</Link>
-            <Link to="/journal">Journal</Link>
+            <Link to="/projects/journal">Journal</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/connect">Contact</Link>
         </div>
