@@ -21,14 +21,15 @@ const HomePage = () => {
 
             {/* Second block with subtitle, big title, button on the left and text description on the right */}
             <div className="block" id="block2">
-                <div className="content">
-                    <h1>Software Development</h1>
-                    <h2>Derivative Trader &</h2>
-                    <h2>Innovater</h2>
-                    <button>Button</button>
-                </div>
-                <div className="description">
-                    <p>This is a text description on the right of the block.</p>
+                <div className="image-container">
+                    <div className="left-image">
+                    <h1 className="title-line">Recent<br />Projects</h1>
+                        <a href="project1-link"><img src="/images/Websites/Dalrecipe.png" alt="Project 1" /></a>
+                    </div>
+                    <div className="right-image">
+                        <a href="project2-link"><img src="/images/Websites/Tradingview.png" alt="Project 2" /></a>
+                        <a href="project3-link"><img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" /></a>
+                    </div>
                 </div>
             </div>
 
