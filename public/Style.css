@@ -1402,6 +1402,97 @@ h2 {
     text-align: justify;
 }
 
+/* Books Page */
+#booksPage.page {
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    color: #444; 
+}
+
+/* Title Section */
+#booksPage #titleSection {
+    text-align: center;
+    color: #C2B19C;
+    border-bottom: 1px solid #C2B19C;
+}
+
+#booksPage #titleSection h1 {
+    font-size: 3.5vw;
+    padding: 1vh 0;
+}
+
+/* Book Grid */
+#booksPage .bookGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* Book Card */
+#booksPage .bookCard {
+    border: 1px solid #C2B19C;
+    border-radius: 0.8vw;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#booksPage .bookCard img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.8vw;
+}
+
+#booksPage .bookCard a {
+    font-size: 2.5vw;
+    color: #C2B19C;
+    margin-top: 1vh;
+}
+
+#booksPage .bookCard p {
+    font-size: 2.2vh;
+    color: #cec9c9;
+    line-height: 2.5vh;
+    text-align: justify;
+}
+
+
+/* Book One Page */
+#bookOnePage.page {
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    color: #444; 
+}
+
+/* Title Section */
+#bookOnePage #titleSection {
+    text-align: center;
+    color: #C2B19C;
+    border-bottom: 1px solid #C2B19C;
+}
+
+#bookOnePage #titleSection h1 {
+    font-size: 3.5vw;
+    padding: 1vh 0;
+}
+
+#bookOnePage #titleSection h3 {
+    font-size: 2.5vw;
+    padding: 1vh 0;
+}
+
+/* Book Content */
+#bookOnePage #bookContent {
+    font-size: 2.2vh;
+    color: #cec9c9;
+    padding: 4vh 0;
+    line-height: 2.5vh;
+    text-align: justify;
+}
 
   
 /* Utilities Parameters */

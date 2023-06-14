@@ -10,6 +10,7 @@ import ErrorPage from "./components/utilities/ErrorPage";
 // Imports-Pages
 import About from "./components/pages/About";
 import Books from "./components/pages/Books";
+import BooksOne from "./components/pages/BooksOne";
 import Business from "./components/pages/Business";
 import Connect from "./components/pages/Connect";
 import Credentials from "./components/pages/Credentials";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
                 element: <MyStory />
             },
             {
+                path: "/books/one",
+                element: <BooksOne />
+            },
+            {
                 path: "/connect",
                 element: <Connect />
             },
@@ -69,7 +74,7 @@ const router = createBrowserRouter([
                 element: <Projects />
             },
             {
-                path: "/projects/books",
+                path: "/books",
                 element: <Books />
             },
             {
@@ -77,7 +82,7 @@ const router = createBrowserRouter([
                 element: <Journals />
             },
             {
-                path: "/projects/journals/1",
+                path: "/journals/one",
                 element: <JournalEntry1 />
             },
             {
