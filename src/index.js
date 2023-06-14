@@ -16,6 +16,7 @@ import Credentials from "./components/pages/Credentials";
 import HomePage from "./components/pages/HomePage";
 import Journal from "./components/pages/Journal";
 import MyStory from "./components/pages/MyStory";
+import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
 import RealEstate from "./components/pages/RealEstate";
 import Resume from "./components/pages/Resume";
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
             {
                 path: "/credentials/resume",
                 element: <Resume />
+            },
+            {
+                path: "/privacy&legal",
+                element: <PrivacyLegal />
             },
             {
                 path: "/projects",

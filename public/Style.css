@@ -1199,6 +1199,87 @@ h2 {
     margin-top: 2vh;
 }
 
+/* Privacy & Legal Page */
+#privacyLegalPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+/* Title Section */
+#titleSection {
+    margin-bottom: 1vh;
+    color: #C2B19C;
+    font-size: 4vh;
+}
+
+/* Privacy Policy Section */
+#privacyPolicy {
+    width: 80vw;
+    margin-bottom: 1vh;
+    color: #444; 
+    background-color: #000; 
+    padding: 4vh;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#privacyPolicy h1,
+#privacyPolicy h2,
+#privacyPolicy h3 {
+    color: #C2B19C;
+    margin-bottom: 0.5vh;
+    margin-top: 4vh;
+    font-size: 3vh;
+}
+
+#privacyPolicy p,
+#privacyPolicy ul,
+#privacyPolicy li {
+    font-size: 2vh;
+    line-height: 2.5vh;
+    color: #cec9c9;
+    opacity: 82%;
+    text-align: justify;
+}
+
+#privacyPolicy ul,
+#termsConditions ul {
+    list-style-position: inside; 
+    padding-left: 2vh; 
+}
+
+
+/* Terms & Conditions Section */
+#termsConditions {
+    width: 80vw;
+    margin-bottom: 5vh;
+    color: #444;
+    background-color: #000; 
+    padding: 4vh;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#termsConditions h1,
+#termsConditions h2 {
+    color: #C2B19C;
+    margin-bottom: 0.5vh;
+    margin-top: 4vh;
+    font-size: 3vh;
+}
+
+#termsConditions p,
+#termsConditions ul,
+#termsConditions li {
+    font-size: 2vh;
+    line-height: 2.5vh;
+    color: #cec9c9;
+    opacity: 82%;
+    text-align: justify;
+}
+
   
 /* Utilities Parameters */
 /* Error Page */
