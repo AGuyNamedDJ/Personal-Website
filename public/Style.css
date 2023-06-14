@@ -276,7 +276,7 @@ article h2 {
 }
 
 article p {
-    font-size: 2vw;  
+    font-size: 1.8vw;  
     text-align: justify;
     color: #4f310c;
     text-indent: 3.5vw;
@@ -1404,6 +1404,7 @@ h2 {
     color: #cec9c9;
     padding: 4vh 0;
     line-height: 2.5vh;
+    opacity: 82%;
     text-align: justify;
     text-indent: 4vh; 
     margin-bottom: 2vh; 
@@ -1539,6 +1540,7 @@ h2 {
     padding: 4vh 0;
     line-height: 2.5vh;
     text-align: justify;
+    opacity: 82%;
 }
 
   
