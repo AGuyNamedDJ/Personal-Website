@@ -58,28 +58,144 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Pages Parameters */
-/* Homepage */
-.homepage {
-    font-size: 8vw;
-    text-align: center;
+/* HomePage */
+#homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #444; 
 }
 
-#homepage-1 {
-    height: 65vh;
-    margin: auto;
-    overflow: hidden; 
-    font-size: 4vh;
-    padding: 10vh 3vw 2vh;  
-    flex: 1 0 auto;
-    margin-top: 15vh; 
+.titleWithDot {
+    position: relative;
 }
 
-#homepage-2 {
-    height: 65vh;
-    margin: auto;
-    overflow: hidden; 
-    flex: 1 0 auto;
+.titleWithDot::before {
+    content: '';
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #C2B19C;
+    border-radius: 50%; /* makes it a circle */
+    right: calc(50% - 11.5vw); /* center it horizontally */
+    bottom: calc(50% - 2.5vw); /* center it vertically */
+    z-index: -1; /* put it behind the text */
 }
+
+
+/* Block */
+#homePage .block {
+    width: 80vw;
+    margin: 4vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Block content */
+#homePage .block .content {
+    width: 40vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homePage .block .content h1 {
+    font-size: 3.5vw;
+    color: #cec9c9;
+}
+
+#homePage .block .content h2 {
+    font-size: 10vw;
+    color: #cec9c9;
+}
+
+#homePage .block .content p {
+    font-size: 1.8vh;
+    color: #cec9c9;
+    opacity: 82%;
+    text-align: left;
+}
+
+#homePage .block .content a {
+    background: none;
+    color: #cec9c9; 
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5vh;
+    padding: 0;
+    margin-top: 2vh;
+    letter-spacing: 0.2vh;
+}
+
+#homePage .block .content a span {
+    border-bottom: 0.2vh solid #C2B19C;
+    line-height: 2.5vh;
+}
+
+#homePage .block .content button {
+    background: none;
+    border: none;
+    color: #cec9c9;
+    text-decoration: underline;
+    cursor: pointer;
+    justify-content: left;
+    font-size: 2vh;
+    padding: 0;
+}
+
+
+#homePage .block .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+#homePage .block .image img {
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    border-radius: 0vw; 
+    box-shadow: 0 0 100px 50px black; 
+}
+
+#homePage .block .image img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent, black 70%);
+    border-radius: 1vw;
+}
+
+/* Add a pseudo-element for the gradient effect */
+#homePage .block .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at center, transparent, black 90%);
+    opacity: 0.8; 
+    z-index: 0; 
+}
+
+/* 3rd block specific styles */
+#homePage .block .three-row-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
 
 /* About */
 .page {
@@ -418,7 +534,7 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Added positioning for overlay */
+    position: relative; 
 }
   
 .image-links a:hover .overlay {
@@ -468,7 +584,7 @@ article p {
 .website-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 55vw; /* change this value to modify the card width */
+    width: 55vw; 
     margin-bottom: 4vh;
     background-color: #000; 
     margin-left: 6vw;
@@ -487,14 +603,14 @@ article p {
 }
 
 .website-card img {
-    width: 100%; /* this makes the image take up the full width of the card */
+    width: 100%; 
     height: auto;
     object-fit: cover;
 }
 
 .website-card p {
     font-size: 2vh;
-    color: #cec9c9; /* adjust this for the color of the text */
+    color: #cec9c9; 
     line-height: 1.6;
     opacity: 82%;
     margin-top: 2vh;
@@ -506,8 +622,8 @@ article p {
     padding: 1vh 2vw;
     font-size: 2vh;
     text-decoration: none;
-    color: #cec9c9; /* adjust this for the color of the link text */
-    background-color: #333; /* adjust this for the color of the link background */
+    color: #cec9c9; 
+    background-color: #333;
     opacity: 88%;
     border-radius: 2vh;
     transition: background-color 0.3s ease;
@@ -530,7 +646,7 @@ article p {
     overflow: hidden; 
     padding: 0vh 3vw 2vh;  
     flex: 1 0 auto;
-    margin-top: -2vh; /* change this after content is added */
+    margin-top: -2vh; 
 }
 
 #ventures-1 .ventures-1-title {
@@ -651,7 +767,6 @@ article p {
     padding-right: 1vw;
     margin-left: 0.25vw;
 }
-
 
 .ventures-3-title span {
     font-size: 8vw;
@@ -1362,12 +1477,12 @@ h2 {
 
 /* Journal name styling */
 .journalCard .overlay h3 {
-    color: #cec9c9; /* White text */
+    color: #cec9c9;
     font-size: 3vh;
 }
 
 .journalCard .overlay h2 {
-    color: #cec9c9; /* White text */
+    color: #cec9c9; 
     font-size: 1.4vh;
     margin-top: 1vh;
 }
@@ -1500,10 +1615,9 @@ h2 {
 #booksPage .bookCard p {
     font-size: 2.2vh;
     color: #cec9c9;
-    line-height: 2.5vh;
+    line-height: 1.4vh;
     text-align: justify;
 }
-
 
 /* Book One Page | Circuit Breakers */
 #bookOnePage.page {
