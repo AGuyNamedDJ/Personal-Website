@@ -23,7 +23,10 @@ const HomePage = () => {
             <div className="block" id="block2">
                 <div className="image-container">
                     <div className="left-image">
-                    <h1 className="title-line">Recent<br />Projects</h1>
+                    <h1 className="title-line">
+                <span className="top-line">Recent</span>
+                <span className="bottom-line">Projects <span className="symbol">+</span></span>
+            </h1>
                         <a href="project1-link"><img src="/images/Websites/Dalrecipe.png" alt="Project 1" /></a>
                     </div>
                     <div className="right-image">

@@ -195,7 +195,23 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     margin-top: 10vh;
 }
+
+#block2 .top-line {
+    display: block;
+    line-height: 3.5vh;
+    font-size: 5.2vh;
+}
   
+#block2 .bottom-line {
+    display: block;
+    font-size: 5.2vh;
+    line-height: 3.5vh;
+}
+  
+#block2 .symbol {
+    color: #C2B19C;
+}
+    
 #block2 .left-image {
     flex-basis: 30%;
     margin-top: 2vh;
