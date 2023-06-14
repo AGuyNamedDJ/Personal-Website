@@ -1317,6 +1317,92 @@ h2 {
     text-align: justify;
 }
 
+/* Journals */
+.journalGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Journal Cards */
+.journalCard {
+    flex-basis: calc(33.333% - 2vw);
+    margin-bottom: 2vh;
+    height: 30vh; 
+    overflow: hidden; 
+    position: relative; 
+    border-radius: 0.8vw;
+}
+
+/* Image styling */
+.journalCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Overlay styling */
+.journalCard .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex; 
+    justify-content: center; 
+    padding: 0 2vw;
+    align-items: center; 
+    text-align: center;
+}
+
+/* Journal name styling */
+.journalCard .overlay h3 {
+    color: #fff; /* White text */
+    font-size: 3vh;
+}
+
+/* Show overlay on hover */
+.journalCard:hover .overlay {
+    opacity: 1; /* Fully visible */
+}
+
+.journalCard:hover img {
+    filter: brightness(80%); /* 80% brightness */
+}
+
+/* Journal Entries */
+/* Journal Entries Page */
+#journalEntry.page {
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    color: #444; 
+}
+
+/* Title Section */
+#journalEntry #titleSection {
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 1vh 0;
+    color: #C2B19C;
+    border-bottom: 1px solid #C2B19C;
+}
+
+/* Journal Entry Content */
+#journalEntry .journal-entry-content {
+    font-size: 2.2vh;
+    color: #cec9c9;
+    padding: 4vh 0;
+    line-height: 2.5vh;
+    text-align: justify;
+}
+
+
   
 /* Utilities Parameters */
 /* Error Page */

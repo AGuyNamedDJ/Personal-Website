@@ -15,7 +15,8 @@ import Connect from "./components/pages/Connect";
 import Credentials from "./components/pages/Credentials";
 import FAQs from "./components/pages/FAQs";
 import HomePage from "./components/pages/HomePage";
-import Journal from "./components/pages/Journal";
+import Journals from "./components/pages/Journals";
+import JournalEntry1 from "./components/pages/Journals/JournalEntry1";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
@@ -72,8 +73,12 @@ const router = createBrowserRouter([
                 element: <Books />
             },
             {
-                path: "/projects/journal",
-                element: <Journal />
+                path: "/projects/journals",
+                element: <Journals />
+            },
+            {
+                path: "/projects/journals/1",
+                element: <JournalEntry1 />
             },
             {
                 path: "/projects/websites",
