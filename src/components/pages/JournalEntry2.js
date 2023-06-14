@@ -7,11 +7,6 @@ const JournalEntry1 = () => {
             <div id="titleSection">
                 <h1>The Tunnel of the Job Search</h1>
             </div>
-
-            {/* Journal Entry Image */}
-            <div className="journal-entry-image">
-                <img src="/images/Journals/1-JobSearch.jpg" />
-            </div>
             
             {/* Journal Entry Content */}
             <div className="journal-entry-content">

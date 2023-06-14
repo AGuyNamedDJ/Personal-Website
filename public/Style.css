@@ -1411,6 +1411,19 @@ h2 {
     padding-top: 2vh;
 }
 
+/* Journal Entry Image */
+#journalEntry .journal-entry-image {
+    display: flex;
+    justify-content: center;
+}
+
+#journalEntry .journal-entry-image img {
+    width: 60vw;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 0.8vw;
+    margin: 2vh auto;
+}
 
 /* Books Page */
 /* #booksPage.page {
