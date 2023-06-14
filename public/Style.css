@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 2vw;
     background-color: #C2B19C;
     border-radius: 50%; /* makes it a circle */
-    right: calc(50% - 13.5vw); /* center it horizontally */
+    right: calc(50% - 15.5vw); /* center it horizontally */
     bottom: calc(50% - 2.5vw); /* center it vertically */
     z-index: -1; /* put it behind the text */
 }
@@ -1151,7 +1151,7 @@ h2 {
     background: #C2B19C; 
     border-radius: 50%;  
     top: 82%; 
-    left: 26.5vw;  
+    left: 28.5vw;  
     transform: translateY(-50%);
 }
 
