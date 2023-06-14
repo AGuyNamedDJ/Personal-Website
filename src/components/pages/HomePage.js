@@ -60,9 +60,20 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="block" id="block4">
+                <div className="centered-text-container">
+                    <p className="contact-me">CONTACT ME</p>
+                    <a className="line-link" href="https://github.com/AGuyNamedDJ" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a className="line-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a className="line-link" href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className="line-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a className="line-link" href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noopener noreferrer">Youtube:Gaming</a>
+                    <a className="line-link" href="https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w" target="_blank" rel="noopener noreferrer">Youtube:Personal</a>
+                </div>
+            </div>
         </div>
     )
 }
-
 
 export default HomePage;

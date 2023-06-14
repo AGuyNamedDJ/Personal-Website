@@ -310,6 +310,45 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 60%;
 }
 
+/* Block 4 */
+#block4 {
+    height: 100vh; /* Adjust to the desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block4 .centered-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+    color: #cec9c9;
+    font-size: 2.5vh;
+}
+
+#block4 .centered-text-container .line-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 6vh;
+    padding: 0.4vh;
+}
+
+/* Social Media */
+#block4 .centered-text-container .contact-me {
+    font-size: 1.8vh; 
+    color: #cec9c9;
+    margin-top: 14vh;
+    padding: 4vh;
+}
+
+#block4 .centered-text-container .line-link:hover {
+    color: #C2B19C;
+}
+
+
 
 /* About */
 .page {
