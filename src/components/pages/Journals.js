@@ -6,7 +6,7 @@ const Journals = () => {
             id: 1,
             title: "The Tunnel of the Job Search",
             image: "/images/Journals/1-JobSearch.jpg",
-            link: "/journals/one"
+            link: "/TTOTJS"
         },
         {
             id: 2,

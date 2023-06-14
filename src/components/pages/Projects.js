@@ -40,13 +40,13 @@ const Projects = () => {
 
                     {/* Link to Writing Pages */}
                     <div className="image-links">
-                        <Link to="/projects" className="image-link">
+                        <Link to="/projects/journals" className="image-link">
                             <img src="/images/Writings/AI.JPG" alt="Journal entries" />
                             <div className="overlay">
                             <p className="label">View Journals</p>
                             </div>
                         </Link>
-                        <Link to="/books" className="image-link">
+                        <Link to="/projects/books" className="image-link">
                             <img src="/images/Writings/Book.JPG" alt="Book series" />
                             <div className="overlay">
                             <p className="label">View Books</p>

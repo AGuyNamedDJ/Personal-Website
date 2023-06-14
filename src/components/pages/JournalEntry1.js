@@ -7,7 +7,7 @@ const JournalEntry1 = () => {
             <div id="titleSection">
                 <h1>The Tunnel of the Job Search</h1>
             </div>
-
+            
             {/* Journal Entry Content */}
             <div className="journal-entry-content">
                 <p>Since Graduating from one of the Top Bootcamps over a month ago, I have submitted over 200 applications to entry and associate software engineering roles. Every morning, my emails are flooded with rejection notices.</p>

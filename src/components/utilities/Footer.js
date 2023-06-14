@@ -13,7 +13,7 @@ const Footer = () => {
             <Link to="/">Dalron J. Robertson © 2023</Link>
             <Link to="/privacy&legal">Privacy & Legal</Link>
             <Link to="/projects/journals">Journals</Link>
-            <Link to="/books">Books</Link>
+            {/* <Link to="/projects/books">Books</Link> */}
             <Link to="/faqs">FAQ</Link>
             <Link to="/connect">Contact</Link>
         </div>

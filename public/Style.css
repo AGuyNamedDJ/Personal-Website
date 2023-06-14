@@ -1362,7 +1362,7 @@ h2 {
 
 /* Journal name styling */
 .journalCard .overlay h3 {
-    color: #fff; /* White text */
+    color: #cec9c9; /* White text */
     font-size: 3vh;
 }
 
@@ -1375,7 +1375,6 @@ h2 {
     filter: brightness(80%); /* 80% brightness */
 }
 
-/* Journal Entries */
 /* Journal Entries Page */
 #journalEntry.page {
     width: 80vw;
@@ -1400,15 +1399,26 @@ h2 {
     padding: 4vh 0;
     line-height: 2.5vh;
     text-align: justify;
+    text-indent: 4vh; 
+    margin-bottom: 2vh; 
 }
 
+/* Journal Entry Date */
+#journalEntry .journal-entry-date {
+    font-size: 2vh;
+    color: #C2B19C;
+    text-align: right;
+    padding-top: 2vh;
+}
+
+
 /* Books Page */
-#booksPage.page {
+/* #booksPage.page {
     width: 80vw;
     margin: auto;
     margin-top: 4vh;
     color: #444; 
-}
+} */
 
 /* Title Section */
 #booksPage #titleSection {
@@ -1425,23 +1435,28 @@ h2 {
 /* Book Grid */
 #booksPage .bookGrid {
     display: flex;
+    background-color: #000;
     flex-direction: column;
     gap: 2vh;
+    align-items: center;
 }
 
 /* Book Card */
 #booksPage .bookCard {
-    border: 1px solid #C2B19C;
+    border: 0.5px solid #C2B19C;
     border-radius: 0.8vw;
     padding: 2vh;
     display: flex;
     flex-direction: column;
+    width: 70vw;
     align-items: center;
+    margin-bottom: 4vh;
     text-align: center;
 }
 
 #booksPage .bookCard img {
-    width: 100%;
+    width: 750;
+    height: auto;
     object-fit: cover;
     border-radius: 0.8vw;
 }
@@ -1460,7 +1475,7 @@ h2 {
 }
 
 
-/* Book One Page */
+/* Book One Page | Circuit Breakers */
 #bookOnePage.page {
     width: 80vw;
     margin: auto;
@@ -1476,13 +1491,15 @@ h2 {
 }
 
 #bookOnePage #titleSection h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     padding: 1vh 0;
+    letter-spacing: 0.4vw;
 }
 
 #bookOnePage #titleSection h3 {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     padding: 1vh 0;
+    letter-spacing: 0.4vw;
 }
 
 /* Book Content */

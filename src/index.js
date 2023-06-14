@@ -46,10 +46,6 @@ const router = createBrowserRouter([
                 element: <MyStory />
             },
             {
-                path: "/books/one",
-                element: <BooksOne />
-            },
-            {
                 path: "/connect",
                 element: <Connect />
             },
@@ -74,15 +70,19 @@ const router = createBrowserRouter([
                 element: <Projects />
             },
             {
-                path: "/books",
+                path: "projects/books",
                 element: <Books />
+            },
+            {
+                path: "/circuitbreakers-bookone",
+                element: <BooksOne />
             },
             {
                 path: "/projects/journals",
                 element: <Journals />
             },
             {
-                path: "/journals/one",
+                path: "/TTOTJS",
                 element: <JournalEntry1 />
             },
             {
