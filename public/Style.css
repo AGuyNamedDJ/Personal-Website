@@ -1280,6 +1280,43 @@ h2 {
     text-align: justify;
 }
 
+/* FAQs */
+/* FAQ Page */
+#faqPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* #titleSection {
+    margin-bottom: 5vh;
+} */
+
+.faq {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 3vh;
+    padding: 2vh;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.faq h2 {
+    cursor: pointer;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+}
+
+.faq p {
+    font-size: 2vh;
+    line-height: 2.5vh;
+    text-align: justify;
+}
+
   
 /* Utilities Parameters */
 /* Error Page */

@@ -13,6 +13,7 @@ import Books from "./components/pages/Books";
 import Business from "./components/pages/Business";
 import Connect from "./components/pages/Connect";
 import Credentials from "./components/pages/Credentials";
+import FAQs from "./components/pages/FAQs";
 import HomePage from "./components/pages/HomePage";
 import Journal from "./components/pages/Journal";
 import MyStory from "./components/pages/MyStory";
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: "/credentials",
                 element: <Credentials />
+            },
+            {
+                path: "/faqs",
+                element: <FAQs />
             },
             {
                 path: "/credentials/resume",
