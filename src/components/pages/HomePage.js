@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import { Link as ScrollLink } from "react-scroll";
 
 const HomePage = () => {
     return (
@@ -23,15 +24,15 @@ const HomePage = () => {
             <div className="block" id="block2">
                 <div className="image-container">
                     <div className="left-image">
-                    <h1 className="title-line">
-                <span className="top-line">Recent</span>
-                <span className="bottom-line">Projects <span className="symbol">+</span></span>
-            </h1>
-                        <a href="project1-link"><img src="/images/Websites/Dalrecipe.png" alt="Project 1" /></a>
+                        <h1 className="title-line">
+                            <span className="top-line">Recent</span>
+                            <span className="bottom-line">Projects <span className="symbol">+</span></span>
+                        </h1>
+                        <a href="https://github.com/AGuyNamedDJ/Health-Hive-Back-End"><img src="/images/Websites/Doctor.jpeg" alt="Project 1" /></a>
                     </div>
                     <div className="right-image">
-                        <a href="project2-link"><img src="/images/Websites/Tradingview.png" alt="Project 2" /></a>
-                        <a href="project3-link"><img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" /></a>
+                        <a href="https://github.com/AGuyNamedDJ/TradingView-Scripts-1"><img src="/images/Websites/Tradingview.png" alt="Project 2" /></a>
+                        <a href="/TTOTJS"><img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" /></a>
                     </div>
                 </div>
             </div>
