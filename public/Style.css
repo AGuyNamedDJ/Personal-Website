@@ -315,10 +315,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Block 4 */
 #block4 {
-    height: 100vh; 
+    height: 80vh; 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20vh;
 }
 
 #block4 .centered-text-container {
@@ -335,13 +336,13 @@ h1, h2, h3, h4, h5, h6 {
 #block4 .centered-text-container .line-link {
     text-decoration: none;
     color: inherit;
-    font-size: 6vh;
+    font-size: 6vw;
     padding: 0.4vh;
 }
 
 /* Social Media */
 #block4 .centered-text-container .contact-me {
-    font-size: 1.8vh; 
+    font-size: 1.6vw; 
     color: #cec9c9;
     margin-top: 14vh;
     padding: 4vh;
