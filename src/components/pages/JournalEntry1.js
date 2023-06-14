@@ -19,6 +19,11 @@ const JournalEntry1 = () => {
                 <p>To all of the recent grads, I'm here with you. I've never felt this in my previous field. I've never been consistently rejected before. I've always gotten the interview. But for now I'll keep trying. I've also decided to make a new full stack website every 4-5 days. I'm going to keep adding to my tech stack. And I'm going to make it! God brought me to tech so I know I'll get the role I want soon.</p>
             </div>
 
+            {/* Journal Entry Date */}
+            <div className="journal-entry-date">
+                <p>Published on: January 11, 2023</p>
+            </div>
+
         </div>
     );
 };

@@ -6,20 +6,16 @@ const Journals = () => {
             id: 1,
             title: "The Tunnel of the Job Search",
             image: "/images/Journals/1-JobSearch.jpg",
-            link: "/TTOTJS"
+            link: "/TTOTJS",
+            date: "January 11, 2023"
         },
         {
             id: 2,
-            title: "Journal 2",
-            image: "/images/Journals/1-JobSearch.jpg",
-            link: "/projects/journals/1"
-        },
-        {
-            id: 3,
-            title: "Journal 3",
-            image: "/images/Journals/1-JobSearch.jpg",
-            link: "/projects/journals/1"
-        },
+            title: "A Busy Week",
+            image: "/images/Journals/2-ABusyWeek.jpeg",
+            link: "/ABW",
+            date: "January 24, 2023"
+        }
     ]
 
     const reversedJournals = [...journals].reverse();
@@ -37,6 +33,7 @@ const Journals = () => {
                             <img src={journal.image} alt="journal cover"/>
                             <div className="overlay">
                                 <h3>{journal.title}</h3>
+                                <h2>{journal.date}</h2>
                             </div>
                         </a>
                     </div>

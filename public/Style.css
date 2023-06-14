@@ -1366,6 +1366,12 @@ h2 {
     font-size: 3vh;
 }
 
+.journalCard .overlay h2 {
+    color: #cec9c9; /* White text */
+    font-size: 1.4vh;
+    margin-top: 1vh;
+}
+
 /* Show overlay on hover */
 .journalCard:hover .overlay {
     opacity: 1; /* Fully visible */
@@ -1419,11 +1425,22 @@ h2 {
 
 #journalEntry .journal-entry-image img {
     width: 60vw;
-    max-height: 40vh;
+    max-height: 50vh;
     object-fit: cover;
     border-radius: 0.8vw;
     margin: 2vh auto;
 }
+
+/* Journal Entry Date */
+#journalEntry .journal-entry-date {
+    color: #C2B19C;
+    font-size: 2.2vh;
+    text-align: center;
+    margin-top: -5vh;
+    margin-bottom: 2vh;
+    font-style: italic;
+}
+
 
 /* Books Page */
 /* #booksPage.page {

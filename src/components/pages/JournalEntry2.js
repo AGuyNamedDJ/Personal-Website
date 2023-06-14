@@ -5,15 +5,24 @@ const JournalEntry1 = () => {
         <div id="journalEntry" className="page">
             {/* Page Title */}
             <div id="titleSection">
-                <h1>The Tunnel of the Job Search</h1>
+                <h1>A Busy Week</h1>
+            </div>
+
+            {/* Journal Entry Image */}
+            <div className="journal-entry-image">
+                <img src="/images/Journals/2-ABusyWeek.jpeg" />
             </div>
             
             {/* Journal Entry Content */}
             <div className="journal-entry-content">
-                <p>Since Graduating from one of the Top Bootcamps over a month ago, I have submitted over 200 applications to entry and associate software engineering roles. Every morning, my emails are flooded with rejection notices.</p>
-                <p>To all of the recent grads, I'm here with you. I've never felt this in my previous field. I've never been consistently rejected before. I've always gotten the interview. But for now I'll keep trying. I've also decided to make a new full stack website every 4-5 days. I'm going to keep adding to my tech stack. And I'm going to make it! God brought me to tech so I know I'll get the role I want soon.</p>
+                <p>This week was a big one for me as I had my first three interviews for Software Engineering positions! While I was a bit nervous going into them, I'm happy to say that with each interview, my confidence grew. It reminded me of the importance of pushing ourselves out of our comfort zones, and how every opportunity is a chance to learn and grow.</p>
+                <p>I'm excited to see where this journey takes me and I'm grateful for the support of my friends and family who have been cheering me on. Here's to many more interviews to come!</p>
             </div>
 
+            {/* Journal Entry Date */}
+            <div className="journal-entry-date">
+                <p>Published on: January 24, 2023</p>
+            </div>
         </div>
     );
 };

@@ -87,6 +87,10 @@ const router = createBrowserRouter([
                 element: <JournalEntry1 />
             },
             {
+                path: "/ABW",
+                element: <JournalEntry2 />
+            },
+            {
                 path: "/projects/websites",
                 element: <Websites />
             },
