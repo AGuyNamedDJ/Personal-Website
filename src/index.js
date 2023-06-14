@@ -16,7 +16,7 @@ import Credentials from "./components/pages/Credentials";
 import FAQs from "./components/pages/FAQs";
 import HomePage from "./components/pages/HomePage";
 import Journals from "./components/pages/Journals";
-import JournalEntry1 from "./components/pages/Journals/JournalEntry1";
+import JournalEntry1 from "./components/pages/JournalEntry1";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
