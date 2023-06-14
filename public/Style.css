@@ -1488,7 +1488,6 @@ h2 {
 #booksPage .bookCard img {
     width: 50vw;
     height: auto;
-    object-fit: cover;
     border-radius: 0.8vw;
 }
 
