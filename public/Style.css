@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 2vh;
     justify-content: space-between;
     margin-top: 10vh;
+    padding-bottom: 4vh;
 }
 
 #block2 .top-line {
@@ -239,8 +240,77 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1vh;
     border-radius: 1.5vh;
 }
-  
-  
+
+/* Third block specific styles */
+#block3 .career-titles {
+    color: #cec9c9;
+    font-size: 3.5vw;
+    position: relative;
+    margin-top: -6vh; /* Adjust as needed */
+}
+
+#block3 .career-titles h1::after {
+    content: '+';
+    position: absolute; /* absolute positioning */
+    color: #C2B19C;
+    right: -4vh; /* adjust this to move the '+' horizontally */
+    top: 1vh; 
+    font-size: 5vh;
+}
+
+
+#block3 .three-row-container {
+    display: flex;
+    justify-content: space-between; /* Use `space-around` for even space on the edges as well */
+    width: 100%; /* Ensure the container spans the entire width */
+    margin-top: 4vh;
+    gap: 2vh; 
+}
+
+#block3 .three-row-container .row {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh;
+    background-color: #000;
+    border-radius: 2vh;
+    text-align: center;
+    color: #444;
+    position: relative; /* this is needed for the pseudo-element */
+}
+
+#block3 .three-row-container .row::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%; /* This and the following line will center the line vertically */
+    bottom: 25%;
+    width: 2px;
+    background: #C2B19C;
+}
+
+#block3 .three-row-container .row:last-child::before {
+    display: none; /* remove the line from the last row */
+}
+
+
+#block3 .three-row-container .row h2 {
+    font-size: 2.5vh;
+    color: #cec9c9
+}
+#block3 .three-row-container .row a {
+    font-size: 2vh;
+    color: #cec9c9;
+    opacity: 92%;
+}
+
+#block3 .three-row-container .row p {
+    font-size: 1.6vh;
+    color: #cec9c9;
+    opacity: 60%;
+}
+
+
 /* About */
 .page {
     display: flex;
