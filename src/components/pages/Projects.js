@@ -26,7 +26,7 @@ const Projects = () => {
                     {/* Video of Trading  */}
                     <iframe 
                         id="tradingVideo"
-                        src="https://www.youtube.com/watch?v=Lbp9kpjss2M" 
+                        src="https://www.youtube.com/embed/Lbp9kpjss2M?autoplay=1&mute=1" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
