@@ -11,7 +11,7 @@ const PrivacyLegal = () => {
 
                     <div id="privacyPolicy">
                         <h1>Privacy Policy</h1>
-                        <p>Last updated: [Insert date]</p>
+                        <p>Last updated: June 16, 2023</p>
 
                         <p>This Privacy Policy explains how personal information is collected, used, and disclosed by Dalron J. Robertson, the owner of this website. By using the site, you agree to the collection and use of information in accordance with this policy.</p>
 
