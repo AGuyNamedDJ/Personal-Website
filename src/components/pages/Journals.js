@@ -15,6 +15,13 @@ const Journals = () => {
             image: "/images/Journals/2-ABusyWeek.jpeg",
             link: "/ABW",
             date: "January 24, 2023"
+        },
+        {
+            id: 3,
+            title: "New Aged Branding",
+            image: "/images/Journals/3-Branding.png",
+            link: "/Branding",
+            date: "May 29, 2023"
         }
     ]
 

@@ -251,11 +251,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .career-title {
     color: #cec9c9;
-    font-size: 5.2vh;
+    font-size: 5.1vh;
     position: relative;
     align-self: flex-start;
     margin-left: 2vh;
-    margin-bottom: 1vh;
+    margin-bottom: -3vh;
 }
 
 .career-word {
