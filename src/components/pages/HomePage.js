@@ -20,22 +20,24 @@ const HomePage = () => {
                 </div>
             </div>
 
-           {/* Second block with subtitle, big title, button on the left and text description on the right */}
+            {/* Second block with subtitle, big title, button on the left and text description on the right */}
             <div className="block" id="block2">
                 <div className="image-container">
-                    <div className="left-image image-link">
+                    <div className="left-image">
                         <h1 className="title-line">
                             <span className="top-line">Recent</span>
                             <span className="bottom-line">Projects <span className="symbol">+</span></span>
                         </h1>
-                        <a href="https://github.com/AGuyNamedDJ/Health-Hive-Back-End">
-                            <img src="/images/Websites/Doctor.jpeg" alt="Project 1" />
-                            <div className="overlay">
-                                <button className="view-project-btn">View Project</button>
-                            </div>
-                        </a>
+                        <div className="image-link">
+                            <a href="https://github.com/AGuyNamedDJ/Health-Hive-Back-End">
+                                <img src="/images/Websites/Doctor.jpeg" alt="Project 1" />
+                                <div className="overlay">
+                                    <button className="view-project-btn">View Project</button>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div className="right-images">
+                    <div className="right-image">
                         <div className="image-link">
                             <a href="https://github.com/AGuyNamedDJ/TradingView-Scripts-1">
                                 <img src="/images/Websites/Tradingview.png" alt="Project 2" />
