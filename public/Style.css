@@ -290,7 +290,19 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #444;
     position: relative; 
-    border-right: 2px solid #C2B19C;  /* This line adds the border */
+}
+
+#block3 .three-row-container .row::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;   /* You can adjust this percentage to control the line's starting point */
+    bottom: 25%;  /* You can adjust this percentage to control the line's ending point */
+    border-right: 2px solid #C2B19C;
+}
+
+#block3 .three-row-container .row:last-child::before {
+    border-right: none;
 }
 
 #block3 .three-row-container .row:last-child {
@@ -298,18 +310,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #block3 .three-row-container .row h2 {
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     color: #cec9c9;
 }
 
 #block3 .three-row-container .row a {
-    font-size: 2vh;
+    font-size: 1.9vh;
     color: #cec9c9;
     opacity: 92%;
 }
 
 #block3 .three-row-container .row p {
-    font-size: 1.6vh;
+    font-size: 1.5vh;
     color: #cec9c9;
     opacity: 60%;
 }
