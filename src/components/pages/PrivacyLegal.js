@@ -55,17 +55,17 @@ const PrivacyLegal = () => {
                         <p>If you have any questions about this Privacy Policy, please contact us:</p>
 
                         <ul>
-                            <li>By email: [Your Email]</li>
-                            <li>By visiting this page on our website: [URL to contact page]</li>
+                        <li>By email: dalronj.robertson@gmail.com</li>
+                            <li>By visiting this page on our website: https://www.dalronj.robertson.com/connect</li>
                         </ul>
                     </div>
                     
                     <div id="termsConditions">
                         <h1>Terms & Conditions</h1>
                         <div id="termsContent">
-                        <p>Last updated: [Insert date]</p>
+                        <p>Last updated: June 16, 2023</p>
 
-                        <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the [your website address] website (the "Service") operated by Dalron J. Robertson ("us", "we", or "our").</p>
+                        <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the https://www.dalronjrobertson.com website (the "Service") operated by Dalron J. Robertson ("us", "we", or "our").</p>
 
                         <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
 
