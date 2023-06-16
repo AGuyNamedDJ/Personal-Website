@@ -352,8 +352,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #C2B19C;
 }
 
-
-
 /* About */
 .page {
     display: flex;
@@ -382,6 +380,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     padding: 1vw;
     opacity: 77%;
+}
+
+#image-container {
+    position: relative;
+}
+
+#image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(circle at center, transparent 10%, black 90%); 
+    z-index: 1;
 }
 
 #about-image {
