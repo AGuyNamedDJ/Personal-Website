@@ -82,8 +82,8 @@ const PrivacyLegal = () => {
                         <p>If you have any questions about these Terms, please contact us:</p>
 
                         <ul>
-                            <li>By email: [Your Email]</li>
-                            <li>By visiting this page on our website: [URL to contact page]</li>
+                            <li>By email: dalronj.robertson@gmail.com</li>
+                            <li>By visiting this page on our website: https://www.dalronj.robertson.com/connect</li>
                         </ul>
                     </div>
                 </div>
