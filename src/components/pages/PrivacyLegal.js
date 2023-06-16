@@ -55,8 +55,8 @@ const PrivacyLegal = () => {
                         <p>If you have any questions about this Privacy Policy, please contact us:</p>
 
                         <ul>
-                        <li>By email: dalronj.robertson@gmail.com</li>
-                            <li>By visiting this page on our website: https://www.dalronj.robertson.com/connect</li>
+                        <li>By email: dalronjrobertson@gmail.com</li>
+                            <li>By visiting this page on our website: https://www.dalronjrobertson.com/connect</li>
                         </ul>
                     </div>
                     
@@ -83,7 +83,7 @@ const PrivacyLegal = () => {
 
                         <ul>
                             <li>By email: dalronj.robertson@gmail.com</li>
-                            <li>By visiting this page on our website: https://www.dalronj.robertson.com/connect</li>
+                            <li>By visiting this page on our website: https://www.dalronjrobertson.com/connect</li>
                         </ul>
                     </div>
                 </div>
