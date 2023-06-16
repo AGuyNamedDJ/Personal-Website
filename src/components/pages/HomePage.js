@@ -38,23 +38,21 @@ const HomePage = () => {
             </div>
 
             {/* Third block with title and a 3 row container */}
-            <div className="block" id="block3">
-                <div className="career-titles">
-                    <h1>Career</h1>
-                </div>
-                <div className="three-row-container">
-                    <div className="row">
+            <div id="block3">
+                <h1 class="career-title">Career</h1>
+                <div class="three-row-container">
+                    <div class="row">
                         <h2>Freelance</h2>
                         <a>Software Developer</a>
                         <p>Dec 2022 - Present</p>
                     </div>
-                    <div className="row">
+                    <div class="row">
                         <h2>MMP</h2>
                         <a>Data & MR Analyst</a>
                         <p>Aug 2020 - Apr 2022</p>
                     </div>
-                    <div className="row">
-                        <h2>CVS Pharmacy</h2>
+                    <div class="row">
+                        <h2>CVS Health</h2>
                         <a>Pharmacist Intern</a>
                         <p>Aug 2015 - Aug 2020</p>
                     </div>
