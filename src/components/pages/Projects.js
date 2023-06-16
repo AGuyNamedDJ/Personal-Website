@@ -24,13 +24,13 @@ const Projects = () => {
                     <p>Embark on a journey into the nuanced world of trading. Explore my approaches, witness calculated risks in action, and gain insights from my real-time market maneuvers. Below you'll find the most recent video from my YouTube channel, providing a tangible window into my trading practices and thought processes.</p>
 
                     {/* Video of Trading  */}
-                    <iframe 
+                    <iframe
                         id="tradingVideo"
-                        src="https://www.youtube.com/embed/Lbp9kpjss2M?autoplay=1&mute=1" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                        src="https://www.youtube.com/embed/Lbp9kpjss2M?autoplay=1&mute=1&start=106"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
                 </div>
 
                 {/* Writing Section */}
