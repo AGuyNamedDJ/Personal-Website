@@ -20,19 +20,38 @@ const HomePage = () => {
                 </div>
             </div>
 
-            {/* Second block with subtitle, big title, button on the left and text description on the right */}
+           {/* Second block with subtitle, big title, button on the left and text description on the right */}
             <div className="block" id="block2">
                 <div className="image-container">
-                    <div className="left-image">
+                    <div className="left-image image-link">
                         <h1 className="title-line">
                             <span className="top-line">Recent</span>
                             <span className="bottom-line">Projects <span className="symbol">+</span></span>
                         </h1>
-                        <a href="https://github.com/AGuyNamedDJ/Health-Hive-Back-End"><img src="/images/Websites/Doctor.jpeg" alt="Project 1" /></a>
+                        <a href="https://github.com/AGuyNamedDJ/Health-Hive-Back-End">
+                            <img src="/images/Websites/Doctor.jpeg" alt="Project 1" />
+                            <div className="overlay">
+                                <button className="view-project-btn">View Project</button>
+                            </div>
+                        </a>
                     </div>
-                    <div className="right-image">
-                        <a href="https://github.com/AGuyNamedDJ/TradingView-Scripts-1"><img src="/images/Websites/Tradingview.png" alt="Project 2" /></a>
-                        <a href="/TTOTJS"><img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" /></a>
+                    <div className="right-images">
+                        <div className="image-link">
+                            <a href="https://github.com/AGuyNamedDJ/TradingView-Scripts-1">
+                                <img src="/images/Websites/Tradingview.png" alt="Project 2" />
+                                <div className="overlay">
+                                    <button className="view-project-btn">View Project</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="image-link">
+                            <a href="/TTOTJS">
+                                <img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" />
+                                <div className="overlay">
+                                    <button className="view-project-btn">View Project</button>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
