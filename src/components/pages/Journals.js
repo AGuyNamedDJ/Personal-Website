@@ -4,20 +4,27 @@ const Journals = () => {
     const journals = [
         {
             id: 1,
+            title: "Love's Purpose",
+            image: "/images/Journals/4-Love.png",
+            link: "/Love",
+            date: "June 14, 2022"
+        },
+        {
+            id: 2,
             title: "The Tunnel of the Job Search",
             image: "/images/Journals/1-JobSearch.jpg",
             link: "/TTOTJS",
             date: "January 11, 2023"
         },
         {
-            id: 2,
+            id: 3,
             title: "A Busy Week",
             image: "/images/Journals/2-ABusyWeek.jpeg",
             link: "/ABW",
             date: "January 24, 2023"
         },
         {
-            id: 3,
+            id: 4,
             title: "New Aged Branding",
             image: "/images/Journals/3-Branding.png",
             link: "/Branding",

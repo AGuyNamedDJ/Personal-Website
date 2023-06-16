@@ -20,6 +20,7 @@ import Journals from "./components/pages/Journals";
 import JournalEntry1 from "./components/pages/JournalEntry1";
 import JournalEntry2 from "./components/pages/JournalEntry2";
 import JournalEntry3 from "./components/pages/JournalEntry3";
+import JournalEntry4 from "./components/pages/JournalEntry4";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
             {
                 path: "/Branding",
                 element: <JournalEntry3 />
+            },
+            {
+                path: "/Love",
+                element: <JournalEntry4 />
             },
             {
                 path: "/projects/websites",
