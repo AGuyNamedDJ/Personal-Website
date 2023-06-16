@@ -241,7 +241,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1.5vh;
 }
 
-/* Third block specific styles */
 /* Block 3 Styles */
 #block3 {
     width: 100%;
@@ -252,50 +251,68 @@ h1, h2, h3, h4, h5, h6 {
 
 .career-title {
     color: #cec9c9;
-    font-size: 3.5vw;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 2vh;
-}
-
-.three-row-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.row {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #000;
-    padding: 2vh;
-    border-radius: 2vh;
-    color: #444;
-}
-
-.row h2,
-.row a,
-.row p {
-    font-size: 2vh;
-    color: #cec9c9;
-}
-
-.row h2 {
-    margin-bottom: 0.5vh;
-}
-
-.row a {
-    opacity: 92%;
+    font-size: 5.2vh;
+    position: relative;
+    align-self: flex-start;
+    margin-left: 2vh;
     margin-bottom: 1vh;
 }
 
-.row p {
-    opacity: 60%;
+.career-word {
+    position: relative;
+    z-index: 1; 
 }
 
+.career-symbol {
+    position: absolute;
+    color: #C2B19C;
+    left: 0; 
+    top: 0.5vh; 
+    font-size: 5vh;
+    z-index: 0;  /* this will position the '+' symbol behind the 'Career' word */
+}
+
+
+#block3 .three-row-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 4vh;
+    gap: 2vh; 
+}
+
+#block3 .three-row-container .row {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh;
+    background-color: #000;
+    text-align: center;
+    color: #444;
+    position: relative; 
+    border-right: 2px solid #C2B19C;  /* This line adds the border */
+}
+
+#block3 .three-row-container .row:last-child {
+    border-right: none;  /* This line ensures the last item doesn't have a border on the right */
+}
+
+#block3 .three-row-container .row h2 {
+    font-size: 2.5vh;
+    color: #cec9c9;
+}
+
+#block3 .three-row-container .row a {
+    font-size: 2vh;
+    color: #cec9c9;
+    opacity: 92%;
+}
+
+#block3 .three-row-container .row p {
+    font-size: 1.6vh;
+    color: #cec9c9;
+    opacity: 60%;
+}
 
 /* Block 4 */
 #block4 {

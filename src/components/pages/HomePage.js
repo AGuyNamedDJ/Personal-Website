@@ -39,7 +39,10 @@ const HomePage = () => {
 
             {/* Third block with title and a 3 row container */}
             <div id="block3">
-                <h1 class="career-title">Career</h1>
+                <h1 className="career-title">
+                    <span className="career-word">Career</span> <span className="symbol">+</span>
+                </h1>
+
                 <div class="three-row-container">
                     <div class="row">
                         <h2>Freelance</h2>
