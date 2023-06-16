@@ -242,6 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Third block specific styles */
+
+
 #block3 .career-titles {
     color: #cec9c9;
     font-size: 3.5vw;
@@ -258,18 +260,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5vh;
 }
 
-
 #block3 .three-row-container {
     display: flex;
-    justify-content: space-between; 
-    width: 100%; 
-    margin-top: 4vh;
-    gap: 2vh; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
+    width: 80%; 
+    margin: 4vh auto; 
 }
 
+
 #block3 .three-row-container .row {
-    min-width: 20vw; 
-    min-height: 20vh; 
     flex: 1;
     flex-direction: column;
     justify-content: center;
