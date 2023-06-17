@@ -21,6 +21,7 @@ import JournalEntry1 from "./components/pages/JournalEntry1";
 import JournalEntry2 from "./components/pages/JournalEntry2";
 import JournalEntry3 from "./components/pages/JournalEntry3";
 import JournalEntry4 from "./components/pages/JournalEntry4";
+import JournalEntry5 from "./components/pages/JournalEntry5";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
             {
                 path: "/Love",
                 element: <JournalEntry4 />
+            },
+            {
+                path: "/Digital",
+                element: <JournalEntry5 />
             },
             {
                 path: "/projects/websites",

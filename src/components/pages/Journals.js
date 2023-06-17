@@ -29,6 +29,13 @@ const Journals = () => {
             image: "/images/Journals/3-Branding.png",
             link: "/Branding",
             date: "May 29, 2023"
+        },
+        {
+            id: 5,
+            title: "A Journey Towards Digital Harmony",
+            image: "/images/Journals/5-Digital.png",
+            link: "/Digital",
+            date: "May 27, 2023"
         }
     ]
 
