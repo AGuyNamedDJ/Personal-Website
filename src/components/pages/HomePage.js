@@ -47,8 +47,8 @@ const HomePage = () => {
                             </a>
                         </div>
                         <div className="image-link">
-                            <a href="/TTOTJS">
-                                <img src="/images/Journals/1-JobSearch.jpg" alt="Project 3" />
+                            <a href="/Love">
+                                <img src="/images/Journals/4-Love.png" alt="Project 3" />
                                 <div className="overlay">
                                     <button className="view-project-btn">View Project</button>
                                 </div>
