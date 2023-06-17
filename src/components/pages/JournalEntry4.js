@@ -5,7 +5,7 @@ const JournalEntry1 = () => {
         <div id="journalEntry" className="page">
             {/* Page Title */}
             <div id="titleSection">
-                <h1>The Tunnel of the Job Search</h1>
+                <h1>Love's Purpose</h1>
             </div>
 
             {/* Journal Entry Image */}
