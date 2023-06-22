@@ -573,31 +573,31 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 8vh;
-    right: 20vh;
     width: 100vw;
     height: 80vh;
     background: red;
-    /* padding: 5vh 0; */
-}
-
-@media (max-width: 600px) {
-    .my-story {
-        right: 0; /* Reset right offset on smaller screens */
-    }
-    .book {
-        margin-right: 0; /* Reset margin on smaller screens */
-        margin: auto; /* Center the book on smaller screens */
-    }
+    overflow: hidden;
 }
 
 .book {
-    width: 60vw;  
-    height: 75vh; 
-    margin-right: 28vh;
+    width: 90%;  
+    height: 90%;
     perspective: 100vw;
     position: relative;
     background-color: #C2B19C;
     background: linear-gradient(to right, #ffffff, #e1e1e1);
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .my-story {
+        height: 100vh; 
+    }
+    .book {
+        width: 95%;  
+        height: 95%; 
+        margin: auto; 
+    }
 }
 
 article {
