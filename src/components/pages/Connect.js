@@ -154,7 +154,7 @@ const Connect = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((current + 1) % slidesData.length);
-        }, 5000);
+        }, 3500);
     
     
         // getLatestYoutubeVideo().then(video => {
