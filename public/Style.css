@@ -590,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 450px) {
     article {
         width: 90%;  
         height: 40%; 
@@ -602,11 +602,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     article p {
-        font-size: 1.7vw;
+        font-size: 14px;
     }
 
     .book {
-        height: 50%;
+        height: 40%;
     }
 }
 
