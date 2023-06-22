@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
     perspective: 100vw;
     position: relative;
     margin-bottom: 4vh;
-    background-color: #C2B19C;
+    background-color: #000;
     background: linear-gradient(to right, #000, #000);
     box-sizing: border-box;
 }
@@ -612,11 +612,12 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
     width: 100%;  
-    height: 95%; 
+    height: 100%; 
     position: absolute;
     will-change: transform;
-    color: #cec9c9;
+    color: #000;
     overflow: scroll;
+    margin-top: 1vh;
     padding: 4.5vw;
     box-sizing: border-box;
     background: #dacebf;
@@ -642,7 +643,8 @@ article p {
 
 .bookTitle {
     position: absolute;
-    top: 1.25vh; 
+    top: 1vh; 
+    margin-top: 1vh;
     right: 4.5vw; 
     font-size: 1.8vw; 
     font-style: italic;
