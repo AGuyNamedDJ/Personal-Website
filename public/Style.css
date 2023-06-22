@@ -237,6 +237,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 38vw;
     height: 38vw;
     object-fit: cover;
+    opacity: 70%;
     padding: 1vh;
     border-radius: 1.5vh;
 }
@@ -626,6 +627,12 @@ article p {
     font-size: 1.8vw; 
     font-style: italic;
     color: #4f310c; 
+}
+
+@media (max-width: 600px) {
+    .bookTitle {
+        top: 0.75vh; 
+    }
 }
 
 .bookFooter {
