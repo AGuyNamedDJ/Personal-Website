@@ -581,9 +581,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .book {
     width: 90%;  
-    height: 90%;
+    height: 100%;
     perspective: 100vw;
     position: relative;
+    margin-bottom: 4vh;
     background-color: #C2B19C;
     background: linear-gradient(to right, #000, #000);
     box-sizing: border-box;
@@ -593,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
     .my-story {
         height: 100vh; 
     }
-    article {
+    .book {
         width: 95%;  
         height: 95%; 
         margin: auto; 
@@ -601,8 +602,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
-    width: 90%;  
-    height: 90%; 
+    width: 100%;  
+    height: 95%; 
     position: absolute;
     will-change: transform;
     color: #cec9c9;
