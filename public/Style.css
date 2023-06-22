@@ -613,7 +613,7 @@ article h2 {
 }
 
 article p {
-    font-size: 1.8vw;  
+    font-size: 1.5vw;  
     text-align: justify;
     color: #4f310c;
     text-indent: 3.5vw;
@@ -636,6 +636,12 @@ article p {
     text-decoration: line-through;
     color: #4f310c;
     font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+    .book {
+        height: 80%;
+    }
 }
 
 /* Projects */

@@ -25,7 +25,7 @@ const JournalEntry1 = () => {
 
             {/* Journal Entry Date */}
             <div className="journal-entry-date">
-                <p>Published on: May 29, 2023</p>
+                <p>Published on: May 25, 2023</p>
             </div>
         </div>
     );
