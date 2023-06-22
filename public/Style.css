@@ -593,12 +593,16 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 768px) {
     article {
         width: 90%;  
-        height: 60%; 
-        padding: 2.5vw; 
+        height: 55%; 
+        padding: 2vw; 
     }
 
     .bookTitle {
         top: 0.5vh;
+    }
+
+    article p {
+        font-size: 1.5vw;
     }
 }
 
