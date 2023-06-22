@@ -590,14 +590,15 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-    .my-story {
-        height: 100vh; 
+@media only screen and (max-width: 768px) {
+    article {
+        width: 90%;  
+        height: 90%; 
+        padding: 2.5vw; 
     }
-    .article {
-        width: 95%;  
-        height: 95%; 
-        margin: auto; 
+
+    .bookTitle {
+        top: 0.5vh;
     }
 }
 
