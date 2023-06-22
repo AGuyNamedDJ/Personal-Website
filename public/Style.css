@@ -576,8 +576,18 @@ h1, h2, h3, h4, h5, h6 {
     right: 20vh;
     width: 100vw;
     height: 80vh;
-    background: #000;
+    background: red;
     /* padding: 5vh 0; */
+}
+
+@media (max-width: 600px) {
+    .my-story {
+        right: 0; /* Reset right offset on smaller screens */
+    }
+    .book {
+        margin-right: 0; /* Reset margin on smaller screens */
+        margin: auto; /* Center the book on smaller screens */
+    }
 }
 
 .book {
