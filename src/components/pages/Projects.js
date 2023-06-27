@@ -26,11 +26,12 @@ const Projects = () => {
                     {/* Video of Trading  */}
                     <iframe
                         id="tradingVideo"
-                        src="https://www.youtube.com/embed/KqqwOfQvIf0?autoplay=1&mute=1&start=106"
+                        src="https://www.youtube.com/embed/fOP7sZgJgE8?autoplay=1&mute=1"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                     ></iframe>
+
                 </div>
 
                 {/* Writing Section */}
