@@ -1782,6 +1782,13 @@ h2 {
     margin-bottom: 2vh; 
 }
 
+#journalEntry .journal-entry-content a::after {
+    content: "";
+    display: block;
+    height: 4vh;
+}
+
+
 /* Journal Entry Date */
 #journalEntry .journal-entry-date {
     font-size: 2vh;
