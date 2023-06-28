@@ -36,6 +36,13 @@ const Journals = () => {
             image: "/images/Journals/5-Digital.png",
             link: "/Digital",
             date: "May 27, 2023"
+        },
+        {
+            id: 6,
+            title: "Darkness is Evidence of Light",
+            image: "/images/Journals/6-Light.jpg",
+            link: "/DIEOL",
+            date: "June 28, 2023"
         }
     ]
 

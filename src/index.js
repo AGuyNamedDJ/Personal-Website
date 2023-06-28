@@ -22,6 +22,7 @@ import JournalEntry2 from "./components/pages/JournalEntry2";
 import JournalEntry3 from "./components/pages/JournalEntry3";
 import JournalEntry4 from "./components/pages/JournalEntry4";
 import JournalEntry5 from "./components/pages/JournalEntry5";
+import JournalEntry6 from "./components/pages/JournalEntry6";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
             {
                 path: "/Digital",
                 element: <JournalEntry5 />
+            },
+            {
+                path: "/DIEOL",
+                element: <JournalEntry6 />
             },
             {
                 path: "/projects/websites",
