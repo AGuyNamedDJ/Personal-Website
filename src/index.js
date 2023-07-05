@@ -87,27 +87,27 @@ const router = createBrowserRouter([
                 element: <Journals />
             },
             {
-                path: "/projects/1",
+                path: "/jone",
                 element: <JournalEntry1 />
             },
             {
-                path: "/projects/2",
+                path: "/jtwo",
                 element: <JournalEntry2 />
             },
             {
-                path: "/projects/3",
+                path: "/jthree",
                 element: <JournalEntry3 />
             },
             {
-                path: "/projects/4",
+                path: "/jfour",
                 element: <JournalEntry4 />
             },
             {
-                path: "/projects/5",
+                path: "/jfive",
                 element: <JournalEntry5 />
             },
             {
-                path: "/projects/6",
+                path: "/jsix",
                 element: <JournalEntry6 />
             },
             {
