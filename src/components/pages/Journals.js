@@ -6,42 +6,42 @@ const Journals = () => {
             id: 1,
             title: "Love's Purpose",
             image: "/images/Journals/4-Love.png",
-            link: "/Love",
+            link: "/projects/4",
             date: "June 14, 2022"
         },
         {
             id: 2,
             title: "The Tunnel of the Job Search",
             image: "/images/Journals/1-JobSearch.jpg",
-            link: "/TTOTJS",
+            link: "/projects/1",
             date: "January 11, 2023"
         },
         {
             id: 3,
             title: "A Busy Week",
             image: "/images/Journals/2-ABusyWeek.jpeg",
-            link: "/ABW",
+            link: "/projects/2",
             date: "January 24, 2023"
         },
         {
             id: 4,
             title: "New Aged Branding",
             image: "/images/Journals/3-Branding.png",
-            link: "/Branding",
+            link: "/projects/3",
             date: "May 25, 2023"
         },
         {
             id: 5,
             title: "A Journey Towards Digital Harmony",
             image: "/images/Journals/5-Digital.png",
-            link: "/Digital",
+            link: "/projects/5",
             date: "May 27, 2023"
         },
         {
             id: 6,
             title: "Darkness is Evidence of Light",
             image: "/images/Journals/6-Light.jpg",
-            link: "/DIEOL",
+            link: "/projects/6",
             date: "June 28, 2023"
         }
     ]
