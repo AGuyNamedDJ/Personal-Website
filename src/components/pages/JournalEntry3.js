@@ -10,7 +10,7 @@ const JournalEntry1 = () => {
 
             {/* Journal Entry Image */}
             <div className="journal-entry-image">
-                <img src="/images/Journals/3-Branding.png" />
+                <img src="/images/Journals/3-Branding1.jpeg" />
             </div>
             
             {/* Journal Entry Content */}

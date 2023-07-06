@@ -47,10 +47,10 @@ const HomePage = () => {
                             </a>
                         </div>
                         <div className="image-link">
-                            <a href="/Love">
-                                <img src="/images/Journals/4-Love.png" alt="Project 3" />
+                            <a href="/jsix">
+                                <img src="/images/Journals/6-Light.jpg" alt="Project 3" />
                                 <div className="overlay">
-                                    <button className="view-project-btn">View Project</button>
+                                    <button className="view-project-btn">View Journal</button>
                                 </div>
                             </a>
                         </div>
@@ -90,8 +90,8 @@ const HomePage = () => {
                     <a className="line-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <a className="line-link" href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a className="line-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a className="line-link" href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noopener noreferrer">Youtube:Gaming</a>
-                    <a className="line-link" href="https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w" target="_blank" rel="noopener noreferrer">Youtube:Personal</a>
+                    <a className="line-link" href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noopener noreferrer">Youtube: Gaming</a>
+                    <a className="line-link" href="https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w" target="_blank" rel="noopener noreferrer">Youtube: Personal</a>
                 </div>
             </div>
         </div>

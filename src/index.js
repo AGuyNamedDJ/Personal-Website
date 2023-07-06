@@ -23,6 +23,7 @@ import JournalEntry3 from "./components/pages/JournalEntry3";
 import JournalEntry4 from "./components/pages/JournalEntry4";
 import JournalEntry5 from "./components/pages/JournalEntry5";
 import JournalEntry6 from "./components/pages/JournalEntry6";
+import JournalEntry7 from "./components/pages/JournalEntry7";
 import MyStory from "./components/pages/MyStory";
 import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
             {
                 path: "/jsix",
                 element: <JournalEntry6 />
+            },
+            {
+                path: "/jseven",
+                element: <JournalEntry7 />
             },
             {
                 path: "/projects/websites",

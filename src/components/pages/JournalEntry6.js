@@ -15,6 +15,8 @@ const JournalEntry6 = () => {
             
             {/* Journal Entry Content */}
             <div className="journal-entry-content">
+                <p>"Without the dark, light would serve no purpose" - a profound statement that has been my anchor throughout my challenging job search journey.</p>
+                <br />
                 <p>Over the past 7 months, I've thrown myself headlong into the job market, taking part in numerous interviews, submitting what feels like thousands of job applications. The results, though? Not as anticipated. The relentless cycle of application, interview, rejection, repeat, has felt like an endless tunnel of darkness, making it seem impossible to secure a position.</p>
                 <br />
                 <p>Yet, amidst this, I found wisdom that has changed my entire perspective. Think of the creation story, when God sought to create light, darkness was first present, setting a stage and creating a need for light. In a similar vein, my job search struggles aren't mere roadblocks, but a necessary darkness that underlines the need for my professional growth, my light.</p>
