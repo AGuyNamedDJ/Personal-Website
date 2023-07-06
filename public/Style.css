@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
 /* 2nd block specific styles */
 #block2 .image-container {
     display: flex;
-    margin-left: 2vh;
-    justify-content: space-between;
+    margin-left: 9vh;
+    justify-content: center;
     margin-top: 6vh;
     padding-bottom: 4vh;
 }
@@ -234,8 +234,8 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 #block2 .image-container img {
-    width: 38vw;
-    height: 38vw;
+    width: 30vw;
+    height: 30vw;
     object-fit: cover;
     opacity: 70%;
     padding: 1vh;
