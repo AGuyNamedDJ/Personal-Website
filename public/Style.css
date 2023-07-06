@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .career-title {
     color: #cec9c9;
-    font-size: 5.1vh;
+    font-size: 4.8vh;
     position: relative;
     align-self: flex-start;
     margin-left: 2vh;
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 #block4 .centered-text-container .contact-me {
     font-size: 1.6vw; 
     color: #cec9c9;
-    margin-top: 14vh;
+    margin-top: 8vh;
     padding: 4vh;
 }
 
