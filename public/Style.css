@@ -349,18 +349,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #block3 .three-row-container .row h2 {
-    font-size: 2.6vh;
+    font-size: 2.2vh;
     color: #cec9c9;
 }
 
 #block3 .three-row-container .row a {
-    font-size: 1.9vh;
+    font-size: 1.65vh;
     color: #cec9c9;
     opacity: 92%;
 }
 
 #block3 .three-row-container .row p {
-    font-size: 1.5vh;
+    font-size: 1.4vh;
     color: #cec9c9;
     opacity: 60%;
 }
