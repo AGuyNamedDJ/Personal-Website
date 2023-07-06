@@ -1199,8 +1199,8 @@ h2 {
     border-radius: 1vw;
 }
 
-.resumeButton:hover {
-    background-color: #C2B19C;
+.resumeButton:hover, .cvButton:hover, .certificationButton:hover, .notorietyButton:hover  {
+    color: #C2B19C;
 }
 
 
