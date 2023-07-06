@@ -222,7 +222,7 @@ const Connect = () => {
                 <div
                     className="calendly-inline-widget"
                     data-url="https://calendly.com/dalronjrobertson?background_color=000000&text_color=cec9c9&primary_color=c2b19c"
-                    style={{ minWidth: '50vw', height: '50vh' }} // adjust these values as needed
+                    style={{ minWidth: '35vw', height: '45vh' }} // adjust these values as needed
                 ></div>
             </div>
 
