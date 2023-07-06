@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #homePage .block .image img {
-    width: 40vw;
+    width: 30vw;
     height: auto;
     object-fit: cover;
     margin-top: 4vh;
