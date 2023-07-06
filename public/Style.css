@@ -750,8 +750,8 @@ article p {
 }
 
 #tradingVideo {
-    width: 80vw;
-    height: 45vw; 
+    width: 66vw;
+    height: 46vw; 
     margin-top: 6vh;
     left: 8vw;
 }
@@ -799,8 +799,8 @@ article p {
 }
   
 .image-links img {
-    width: 30vw;
-    height: 32vh;
+    width: 28vw;
+    height: 28vh;
     object-fit: cover;
     border-radius: 0.8vw;
     margin: 0;
@@ -1164,11 +1164,11 @@ article p {
 }
 
 .section-credentials {
-    width: 80vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     border: 1px solid #cec9c9;
-    border-radius: 1vw;
+    border-radius: 0.8vw;
     padding: 2vw;
     text-align: center;
     align-items: center;

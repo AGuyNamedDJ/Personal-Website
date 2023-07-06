@@ -39,7 +39,7 @@ const Credentials = () => {
                 <div id="notorietySection" className="section-credentials" style={{textAlign: "center"}}>
                     <h1>Notoriety</h1>
                     <div className="buttonContainer">
-                    <p style={{opacity: "0.77"}}>This section unveils an array of awards, honors, media features, and notable acknowledgments that exemplify my commitment to excellence, growth, and societal contributions.</p>
+                    <p style={{opacity: "0.77"}}>This section unveils an array of awards, honors, and notable acknowledgments that exemplify my commitment to excellence, growth, and contributions.</p>
                     </div>
                 </div>
             </div>

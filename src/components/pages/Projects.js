@@ -42,7 +42,7 @@ const Projects = () => {
                     {/* Link to Writing Pages */}
                     <div className="image-links">
                         <Link to="/projects/journals" className="image-link">
-                            <img src="/images/Writings/AI.JPG" alt="Journal entries" />
+                            <img src="/images/Writings/Journal.webp" alt="Journal entries" />
                             <div className="overlay">
                             <p className="label">View Journals</p>
                             </div>
