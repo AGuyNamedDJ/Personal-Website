@@ -126,6 +126,10 @@ const router = createBrowserRouter([
                 path: "/ventures/realestate",
                 element: <RealEstate />
             },
+            {
+                path: "*", //catch all route
+                element: <ErrorPage />
+            },
         ]
     }
 ])
