@@ -47,16 +47,18 @@ function shuffle(array) {
 }
 
 const About = () => {
-    // useState and useEffect for controlling the slideshow
     const [shuffledImages, setShuffledImages] = useState(shuffle([...imgSources]));
-    const [currentImg, setCurrentImg] = React.useState(0);
+    const [currentPage, setCurrentPage] = useState(0);
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImg((currentImg + 1) % shuffledImages.length);
-        }, 3000); // change image every 3 seconds
-        return () => clearInterval(timer);
-    }, [currentImg, shuffledImages]);
+    // Function to navigate to the next page
+    const nextPage = () => {
+        setCurrentPage(currentPage => Math.min(currentPage + 1, Math.floor(shuffledImages.length / 9)));
+    };
+
+    // Function to navigate to the previous page
+    const prevPage = () => {
+        setCurrentPage(currentPage => Math.max(currentPage - 1, 0));
+    };
 
     return(
         <div id="aboutPage" className="page">
@@ -110,8 +112,14 @@ const About = () => {
                 <h2>Personal Interests</h2>
                 <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
                 <div id="slideshow">
-                    <img src={shuffledImages[currentImg]} alt="Slideshow" />
+                    {shuffledImages.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 
+                        <div key={index} className="slideshow-img-container">
+                            <img src={imgSrc} alt={`Slideshow ${index+1}`} className="slideshow-img" />
+                        </div>
+                    )}
                 </div>
+                <button onClick={prevPage} disabled={currentPage === 0}>Previous</button>
+                <button onClick={nextPage} disabled={currentPage === Math.floor(shuffledImages.length / 9)}>Next</button>
             </div>
         </div>
     )

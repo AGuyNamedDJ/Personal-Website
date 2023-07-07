@@ -555,15 +555,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #slideshow {
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     height: auto;
+    margin-bottom: 1em;
 }
 
-#slideshow img {
+.slideshow-img-container {
+    flex: 1 0 30%;
+    margin: 0.5em;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.slideshow-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1vw;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
 }
 
 /* My Story */
