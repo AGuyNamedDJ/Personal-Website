@@ -113,7 +113,7 @@ const About = () => {
                 <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
                 <div id="slideshow-controls">
                     <button className="control-button" onClick={prevPage} disabled={currentPage === 0}>
-                    <img src="/images/AboutArrow.png" alt="Previous" />
+                    <img class="prev-button" src="/images/AboutArrow.png" alt="Previous" />
                     </button>
                     <div id="slideshow">
                         {shuffledImages.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 

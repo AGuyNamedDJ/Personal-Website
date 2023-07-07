@@ -602,6 +602,10 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 50%;
 }
 
+.prev-button {
+    transform: scaleX(-1);
+}
+
 /* My Story */
 .my-story {
     display: flex;
