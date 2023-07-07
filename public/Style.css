@@ -554,13 +554,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2vh;
 }
 
+#slideshow-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 #slideshow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1em;
+    flex: 1 0 70%; /* adjust this as needed */
 }
 
 .slideshow-img-container {
@@ -568,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.5em;
     border-radius: 1vw;
     overflow: hidden;
-    height: 25vw;
+    height: 200px; /* adjust this as needed */
 }
 
 .slideshow-img {
@@ -583,8 +588,8 @@ button {
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
+    border-radius: 2em;
+    flex: 1 0 10%; /* adjust this as needed */
 }
 
 button:disabled {

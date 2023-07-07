@@ -109,18 +109,21 @@ const About = () => {
 
             {/* Personal Interests Section */}
             <div id="personalInterestsSection" className="section-about">
-                <h2>Personal Interests</h2>
-                <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
-                <div id="slideshow">
-                    {shuffledImages.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 
-                        <div key={index} className="slideshow-img-container">
-                            <img src={imgSrc} alt={`Slideshow ${index+1}`} className="slideshow-img" />
-                        </div>
-                    )}
+    <h2>Personal Interests</h2>
+    <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
+    <div id="slideshow-controls">
+        <button onClick={prevPage} disabled={currentPage === 0}>Previous</button>
+        <div id="slideshow">
+            {shuffledImages.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 
+                <div key={index} className="slideshow-img-container">
+                    <img src={imgSrc} alt={`Slideshow ${index+1}`} className="slideshow-img" />
                 </div>
-                <button onClick={prevPage} disabled={currentPage === 0}>Previous</button>
-                <button onClick={nextPage} disabled={currentPage === Math.floor(shuffledImages.length / 9)}>Next</button>
-            </div>
+            )}
+        </div>
+        <button onClick={nextPage} disabled={currentPage === Math.floor(shuffledImages.length / 9)}>Next</button>
+    </div>
+</div>
+
         </div>
     )
 };
