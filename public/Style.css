@@ -593,7 +593,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .control-button:disabled {
-    background-color: #777;
+    /* background-color: #C2B19C; */
+    opacity: 25%;
     cursor: not-allowed;
 }
 
@@ -605,6 +606,11 @@ h1, h2, h3, h4, h5, h6 {
 .prev-button {
     transform: scaleX(-1);
 }
+
+.control-button:active img {
+    opacity: 0.6; 
+}
+
 
 /* My Story */
 .my-story {
