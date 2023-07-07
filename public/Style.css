@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-button {
+.control-button {
     padding: 0.5em 1em;
     margin: 0 0.5em;
     background-color: #000;
@@ -592,9 +592,14 @@ button {
     flex: 1 0 10%; /* adjust this as needed */
 }
 
-button:disabled {
+.control-button:disabled {
     background-color: #777;
     cursor: not-allowed;
+}
+
+.control-button img {
+    max-height: 50%;
+    max-width: 50%;
 }
 
 /* My Story */
