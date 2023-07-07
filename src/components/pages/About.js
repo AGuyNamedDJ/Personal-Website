@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import Mac1 from "../animations/Mac1.json";
 import Create from "../animations/Create.json";
+import Book1 from "../animations/Book1.json";
 
 const defaultOptions = {
     loop: true,
     autoplay: true, 
-    animationData: Create,
+    animationData: Book1,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
@@ -70,15 +71,7 @@ const About = () => {
             {/* Intro Section */}
             <div id="introSection" className="section-about">
                 <div id="about-text">
-                    <p id="indented-paragraph"> Welcome, I am Dalron J. Robertson, an embodiment of ceaseless curiosity and unbridled passion. At 27, I am a father, a Christian, and a lover of life's endless possibilities.
-
-                    Difficult to confine to a single title, my essence is steeped in creativity, problem-solving and an unyielding zest for knowledge. I navigate a variety of realms, from software development to finance, music to technology, with an ease born of my belief in the attainable.
-
-                    My journey is as varied as my interests, beginning with my studies in music, transitioning through the life sciences, and now residing in the realm of technology. Each phase represents a new layer of experience and wisdom, a unique perspective that encompasses all I do.
-
-                    Outside of work, I immerse myself in the arts, admire the wonders of architecture, and relax myself in boating life. The pursuit of excellence extends to my personal life, influencing my love for culinary experiences, and my love for the tranquility of nature.
-
-                    Join me as I continue to explore, grow, and transcend boundaries in this extraordinary adventure called life.</p>
+                    <p id="indented-paragraph">Welcome! I'm Dalron J. Robertson, a 27-year-old father, Christian, and passionate enthusiast of life's endless possibilities. My interests are wide and varied, straddling the domains of software development, finance, music, and technology. My academic journey began with music, transitioned into life sciences, and finally, found its calling in the realm of technology. This unique blend of experiences informs my perspective, infusing creativity and problem-solving into all I do. When I'm not immersed in work, I explore the arts, admire architectural wonders, and unwind with boating adventures. I also enjoy delving into culinary experiences and basking in the tranquility of nature. Join me as I navigate this extraordinary journey of life, continually exploring, growing, and pushing boundaries.</p>
                 </div>
                     <div id="image-container" style={{position: "relative"}}>
                         <img src="/images/AGNDJ1.png" alt="Dalron" id="about-image" />
@@ -98,7 +91,7 @@ const About = () => {
                     </div>
 
                     <div id="creation-animation">
-                        <Lottie animationData={Create} style={{ height: '40vh', width: '40vw' }} loop autoplay />
+                        <Lottie animationData={Book1} style={{ height: '40vh', width: '40vw' }} loop autoplay />
                     </div>
 
                     <div className="creation-text">

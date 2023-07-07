@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 #titleSection-template {
     font-family: 'Playfair', serif;
     color: #cec9c9;
-    font-size: 4.4vw; 
+    font-size: 4.0vw; 
     font-weight: 250;
     letter-spacing: -0.2vw;
     padding: 2vh 2vw;
@@ -450,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about-image {
-    width: 44vw;
+    width: 38vw;
     height: auto;
     object-fit: cover;
     margin-left: 4vw;
