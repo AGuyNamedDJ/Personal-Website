@@ -18,7 +18,7 @@ let initialSlidesData = [
     { 
         id: 1, 
         content: 'GitHub', 
-        link: 'https://github.com/DJRobertson95', 
+        link: 'https://github.com/AGuyNamedDJ', 
         username: '@AGuyNamedDJ', 
         description: 'My playground for code, where every line tells a story. An open canvas where innovation takes form, collaboration fuels progress, and ideas come to life.',
         img: Coding1 

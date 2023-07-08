@@ -16,6 +16,7 @@ import Connect from "./components/pages/Connect";
 import Credentials from "./components/pages/Credentials";
 import FAQs from "./components/pages/FAQs";
 import HomePage from "./components/pages/HomePage";
+import Jesus from "./components/pages/Jesus";
 import Journals from "./components/pages/Journals";
 import JournalEntry1 from "./components/pages/JournalEntry1";
 import JournalEntry2 from "./components/pages/JournalEntry2";
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
                 element: <Resume />
             },
             {
+                path: "/jesus",
+                element: <Jesus />
+            },
+            {
                 path: "/privacy&legal",
                 element: <PrivacyLegal />
             },
@@ -113,7 +118,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/jseven",
-                element: <JournalEntry7 />
+                element: <JournalEntry7 /> // Add recent journal to template
             },
             {
                 path: "/projects/websites",

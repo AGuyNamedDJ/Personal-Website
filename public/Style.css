@@ -1410,7 +1410,8 @@ h2 {
 
 #emailSection {
     height: 70vh;
-    margin-top: -12vh;
+    /* padding-top: 10vh;
+    margin-top: -12vh; */
 }
 
 #scheduleSection {
@@ -1509,7 +1510,7 @@ h2 {
   
 #emailContentSection {
     width: 80vw;
-    height: 80vh;
+    height: 60vh;
     margin: auto;
     text-align: center;
     padding: 2vw;
@@ -2064,6 +2065,73 @@ h2 {
 
 /* Footer */
 #footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 4vh;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    padding-top: 4vh;
+    border-top: 0.08px solid rgba(206, 201, 201, 0.28);
+    border-bottom: 0.08px solid rgba(206, 201, 201, 0.28);
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 19%; 
+}
+
+.footer-column h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.28vh;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.25em;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vh;
+    opacity: 70%;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    opacity: 70%;
+    font-size: 1.1vh;
+}
+
+#footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5vw;
+}
+
+
+
+
+
+
+
+/* #footer {
     width: 93%;
     position: static;
     bottom: 1.25vh;
@@ -2107,4 +2175,4 @@ h2 {
     margin: 0;
     outline: none;
     cursor: pointer;
-}
+} */
