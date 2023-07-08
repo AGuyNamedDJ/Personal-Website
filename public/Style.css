@@ -2090,7 +2090,7 @@ h2 {
 
 .footer-column h4 {
     margin-bottom: 0.5em;
-    font-size: 1.28vh;
+    font-size: 1.24vh;
 }
 
 .footer-column ul {
@@ -2106,7 +2106,7 @@ h2 {
 .footer-column ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1vh;
+    font-size: 1.05vh;
     opacity: 70%;
 }
 
@@ -2115,6 +2115,7 @@ h2 {
     justify-content: center;
     margin-top: 1em;
     padding-top: 1em;
+    margin-bottom: 1vh;
     opacity: 70%;
     font-size: 1.1vh;
 }
