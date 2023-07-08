@@ -31,6 +31,7 @@ const Projects = () => {
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                     ></iframe>
+                    
                     {/* Link to YouTube playlist */}
                     <p style={{ textAlign: 'center', marginTop: '20px' }}>
                         <a href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_jGUHtmMZ8LVgS5NuV-ruq"

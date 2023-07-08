@@ -803,13 +803,15 @@ article p {
 }
 
 .learn-more-link {
-    color: #cec9c9;  /* change to your preferred color */
+    color: #cec9c9; 
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 2.2vh;
+    opacity: 100%;
+    letter-spacing: 0.25vw;
 }
 
 .learn-more-link:hover {
-    color: #C2B19C;  /* change to your preferred hover color */
+    color: #C2B19C; 
 }
 
 .learn-more-link:active {
