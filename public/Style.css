@@ -1365,8 +1365,18 @@ h2 {
     color: #cec9c9; /* Grey */
     font-size: 2vw;
     font-weight: bold; 
+    background-color: #000;
     margin-top: -2vw;
     padding-top: 2vw;
+    transition: background-color 0.3s ease;
+}
+
+.slide-content a:hover {
+    background-color: #C2B19C;
+}
+
+.slide-content a:active {
+    opacity: 0.4;
 }
 
 #socialSection {
