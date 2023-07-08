@@ -802,6 +802,21 @@ article p {
     left: 8vw;
 }
 
+.learn-more-link {
+    color: #cec9c9;  /* change to your preferred color */
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.learn-more-link:hover {
+    color: #C2B19C;  /* change to your preferred hover color */
+}
+
+.learn-more-link:active {
+    opacity: 0.5;
+}
+
+
 #writingSection {
     width: 80vw;
     height: auto;
