@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import Coding1 from "../animations/Coding1.json";
 import Gaming from "../animations/Gaming.json";
+import Instagram1 from "../animations/Instagram1.json";
 import iPhone from "../animations/iPhone.json";
 import iPhone1 from "../animations/iPhone1.json";
 import { InlineWidget } from 'react-calendly';
+import Linkedin from "../animations/Linkedin.json";
 import Macbook2 from "../animations/Macbook2.json";
+import Threads from "../animations/Threads.json";
 import Youtube from "../animations/Youtube.json";
 import axios from 'axios';
 import YouTube from 'react-youtube';
+import Youtube1 from "../animations/Youtube1.json";
 
 let initialSlidesData = [
     { 
@@ -25,7 +29,7 @@ let initialSlidesData = [
         link: 'https://www.youtube.com/@AGNDJ', 
         username: 'A Guy Named DJ', 
         description: 'Exploring digital frontiers, one game at a time. A destination for thrilling adventures, strategic battles, and unique narratives. Every video, a new world waiting to be discovered.',
-        img: Youtube
+        img: Youtube1
     },
     { 
         id: 3, 
@@ -33,7 +37,7 @@ let initialSlidesData = [
         link: 'https://www.instagram.com/aguynameddj/', 
         username: '@AGuyNamedDJ', 
         description: 'My curated collection of life moments. Here, creativity bridges the gap between cultures and languages, showcasing the world through a different lens.',
-        img: iPhone
+        img: Instagram1
     },
     { 
         id: 4, 
@@ -41,7 +45,7 @@ let initialSlidesData = [
         link: 'https://www.linkedin.com/in/dalronjrobertson/', 
         username: 'Dalron J. Robertson', 
         description: 'My professional journey articulated through achievements, experiences, and connections. A hub where insights meet aspirations, fostering growth and fostering collaborations.',
-        img: Macbook2
+        img: Linkedin
     },
     {
         id: 5, 
@@ -58,6 +62,14 @@ let initialSlidesData = [
         username: '@AGuyNamedDJ_', 
         description: 'My personal news ticker, a source of real-time insights, and a platform for engaging with a global audience. Where I share thoughts, track trends, and connect with influencers and innovators.',
         img: iPhone1
+    },
+    { 
+        id: 7, 
+        content: 'Threads', 
+        link: 'https://www.threads.net/@aguynameddj', 
+        username: '@AGuyNamedDJ', 
+        description: 'Visit my Threads, where I share insights, connect with innovators, and engage in deep discussions. ',
+        img: Threads
     },
 ];
 
