@@ -20,7 +20,7 @@ const Projects = () => {
 
                 {/* Trading Section */}
                 <div className="project-section" id="tradingSection">
-                    <h2>Private Equity/Hedge Trading.</h2>
+                    <h2>Derivative / Hedge Trading.</h2>
                     <p>Embark on a journey into the nuanced world of trading. Explore my approaches, witness calculated risks in action, and gain insights from my real-time market maneuvers. Below you'll find the most recent video from my YouTube channel, providing a tangible window into my trading practices and thought processes.</p>
 
                     {/* Video of Trading  */}
