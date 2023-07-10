@@ -78,7 +78,7 @@ const Footer = () => {
             <div id="footer-bottom">
                 <Link to="/">Copyright © 2023 Dalron J. Robertson. All rights reserved.</Link>
                 <Link to="/privacy&legal">Privacy & Legal</Link>
-                <Link to="/connect">Terms of Use</Link> {/* need to create page */}
+                <Link to="/termsofuse">Terms of Use</Link> {/* need to create page */}
                 <Link to="/connect">Site Map</Link> {/* need to create page */}
             </div>
         </div>
