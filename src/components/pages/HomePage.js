@@ -21,7 +21,7 @@ const HomePage = () => {
             </div>
 
             {/* Second block with subtitle, big title, button on the left and text description on the right */}
-            <div className="block" id="block2">
+            {/* <div className="block" id="block2">
                 <div className="image-container">
                     <div className="left-image">
                         <h1 className="title-line">
@@ -56,7 +56,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Third block with title and a 3 row container */}
             <div id="block3">
