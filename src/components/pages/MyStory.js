@@ -27,7 +27,7 @@ const MyStory = () => {
             <div className="my-story">
                 <div className="book">
                     <FlipPage
-                        responsive={false}
+                        responsive={true}
                         showHint
                         animationDuration={400}
                         width={dimensions.width * 0.75}
@@ -36,7 +36,7 @@ const MyStory = () => {
                         uncutPages
                         maxAngle={90}
                         direction="rtl"
-                        pageBackground="#fff"
+                        pageBackground="#000"
                     >
                     {/* Page 1 */}
                     <article>
