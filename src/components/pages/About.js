@@ -4,11 +4,12 @@ import Lottie from 'lottie-react';
 import Mac1 from "../animations/Mac1.json";
 import Create from "../animations/Create.json";
 import Book1 from "../animations/Book1.json";
+import Brown from "../animations/Brown.json";
 
 const defaultOptions = {
     loop: true,
     autoplay: true, 
-    animationData: Book1,
+    animationData: Brown,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
@@ -99,7 +100,7 @@ const About = () => {
                     </div>
 
                     <div id="creation-animation">
-                        <Lottie animationData={Book1} style={{ height: '40vh', width: '40vw' }} loop autoplay />
+                        <Lottie animationData={Brown} style={{ height: '40vh', width: '40vw' }} loop autoplay />
                     </div>
 
                     <div className="creation-text">
