@@ -2099,6 +2099,24 @@ h2 {
     margin-bottom: 5vw;
 }
 
+/* Site Map */
+#site-map-block {
+    background-color: #000;
+    border-top: solid 0.01vh rgba(206, 201, 201, 0.28);
+}
+
+.site-map-title {
+    padding-top: 4vh;
+}
+
+
+.site-map-columns {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 /* Navbar */
 #navbar {
     position: fixed;
