@@ -102,12 +102,12 @@ const Jesus = () => {
             </div>
 
             {/* Resources */}
-            <div id="resourcesSection">
+            <div id="resourcesSection"> {/* Section */}
                 <h2>Resources</h2>
-                <div id="resourcesSlider">
+                <div id="resourcesSlider"> {/* Slider */}
                     {currentSlide.map((slideIndex) => (
-                        <div className="resourceSlide">
-                            <div className="resourceCard">
+                        <div className="resourceSlide"> 
+                            <div className="resourceCard"> {/* Card */}
                                 <h3>{resources[slideIndex].name}</h3>
                                 <p>{resources[slideIndex].pastor}</p>
                                 <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>

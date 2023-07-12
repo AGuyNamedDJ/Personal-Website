@@ -1706,18 +1706,36 @@ h2 {
     opacity: 77%;
 }
 
+#resourcesSection {
+    position: relative;
+    background-color: #000;
+    justify-content: center;
+    margin: auto;
+    height: 50vh;
+    background-color: #000;
+    width: 100%;
+    overflow: auto;
+}
+
 #resourcesSlider {
     display: flex;
     overflow: auto;
+    width: 120%;
+    justify-content: center;
+    padding-right: 10vh;
+    padding-left: 2vh;
+    background-color: #000;
 }
 
 .resourceSlide {
     flex: 0 0 auto;
-    width: 60%; 
+    width: 50%; 
+    height: 100%;
     padding: 1vh;
     box-sizing: border-box;
     display: flex;
     align-items: stretch;
+    margin-left: 5vh;
     justify-content: center;
     flex-direction: column;
     border: 2px solid #C2B19C; 
@@ -1739,7 +1757,7 @@ h2 {
     background: #1a1a1a;
     color: #cec9c9;
     padding: 2em;
-    height: 100%;
+    height: 40vh;
     border-radius: 2vh;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
     display: flex;
@@ -1765,11 +1783,6 @@ h2 {
 
 .resourceCard p, .resourceCard a {
     opacity: 0.77;
-}
-
-#resourcesSection {
-    position: relative;
-    overflow: auto;
 }
 
 #slideLeft, #slideRight {
