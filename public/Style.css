@@ -1756,6 +1756,15 @@ h2 {
 
 .resourceCard a:hover .resourceCard b:hover {
     color: #C2B19C;
+    opacity: 1;
+}
+
+.resourceCard a:active, .resourceCard b:active {
+    opacity: 0.5;
+}
+
+.resourceCard p, .resourceCard a {
+    opacity: 0.77;
 }
 
 #resourcesSection {

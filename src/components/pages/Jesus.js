@@ -7,7 +7,7 @@ const Jesus = () => {
     const verseExplanation = "The Great Commission emphasizes the responsibility of believers to spread the teachings of Jesus. Jesus assures his followers of his continual presence and support.";
 
     // Your YouTube video IDs
-    const youtubeVideos = ["VideoID1", "VideoID2", "VideoID3"];
+    const youtubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
 
     // Your resources
     const resources = [
