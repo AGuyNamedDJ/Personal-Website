@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import YouTube from 'react-youtube';
 
 const Jesus = () => {
     // Your Verse of the month and explanation
-    const verseOfTheMonth = "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.";
-    const verseExplanation = "This verse expresses the deep love that God has for humanity and the sacrifice He made.";
+    const verseOfTheMonth = "Matthew 28:19-20\n19 Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,\n20 teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.";
+    const verseExplanation = "The Great Commission emphasizes the responsibility of believers to spread the teachings of Jesus. Jesus assures his followers of his continual presence and support.";
 
     // Your YouTube video IDs
     const youtubeVideos = ["VideoID1", "VideoID2", "VideoID3"];
@@ -53,7 +53,31 @@ const Jesus = () => {
             websiteLink: "https://socialdallas.online", 
             youtubeLink: "https://www.youtube.com/@SocialDallas"
         },
+        {
+            name: "Bible Project", 
+            pastor: null, 
+            websiteLink: "https://bibleproject.com", 
+            youtubeLink: "https://www.youtube.com/@bibleproject"
+        },
     ];
+
+    // State for resource slides
+    const [currentSlide, setCurrentSlide] = useState([0, 1]); // This holds two indices now
+
+    const nextSlide = () => {
+        setCurrentSlide([
+            (currentSlide[1] + 1) % resources.length,
+            (currentSlide[1] + 2) % resources.length
+        ]);
+    }
+
+    const prevSlide = () => {
+        setCurrentSlide([
+            (currentSlide[0] - 1 + resources.length) % resources.length,
+            (currentSlide[0]) % resources.length
+        ]);
+    }
+
 
     return (
         <div id="JesusPage" className="page">
@@ -81,19 +105,19 @@ const Jesus = () => {
             <div id="resourcesSection">
                 <h2>Resources</h2>
                 <div id="resourcesSlider">
-                    {resources.map((resource, index) => (
-                        <div className="resourceSlide" key={index}>
+                    {currentSlide.map((slideIndex) => (
+                        <div className="resourceSlide">
                             <div className="resourceDetails">
-                                <h3>{resource.name}</h3>
-                                <p>{resource.pastor}</p>
-                                <a href={resource.websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
-                                <a href={resource.youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
+                                <h3>{resources[slideIndex].name}</h3>
+                                <p>{resources[slideIndex].pastor}</p>
+                                <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
+                                <a href={resources[slideIndex].youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
                             </div>
                         </div>
                     ))}
                 </div>
-                <button id="slideLeft"><img src="/images/left_arrow.png" alt="left arrow"/></button>
-                <button id="slideRight"><img src="/images/right_arrow.png" alt="right arrow"/></button>
+                <button id="slideLeft" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
+                <button id="slideRight" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
             </div>
         </div>
     );

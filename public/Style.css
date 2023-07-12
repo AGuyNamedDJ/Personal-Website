@@ -1682,7 +1682,83 @@ h2 {
     margin-top: 2vh;
 }
 
-/* Jesus */
+/* Jesus Page */
+#JesusPage {
+    padding: 1em;
+    /* color: #C2B19C; */
+    /* cec9c9 */
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#verseSection, #youtubeSection, #resourcesSection {
+    margin-bottom: 2em;
+    padding: 0 20%;
+}
+
+#verseSection h2, #youtubeSection h2, #resourcesSection h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#verseSection p, #youtubeSection p, #resourcesSection p {
+    font-size: 2vh;
+    line-height: 1.5;
+    opacity: 77%;
+}
+
+#resourcesSlider {
+    display: flex;
+    overflow: auto;
+}
+
+.resourceSlide {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resourceSlide h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.resourceSlide p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.resourceSlide a {
+    font-size: 1em;
+    color: #0000EE;
+    text-decoration: none;
+}
+
+#resourcesSection {
+    position: relative;
+    /* Rest of your styles... */
+}
+
+#slideLeft, #slideRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
+
+#slideLeft {
+    left: 0;
+}
+
+#slideRight {
+    right: 0;
+}
 
 
 /* Privacy & Legal Page */
