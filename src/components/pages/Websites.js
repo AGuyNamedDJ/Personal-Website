@@ -135,7 +135,7 @@ const Websites = () => {
 
             <div className="websites-container">
                 {websites.map((website, index) => (
-                    <div className="website-card" key={index}>
+                    <div className="website-card" id={`project-${index}`} key={index}>
                         <h2>{website.title}</h2>
                         <img src={website.image} alt={website.title} />
                         <p>{website.description}</p>

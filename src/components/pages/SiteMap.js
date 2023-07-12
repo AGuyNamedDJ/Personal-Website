@@ -41,19 +41,19 @@ const SiteMap = () => {
                         <Link className="site-map-link" to="/projects#writingSection">Literary Works</Link>
                         <br></br>
                         <div className="site-map-subtitle">Websites</div>
-                        <Link className="site-map-link" to="/personalwebsite">Personal Website</Link>
-                        <Link className="site-map-link" to="/tradingview">Trading View Strategies</Link>
-                        <Link className="site-map-link" to="/healthhive">Health Hive</Link>
-                        <Link className="site-map-link" to="/carhaven">Car Haven</Link>
-                        <Link className="site-map-link" to="/dalrecipe">Dal-Recipe</Link>
-                        <Link className="site-map-link" to="/sweetspot">The Sweet Spot</Link>
-                        <Link className="site-map-link" to="/fitnesstrackr">Fitness Trackr</Link>
-                        <Link className="site-map-link" to="/juicebox">Juicebox</Link>
-                        <Link className="site-map-link" to="/strangersthings">Stranger's Things</Link>
-                        <Link className="site-map-link" to="/hackersnews">Hacker's News</Link>
-                        <Link className="site-map-link" to="/puppybowl">Puppy Bowl</Link>
-                        <Link className="site-map-link" to="/connect4">Connect 4</Link>
-                        <Link className="site-map-link" to="/realestateclicker">Real Estate Clicker</Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-0">Personal Website</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-1">Trading View Strategies</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-2">Health Hive</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-3">Car Haven</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-4">Dal-Recipe</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-5">The Sweet Spot</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-6">Fitness Trackr</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-7">Juicebox</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-8">Stranger's Things</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-9">Hacker's News</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-10">Puppy Bowl</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-11">Connect 4</a></Link>
+                        <Link className="site-map-link" to="/projects/websites"><a href="#project-12">Real Estate Clicker</a></Link>
                     </div>
 
                     <div className="site-map-2">
@@ -61,26 +61,26 @@ const SiteMap = () => {
                         <p>Circuit Breakers: One</p>
                         <br></br>
                         <div className="site-map-subtitle">YouTube</div>
-                        <p>AGNDJ</p>
-                        <p>AGNDJ: Gaming</p>
-                        <p>Behind The Lens</p>
-                        <p>God's Grace</p>
-                        <p>Life Upgraded</p>
-                        <p>Music Spaces</p>
-                        <p>Reflections and Revelations</p>
-                        <p>The Dreamer's Desk</p>
-                        <p>Tech Savvy</p>
-                        <p>Trading Markets</p>
+                        <a className="site-map-link" href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer">AGNDJ</a>
+                        <a className="site-map-link" href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noopener noreferrer">AGNDJ: Gaming</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_9q-Ocgh7_m-9QLrnJjA3j" target="_blank" rel="noopener noreferrer">Behind The Lens</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo-s2GiQvdE-sP7f0KiTalxo" target="_blank" rel="noopener noreferrer">Guided By Grace</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_3NaPoonFVRHQuw2kcK2e3" target="_blank" rel="noopener noreferrer">Life Upgraded</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo9ul0ZoPWf9yBL6sdF8KaB_" target="_blank" rel="noopener noreferrer">Music Spaces</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_V8e2esmRO7J6JcFCvOpkP" target="_blank" rel="noopener noreferrer">Reflections and Revelations</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo-24k9y15pYjlWKvOIWgurs" target="_blank" rel="noopener noreferrer">The Dreamer's Desk</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo9DrUCRrG5qR4E8tuOjNjsg" target="_blank" rel="noopener noreferrer">Tech Savvy</a>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_jGUHtmMZ8LVgS5NuV-ruq" target="_blank" rel="noopener noreferrer">Trading Markets</a>
                     </div>
                     
                     <div className="site-map-3">
                         <div className="site-map-subtitle">Journals</div>
-                        <p>A Busy Week</p>
-                        <p>Digital Harmony</p>
-                        <p>Evidence of Light</p>
-                        <p>Love's Purpose</p>
-                        <p>New Aged Branding</p>
-                        <p>The Tunnel</p>
+                        <p><a className="site-map-link" href="/jtwo">A Busy Week</a></p>
+                        <p><a className="site-map-link" href="/jfive">Digital Harmony</a></p>
+                        <p><a className="site-map-link" href="/jsix">Evidence of Light</a></p>
+                        <p><a className="site-map-link" href="/jfour">Love's Purpose</a></p>
+                        <p><a className="site-map-link" href="/jthree">New Aged Branding</a></p>
+                        <p><a className="site-map-link" href="/jone">The Tunnel</a></p>
                     </div>
                 </div>
             </div>
