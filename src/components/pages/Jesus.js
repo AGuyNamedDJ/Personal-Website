@@ -9,6 +9,25 @@ const Jesus = () => {
     // Your YouTube video IDs
     const youtubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
 
+    // State for YouTube video slides
+    const [currentVideo, setCurrentVideo] = useState([0, 1, 2]);
+
+    const nextVideo = () => {
+        setCurrentVideo([
+            (currentVideo[0] + 1) % youtubeVideos.length,
+            (currentVideo[1] + 1) % youtubeVideos.length,
+            (currentVideo[2] + 1) % youtubeVideos.length
+        ]);
+    }
+
+    const prevVideo = () => {
+        setCurrentVideo([
+            (currentVideo[0] - 1 + youtubeVideos.length) % youtubeVideos.length,
+            (currentVideo[1] - 1 + youtubeVideos.length) % youtubeVideos.length,
+            (currentVideo[2] - 1 + youtubeVideos.length) % youtubeVideos.length
+        ]);
+    }
+
     // Your resources
     const resources = [
         {
@@ -95,19 +114,16 @@ const Jesus = () => {
 
             {/* YouTube Videos */}
             <div id="youtubeSection">
-    <div id="youtubeSlider">
-        <div class="videoSlide">
-            <iframe src="https://www.youtube.com/embed/I-yW-nrSSJg" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="videoSlide main">
-            <iframe src="https://www.youtube.com/embed/gGdsDkq0XXs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="videoSlide">
-            <iframe src="https://www.youtube.com/embed/K7r09B95zC0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
+                <div id="youtubeSlider">
+                    {currentVideo.map((videoIndex, idx) => (
+                        <div class={idx === 1 ? "videoSlide main" : "videoSlide"}>
+                            <iframe src={`https://www.youtube.com/embed/${youtubeVideos[videoIndex]}`} frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    ))}
+                </div>
+                <button id="slideLeft" onClick={prevVideo}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
+                <button id="slideRight" onClick={nextVideo}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
+            </div>
 
             {/* Resources */}
             <div id="resourcesSection"> {/* Section */}

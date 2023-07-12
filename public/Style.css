@@ -1696,10 +1696,10 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    background-color: #000;
+    background-color: red;
     margin: auto;
     overflow: hidden;
-    height: 60vh; 
+    height: 30vh; 
     gap: 2vw;
 }
 
@@ -1725,7 +1725,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(20vw * 9 / 16)
+    
 }
 
 .videoSlide.main {
@@ -1733,15 +1733,18 @@ h2 {
 }
 
 .videoSlide.main iframe {
-    height: calc(60vw * 9 / 16);
+    height: 100%;
 }
 
-
-#verseSection, #youtubeSection, #resourcesSection {
+Section, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
     padding: 0 20%;
     justify-content: center;
     align-items: center;
+}
+
+#verseSection {
+    padding-bottom: 8vh;
 }
 
 #verseSection h2, #youtubeSection h2, #resourcesSection h2 {
