@@ -530,6 +530,12 @@ h1, h2, h3, h4, h5, h6 {
     align-self: flex-start;
 }
 
+/* @media (max-width: 500px) {
+    #creation-animation {
+        padding-bottom: 10vh;
+    }
+} */
+
 #personalInterestsSection {
     display: flex;
     flex-direction: column;
