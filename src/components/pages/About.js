@@ -25,7 +25,15 @@ const imgSources = [
     '/images/Chi2/Img13.jpeg','/images/Chi2/Img14.jpeg',
     '/images/Chi2/Img15.jpg','/images/Chi2/Img16.JPG',
     '/images/Chi2/Img17.jpeg','/images/Chi2/Img18.jpeg',
-    '/images/Chi2/Img19.jpeg','/images/Chi2/Img20.jpeg'
+    '/images/Chi2/Img19.jpeg','/images/Chi2/Img20.jpeg',
+    '/images/Chi2/Img21.jpeg','/images/Chi2/Img22.jpeg',
+    '/images/Chi2/Img23.jpeg','/images/Chi2/Img24.jpeg',
+    '/images/Chi2/Img25.jpeg','/images/Chi2/Img26.jpeg',
+    '/images/Chi2/Img27.jpeg','/images/Chi2/Img28.JPG',
+    '/images/Chi2/Img29.jpeg','/images/Chi2/Img30.jpeg',
+    '/images/Chi2/Img31.jpeg','/images/Chi2/Img32.jpeg',
+    '/images/Chi2/Img33.jpeg','/images/Chi2/Img34.JPG'
+
 ]; 
 
 // Shuffle Images
