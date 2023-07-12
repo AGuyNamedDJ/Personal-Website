@@ -2115,12 +2115,24 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 4vh;
+}
+
+.site-map-subtitle {
+    color: #cec9c9;
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+
+.site-map-container link {
+    color: #C2B19C;
 }
 
 .site-map-1 {
     width: 30%;
     padding: 1vh;
-    color: #C2B19C
+    color: #C2B19C;
+    line-height: 2.6vh;
 }
 
 .site-map-1 p:hover, .site-map-2 p:hover, .site-map-3 p:hover {
