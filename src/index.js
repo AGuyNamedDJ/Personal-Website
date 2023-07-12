@@ -120,7 +120,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/jseven",
-                element: <JournalEntry7 /> // Add recent journal to template
+                element: <JournalEntry7 /> // Update recent journal to footer, & site map
             },
             {
                 path: "/projects/websites",

@@ -17,7 +17,7 @@ const SiteMap = () => {
                 <div className="site-map-container">
                     <div className="site-map-1">
                         <p>DJR</p>
-                        <p>Read My Story</p>
+                        <p>My Story</p>
                         <p>Personal Interest</p>
                     </div>
                     <div className="site-map-2">
@@ -60,6 +60,8 @@ const SiteMap = () => {
                         <p>Circuit Breakers: One</p>
                         <br></br>
                         <div className="site-map-subtitle">YouTube</div>
+                        <p>AGNDJ</p>
+                        <p>AGNDJ: Gaming</p>
                         <p>Behind The Lens</p>
                         <p>God's Grace</p>
                         <p>Life Upgraded</p>
@@ -71,19 +73,89 @@ const SiteMap = () => {
                     </div>
                     <div className="site-map-3">
                         <div className="site-map-subtitle">Journals</div>
-                        <p>Love's Purpose</p>
-                        <p>The Tunnel</p>
                         <p>A Busy Week</p>
-                        <p>New Aged Branding</p>
                         <p>Digital Harmony</p>
                         <p>Evidence of Light</p>
+                        <p>Love's Purpose</p>
+                        <p>New Aged Branding</p>
+                        <p>The Tunnel</p>
                     </div>
                 </div>
             </div>
 
             {/* Ventures */}
+            <div id="site-map-block">
+                <div className="site-map-title">
+                    <h2>Ventures</h2>
+                </div>
+                <div className="site-map-container">
+                    <div className="site-map-1">
+                        <p>Business</p>
+                        <p>Purpose</p>
+                        <p>Real Estate</p>
+                    </div>
+                    <div className="site-map-2">
+
+                    </div>
+                    <div className="site-map-3">
+
+                    </div>
+                </div>
+            </div>
+
             {/* Credentials */}
+            <div id="site-map-block">
+                <div className="site-map-title">
+                    <h2>Credentials</h2>
+                </div>
+                <div className="site-map-container">
+                    <div className="site-map-1">
+                        <div className="site-map-subtitle">Curriculum Vitae</div>
+                        <p>Download CV</p>
+                        <p>View CV</p>
+                    </div>
+                    <div className="site-map-2">
+                        <div className="site-map-subtitle">Resume</div>
+                        <p>Download Resume</p>
+                        <p>View Resume</p>
+                    </div>
+                    <div className="site-map-3">
+                        <div className="site-map-subtitle">Certifications</div>
+                        <p>View Certifications</p>
+                        <br></br>
+                        <div className="site-map-subtitle">Notoriety</div>
+                        <p>View Notoriety</p>
+                    </div>
+                </div>
+            </div>
             {/* Connect */}
+
+            <div id="site-map-block">
+                <div className="site-map-title">
+                    <h2>Connect</h2>
+                </div>
+                <div className="site-map-container">
+                    <div className="site-map-1">
+                        <div className="site-map-subtitle">Social Media</div>
+                        <p>Github</p>
+                        <p>Instagram</p>
+                        <p>Linkedin</p>
+                        <p>Threads</p>
+                        <p>Twitter</p>
+                        <p>Youtube: Gaming Channel</p>
+                        <p>Youtube: Main Channel</p>
+                    </div>
+                    <div className="site-map-2">
+                        <div className="site-map-subtitle">Contact</div>
+                        <p>Schedule a Meeting</p>
+                        <p>Contact Me</p>
+
+                    </div>
+                    <div className="site-map-3">
+
+                    </div>
+                </div>
+            </div>
 
 
 
