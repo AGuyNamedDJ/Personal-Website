@@ -10,23 +10,16 @@ const Jesus = () => {
     const youtubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
 
     // State for YouTube video slides
-    const [currentVideo, setCurrentVideo] = useState([0, 1, 2]);
+    const [currentVideo, setCurrentVideo] = useState(1);
 
     const nextVideo = () => {
-        setCurrentVideo([
-            (currentVideo[0] + 1) % youtubeVideos.length,
-            (currentVideo[1] + 1) % youtubeVideos.length,
-            (currentVideo[2] + 1) % youtubeVideos.length
-        ]);
+        setCurrentVideo((currentVideo + 1) % youtubeVideos.length);
     }
-
+    
     const prevVideo = () => {
-        setCurrentVideo([
-            (currentVideo[0] - 1 + youtubeVideos.length) % youtubeVideos.length,
-            (currentVideo[1] - 1 + youtubeVideos.length) % youtubeVideos.length,
-            (currentVideo[2] - 1 + youtubeVideos.length) % youtubeVideos.length
-        ]);
+        setCurrentVideo((currentVideo - 1 + youtubeVideos.length) % youtubeVideos.length);
     }
+    
 
     // Your resources
     const resources = [
@@ -115,9 +108,9 @@ const Jesus = () => {
             {/* YouTube Videos */}
             <div id="youtubeSection">
                 <div id="youtubeSlider">
-                    {currentVideo.map((videoIndex, idx) => (
-                        <div class={idx === 1 ? "videoSlide main" : "videoSlide"}>
-                            <iframe src={`https://www.youtube.com/embed/${youtubeVideos[videoIndex]}`} frameborder="0" allowfullscreen></iframe>
+                    {youtubeVideos.map((videoID, idx) => (
+                        <div class={idx === currentVideo ? "videoSlide main" : "videoSlide"}>
+                            <iframe src={`https://www.youtube.com/embed/${videoID}`} frameborder="0" allowfullscreen></iframe>
                         </div>
                     ))}
                 </div>
