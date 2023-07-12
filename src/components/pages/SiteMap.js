@@ -139,19 +139,18 @@ const SiteMap = () => {
                 <div className="site-map-container">
                     <div className="site-map-1">
                         <div className="site-map-subtitle">Social Media</div>
-                        <p>Github</p>
-                        <p>Instagram</p>
-                        <p>Linkedin</p>
-                        <p>Threads</p>
-                        <p>Twitter</p>
-                        <p>Youtube: Gaming Channel</p>
-                        <p>Youtube: Main Channel</p>
+                        <p><a className="site-map-link" href="https://github.com/AGuyNamedDJ">Github</a></p>
+                        <p><a className="site-map-link" href="https://www.instagram.com/aguynameddj/">Instagram</a></p>
+                        <p><a className="site-map-link" href="https://www.linkedin.com/in/dalronjrobertson/">Linkedin</a></p>
+                        <p><a className="site-map-link" href="https://www.threads.net/@aguynameddj">Threads</a></p>
+                        <p><a className="site-map-link" href="https://twitter.com/AGuyNamedDJ_">Twitter</a></p>
+                        <p><a className="site-map-link" href="https://youtube.com/@AGNDJGaming">Youtube: Gaming Channel</a></p>
+                        <p><a className="site-map-link" href="https://www.youtube.com/@AGNDJ">Youtube: Main Channel</a></p>
                     </div>
                     <div className="site-map-2">
                         <div className="site-map-subtitle">Contact</div>
-                        <p>Schedule a Meeting</p>
-                        <p>Contact Me</p>
-
+                        <p><a className="site-map-link" href="/connect#meetingSection">Schedule a Meeting</a></p>
+                        <p><a className="site-map-link" href="/connect#email-section">Contact Me</a></p>
                     </div>
                     <div className="site-map-3">
 

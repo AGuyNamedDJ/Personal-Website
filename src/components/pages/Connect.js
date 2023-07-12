@@ -50,7 +50,7 @@ let initialSlidesData = [
     {
         id: 5, 
         content: 'YouTube', 
-        link: 'https://www.youtube.com/channel/UCDUahDaIaCmrWOTA90Qr34Q', 
+        link: 'https://www.youtube.com/@AGNDJGaming', 
         username: 'AGNDJ Gaming', 
         description: 'Exploring digital frontiers, one game at a time. A destination for thrilling adventures, strategic battles, and unique narratives. Every video, a new world waiting to be discovered.',
         img: Gaming
