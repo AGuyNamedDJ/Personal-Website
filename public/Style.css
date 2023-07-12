@@ -1689,6 +1689,10 @@ h2 {
     font-family: Arial, sans-serif;
 }
 
+#youtubeSection {
+    margin: auto;
+}
+
 #verseSection, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
     padding: 0 20%;
@@ -1722,7 +1726,7 @@ h2 {
     overflow: auto;
     width: 120%;
     justify-content: center;
-    padding-right: 10vh;
+    padding-right: 14vh;
     padding-left: 2vh;
     background-color: #000;
 }
