@@ -2110,10 +2110,33 @@ h2 {
 }
 
 
-.site-map-columns {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
+.site-map-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.site-map-1 {
+    width: 30%;
+    padding: 1vh;
+    color: #C2B19C
+}
+
+.site-map-1 p:hover, .site-map-2 p:hover, .site-map-3 p:hover {
+    text-decoration: underline;
+}
+
+.site-map-2 {
+    width: 30%;
+    padding: 1vh;
+    color: #C2B19C
+}
+
+.site-map-3 {
+    width: 30%;
+    padding: 1vh;
+    color: #C2B19C
 }
 
 

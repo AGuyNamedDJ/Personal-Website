@@ -13,7 +13,7 @@ const SiteMap = () => {
                 <div className="site-map-title">
                     <h2>About</h2>
                 </div>
-                <div className="site-map-columns">
+                <div className="site-map-container">
                     <div className="site-map-1">
                         <p>random data</p>
                         <p>random data</p>
