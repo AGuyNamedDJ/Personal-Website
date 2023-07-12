@@ -1685,24 +1685,18 @@ h2 {
 /* Jesus Page */
 #JesusPage {
     padding: 1em;
-    /* color: #C2B19C; */
-    /* cec9c9 */
     background-color: #000;
     font-family: Arial, sans-serif;
 }
 
 #verseSection, #youtubeSection, #resourcesSection {
-    margin-bottom: 2em;
+    margin-bottom: 8vh;
     padding: 0 20%;
 }
 
 #verseSection h2, #youtubeSection h2, #resourcesSection h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-#verseSection h2 {
     font-size: 3vh;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -1719,61 +1713,54 @@ h2 {
 
 .resourceSlide {
     flex: 0 0 auto;
-    width: 50%;
-    padding: 1em;
+    width: 60%; 
+    padding: 1vh;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-direction: column;
-}
-
-.resourceSlide h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-#resourcesSection h2, #youtubeSection h2 {
-    text-align: center;
-    font-size: 3vh;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.resourceSlide p {
-    font-size: 1em;
-    margin-bottom: 1em;
-}
-
-.resourceDetails a {
-    display: block; /* Make links block elements so they stack vertically */
-    text-decoration: none;
-    color: #0000EE;
-    text-align: center; /* Center the link text */
-}
-
-.resourceSlide {
-    flex: 0 0 auto;
-    width: 45%; /* Adjusted width to fit two cards side by side */
-    padding: 1em;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid #ccc; /* Border around the card */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a bit of depth */
-    background-color: #fff; /* White card background */
-    margin: 0 2.5%; /* Add some margin around each card */
+    border: 2px solid #C2B19C; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #000; 
+    margin: 0 2.5%;
 }
 
 .resourceSlide h3, .resourceSlide p, .resourceSlide a {
-    margin-bottom: 1em; /* Space out the elements within the card */
+    margin-bottom: 1em; 
+}
+
+.resourceSlide h3 {
+    font-size: 3vh;
+    color: #C2B19C;
+}
+
+.resourceCard {
+    background: #1a1a1a;
+    color: #cec9c9;
+    padding: 2em;
+    height: 100%;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1em;
+}
+.resourceCard a, .resourceCard b {
+    color: #cec9c9;
+    text-decoration: none;
+}
+
+.resourceCard a:hover .resourceCard b:hover {
+    color: #C2B19C;
 }
 
 #resourcesSection {
-    position: relative; 
+    position: relative;
+    overflow: auto;
 }
 
 #slideLeft, #slideRight {
@@ -1798,6 +1785,10 @@ h2 {
 
 #slideRight {
     right: 0;
+}
+
+#slideLeft:active, #slideRight:active, #slideLeft:active img, #slideRight:active img {
+    opacity: 0.5;
 }
 
 

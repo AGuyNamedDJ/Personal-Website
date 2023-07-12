@@ -12,7 +12,7 @@ const Jesus = () => {
     // Your resources
     const resources = [
         {
-            name: "Revelation Church LA", 
+            name: "Revelation Church: LA", 
             pastor: "Prophet Lovy Elias", 
             websiteLink: "https://www.revelationchurchla.org", 
             youtubeLink: "https://www.youtube.com/@ProphetLovy"
@@ -37,12 +37,12 @@ const Jesus = () => {
         },
         {
             name: "Sarah Jakes Roberts", 
-            pastor: "Pastor Sarah Jakes Roberts", 
+            pastor: null, 
             websiteLink: "https://sarahjakesroberts.com", 
             youtubeLink: "https://www.youtube.com/@SarahJakesRoberts"
         },
         {
-            name: "A Potter's House Church: ONE", 
+            name: "ONE LA", 
             pastor: "Pastors Touré & Sarah Roberts", 
             websiteLink: "https://one.online", 
             youtubeLink: "https://www.youtube.com/@ToureRoberts"
@@ -107,12 +107,13 @@ const Jesus = () => {
                 <div id="resourcesSlider">
                     {currentSlide.map((slideIndex) => (
                         <div className="resourceSlide">
-                            <div className="resourceDetails">
+                            <div className="resourceCard">
                                 <h3>{resources[slideIndex].name}</h3>
                                 <p>{resources[slideIndex].pastor}</p>
                                 <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
                                 <a href={resources[slideIndex].youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
                             </div>
+
                         </div>
                     ))}
                 </div>
