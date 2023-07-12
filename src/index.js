@@ -30,6 +30,7 @@ import PrivacyLegal from "./components/pages/PrivacyLegal";
 import Projects from "./components/pages/Projects";
 import RealEstate from "./components/pages/RealEstate";
 import Resume from "./components/pages/Resume";
+import SiteMap from "./components/pages/SiteMap";
 import TermsOfUse from "./components/pages/TermsOfUse";
 import Ventures from "./components/pages/Ventures";
 import Websites from "./components/pages/Websites";
@@ -124,6 +125,10 @@ const router = createBrowserRouter([
             {
                 path: "/projects/websites",
                 element: <Websites />
+            },
+            {
+                path: "/sitemap",
+                element: <SiteMap />
             },
             {
                 path: "/termsofuse",
