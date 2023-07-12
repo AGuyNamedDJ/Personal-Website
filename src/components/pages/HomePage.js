@@ -13,7 +13,7 @@ const HomePage = () => {
                         <h2>Dalron</h2>
                     </div>
                     <p>Living to push boundaries and redefine what's "possible," I embrace challenges, explore uncharted territories, and inspire others to dream bigger.</p>
-                    <Link to="block2" spy={true} smooth={true}><span className="scroll-for-more">Scroll for More</span></Link>
+                    <Link to="block3" spy={true} smooth={true}><span className="scroll-for-more">Scroll for More</span></Link>
                 </div>
                 <div className="image">
                     <img src="/images/AGNDJ1.png" alt="Dalron" />
