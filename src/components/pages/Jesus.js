@@ -95,11 +95,19 @@ const Jesus = () => {
 
             {/* YouTube Videos */}
             <div id="youtubeSection">
-                <h2>Teachings</h2>
-                {youtubeVideos.map((videoId) => (
-                    <YouTube videoId={videoId} />
-                ))}
-            </div>
+    <div id="youtubeSlider">
+        <div class="videoSlide">
+            <iframe src="https://www.youtube.com/embed/I-yW-nrSSJg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="videoSlide main">
+            <iframe src="https://www.youtube.com/embed/gGdsDkq0XXs" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="videoSlide">
+            <iframe src="https://www.youtube.com/embed/K7r09B95zC0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
 
             {/* Resources */}
             <div id="resourcesSection"> {/* Section */}
@@ -113,7 +121,6 @@ const Jesus = () => {
                                 <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
                                 <a href={resources[slideIndex].youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
                             </div>
-
                         </div>
                     ))}
                 </div>

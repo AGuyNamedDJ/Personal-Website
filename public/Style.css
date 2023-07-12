@@ -1686,16 +1686,62 @@ h2 {
 #JesusPage {
     padding: 1em;
     background-color: #000;
+    /* justify-content: center;
+    align-items: center; */
     font-family: Arial, sans-serif;
 }
 
 #youtubeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    background-color: #000;
     margin: auto;
+    overflow: hidden;
+    height: 60vh; 
+    gap: 2vw;
 }
+
+#youtubeSlider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.videoSlide {
+    flex: 0 0 auto;
+    width: 20vw;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoSlide iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(20vw * 9 / 16)
+}
+
+.videoSlide.main {
+    width: 60vw; 
+}
+
+.videoSlide.main iframe {
+    height: calc(60vw * 9 / 16);
+}
+
 
 #verseSection, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
     padding: 0 20%;
+    justify-content: center;
+    align-items: center;
 }
 
 #verseSection h2, #youtubeSection h2, #resourcesSection h2 {
@@ -1705,7 +1751,7 @@ h2 {
 }
 
 #verseSection p, #youtubeSection p, #resourcesSection p {
-    font-size: 2vh;
+    font-size: 2vw;
     line-height: 1.5;
     opacity: 77%;
 }
@@ -1714,6 +1760,7 @@ h2 {
     position: relative;
     background-color: #000;
     justify-content: center;
+    align-items: center;
     margin: auto;
     height: 50vh;
     background-color: #000;
@@ -1750,10 +1797,11 @@ h2 {
 
 .resourceSlide h3, .resourceSlide p, .resourceSlide a {
     margin-bottom: 1em; 
+    text-align: center;
 }
 
 .resourceSlide h3 {
-    font-size: 3vh;
+    font-size: 3vw;
     color: #C2B19C;
 }
 
@@ -1761,13 +1809,12 @@ h2 {
     background: #1a1a1a;
     color: #cec9c9;
     padding: 2em;
-    height: 40vh;
     border-radius: 2vh;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     gap: 1em;
 }
