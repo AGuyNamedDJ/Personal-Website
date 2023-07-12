@@ -16,9 +16,9 @@ const SiteMap = () => {
                 </div>
                 <div className="site-map-container">
                     <div className="site-map-1">
-                        <p>DJR</p>
-                        <p>My Story</p>
-                        <p>Personal Interest</p>
+                        <Link to="/about">DJR</Link>
+                        <Link to="/about/mystory">My Story</Link>
+                        <Link to="/about#personalInterestsSection">Personal Interest</Link>
                     </div>
                     <div className="site-map-2">
 
@@ -37,24 +37,25 @@ const SiteMap = () => {
                 <div className="site-map-container">
                     <div className="site-map-1">
                         <div className="site-map-subtitle">Software Development</div>
-                        <p>Derivative/Hedge Trading</p>
-                        <p>Literary Works</p>
+                        <a className="site-map-link" href="https://www.youtube.com/playlist?list=PLKczMAL9dQo_jGUHtmMZ8LVgS5NuV-ruq">Derivative/Hedge Trading</a>
+                        <Link className="site-map-link" to="/projects#writingSection">Literary Works</Link>
                         <br></br>
                         <div className="site-map-subtitle">Websites</div>
-                        <p>Personal Website</p>
-                        <p>Trading View Strategies</p>
-                        <p>Health Hive</p>
-                        <p>Car Haven</p>
-                        <p>Dal-Recipe</p>
-                        <p>The Sweet Spot</p>
-                        <p>Fitness Trackr</p>
-                        <p>Juicebox</p>
-                        <p>Stranger's Things</p>
-                        <p>Hacker's News</p>
-                        <p>Puppy Bowl</p>
-                        <p>Connect 4</p>
-                        <p>Reak Estate Clicker</p>
+                        <Link className="site-map-link" to="/personalwebsite">Personal Website</Link>
+                        <Link className="site-map-link" to="/tradingview">Trading View Strategies</Link>
+                        <Link className="site-map-link" to="/healthhive">Health Hive</Link>
+                        <Link className="site-map-link" to="/carhaven">Car Haven</Link>
+                        <Link className="site-map-link" to="/dalrecipe">Dal-Recipe</Link>
+                        <Link className="site-map-link" to="/sweetspot">The Sweet Spot</Link>
+                        <Link className="site-map-link" to="/fitnesstrackr">Fitness Trackr</Link>
+                        <Link className="site-map-link" to="/juicebox">Juicebox</Link>
+                        <Link className="site-map-link" to="/strangersthings">Stranger's Things</Link>
+                        <Link className="site-map-link" to="/hackersnews">Hacker's News</Link>
+                        <Link className="site-map-link" to="/puppybowl">Puppy Bowl</Link>
+                        <Link className="site-map-link" to="/connect4">Connect 4</Link>
+                        <Link className="site-map-link" to="/realestateclicker">Real Estate Clicker</Link>
                     </div>
+
                     <div className="site-map-2">
                         <div className="site-map-subtitle">Books</div>
                         <p>Circuit Breakers: One</p>
@@ -71,6 +72,7 @@ const SiteMap = () => {
                         <p>Tech Savvy</p>
                         <p>Trading Markets</p>
                     </div>
+                    
                     <div className="site-map-3">
                         <div className="site-map-subtitle">Journals</div>
                         <p>A Busy Week</p>

@@ -2109,6 +2109,15 @@ h2 {
     padding-top: 4vh;
 }
 
+.site-map-link {
+    color: #C2B19C;
+    display: block;
+    line-height: 2.6vh;
+}
+.site-map-link:hover {
+    text-decoration: underline;
+}
+
 
 .site-map-container {
     display: flex;
@@ -2124,31 +2133,20 @@ h2 {
     font-weight: bold;
 }
 
-.site-map-container link {
-    color: #C2B19C;
-}
-
-.site-map-1 {
+.site-map-1, .site-map-2, .site-map-3 {
     width: 30%;
     padding: 1vh;
     color: #C2B19C;
     line-height: 2.6vh;
 }
 
-.site-map-1 p:hover, .site-map-2 p:hover, .site-map-3 p:hover {
+.site-map-1 a, .site-map-2 a, .site-map-3 a {
+    color: #C2B19C;
+    display: block;
+}
+
+.site-map-1 a:hover, .site-map-2 a:hover, .site-map-3 a:hover {
     text-decoration: underline;
-}
-
-.site-map-2 {
-    width: 30%;
-    padding: 1vh;
-    color: #C2B19C
-}
-
-.site-map-3 {
-    width: 30%;
-    padding: 1vh;
-    color: #C2B19C
 }
 
 
