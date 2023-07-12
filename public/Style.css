@@ -612,11 +612,12 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.6; 
 }
 
-
 /* My Story */
 .my-story {
     display: flex;
     justify-content: center;
+    margin: auto;
+    perspective: 100vw;
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 8vh;
