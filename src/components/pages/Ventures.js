@@ -2,6 +2,19 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    }
+  }
+
 const Ventures = () => {
     const [imageIndex1, setImageIndex1] = useState(0);
     const [imageIndex2, setImageIndex2] = useState(0);
@@ -38,29 +51,30 @@ const Ventures = () => {
         };
     }, []);
 
+
     useEffect(() => {
         let lastScrollY = window.pageYOffset;
-        const handleScroll = () => {
-            const currentScrollY = window.pageYOffset;
-            if (currentScrollY > lastScrollY) {
-                // scrolling down
-                setImageIndex1((prev) => (prev + 1) % images1.length);
-                setImageIndex2((prev) => (prev + 1) % images2.length);
-            } else if (currentScrollY < lastScrollY) {
-                // scrolling up
-                setImageIndex1((prev) => (prev - 1 + images1.length) % images1.length);
-                setImageIndex2((prev) => (prev - 1 + images2.length) % images2.length);
-            }
-            lastScrollY = currentScrollY;
-        };
-
+        const handleScroll = throttle(() => {
+          const currentScrollY = window.pageYOffset;
+          if (currentScrollY > lastScrollY) {
+            // scrolling down
+            setImageIndex1((prev) => (prev + 1) % images1.length);
+            setImageIndex2((prev) => (prev + 1) % images2.length);
+          } else if (currentScrollY < lastScrollY) {
+            // scrolling up
+            setImageIndex1((prev) => (prev - 1 + images1.length) % images1.length);
+            setImageIndex2((prev) => (prev - 1 + images2.length) % images2.length);
+          }
+          lastScrollY = currentScrollY;
+        }, 500);  // Add throttle function here. 500ms means the function can only be called once every 500 milliseconds
+      
         window.addEventListener('scroll', handleScroll, { passive: true });
-
+      
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
-
+      }, []);
+      
     return(
         <div id="ventures" ClassName="page">
             {/* Block 1 */}
