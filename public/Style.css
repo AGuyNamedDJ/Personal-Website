@@ -1701,6 +1701,11 @@ h2 {
     margin-bottom: 1em;
 }
 
+#verseSection h2 {
+    font-size: 3vh;
+    text-align: center;
+}
+
 #verseSection p, #youtubeSection p, #resourcesSection p {
     font-size: 2vh;
     line-height: 1.5;
@@ -1728,20 +1733,47 @@ h2 {
     margin-bottom: 0.5em;
 }
 
+#resourcesSection h2, #youtubeSection h2 {
+    text-align: center;
+    font-size: 3vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .resourceSlide p {
     font-size: 1em;
     margin-bottom: 1em;
 }
 
-.resourceSlide a {
-    font-size: 1em;
-    color: #0000EE;
+.resourceDetails a {
+    display: block; /* Make links block elements so they stack vertically */
     text-decoration: none;
+    color: #0000EE;
+    text-align: center; /* Center the link text */
+}
+
+.resourceSlide {
+    flex: 0 0 auto;
+    width: 45%; /* Adjusted width to fit two cards side by side */
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Border around the card */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a bit of depth */
+    background-color: #fff; /* White card background */
+    margin: 0 2.5%; /* Add some margin around each card */
+}
+
+.resourceSlide h3, .resourceSlide p, .resourceSlide a {
+    margin-bottom: 1em; /* Space out the elements within the card */
 }
 
 #resourcesSection {
-    position: relative;
-    /* Rest of your styles... */
+    position: relative; 
 }
 
 #slideLeft, #slideRight {
@@ -1750,6 +1782,14 @@ h2 {
     transform: translateY(-50%);
     background: none;
     border: none;
+}
+
+#slideLeft img, #slideRight img {
+    height: 4vh;
+}
+
+#slideLeft img {
+    transform: rotate(180deg);
 }
 
 #slideLeft {
