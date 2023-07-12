@@ -526,6 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 #creation-animation {
     width: auto;
     height: 20vh;
+    margin-top: 8vh;
     align-self: flex-start;
 }
 
