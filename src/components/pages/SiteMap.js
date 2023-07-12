@@ -92,9 +92,9 @@ const SiteMap = () => {
                 </div>
                 <div className="site-map-container">
                     <div className="site-map-1">
-                        <p>Business</p>
-                        <p>Purpose</p>
-                        <p>Real Estate</p>
+                        <p><a className="site-map-link" href="/ventures/business">Business</a></p>
+                        <p><a className="site-map-link" href="/ventures">Purpose</a></p>
+                        <p><a className="site-map-link" href="/ventures/realestate">Real Estate</a></p>
                     </div>
                     <div className="site-map-2">
 
@@ -113,25 +113,25 @@ const SiteMap = () => {
                 <div className="site-map-container">
                     <div className="site-map-1">
                         <div className="site-map-subtitle">Curriculum Vitae</div>
-                        <p>Download CV</p>
-                        <p>View CV</p>
+                        <p><a className="site-map-link" href="https://www.dropbox.com/s/pdwtfs8ymntvl1s/DJR-Curriculum%20Vitae.docx-2.pdf?dl=1" download>Download CV</a></p>
+                        <p><a className="site-map-link" href="https://www.dropbox.com/s/pdwtfs8ymntvl1s/DJR-Curriculum%20Vitae.docx-2.pdf?dl=0">View CV</a></p>
                     </div>
                     <div className="site-map-2">
                         <div className="site-map-subtitle">Resume</div>
-                        <p>Download Resume</p>
-                        <p>View Resume</p>
+                        <p><a className="site-map-link" href="https://www.dropbox.com/s/wmp2n32alyvm7jc/DJR-Resume-2023-4.pdf?dl=1" download>Download Resume</a></p>
+                        <p><a className="site-map-link" href="https://www.dropbox.com/s/wmp2n32alyvm7jc/DJR-Resume-2023-4.pdf?dl=0">View Resume</a></p>
                     </div>
                     <div className="site-map-3">
                         <div className="site-map-subtitle">Certifications</div>
-                        <p>View Certifications</p>
+                        <p><a className="site-map-link" href="https://www.dropbox.com/sh/tqxl9vgpobnnvso/AAD_nK8q8oY3e0a0IH-dZIHca?dl=0">View Certifications</a></p>
                         <br></br>
                         <div className="site-map-subtitle">Notoriety</div>
-                        <p>View Notoriety</p>
+                        <p><a className="site-map-link" href="https://example.com/view-notoriety">View Notoriety</a></p> {/* Update When there is a weblink */}
                     </div>
                 </div>
             </div>
+            
             {/* Connect */}
-
             <div id="site-map-block">
                 <div className="site-map-title">
                     <h2>Connect</h2>
