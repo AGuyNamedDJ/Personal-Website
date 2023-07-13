@@ -13,8 +13,8 @@ const Credentials = () => {
                 <div id="resumeSection" className="section-credentials" style={{textAlign: "center"}}>
                     <h1>Resume</h1>
                     <div className="buttonContainer">
-                        <a href="https://www.dropbox.com/s/wmp2n32alyvm7jc/DJR-Resume-2023-4.pdf?dl=0" target="_blank" rel="noopener noreferrer" className="resumeButton">View Resume</a>
-                        <a href="https://www.dropbox.com/s/wmp2n32alyvm7jc/DJR-Resume-2023-4.pdf?dl=1" download className="resumeButton">Download Resume</a>
+                        <a href="https://www.dropbox.com/s/cf9hkmn7wii2rpz/DJR-Resume-2023-7.pdf?dl=0" target="_blank" rel="noopener noreferrer" className="resumeButton">View Resume</a>
+                        <a href="https://www.dropbox.com/s/cf9hkmn7wii2rpz/DJR-Resume-2023-7.pdf?dl=1" download className="resumeButton">Download Resume</a>
                     </div>
                 </div>
         

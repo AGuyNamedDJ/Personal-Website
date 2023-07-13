@@ -72,7 +72,7 @@ const HomePage = () => {
                     </div>
                     <div class="row">
                         <h2>MMP</h2>
-                        <a>Data & MR Analyst</a>
+                        <a>Pharmacy Informatics & Automation Specialist</a>
                         <p>Aug 2020 - Apr 2022</p>
                     </div>
                     <div class="row">
