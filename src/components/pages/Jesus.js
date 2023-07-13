@@ -28,8 +28,7 @@ const Jesus = () => {
         });
     }
 
-
-    // Your resources
+    // Resources
     const resources = [
         {
             name: "Revelation Church: LA", 
@@ -82,22 +81,43 @@ const Jesus = () => {
     ];
 
     // State for resource slides
-    const [currentSlide, setCurrentSlide] = useState([0, 1]); // This holds two indices now
+    const [currentSlide, setCurrentSlide] = useState([0, 1]);
+
+    function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+    
+        while (0 !== currentIndex) {
+    
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+    
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+    
+        return array;
+    }
 
     const nextSlide = () => {
         setCurrentSlide([
             (currentSlide[1] + 1) % resources.length,
             (currentSlide[1] + 2) % resources.length
         ]);
+    
+        setResources(shuffle(resources)); 
     }
-
+    
     const prevSlide = () => {
         setCurrentSlide([
             (currentSlide[0] - 1 + resources.length) % resources.length,
             (currentSlide[0]) % resources.length
         ]);
+    
+        setResources(shuffle(resources));
     }
-
 
     return (
         <div id="JesusPage" className="page">
@@ -136,29 +156,27 @@ const Jesus = () => {
                 <a href="https://studio.youtube.com/playlist/PLKczMAL9dQo-s2GiQvdE-sP7f0KiTalxo/videos" target="_blank" rel="noopener noreferrer">- View Playlist -</a>
             </div>
 
-{/* Resources */}
-<div className="resources-section">
-    <div className="resources-slider">
-        {resources.map((resource, index) => {
-            if (index === currentSlide[0] || index === currentSlide[1]) {
-                return (
-                    <div className="resource-slide" key={index}> 
-                        <div className="resource-card">
-                            <h3>{resource.name}</h3>
-                            <p>{resource.pastor}</p>
-                            <a href={resource.websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
-                            <a href={resource.youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
-                        </div>
-                    </div>
-                );
-            } else { return null; }
-        })}
-        <button className="slider-left" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
-        <button className="slider-right" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
-    </div>
-</div>
-
-
+            {/* Resources */}
+            <div className="resources-section">
+                <div className="resources-slider">
+                    {resources.map((resource, index) => {
+                        if (index === currentSlide[0] || index === currentSlide[1]) {
+                            return (
+                                <div className="resource-slide" key={index}> 
+                                    <div className="resource-card">
+                                        <h3>{resource.name}</h3>
+                                        <p>{resource.pastor}</p>
+                                        <a href={resource.websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
+                                        <a href={resource.youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
+                                    </div>
+                                </div>
+                            );
+                        } else { return null; }
+                    })}
+                    <button className="slider-left" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
+                    <button className="slider-right" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
+                </div>
+            </div>
         </div>
     );
 };

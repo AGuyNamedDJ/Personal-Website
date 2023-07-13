@@ -1835,7 +1835,7 @@ Section, #youtubeSection, #resourcesSection {
     display: flex;
     margin: auto;
     height: 50vh;
-    margin-top: -4vh;
+    margin-top: -8vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
