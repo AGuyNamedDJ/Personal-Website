@@ -114,6 +114,10 @@ const Jesus = () => {
             </div>
 
             {/* YouTube Videos */}
+            <div class="containeryr">
+                <h2 id="youtube-vr">Video Resources</h2>
+            </div>
+
             <div id="youtubeSection">
                 <div id="youtubeSlider">
                     {youtubeVideos.map((videoID, idx) => (
@@ -124,6 +128,11 @@ const Jesus = () => {
                 </div>
                 <button id="slideLeft" onClick={prevVideo}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
                 <button id="slideRight" onClick={nextVideo}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
+            </div>
+
+            {/* Guided By Grace Link */}
+            <div id="playlistLink">
+                <a href="https://studio.youtube.com/playlist/PLKczMAL9dQo-s2GiQvdE-sP7f0KiTalxo/videos" target="_blank" rel="noopener noreferrer">- View Playlist -</a>
             </div>
 
             {/* Resources */}

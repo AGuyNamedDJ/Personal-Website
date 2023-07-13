@@ -1691,12 +1691,24 @@ h2 {
     font-family: Arial, sans-serif;
 }
 
+.containeryr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+  
+#youtube-vr {
+    text-align: center;
+    font-size: 3vw;
+}
+
 #youtubeSection {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80vw;
-    background-color: red;
+    background-color: #000;
     margin: auto;
     overflow: hidden;
     height: 30vh; 
@@ -1721,6 +1733,7 @@ h2 {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    opacity: 0.3;
 }
 
 .videoSlide iframe {
@@ -1734,11 +1747,35 @@ h2 {
 .videoSlide.main {
     width: 60vw; 
     flex-grow: 2;
+    opacity: 1;
 }
 
 .videoSlide.main iframe {
-    height: 100%;
+    height: 110%;
+    width: 100%;
 }
+
+#playlistLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4vh;
+    margin-bottom: 10vh;
+    font-size: 2vw;
+}
+  
+#playlistLink a {
+    color: #C2B19C;
+}
+  
+#playlistLink a:hover {
+    color: #cec9c9;
+}
+  
+#playlistLink a:active {
+    opacity: 0.5;
+}
+  
 
 Section, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
@@ -1849,10 +1886,12 @@ Section, #youtubeSection, #resourcesSection {
     transform: translateY(-50%);
     background: none;
     border: none;
+    opacity: 1;
 }
 
 #slideLeft img, #slideRight img {
     height: 4vh;
+    opacity: 1;
 }
 
 #slideLeft img {
