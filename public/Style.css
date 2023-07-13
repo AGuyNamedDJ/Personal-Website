@@ -1777,7 +1777,6 @@ h2 {
     opacity: 0.5;
 }
 
-  
 Section, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
     padding: 0 20%;
@@ -1789,7 +1788,6 @@ Section, #youtubeSection, #resourcesSection {
     padding-bottom: 8vh;
 }
 
-
 #verseSection h2, #youtubeSection h2, #resourcesSection h2 {
     font-size: 3vh;
     margin-bottom: 1em;
@@ -1800,86 +1798,6 @@ Section, #youtubeSection, #resourcesSection {
     font-size: 2vw;
     line-height: 1.5;
     opacity: 77%;
-}
-
-#resourcesSection {
-    position: relative;
-    background-color: #000;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 50vh;
-    background-color: #000;
-    width: 100%;
-    overflow: auto;
-}
-
-#resourcesSlider {
-    display: flex;
-    overflow: auto;
-    width: 120%;
-    justify-content: center;
-    padding-right: 10vh;
-    padding-left: 2vh;
-    background-color: #000;
-}
-
-.resourceSlide {
-    flex: 0 0 auto;
-    width: 50%; 
-    height: 100%;
-    padding: 1vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch;
-    margin-left: 5vh;
-    justify-content: center;
-    flex-direction: column;
-    border: 2px solid #C2B19C; 
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
-    background-color: #000; 
-    margin: 0 2.5%;
-}
-
-.resourceSlide h3, .resourceSlide p, .resourceSlide a {
-    margin-bottom: 1em; 
-    text-align: center;
-}
-
-.resourceSlide h3 {
-    font-size: 3vw;
-    color: #C2B19C;
-}
-
-.resourceCard {
-    background: #1a1a1a;
-    color: #cec9c9;
-    padding: 2em;
-    border-radius: 2vh;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.85);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1em;
-}
-.resourceCard a, .resourceCard b {
-    color: #cec9c9;
-    text-decoration: none;
-}
-
-.resourceCard a:hover .resourceCard b:hover {
-    color: #C2B19C;
-    opacity: 1;
-}
-
-.resourceCard a:active, .resourceCard b:active {
-    opacity: 0.5;
-}
-
-.resourceCard p, .resourceCard a {
-    opacity: 0.77;
 }
 
 #slideLeft, #slideRight {
@@ -1911,6 +1829,110 @@ Section, #youtubeSection, #resourcesSection {
 #slideLeft:active, #slideRight:active, #slideLeft:active img, #slideRight:active img {
     opacity: 0.5;
 }
+
+/* Resource Card */
+.resources-section {
+    display: flex;
+    margin: auto;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    background-color: #000; 
+}
+
+.resources-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 0vh;
+    width: 80vw;
+    overflow: auto;
+    background-color: #000;
+}
+
+.resource-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 35%;
+    overflow: hidden;
+    /* flex: 0 1 auto; */
+    height: 100%;
+    padding: 2vw;
+    border: 2px solid #C2B19C; 
+    box-sizing: border-box;
+    box-shadow: 0.4vw 0.4vw 1vw rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    margin: 0 2.5%;
+}
+
+.resource-card {
+    background: #1a1a1a;
+    color: #cec9c9;
+    padding: 2vw;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 2vw 0px rgba(0,0,0,0.85);
+    box-sizing: border-box;
+    /* border: 1px solid #cec9c9; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 35vh;
+    gap: 1vw;
+}
+
+.resource-card a, .resource-card b {
+    color: #cec9c9;
+    text-decoration: none;
+    opacity: 0.77;
+}
+
+.resource-card a:hover, .resource-card b:hover {
+    color: #C2B19C;
+    opacity: 1;
+}
+
+.resource-card a:active, .resource-card b:active {
+    opacity: 0.5;
+}
+
+.slider-left, .slider-right {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.slider-left {
+    left: 0;
+}
+
+.slider-right {
+    right: 0;
+}
+
+.slider-left:active, .slider-right:active, .slider-left:active img, .slider-right:active img {
+    opacity: 0.5;
+}
+
+.slider-left img, .slider-right img {
+    height: 4vw;
+    opacity: 1;
+}
+
+.slider-left img {
+    transform: rotate(180deg);
+}
+
+
 
 /* Privacy & Legal Page */
 #privacyLegalPage {

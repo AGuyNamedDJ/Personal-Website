@@ -136,26 +136,51 @@ const Jesus = () => {
                 <a href="https://studio.youtube.com/playlist/PLKczMAL9dQo-s2GiQvdE-sP7f0KiTalxo/videos" target="_blank" rel="noopener noreferrer">- View Playlist -</a>
             </div>
 
-            {/* Resources */}
-            <div id="resourcesSection"> {/* Section */}
-                <h2>Resources</h2>
-                <div id="resourcesSlider"> {/* Slider */}
-                    {currentSlide.map((slideIndex) => (
-                        <div className="resourceSlide"> 
-                            <div className="resourceCard"> {/* Card */}
-                                <h3>{resources[slideIndex].name}</h3>
-                                <p>{resources[slideIndex].pastor}</p>
-                                <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
-                                <a href={resources[slideIndex].youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
-                            </div>
+{/* Resources */}
+<div className="resources-section">
+    <div className="resources-slider">
+        {resources.map((resource, index) => {
+            if (index === currentSlide[0] || index === currentSlide[1]) {
+                return (
+                    <div className="resource-slide" key={index}> 
+                        <div className="resource-card">
+                            <h3>{resource.name}</h3>
+                            <p>{resource.pastor}</p>
+                            <a href={resource.websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
+                            <a href={resource.youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
                         </div>
-                    ))}
-                </div>
-                <button id="slideLeft" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
-                <button id="slideRight" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
-            </div>
+                    </div>
+                );
+            } else { return null; }
+        })}
+        <button className="slider-left" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
+        <button className="slider-right" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
+    </div>
+</div>
+
+
         </div>
     );
 };
 
 export default Jesus;
+
+{/* 
+<div id="resourcesSection">
+<h2>Resources</h2>
+<div id="resourcesSlider"> 
+    {currentSlide.map((slideIndex) => (
+        <div className="resourceSlide"> 
+            <div className="resourceCard"> 
+                <h3>{resources[slideIndex].name}</h3>
+                <p>{resources[slideIndex].pastor}</p>
+                <a href={resources[slideIndex].websiteLink} target="_blank" rel="noopener noreferrer">Website</a>
+                <a href={resources[slideIndex].youtubeLink} target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+        </div>
+    ))}
+</div>
+<button id="slideLeft" onClick={prevSlide}><img src="/images/AboutArrow.png" alt="left arrow"/></button>
+<button id="slideRight" onClick={nextSlide}><img src="/images/AboutArrow.png" alt="right arrow"/></button>
+</div>
+*/}
