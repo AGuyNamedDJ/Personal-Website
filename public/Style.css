@@ -1681,6 +1681,7 @@ h2 {
     height: 3vh;
     margin-top: 2vh;
 }
+
 /* Jesus Page */
 #JesusPage {
     padding: 1em;
@@ -1787,6 +1788,7 @@ Section, #youtubeSection, #resourcesSection {
 #verseSection {
     padding-bottom: 8vh;
 }
+
 
 #verseSection h2, #youtubeSection h2, #resourcesSection h2 {
     font-size: 3vh;

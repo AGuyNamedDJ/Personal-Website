@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 const Jesus = () => {
     // Your Verse of the month and explanation
-    const verseOfTheMonth = "Matthew 28:19-20\n19 Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,\n20 teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.";
+    const verseOfTheMonth = "Matthew 28:19-20|<br> 19. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, 20. teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.";
     const verseExplanation = "The Great Commission emphasizes the responsibility of believers to spread the teachings of Jesus. Jesus assures his followers of his continual presence and support.";
 
     // Your YouTube video IDs
@@ -109,7 +109,8 @@ const Jesus = () => {
             {/* Verse of the Month */}
             <div id="verseSection">
                 <h2>Verse of the Month</h2>
-                <p>{verseOfTheMonth}</p>
+                <p dangerouslySetInnerHTML={{ __html: verseOfTheMonth }}></p>
+                <br />
                 <p>{verseExplanation}</p>
             </div>
 
