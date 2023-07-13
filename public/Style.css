@@ -1681,7 +1681,6 @@ h2 {
     height: 3vh;
     margin-top: 2vh;
 }
-
 /* Jesus Page */
 #JesusPage {
     padding: 1em;
@@ -1734,6 +1733,7 @@ h2 {
     height: 0;
     overflow: hidden;
     opacity: 0.3;
+    transform: opacity 0.5s ease-in-out;
 }
 
 .videoSlide iframe {
@@ -1775,8 +1775,8 @@ h2 {
 #playlistLink a:active {
     opacity: 0.5;
 }
-  
 
+  
 Section, #youtubeSection, #resourcesSection {
     margin-bottom: 8vh;
     padding: 0 20%;
