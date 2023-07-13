@@ -1819,7 +1819,7 @@ Section, #youtubeSection, #resourcesSection {
     overflow: auto;
     width: 120%;
     justify-content: center;
-    padding-right: 14vh;
+    padding-right: 10vh;
     padding-left: 2vh;
     background-color: #000;
 }
