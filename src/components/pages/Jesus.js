@@ -7,19 +7,29 @@ const Jesus = () => {
     const verseExplanation = "The Great Commission emphasizes the responsibility of believers to spread the teachings of Jesus. Jesus assures his followers of his continual presence and support.";
 
     // Your YouTube video IDs
-    const youtubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
+    const initialYoutubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
 
     // State for YouTube video slides
-    const [currentVideo, setCurrentVideo] = useState(1);
+    const [currentVideo, setCurrentVideo] = useState(0);
+    const [youtubeVideos, setYoutubeVideos] = useState(initialYoutubeVideos);
 
     const nextVideo = () => {
+        setYoutubeVideos(prevVideos => {
+            const first = prevVideos[0];
+            const rest = prevVideos.slice(1);
+            return [...rest, first];
+        });
         setCurrentVideo((currentVideo + 1) % youtubeVideos.length);
     }
     
     const prevVideo = () => {
+        setYoutubeVideos(prevVideos => {
+            const last = prevVideos[prevVideos.length - 1];
+            const rest = prevVideos.slice(0, -1);
+            return [last, ...rest];
+        });
         setCurrentVideo((currentVideo - 1 + youtubeVideos.length) % youtubeVideos.length);
     }
-    
 
     // Your resources
     const resources = [
@@ -109,7 +119,7 @@ const Jesus = () => {
             <div id="youtubeSection">
                 <div id="youtubeSlider">
                     {youtubeVideos.map((videoID, idx) => (
-                        <div class={idx === currentVideo ? "videoSlide main" : "videoSlide"}>
+                        <div className={idx === currentVideo ? "videoSlide main" : "videoSlide"}>
                             <iframe src={`https://www.youtube.com/embed/${videoID}`} frameborder="0" allowfullscreen></iframe>
                         </div>
                     ))}
