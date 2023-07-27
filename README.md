@@ -57,18 +57,30 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 ### /src
 
     -- components/ :This directory contains all the reusable components used in the project.
+        -- animations/ :This directory holds all the JSON files used for Lottie animations in the project. Lottie is a library that allows the integration of high-quality, scalable animations in web applications.
+
+        -- pages/ :This directory contains page components used to render the content and functionality of each individual page of the website. Each page component represents a specific section or view of the application.
+
+        -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
+
+        -- .DS_Store :This file is specific to macOS and stores custom attributes related to a folder's view options, icon positions, and other metadata.
+
 
     -- .DS_Store :This file is specific to macOS and stores custom attributes related to a folder's view options, icon positions, and other metadata.
 
     -- index.js :The main entry point of the JavaScript code for the project.
         1. **Imports**:
             - Description: This section contains import statements for various libraries and components used in the application. It includes imports for React, react-router-dom related modules (createBrowserRouter, RouterProvider), and react-dom/client (createRoot).
-        2. Import-Utilities**:
+
+        2. **Import-Utilities**:
             - Description: This section contains imports for utility components used in the project. These utilities might include helper functions, custom hooks, or components with specific functionality that can be reused across multiple pages.
-        3. Imports-Pages**:
+
+        3. **Imports-Pages**:
             - Description: This section contains imports for different page components used in the project. Each import corresponds to a specific page or section of the website. Page components are used to render the content and functionality of each individual page.
         4. **Browser Router**:
+
             - Description: This section sets up the router using createBrowserRouter from react-router-dom. It defines the routing configuration for the application, specifying the path and corresponding page component for each route. It also includes a catch-all route to handle any undefined paths.
+
         5. **Version 18**:
             - Description: This section is responsible for rendering the application. It creates a root element using createRoot and renders the application using the RouterProvider, passing the defined router as a prop.
 
