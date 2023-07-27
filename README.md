@@ -486,8 +486,9 @@ Special thanks to all the developers and contributors to these projects.
 For any questions or concerns, you can reach out to me through the following methods:
 
 - Email: dalronj.robertson@gmail.com
+- Github: [AGuyNamedDJ](https://github.com/AGuyNamedDJ)
 - LinkedIn: [Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
-- YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
 - Website: [dalronjrobertson.com](https://dalronjrobertson.com)
+- YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
 
 I'm always open to feedback, collaboration, or simply a chat. Feel free to get in touch!
