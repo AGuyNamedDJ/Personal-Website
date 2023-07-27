@@ -8,16 +8,16 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
 ## Table of Contents <a name="table-of-contents"></a>
 
-1. Description
-2. Installation
-3. Usage
-4. File & Directory Structure
-   - /public
-   - /src
-5. APIs & Libraries Used
-6. Testing
-7. Credits
-8. Contact Information
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [File & Directory Structure](#file-directory-structure)
+   - [public/](#public)
+   - [src/](#src)
+5. [APIs & Libraries Used](#api)
+6. [Testing](#testing)
+7. [Credits](#credits)
+8. [Contact Information](#contact-information)
 
 ---
 
@@ -29,7 +29,7 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
 ---
 
-## File & Directory Structure <a name="file--directory-structure"></a>
+## File & Directory Structure <a name="file-directory-structure"></a>
 
 ### /public <a name="public"></a>
 
