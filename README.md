@@ -62,6 +62,15 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
         -- pages/ :This directory contains page components used to render the content and functionality of each individual page of the website. Each page component represents a specific section or view of the application.
 
         -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
+            -- ErrorPage.js :A component that displays an error page when a route is not found or an error occurs in the application.
+
+            -- FetchForHomePage.js :A component responsible for fetching data required for the homepage, enhancing performance and data loading efficiency.
+
+            -- Footer.js :A reusable component that renders the website's footer, providing consistent layout and content across pages.
+
+            -- Navbar.js :A reusable component that renders the website's navigation bar, allowing easy navigation between different sections and pages.
+
+            -- Template.js :A template page that serves as a starting point to quickly create new webpages with common elements and structure.
 
         -- .DS_Store :This file is specific to macOS and stores custom attributes related to a folder's view options, icon positions, and other metadata.
 
