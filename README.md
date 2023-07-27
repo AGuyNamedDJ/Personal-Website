@@ -1,26 +1,37 @@
 # dalronjrobertson.com
 
-## Description
+## Description <a name="description"></a>
 
 Dalron J. Robertson's personal website showcases his diverse ventures, projects, and work. Built with React, this website provides an interactive experience for visitors to learn more about Dalron's background, experience, and ongoing endeavors.
 
 ---
 
-## Table of Contents
+## Table of Contents <a name="table-of-contents"></a>
+
+1. Description
+2. Installation
+3. Usage
+4. File & Directory Structure
+   - /public
+   - /src
+5. APIs & Libraries Used
+6. Testing
+7. Credits
+8. Contact Information
 
 ---
 
-## Installation
+## Installation <a name="installation"></a>
 
 ---
 
-## Usage
+## Usage <a name="usage"></a>
 
 ---
 
-## File & Directory Structure
+## File & Directory Structure <a name="file--directory-structure"></a>
 
-### /public
+### /public <a name="public"></a>
 
     -- images/ :Directory containing all image files used on the website.
         1. **Books/**
@@ -54,7 +65,7 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
         6. **Content**:
             - Description: The `<div>` with the `id="apps"` acts as a placeholder for content generated dynamically through JavaScript. It is common for Single Page Applications (SPAs) to use such placeholders to render content dynamically.
 
-### /src
+### /src <a name="src"></a>
 
     -- components/ :This directory contains all the reusable components used in the project.
         -- animations/ :This directory holds all the JSON files used for Lottie animations in the project. Lottie is a library that allows the integration of high-quality, scalable animations in web applications.
@@ -340,16 +351,16 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
 ---
 
-## APIs & Libraries Used
+## APIs & Libraries Used <a name="api"></a>
 
 ---
 
-## Testing
+## Testing <a name="testing"></a>
 
 ---
 
-## Credits
+## Credits <a name="credits"></a>
 
 ---
 
-## Contact Information
+## Contact Information <a name="contact-information"></a>
