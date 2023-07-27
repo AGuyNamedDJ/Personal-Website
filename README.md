@@ -177,23 +177,114 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
                     - Description: The JournalEntry1 component is exported for use in other parts of the application.
 
             -- Journals.js
+                1. **Imports**:
+                    - Description: General imports for the page, including React.
+                2. **Component Definition**:
+                    - Description: The functional component "Journals" which contains all the journal entries is defined. Each journal entry is an object with properties such as id, title, image, link, and date.
+                3. ***Render**:
+                    - Description: Contains the render method of the component, which includes:
+                        - The page title.
+                        - A grid of journal entries created by mapping through the reversedJournals array.
+                4. **Export**:
+                    - Description: The Journals component is exported for use in other parts of the application.
 
             -- MyStory.js
+                1. **Imports**:
+                    - Description: Standard React imports along with useState and useEffect hooks. The FlipPage package for implementing the book-like UI is also imported.
+                2. **Component Definition**:
+                    - Description: A functional component "MyStory" is defined. It includes a state for tracking the window dimensions which is useful for responsive design, and an effect that listens to window resize events.
+                3. **Render**:
+                    - Description: The component's render method includes:
+                        - A page title.
+                        - The FlipPage component which holds the book-like UI. The FlipPage component has several custom properties and each 'page' of the book is created using an 'article' tag that holds the page's content. Each page contains a title, the main content and a footer.
+                4. **Resize Effect**:
+                    - Description: An effect that adds a resize event listener to the window. This updates the state containing the window's dimensions every time a resize event occurs, thus ensuring responsiveness of the book. The event listener is removed when the component is unmounted to prevent memory leaks.
+                5. **Export**:
+                    - Description: The "MyStory" component is exported for use in other parts of the application.
 
             -- Privacy & Legal.js
+                1. **Imports**:
+                    - Description: The PrivacyLegal page only requires the default React import, as no hooks or additional components are used.
+                2. **Component Definition**:
+                    - Description: The functional component "PrivacyLegal" is defined, which provides the site's privacy policy and terms & conditions.
+                3. **Render**:
+                    - Description: The render method includes:
+                        - The page title "Privacy & Legal".
+                        - Two main sections, one for the privacy policy and the other for the terms & conditions. Each of these sections contain a header, a last updated date, and the relevant text and data points.
+                        - The privacy policy details how user data is collected, used, and protected, while the terms & conditions provide information about site usage and potential updates to the terms.
+                        - Contact information is also provided in both sections, in the event that a user has any queries or concerns about the site's privacy practices or terms of service.
+                4. **Export**:
+                    - Description: The "PrivacyLegal" component is exported for use in other parts of the application.
 
             -- Projects.js
+                1. **Imports**:
+                    - Description: React and Link from 'react-router-dom' are imported for creating the component and navigation links.
+                2. **Component Definition**:
+                    - Description: Define "Projects", a functional component showcasing project categories: software development, trading, and literary works.
+                3. **Render**:
+                    - Description: The component renders a title and three sections each dedicated to a project category. Each section includes a brief description and a link or embedded media for further exploration.
+                4. **Export**:
+                    - Description: The "Projects" component is exported for use elsewhere in the application.
 
             -- RealEstate.js
+                1. **Imports**:
+                    - Description: Import React to build the functional component.
+                2. **Component Definition**:
+                    - Description: Define the functional component "RealEstate" which currently features a placeholder "Coming Soon" message.
+                3. **Render:
+                    - Description**: The component renders a message indicating that this section of the site is currently under development and asks users to stay tuned for updates.
+                4. **Export**:
+                    - Description: The "RealEstate" component is exported for use elsewhere in the application.
 
             -- SiteMap.js
+                1. **Imports**:
+                    - Description: React is imported to build the functional component. The Link component from "react-router-dom" is imported for navigation within the application.
+                2. **Component Definition**:
+                    - Description: Define the functional component "SiteMap" which renders a site map of the application's routes and sections.
+                3. **Render**:
+                    - Description: The component organizes and renders links for various sections of the site such as "About", "Projects", "Ventures", "Credentials", and "Connect". Each section has different subcategories with their own set of links.
+                4. **Export**:
+                    - Description: The "SiteMap" component is exported for use elsewhere in the application.
 
             -- TearmsofUse.js
+                1. **Imports**:
+                    - Description: React is imported to define the functional component.
+                2. **Component Definition**:
+                    - Description: A functional component, "TermsOfUse", is defined. It does not accept any props, but renders the terms of use for the website.
+                3. **Render**:
+                    - Description: This component returns a div with the class "terms-container", which includes a title and multiple sections.g
+                4. **Export**:
+                    - Description: The "TermsOfUse" component is exported for use elsewhere in the application.
 
             -- Ventures.js
+                1. **Imports**:
+                    - Description: Various React features, 'react-router-dom', and 'framer-motion' are imported for component creation, routing, and animations respectively.
+                2. **Function Definitions**:
+                    - Description: A throttle function is defined to limit function invocation rate.
+                3. **Component Definition**:
+                    - Description: The "Ventures" functional component is defined, using hooks for state and effects.
+                4. **State Variables**:
+                    - Description: useState hooks manage state for image indices and carousel lock status.
+                5. **Image Arrays**:
+                    - Description: Two image URL arrays are defined for carousel display.
+                6. **useEffect Hooks**:
+                    - Description: Two useEffect hooks manage image rotation based on time intervals and scroll events.
+                7. **Render**:
+                    - Description: The component renders a div with nested elements, including a carousel of images.
+                8. **Export**:
+                    - Description: "Ventures" component is exported for use elsewhere.
 
             -- Websites.js
-
+                1. **Imports**:
+                    - Description: React and 'react-router-dom' are imported to build the component and routing.
+                2. **Component Definition**:
+                    - Description: The "Websites" functional component is defined with a list of websites showcasing different projects.
+                3. **Data Definition**:
+                    - Description: An array of objects holds the data for each website, including title, description, technologies, images, and links.
+                4. **Render**:
+                    - Description: The component renders a page containing a title and a series of website cards. Each card displays the project details and relevant links.
+                5. **Export**:
+                    - Description: The "Websites" component is exported for use elsewhere.
 
         -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
             -- ErrorPage.js :A component that displays an error page when a route is not found or an error occurs in the application.
