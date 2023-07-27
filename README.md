@@ -73,6 +73,28 @@ Please ensure you have the necessary access rights and permissions when performi
 
 ## Usage <a name="usage"></a>
 
+After successfully running the server, navigate to `localhost:3000` (or the port that your terminal indicates) in your browser. You should see the landing page of Dalron J. Robertson's personal website.
+
+The website is composed of several sections:
+
+    1. **Home:** The home page provides a brief introduction about Dalron J. Robertson.
+
+    2. **About:** This section provides more detailed information about Dalron's background and experience.
+
+    3. **Projects:** Here, you can explore Dalron's diverse projects and work. Each project is displayed with a brief description, and you can click on each one for more detailed information.
+
+    4. **Ventures:** In the Ventures section, you'll discover an assortment of Dalron's entrepreneurial endeavors, side projects, and startups.
+
+    5. **Credentials:** The Credentials section provides a detailed account of Dalron's academic qualifications, professional certifications, and skills. Here, you'll find his educational history, from university degrees to online courses, as well as professional certifications he has earned over the years.
+
+    6. **Contact:** This page allows visitors to get in touch with Dalron. It includes a form to submit any inquiries or messages.
+
+Additionally, the website includes an interactive navbar that enables easy navigation across the site. Hover effects, animations, and transitions are implemented across the site to enhance the user experience.
+
+Remember that any changes you make in the code while the server is running will automatically refresh the page due to the Hot Module Replacement feature in React.
+
+For more technical or specific interactions, consult the 'File & Directory Structure' and 'APIs & Libraries Used' sections.
+
 ---
 
 ## File & Directory Structure <a name="file-directory-structure"></a>
@@ -398,6 +420,27 @@ Please ensure you have the necessary access rights and permissions when performi
 ---
 
 ## APIs & Libraries Used <a name="api"></a>
+
+This website is built using a variety of powerful JavaScript libraries and APIs to ensure a smooth, interactive user experience. Here is a list of them:
+
+### Libraries:
+
+1. React.js (v18.2.0): A JavaScript library for building user interfaces.
+2. React DOM (v18.2.0): The library that powers the React framework in a web environment.
+3. Framer Motion (v10.12.16): A production-ready motion library for React.
+4. React Router (v6.6.1) and React Router DOM (v6.6.1): The standard routing library for React.
+5. React Scroll (v1.8.9) and React Scroll Parallax (v3.4.2): Libraries to enable smooth scrolling and parallax effects.
+6. React Icons (v4.9.0): An easy-to-use icon library for React.
+7. React Flip Page (v1.6.4): A React component for creating page flip effects.
+8. Lottie React (v2.4.0): A library to easily incorporate animations in a React app.
+9. React YouTube (v10.1.0): A custom React hook to play, pause, and control YouTube videos.
+10. React Calendly (v4.1.1): A React component to embed and open the Calendly widget.
+11. Font Awesome (v6.4.0): Icon library used for user interface design.
+
+### APIs:
+
+1. Axios (v1.4.0): Promise-based HTTP client for the browser and node.js, used for API calls.
+   In addition to these, the project uses React Scripts (v5.0.1) for the development environment and build process.
 
 ---
 
