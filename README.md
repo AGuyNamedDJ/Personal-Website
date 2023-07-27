@@ -2,7 +2,11 @@
 
 ## Description <a name="description"></a>
 
-Dalron J. Robertson's personal website showcases his diverse ventures, projects, and work. Built with React, this website provides an interactive experience for visitors to learn more about Dalron's background, experience, and ongoing endeavors.
+Welcome to the GitHub repository for the personal website of Dalron J. Robertson. This platform not only embodies my journey, diverse projects, and ventures, but also demonstrates my proficiency in web development, particularly in using React. The website is designed to provide an engaging and interactive user experience, allowing visitors to gain insight into my background, skills, experiences, and ongoing projects.
+
+Constructed with a focus on clean, efficient code, and attention to detail, this website is a testament to my ability to create a seamless user experience, optimizing React.js alongside other modern web technologies. Please explore this repository to understand the structure, conventions, and coding style I adhere to in my projects. You'll find thorough documentation on the codebase, including installation guides, file and directory structures, usage, testing procedures, and more.
+
+I appreciate your interest and look forward to any opportunity where I can bring value with my expertise and passion for web development.
 
 ---
 
