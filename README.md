@@ -486,7 +486,7 @@ Special thanks to all the developers and contributors to these projects.
 For any questions or concerns, you can reach out to me through the following methods:
 
 - Email: dalronj.robertson@gmail.com
-- LinkedIn: Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
+- LinkedIn: [Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
 - YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
 - Website: [dalronjrobertson.com](https://dalronjrobertson.com)
 
