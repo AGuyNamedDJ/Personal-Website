@@ -6,14 +6,41 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
 ---
 
-Features
+## Table of Contents
 
-About: This section provides an overview of who Dalron is and what he does.
+---
 
-Projects: A dedicated space showcasing Dalron's diverse portfolio, including software development work, investment insights, writings, and media (photography and video content).
+## Installation
 
-Ventures: A closer look into Dalron's entrepreneurial aspirations and real estate ventures.
+---
 
-Credentials: Overview of Dalron's work experience, education, skills, and accomplishments.
+## Usage
 
-Connect: Provides contact information and ways to reach out to Dalron.
+---
+
+## File & Directory Structure
+
+### /public
+
+    -- images/ :Directory containing all image files used on the website.
+    -- Styles.css :The main CSS file that contains styles for the entire website.
+    -- _redirects :This file is used for configuring redirection rules for hosting the website on Netlify.
+    -- index.html :The main HTML file that serves as the landing page for your website.
+
+### /src
+
+---
+
+## APIs & Libraries Used
+
+---
+
+## Testing
+
+---
+
+## Credits
+
+---
+
+## Contact Information
