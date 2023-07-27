@@ -13,6 +13,14 @@ const Websites = () => {
             codeLink: "https://github.com/AGuyNamedDJ/Personal-Website"
         },
         {
+            title: "Jamal - Backend",
+            description: "Backend for 'Jamāl' - a Salon Suite Franchise app. Built with Node.js and Express.js, supporting SQL database. Manages bookings, user roles (customers, suite renters, admins), direct messaging, and user favorites. Includes authentication and notification handling for enhanced user engagement.",
+            technologies: ["Javascript", "Node","CORS", "dotenv", "Express", "SQL", "Jest", "bcrypt", "pg", "morgan", "jsonwebtoken"],
+            image: "/images/Websites/Salon.jpg",
+            liveLink: null,
+            codeLink: "https://github.com/AGuyNamedDJ/Jamal-Backend"
+        },
+        {
             title: "TradingView Strategies & Indicator Scripts #1 (Open Source)",
             description: "This project contains a collection of custom trading strategies and indicators for TradingView, developed using Pine Script. The aim of this collection is to provide traders and investors with a diverse set of tools for technical analysis and to assist them in making more informed trading decisions.",
             technologies: ["Pinescript", "HTML"],
