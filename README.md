@@ -60,6 +60,44 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
         -- animations/ :This directory holds all the JSON files used for Lottie animations in the project. Lottie is a library that allows the integration of high-quality, scalable animations in web applications.
 
         -- pages/ :This directory contains page components used to render the content and functionality of each individual page of the website. Each page component represents a specific section or view of the application.
+            -- About.js
+            -- Books.js
+            -- BooksOne.js
+
+            -- Business.js
+
+            -- Connect.js
+
+            -- Credentials.js
+
+            -- FAQs.js
+
+            -- HomePage.js
+
+            -- Jesus.js
+
+            -- JournalEntry.js
+
+            -- Journals.js
+
+            -- MyStory.js
+
+            -- Privacy & Legal.js
+
+            -- Projects.js
+
+            -- RealEstate.js
+
+            -- SiteMap.js
+
+            -- TearmsofUse.js
+
+            -- Ventures.js
+
+            -- Websites.js
+
+
+
 
         -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
             -- ErrorPage.js :A component that displays an error page when a route is not found or an error occurs in the application.
@@ -71,10 +109,24 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
                     - Description: Renders the website's footer for consistent layout and content.
 
             -- FetchForHomePage.js :A component responsible for fetching data required for the homepage, enhancing performance and data loading efficiency.
+                1. **Imports**:
+                    - Description: General imports for the page, including React, Navbar, Footer, and necessary hooks from react-router-dom.
+                2. **Content**:
+                    - Description: Renders the content of the homepage or nested child components using <Outlet /> as a placeholder for specific route rendering.
 
             -- Footer.js :A reusable component that renders the website's footer, providing consistent layout and content across pages.
+                1. **Imports**:
+                    - Description: This section contains general imports for the component, including React and Link from react-router-dom.
+                2. **Footer Columns**:
+                    - Description: This section contains multiple columns of footer links, each providing information and navigation to different sections of the website, such as ventures, employer-related information, creatives content, support, and social media links.
+                3. **Footer Bottom**:
+                    - Description: This section displays the bottom part of the footer, which contains links for copyright notice, privacy & legal, terms of use, and site map.
 
             -- Navbar.js :A reusable component that renders the website's navigation bar, allowing easy navigation between different sections and pages.
+                1. **Imports**:
+                    - Description: This section contains general imports for the component, including React and Link from react-router-dom.
+                2. **Navbar**:
+                    - Description: The Navbar component renders the website's navigation bar. It provides links to various sections and pages of the website, such as the homepage, about page, projects page, ventures page, credentials page, and contact page.
 
             -- Template.js :A template page that serves as a starting point to quickly create new webpages with common elements and structure.
 
