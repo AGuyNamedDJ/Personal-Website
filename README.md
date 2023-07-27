@@ -61,22 +61,120 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
         -- pages/ :This directory contains page components used to render the content and functionality of each individual page of the website. Each page component represents a specific section or view of the application.
             -- About.js
+                1. **Imports**:
+                    - Description: This section contains general imports for the component, including React, useState, useEffect, and Link from react-router-dom. It also imports Lottie for handling animations and the JSON animation files.
+                2. **Animation Options**:
+                    - Description: This section contains default options for the Lottie animation, specifying properties such as looping, autoplay, animation data, and renderer settings.
+                3. **Image Sources**:
+                    - Description: This section provides an array of placeholder image sources used for a slideshow in the "Personal Interests" section.
+                4. **Shuffle Images Function**:
+                    Description: This function shuffles the array of image sources to be used in the slideshow.
+                5. **About Component**:
+                    - Description: The About component renders the "About" page of the website. It includes sections such as "Intro Section" with a brief introduction about the website owner, "Story Section" with a link to read the owner's story, "Creation Section" with animated content describing the owner's creative ventures, and "Personal Interests Section" with a slideshow of personal interest images.
+
             -- Books.js
+                1. **Imports**:
+                    - Description: This section contains general imports for the component, including React and Link from react-router-dom.
+                2. **Books Data**:
+                    - Description: This section defines an array of book objects, each representing a book available on the website. Each book object contains properties such as id, title, description, image, and link.
+                3. **Books Component**:
+                    - Description: The Books component renders the "Books" page of the website. It displays a collection of books, with each book represented as a card containing its image, title, and description. Clicking on a book card's link will direct the user to a specific page for that book.
+
             -- BooksOne.js
+                1. **Imports:
+                    - Description: This section contains the import statement for React.
+                2. **BooksOne Component**:
+                    - Description: The BooksOne component renders the page for the book titled "Circuit Breakers: Book One". It provides details about the book, including the title and a brief description of its content.
 
             -- Business.js
+                1. **Import Section**:
+                    - Imports the necessary modules for the component, including React.
+                2. **Return Statement**:
+                    - Returns a simple "Coming Soon" page with a title and two paragraphs of text.
 
             -- Connect.js
+                1. **Imports**:
+                    - Description: This section contains the import statements for React, useState, useEffect, Lottie, and other required dependencies.
+                2. **Slides Data**:
+                    - Description: This section defines an array of objects that represent the data for each slide in the carousel. Each object contains information about a social media platform, such as its title, link, username, description, and associated animation image.
+                3. **Styles**:
+                    - Description: This section defines the CSS styles used in the component for layout and positioning of elements.
+                4. **Slide Component**:
+                    - Description: This section defines a functional component called Slide, which represents an individual slide in the carousel. It takes props for content, link, username, description, image, and active status to conditionally apply the 'active' class based on the current slide index.
+                5. **Connect Component**:
+                    - Description: The Connect component is a functional component that renders the Connect page. It displays a carousel of social media platforms with their descriptions and animation images. The carousel automatically transitions to the next slide every 3.5 seconds. Additionally, it includes sections for scheduling a meeting using Calendly and a contact form to send a message.
 
             -- Credentials.js
+                1. **Imports**:
+                    - Description: This component imports React.
+                2. **Credentials Component**:
+                    - Description: The Credentials component is a page that showcases the user's credentials, including their resume, curriculum vitae, certifications, and notoriety. It contains four sections, each displaying relevant information and providing options to view or download the corresponding documents.
+                    The sections are:
+                        1. ***Resume Section***:
+                            - Description: This section displays the user's resume and provides links to view and download it.
+                        2. ***Curriculum Vitae Section***:
+                            - Description: This section displays the user's curriculum vitae and provides links to view and download it.
+                        3. ***Certifications Section***:
+                            - Description: This section displays the user's certifications and provides a link to view them.
+                        4.***Notoriety Section***:
+                            - Description: This section briefly describes the user's awards, honors, and notable acknowledgments that highlight their commitment to excellence, growth, and contributions.
 
             -- FAQs.js
+                1. **Imports**:
+                    - Description: The FAQs component imports React and useState from the "react" package.
+                2. **FAQs Component**:
+                    - Description: The FAQs component displays a list of frequently asked questions and their corresponding answers. Users can click on a question to reveal its answer. The component uses the useState hook and the FAQList array to manage the active state of each question and answer.
 
             -- HomePage.js
+                1. **Imports**:
+                    - Description: The HomePage component imports the necessary dependencies from the "react" library, "react-scroll," and other packages.
+                2. **HomePage Component**:
+                    - Description: The HomePage component serves as the landing page of the website, comprising four distinct blocks:
+                        1. ***Block 1***: Welcome Message
+                            - Description: This block introduces "Dalron" and provides a brief description of his aspirations, encouraging users to explore further.
+                        2. ***Block 2***: Recent Projects (Currently Hidden)
+                            - Description: Although commented out and not displayed, this block is intended to showcase recent projects with images and links.
+                        3. ***Block 3***: Career Timeline
+                            - Description: This block presents Dalron's career history in three rows, including job titles, companies, and respective durations.
+                        4. ***Block 4***: Contact Information
+                            - Description: The final block displays "CONTACT ME" and provides social media links for Github, Instagram, LinkedIn, Twitter, and YouTube channels. Users can access Dalron's profiles by clicking on these links.
 
             -- Jesus.js
+                1. **Imports**:
+                    - Description: General imports for the page, including React and YouTube player library.
+                2. **Component Definition**:
+                    - Description: The main functional component "Jesus" which constitutes the page is defined.
+                3. **States and Constants**:
+                    - Description: Several constants and states are defined, including:
+                        - verseOfTheMonth and verseExplanation for displaying a religious verse and its explanation.
+                        - initialYoutubeVideos and youtubeVideos for handling the YouTube videos to be displayed.
+                        - resources and currentSlide for managing the resource information and navigation.
+                4. **State Update Functions:
+                    - Description: nextVideo, prevVideo, shuffle, nextSlide, prevSlide functions handle updates to the YouTube video display and resource carousel.
+                5. **Render**:
+                    - Description: Contains the render method of the component, which includes:
+                        - The page title.
+                        - Verse of the month and its explanation.
+                        - Video resources with navigation.
+                        - Resource carousel with navigation.
+                6. **Export**:
+                    - Description: The Jesus component is exported for use in other parts of the application.
+                7. **Commented Code**:
+                    - Description: There is a block of commented code at the end, which seems to be an alternate implementation of the resources section.
 
             -- JournalEntry.js
+                1. **Imports**:
+                    - Description: General imports for the page, including React.
+                2. **Component Definition**:
+                    - Description: The functional component "JournalEntry1" which constitutes the journal entry is defined.
+                3. **Render**:
+                    - Description: Contains the render method of the component, which includes:
+                        - The page title.
+                        - An image for the journal entry.
+                        - The main journal entry content.
+                        - The published date of the journal entry.
+                3. **Export**:
+                    - Description: The JournalEntry1 component is exported for use in other parts of the application.
 
             -- Journals.js
 
@@ -95,8 +193,6 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
             -- Ventures.js
 
             -- Websites.js
-
-
 
 
         -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
