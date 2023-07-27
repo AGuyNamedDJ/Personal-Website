@@ -4,7 +4,7 @@ import YouTube from 'react-youtube';
 const Jesus = () => {
     // Your Verse of the month and explanation
     const verseOfTheMonth = "Matthew 13:10-17 |<br> [10] His disciples came and asked him, 'Why do you use parables when you talk to the people?' [11] He replied, 'You are permitted to understand the secrets of the Kingdom of Heaven, but others are not.  [12] To those who listen to my teaching, more understanding will be given, and they will have an abundance of knowledge. But for those who are not listening, even what little understanding they have will be taken away from them.  [13] That is why I use these parables, For they look, but they don't really see.  They hear, but they don't really listen or understand";
-    const verseExplanation = "Explanation: <br> Human ears hear many sounds, but there is a deeper kind of listening that results in spiritual understanding.  When speaking in parables, Jesus was not hiding truth from sincere seekers, because those who were receptive to spiritual truth understood the illustrations.  To others they were only stories without meaning.";
+    const verseExplanation = "Explanation: Human ears hear many sounds, but there is a deeper kind of listening that results in spiritual understanding.  When speaking in parables, Jesus was not hiding truth from sincere seekers, because those who were receptive to spiritual truth understood the illustrations.  To others they were only stories without meaning.";
 
     // Your YouTube video IDs
     const initialYoutubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
