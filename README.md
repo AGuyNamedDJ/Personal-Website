@@ -1,4 +1,6 @@
-Dalron J. Robertson
+# dalronjrobertson.com
+
+## Description
 
 Dalron J. Robertson's personal website showcases his diverse ventures, projects, and work. Built with React, this website provides an interactive experience for visitors to learn more about Dalron's background, experience, and ongoing endeavors.
 
