@@ -63,6 +63,12 @@ Dalron J. Robertson's personal website showcases his diverse ventures, projects,
 
         -- utilities/ :This directory contains utility components, helper functions, or custom hooks that provide specific functionality used across the project.
             -- ErrorPage.js :A component that displays an error page when a route is not found or an error occurs in the application.
+                1.  **Imports**:
+                    - General imports for the page, including React and custom components for consistent layout and functionality.
+                2. **Error Content**:
+                    - Description: Displays an error message and an image to inform users about server issues and team response.
+                3. **Footer**:
+                    - Description: Renders the website's footer for consistent layout and content.
 
             -- FetchForHomePage.js :A component responsible for fetching data required for the homepage, enhancing performance and data loading efficiency.
 
