@@ -27,6 +27,48 @@ I appreciate your interest and look forward to any opportunity where I can bring
 
 ## Installation <a name="installation"></a>
 
+To get this project running on your local machine, follow the steps mentioned below.
+
+### Prerequisites
+
+Ensure that you have Node.js and npm (Node Package Manager) installed on your machine. You can verify if you have these installed by running the following commands in your terminal/command prompt:
+
+    npm -v
+
+If these commands return versions, then you have the necessary installations to proceed. If not, please install Node.js and npm first.
+
+### Steps
+
+1. Clone the repository
+
+Open a terminal/command prompt and navigate to the folder where you want to clone the repository. Run the following command:
+
+    git clone https://github.com/AGuyNamedDJ/Personal_Website.git
+
+2. Navigate to the project directory
+
+   cd personal_site_01
+
+3. Install dependencies
+
+   Once you're in the root directory of the project, install the required dependencies by running:
+
+   npm install
+
+This command will install all the project's dependencies mentioned in the package.json file, including React, React-DOM, FontAwesome, axios, and others.
+
+4. Start the server
+
+Once all the dependencies are installed, you can start the server:
+
+    npm start
+
+This will start the server and the website should be available at localhost:3000 (or a port that your terminal indicates).
+
+Note: If changes are made to the package.json file, you will need to stop the server (Ctrl + C in the terminal), reinstall the dependencies (npm install), and then start the server again (npm start).
+
+Please ensure you have the necessary access rights and permissions when performing the above operations. If you encounter any issues, please refer to the 'issues' section of the repository.
+
 ---
 
 ## Usage <a name="usage"></a>
