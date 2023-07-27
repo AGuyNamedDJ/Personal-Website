@@ -13,7 +13,7 @@ const Websites = () => {
             codeLink: "https://github.com/AGuyNamedDJ/Personal-Website"
         },
         {
-            title: "Jamal - Backend",
+            title: "Jamāl - Backend",
             description: "Backend for 'Jamāl' - a Salon Suite Franchise app. Built with Node.js and Express.js, supporting SQL database. Manages bookings, user roles (customers, suite renters, admins), direct messaging, and user favorites. Includes authentication and notification handling for enhanced user engagement.",
             technologies: ["Javascript", "Node","CORS", "dotenv", "Express", "SQL", "Jest", "bcrypt", "pg", "morgan", "jsonwebtoken"],
             image: "/images/Websites/Salon.jpg",
