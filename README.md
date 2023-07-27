@@ -440,16 +440,54 @@ This website is built using a variety of powerful JavaScript libraries and APIs 
 ### APIs:
 
 1. Axios (v1.4.0): Promise-based HTTP client for the browser and node.js, used for API calls.
+
    In addition to these, the project uses React Scripts (v5.0.1) for the development environment and build process.
 
 ---
 
 ## Testing <a name="testing"></a>
 
+This project has been tested through a combination of console logs, prints, and careful manual testing. While there's no automated testing in place at this time, the application has been thoroughly debugged to ensure the best user experience possible.
+
+Manual testing was performed by verifying expected output in the console and confirming visual elements appeared and behaved as intended in the browser.
+
+For the future, the incorporation of a testing library like Jest, along with React Testing Library, is being considered to make the testing process more streamlined and comprehensive.
+
 ---
 
 ## Credits <a name="credits"></a>
 
+This project stands on the shoulders of the open source community. The following resources have been instrumental in the development of this website:
+
+1. React - This project was bootstrapped with Create React App.
+2. @fortawesome/react-fontawesome - Used for adding scalable vector icons that can be customized with CSS.
+3. @fortawesome/fontawesome-svg-core - Used for the core functionalities of Font Awesome icons.
+4. @fortawesome/free-brands-svg-icons - Provided the free brand icons used across the site.
+5. @fortawesome/free-solid-svg-icons - Supplied the free solid icons used across the site.
+6. axios - Used to make HTTP requests from the browser.
+7. framer-motion - Used for animating components and handling gesture-based interactions.
+8. lottie-react - Used to render Adobe After Effects animations.
+9. react-calendly - Used for scheduling meetings via Calendly.
+10. react-flip-page - Used for creating a book-like flipping page layout.
+11. react-icons - Provided additional icons for the project.
+12. react-router - Used for routing in this single page application.
+13. react-router-dom - Used for DOM bindings in the React Router.
+14. react-scripts - Used for scripts and configuration used by Create React App.
+15. react-scroll - Used for scroll animations in the website.
+16. react-scroll-parallax - Used for creating parallax effects while scrolling.
+17. react-youtube - Used for embedding YouTube videos in the React App.
+
+Special thanks to all the developers and contributors to these projects.
+
 ---
 
 ## Contact Information <a name="contact-information"></a>
+
+For any questions or concerns, you can reach out to me through the following methods:
+
+Email: dalronj.robertson@gmail.com
+LinkedIn: Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
+YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
+Website: [dalronjrobertson.com](https://dalronjrobertson.com)
+
+I'm always open to feedback, collaboration, or simply a chat. Feel free to get in touch!
