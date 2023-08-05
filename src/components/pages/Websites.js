@@ -13,6 +13,14 @@ const Websites = () => {
             codeLink: "https://github.com/AGuyNamedDJ/Personal-Website"
         },
         {
+            title: "Jamāl - Frontend",
+            description: "Frontend for 'Jamāl' - a Salon Suite Franchise app. Built with JavaScript, React.js, & CSS supporting SQL database. Manages bookings, user roles (customers, suite renters, admins), direct messaging, and user favorites. Includes authentication and notification handling for enhanced user engagement.",
+            technologies: ["Javascript", "React.js", "useEffect", "useState", "AJAX", "CSS", "HTML"],
+            image: "/images/Websites/Salon.jpg",
+            liveLink: "https://myjamal.netlify.app",
+            codeLink: "https://github.com/AGuyNamedDJ/Jamal"
+        },
+        {
             title: "Jamāl - Backend",
             description: "Backend for 'Jamāl' - a Salon Suite Franchise app. Built with Node.js and Express.js, supporting SQL database. Manages bookings, user roles (customers, suite renters, admins), direct messaging, and user favorites. Includes authentication and notification handling for enhanced user engagement.",
             technologies: ["Javascript", "Node","CORS", "dotenv", "Express", "SQL", "Jest", "bcrypt", "pg", "morgan", "jsonwebtoken"],
