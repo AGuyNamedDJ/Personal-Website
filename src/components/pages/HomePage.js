@@ -89,7 +89,7 @@ const HomePage = () => {
                     <a className="line-link" href="https://github.com/AGuyNamedDJ" target="_blank" rel="noopener noreferrer">Github</a>
                     <a className="line-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <a className="line-link" href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a className="line-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a className="line-link" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">X</a>
                     <a className="line-link" href="https://www.youtube.com/@AGNDJGaming" target="_blank" rel="noopener noreferrer">Youtube: Gaming</a>
                     <a className="line-link" href="https://www.youtube.com/channel/UCrToDvdFWAczvBr6DJK3U5w" target="_blank" rel="noopener noreferrer">Youtube: Personal</a>
                 </div>
