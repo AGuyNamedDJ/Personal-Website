@@ -35,6 +35,9 @@ import TermsOfUse from "./components/pages/TermsOfUse";
 import Ventures from "./components/pages/Ventures";
 import Websites from "./components/pages/Websites";
 
+// Import Photo Albums
+import AlbumOneChicagoLoop239 from "./components/pages/AlbumOneChicagoLoop239";
+
 // Browser Router
 const router = createBrowserRouter([
     {
@@ -53,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path: "/about/mystory",
                 element: <MyStory />
+            },
+            {
+                path: "/AlbumOne",
+                element: <AlbumOneChicagoLoop239 />
             },
             {
                 path: "/connect",

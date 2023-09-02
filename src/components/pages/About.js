@@ -17,57 +17,55 @@ const defaultOptions = {
 
 // Placeholders for image sources
 const imgSources = [
-    '/images/Chi2/Img1.jpeg', '/images/Chi2/Img2.JPG',
-    '/images/Chi2/Img3.jpg','/images/Chi2/Img4.jpeg',
-    '/images/Chi2/Img5.JPG','/images/Chi2/Img6.jpg',
-    '/images/Chi2/Img7.jpeg','/images/Chi2/Img8.jpg',
-    '/images/Chi2/Img9.jpeg','/images/Chi2/Img10.jpg',
-    '/images/Chi2/Img11.JPG','/images/Chi2/Img12.jpeg',
-    '/images/Chi2/Img13.jpeg','/images/Chi2/Img14.jpeg',
-    '/images/Chi2/Img15.jpg','/images/Chi2/Img16.JPG',
-    '/images/Chi2/Img17.jpeg','/images/Chi2/Img18.jpeg',
-    '/images/Chi2/Img19.jpeg','/images/Chi2/Img20.jpeg',
-    '/images/Chi2/Img21.jpeg','/images/Chi2/Img22.jpeg',
-    '/images/Chi2/Img23.jpeg','/images/Chi2/Img24.jpeg',
-    '/images/Chi2/Img25.jpeg','/images/Chi2/Img26.jpeg',
-    '/images/Chi2/Img27.jpeg','/images/Chi2/Img28.JPG',
-    '/images/Chi2/Img29.jpeg','/images/Chi2/Img30.jpeg',
-    '/images/Chi2/Img31.jpeg','/images/Chi2/Img32.jpeg',
-    '/images/Chi2/Img33.jpeg','/images/Chi2/Img34.JPG'
+    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
+    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
+    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
+    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg'
+    // ... other images
 
 ]; 
 
-// Shuffle Images
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+// Placeholders for image links
+const imgLinks = [
+    '/AlbumOne',
+    // ... other links
+];
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
+// Placeholders for image names
+const galleryNames = [
+    "Chicago Loop '23-9.1'",
+]
 
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
+// // Shuffle Images
+// function shuffle(array) {
+//     var currentIndex = array.length, temporaryValue, randomIndex;
 
-    return array;
-}
+//     // While there remain elements to shuffle...
+//     while (0 !== currentIndex) {
+//         // Pick a remaining element...
+//         randomIndex = Math.floor(Math.random() * currentIndex);
+//         currentIndex -= 1;
+
+//         // And swap it with the current element.
+//         temporaryValue = array[currentIndex];
+//         array[currentIndex] = array[randomIndex];
+//         array[randomIndex] = temporaryValue;
+//     }
+
+//     return array;
+// }
 
 const About = () => {
-    const [shuffledImages, setShuffledImages] = useState(shuffle([...imgSources]));
     const [currentPage, setCurrentPage] = useState(0);
-
+  
     // Function to navigate to the next page
     const nextPage = () => {
-        setCurrentPage(currentPage => Math.min(currentPage + 1, Math.floor(shuffledImages.length / 9)));
+      setCurrentPage(currentPage => Math.min(currentPage + 1, Math.floor(imgSources.length / 9)));
     };
-
+  
     // Function to navigate to the previous page
     const prevPage = () => {
-        setCurrentPage(currentPage => Math.max(currentPage - 1, 0));
+      setCurrentPage(currentPage => Math.max(currentPage - 1, 0));
     };
 
     return(
@@ -111,20 +109,23 @@ const About = () => {
 
             {/* Personal Interests Section */}
             <div id="personalInterestsSection" className="section-about">
-                <h2>Personal Interests</h2>
-                <p>From culinary arts to arts to boating life, my personal interests span a wide range. Here's just a snippet into my world of relaxation.</p>
+                <h2>Photo Galleries</h2>
+                <p>Click on any album to explore my gallery.</p>
                 <div id="slideshow-controls">
-                    <button className="control-button" onClick={prevPage} disabled={currentPage === 0}>
-                    <img class="prev-button" src="/images/AboutArrow.png" alt="Previous" />
+                <button className="control-button" onClick={prevPage} disabled={currentPage === 0}>
+                        <img className="prev-button" src="/images/AboutArrow.png" alt="Previous" />
                     </button>
                     <div id="slideshow">
-                        {shuffledImages.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 
+                        {imgSources.slice(currentPage*9, currentPage*9+9).map((imgSrc, index) => 
                         <div key={index} className="slideshow-img-container">
-                            <img src={imgSrc} alt={`Slideshow ${index+1}`} className="slideshow-img" />
+                            <Link to={imgLinks[index]}>
+                                <img src={imgSrc} alt={`Slideshow ${index + 1}`} className="slideshow-img" />
+                            </Link>
+                            <div className="gallery-name">{galleryNames[index]}</div>
                         </div>
                         )}
                     </div>
-                    <button className="control-button" onClick={nextPage} disabled={currentPage === Math.floor(shuffledImages.length / 9)}>
+                    <button className="control-button" onClick={nextPage} disabled={currentPage === Math.floor(imgSources.length / 9)}>
                         <img src="/images/AboutArrow.png" alt="Next" />
                     </button>
                 </div>
