@@ -37,6 +37,7 @@ import Websites from "./components/pages/Websites";
 
 // Import Photo Albums
 import AlbumOneChicagoLoop239 from "./components/pages/AlbumOneChicagoLoop239";
+import AlbumTwoAppleDay91223 from "./components/pages/AlbumTwoAppleDay91223";
 
 // Browser Router
 const router = createBrowserRouter([
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
             {
                 path: "/AlbumOne",
                 element: <AlbumOneChicagoLoop239 />
+            },
+            {
+                path: "/AlbumTwo",
+                element: <AlbumTwoAppleDay91223 />
             },
             {
                 path: "/connect",
