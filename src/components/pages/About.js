@@ -17,23 +17,20 @@ const defaultOptions = {
 
 // Placeholders for image sources
 const imgSources = [
-    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
-    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
-    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
-    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg'
+    '/images/Apple-Day-9-12-23/Apple-Day-9-12-23-95.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
     // ... other images
 
 ]; 
 
 // Placeholders for image links
 const imgLinks = [
-    '/AlbumOne',
+    '/AlbumTwo', '/AlbumOne',
     // ... other links
 ];
 
 // Placeholders for image names
 const galleryNames = [
-    "Chicago Loop '23-9.1'",
+    "Apple Day '23-9.12", "Chicago Loop '23-9.1'",
 ]
 
 // // Shuffle Images
