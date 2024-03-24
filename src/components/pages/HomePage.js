@@ -66,9 +66,9 @@ const HomePage = () => {
 
                 <div class="three-row-container">
                     <div class="row">
-                        <h2>Freelance</h2>
-                        <a>Software Developer</a>
-                        <p>Dec 2022 - Present</p>
+                        <h2>Scale AI</h2>
+                        <a>AI Software Engineer</a>
+                        <p>Sep 2023 - Present</p>
                     </div>
                     <div class="row">
                         <h2>MMP</h2>
