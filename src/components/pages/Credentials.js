@@ -13,8 +13,8 @@ const Credentials = () => {
                 <div id="resumeSection" className="section-credentials" style={{textAlign: "center"}}>
                     <h1>Resume</h1>
                     <div className="buttonContainer">
-                        <a href="https://www.dropbox.com/s/keels1c4kcq9qux/DJR%20-%20Resume-3.pdf?dl=0" target="_blank" rel="noopener noreferrer" className="resumeButton">View Resume</a>
-                        <a href="https://www.dropbox.com/s/keels1c4kcq9qux/DJR%20-%20Resume-3.pdf?dl=1" download className="resumeButton">Download Resume</a>
+                        <a href="https://www.dropbox.com/scl/fi/mjdfub6i528q3atyfja92/DJR-Resume-6.pdf?rlkey=s4n3ujcoraena2ltys1mx2t8g&dl=0" target="_blank" rel="noopener noreferrer" className="resumeButton">View Resume</a>
+                        <a href="https://www.dropbox.com/scl/fi/mjdfub6i528q3atyfja92/DJR-Resume-6.pdf?rlkey=s4n3ujcoraena2ltys1mx2t8g&dl=1" download className="resumeButton">Download Resume</a>
                     </div>
                 </div>
         
@@ -22,8 +22,8 @@ const Credentials = () => {
                 <div id="cvSection" className="section-credentials" style={{textAlign: "center"}}>
                     <h1>Curriculum Vitae</h1>
                     <div className="buttonContainer">
-                        <a href="https://www.dropbox.com/s/ieh2mc9ijl4zpfh/DJR%20-%20CV.docx-3.pdf?dl=0" target="_blank" rel="noopener noreferrer" className="cvButton">View Curriculum Vitae</a>
-                        <a href="https://www.dropbox.com/s/ieh2mc9ijl4zpfh/DJR%20-%20CV.docx-3.pdf?dl=1" download className="cvButton">Download Curriculum Vitae</a>
+                        <a href="https://www.dropbox.com/scl/fi/dy73dmutzxkow0buri8mp/DJR-CV.docx-6.pdf?rlkey=hp6upmpnzialeyl7zq29ulpqg&dl=0" target="_blank" rel="noopener noreferrer" className="cvButton">View Curriculum Vitae</a>
+                        <a href="https://www.dropbox.com/scl/fi/dy73dmutzxkow0buri8mp/DJR-CV.docx-6.pdf?rlkey=hp6upmpnzialeyl7zq29ulpqg&dl=1" download className="cvButton">Download Curriculum Vitae</a>
                     </div>
                 </div>
 
