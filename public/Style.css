@@ -393,6 +393,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.4vh;
 }
 
+.job-link {
+    text-decoration: none; 
+}
+
+.job-link h2 {
+    transition: color 0.3s, opacity 0.3s; 
+}
+
+.job-link:hover h2 {
+    color: #C2B19C; 
+}
+
+.job-link:active h2 {
+    opacity: 0.3; 
+}
+
 /* Social Media */
 #block4 .centered-text-container .contact-me {
     font-size: 1.6vw; 

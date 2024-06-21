@@ -64,19 +64,25 @@ const HomePage = () => {
                     <span className="career-word">Career</span> <span className="symbol">+</span>
                 </h1>
 
-                <div class="three-row-container">
-                    <div class="row">
-                        <h2>Scale AI</h2>
+                <div className="three-row-container">
+                    <div className="row">
+                        <a className="job-link" href="https://scale.com" target="_blank">
+                            <h2>Scale AI</h2>
+                        </a>
                         <a>AI Software Engineer</a>
                         <p>Sep 2023 - Present</p>
                     </div>
-                    <div class="row">
-                        <h2>MMP</h2>
+                    <div className="row">
+                        <a className="job-link" href="https://www.mmprx.com" target="_blank">
+                            <h2>MMP</h2>
+                        </a>
                         <a>Pharmacy Informatics & Automation, Staff Pharmacist-in-Training</a>
                         <p>Aug 2020 - Apr 2022</p>
                     </div>
-                    <div class="row">
-                        <h2>CVS Health</h2>
+                    <div className="row">
+                        <a className="job-link" href="https://www.cvshealth.com/" target="_blank">
+                            <h2>CVS Health</h2>
+                        </a>
                         <a>Staff Pharmacy Manager-in-Training</a>
                         <p>Aug 2015 - Aug 2020</p>
                     </div>
