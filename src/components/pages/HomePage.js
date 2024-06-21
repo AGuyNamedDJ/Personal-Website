@@ -72,12 +72,12 @@ const HomePage = () => {
                     </div>
                     <div class="row">
                         <h2>MMP</h2>
-                        <a>Pharmacy Informatics & Automation Specialist</a>
+                        <a>Pharmacy Informatics & Automation, Staff Pharmacist-in-Training</a>
                         <p>Aug 2020 - Apr 2022</p>
                     </div>
                     <div class="row">
                         <h2>CVS Health</h2>
-                        <a>Pharmacist Intern</a>
+                        <a>Staff Pharmacy Manager-in-Training</a>
                         <p>Aug 2015 - Aug 2020</p>
                     </div>
                 </div>

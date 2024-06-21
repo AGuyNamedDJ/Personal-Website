@@ -28,9 +28,9 @@ const Footer = () => {
                         <li><Link to="/about">About</Link></li>
                         <li><a href="https://www.dropbox.com/sh/tqxl9vgpobnnvso/AAD_nK8q8oY3e0a0IH-dZIHca?dl=0" target="_blank" rel="noopener noreferrer">Certifications</a></li> {/* need to create page */}
                         <li><Link to="/credentials">Credentials</Link></li>
-                        <li><a href="https://www.dropbox.com/s/pdwtfs8ymntvl1s/DJR-Curriculum%20Vitae.docx-2.pdf?dl=0" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></li> {/* need to create page */}
+                        <li><a href="https://www.dropbox.com/scl/fi/x4vaqjdx0jaw9xt90x7nf/DJR-CV.docx-5.pdf?rlkey=cir0ujv5vu8gve1i2kv6oa8e2&st=pdcfkzsg&dl=0" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></li> {/* need to create page */}
                         <li><Link to="/projects/websites">Development Projects</Link></li>
-                        <li><a href="https://www.dropbox.com/s/wmp2n32alyvm7jc/DJR-Resume-2023-4.pdf?dl=0" target="_blank" rel="noopener noreferrer" >Resume</a></li> {/* need to create page */}
+                        <li><a href="https://www.dropbox.com/scl/fi/gfq577iyorqptm9286val/DJR-Resume.docx-8.pdf?rlkey=8rh26az6v6mfuioj84zoilods&st=4lrwiine&dl=0" target="_blank" rel="noopener noreferrer" >Resume</a></li> {/* need to create page */}
                         <li><Link to="/projects#codingSection">Software</Link></li> {/* need to create page */}
                     </ul>
                 </div>
