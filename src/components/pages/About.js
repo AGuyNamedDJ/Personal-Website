@@ -17,7 +17,7 @@ const defaultOptions = {
 
 // Placeholders for image sources
 const imgSources = [
-    '/images/DC-Oct-24/DC-3.jpg', '/images/Apple-Day-9-12-23/Apple-Day-9-12-23-95.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
+    '/images/DC-Oct-24/DC-Oct-24-03.jpg', '/images/Apple-Day-9-12-23/Apple-Day-9-12-23-95.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
 
     // ... other images
 
