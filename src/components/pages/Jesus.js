@@ -3,11 +3,11 @@ import YouTube from 'react-youtube';
 
 const Jesus = () => {
     // Your Verse of the month and explanation
-    const verseOfTheMonth = "Matthew 13:10-13 |<br> [10] His disciples came and asked him, 'Why do you use parables when you talk to the people?' [11] He replied, 'You are permitted to understand the secrets of the Kingdom of Heaven, but others are not.  [12] To those who listen to my teaching, more understanding will be given, and they will have an abundance of knowledge. But for those who are not listening, even what little understanding they have will be taken away from them.  [13] That is why I use these parables, For they look, but they don't really see.  They hear, but they don't really listen or understand";
-    const verseExplanation = "Explanation: Human ears hear many sounds, but there is a deeper kind of listening that results in spiritual understanding.  When speaking in parables, Jesus was not hiding truth from sincere seekers, because those who were receptive to spiritual truth understood the illustrations.  To others they were only stories without meaning.";
+    const verseOfTheMonth = "Ezekiel 37:1-10 |<br> [1] The hand of the Lord was upon me, and He brought me out by the Spirit of the Lord and set me down in the middle of the valley; and it was full of bones. [2] He caused me to pass among them round about, and behold, there were very many on the surface of the valley; and lo, they were very dry. [3] He said to me, 'Son of man, can these bones live?' And I answered, 'O Lord God, You know.' [4] Again He said to me, 'Prophesy over these bones and say to them, 'O dry bones, hear the word of the Lord.' [5] Thus says the Lord God to these bones, 'Behold, I will cause breath to enter you that you may come to life. [6] I will put sinews on you, make flesh grow back on you, cover you with skin and put breath in you that you may come alive; and you will know that I am the Lord.' <br> <br> [7] So I prophesied as I was commanded; and as I prophesied, there was a noise, and behold, a rattling; and the bones came together, bone to its bone. [8] And I looked, and behold, sinews were on them, and flesh grew and skin covered them; but there was no breath in them. [9] Then He said to me, 'Prophesy to the breath, prophesy, son of man, and say to the breath, 'Thus says the Lord God, 'Come from the four winds, O breath, and breathe on these slain, that they come to life.' [10] So I prophesied as He commanded me, and the breath came into them, and they came to life and stood on their feet, an exceedingly great army.";
+    const verseExplanation = "Explanation: In this passage, God is teaching Ezekiel to prophesy. He shows Ezekiel a valley full of dry bones, which can remind us of times when we see brokenness or feel like nothing is going right in our lives. Despite how hopeless it looked, Ezekiel spoke God's words to the bones as he was told. The bones came together, and life was restored to them. This story shows us that no matter how impossible things may seem, speaking and trusting in God's word can bring change and new life to any situation.";
 
     // Your YouTube video IDs
-    const initialYoutubeVideos = ["I-yW-nrSSJg", "wVjgMKFS114", "K7r09B95zC0"];
+    const initialYoutubeVideos = ["gSXORzogoTM", "kk6-KQoFHqY", "d7zIhZlenXU"];
 
     // State for YouTube video slides
     const [youtubeVideos, setYoutubeVideos] = useState(initialYoutubeVideos);
@@ -43,10 +43,10 @@ const Jesus = () => {
             youtubeLink: "https://www.youtube.com/@TDJakesOfficial"
         },
         {
-            name: "Elevation Church", 
-            pastor: "Pastor Steven Furtick", 
-            websiteLink: "https://elevationchurch.org", 
-            youtubeLink: "https://www.youtube.com/@elevationchurch"
+            name: "Newlife Southeast", 
+            pastor: "Pastor John F. Hannah", 
+            websiteLink: "https://www.newlifesoutheast.org", 
+            youtubeLink: "https://www.youtube.com/c/PastorHannah"
         },
         {
             name: "Elevation Worship", 
@@ -126,9 +126,9 @@ const Jesus = () => {
                 <h1>Jesus</h1>
             </div>
 
-            {/* Verse of the Month */}
+            {/* Verse of the Season */}
             <div id="verseSection">
-                <h2>Verse of the Month</h2>
+                <h2>Verse of the Season</h2>
                 <p dangerouslySetInnerHTML={{ __html: verseOfTheMonth }}></p>
                 <br />
                 <p>{verseExplanation}</p>
