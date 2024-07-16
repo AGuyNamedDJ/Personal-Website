@@ -17,21 +17,21 @@ const defaultOptions = {
 
 // Placeholders for image sources
 const imgSources = [
-    '/images/DC-Oct-24/DC-Oct-24-03.jpg', '/images/Apple-Day-9-12-23/Apple-Day-9-12-23-95.jpg',    '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
-
-    // ... other images
+    '/images/DC-Oct-24/DC-Oct-24-03.jpg', 'images/Texas-State-Fair/Texas-State-Fair-05.jpg',
+    '/images/Apple-Day-9-12-23/Apple-Day-9-12-23-95.jpg', '/images/Chicago-Loop-23-9/Chicago-Loop-23-9-39.jpg',
 
 ]; 
 
 // Placeholders for image links
 const imgLinks = [
-    '/AlbumThree', '/AlbumTwo', '/AlbumOne',
+    '/AlbumThree', '/AlbumFour', '/AlbumTwo', '/AlbumOne',
     // ... other links
 ];
 
 // Placeholders for image names
 const galleryNames = [
-    "DC '24-10", "Apple Day '23-9.12", "Chicago Loop '23-9.1'",
+    "DC '24-10", "Texas State Fair '23-10.14'",
+    "Apple Day '23-9.12", "Chicago Loop '23-9.1'",
 ]
 
 // // Shuffle Images

@@ -39,6 +39,7 @@ import Websites from "./components/pages/Websites";
 import AlbumOneChicagoLoop239 from "./components/pages/AlbumOneChicagoLoop239";
 import AlbumTwoAppleDay91223 from "./components/pages/AlbumTwoAppleDay91223";
 import AlbumThreeDC1024 from "./components/pages/AlbumThreeDC1024";
+import AlbumFourTSF from "./components/pages/AlbumFourTSF";
 
 // Browser Router
 const router = createBrowserRouter([
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
             {
                 path: "/AlbumThree",
                 element: <AlbumThreeDC1024 />
+            },
+            {
+                path: "/AlbumFour",
+                element: <AlbumFourTSF />
             },
             {
                 path: "/connect",
