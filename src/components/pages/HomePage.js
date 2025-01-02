@@ -69,7 +69,7 @@ const HomePage = () => {
                         <a className="job-link" href="https://scale.com" target="_blank">
                             <h2>Scale AI</h2>
                         </a>
-                        <a>AI Software Engineer</a>
+                        <a>Prompt Engineer</a>
                         <p>Sep 2023 - Present</p>
                     </div>
                     <div className="row">
