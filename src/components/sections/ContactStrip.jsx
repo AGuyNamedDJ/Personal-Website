@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React, { useState } from "react";
@@ -40,23 +38,28 @@ export default function ContactStrip() {
         viewport={{ once: true }}
         className="mx-auto max-w-2xl relative"
       >
-        <div className="bg-[#F9F4EC] p-10 md:p-16 rounded-3xl shadow-lg shadow-inner ring-1 ring-neutral-200 relative">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight md:tracking-wide mb-4">
+        <div className="bg-[#F9F4EC] p-10 md:p-16 rounded-3xl shadow-lg shadow-inner border border-[#D2C2AA] ring-0 relative">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold tracking-wide leading-tight mb-2">
             Have a bold idea? Let’s make it real.
           </h2>
-          <div className="mx-auto mb-6 h-0.5 w-16 bg-gradient-to-r from-accent-gold via-accent-gold/60 to-transparent" />
-          <p className="mb-8 text-lg md:text-xl text-neutral-700">
-            Reach out to discuss opportunities, collaborations, or research.
+          <div className="mx-auto mb-2 h-0.5 w-16 bg-gradient-to-r from-accent-gold via-accent-gold/60 to-transparent" />
+          <p className="mb-6 text-lg md:text-xl text-neutral-800">
+            Contact me to discuss research projects, professional opportunities, or joint ventures.
           </p>
-          <form onSubmit={onSubmit} className="space-y-6" noValidate>
+          <form onSubmit={onSubmit} className="space-y-4" noValidate>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div>
+              <div className="relative">
+                <label
+                  htmlFor="name"
+                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
+                >
+                  Your Name
+                </label>
                 <input
                   id="name"
                   type="text"
                   name="name"
-                  placeholder="Your Name"
-                  className={`w-full rounded-lg px-4 py-3 bg-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-accent-gold hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.name ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -69,13 +72,18 @@ export default function ContactStrip() {
                   <p className="mt-2 text-sm text-red-600">{localErrors.name}</p>
                 )}
               </div>
-              <div>
+              <div className="relative">
+                <label
+                  htmlFor="email"
+                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
+                >
+                  Your Email
+                </label>
                 <input
                   id="email"
                   type="email"
                   name="email"
-                  placeholder="Your Email"
-                  className={`w-full rounded-lg px-4 py-3 bg-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-accent-gold hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.email ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -88,13 +96,18 @@ export default function ContactStrip() {
                   <p className="mt-2 text-sm text-red-600">{localErrors.email}</p>
                 )}
               </div>
-              <div>
+              <div className="relative">
+                <label
+                  htmlFor="subject"
+                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
+                >
+                  Subject
+                </label>
                 <input
                   id="subject"
                   type="text"
                   name="subject"
-                  placeholder="Subject"
-                  className={`w-full rounded-lg px-4 py-3 bg-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-accent-gold hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.subject ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -108,13 +121,18 @@ export default function ContactStrip() {
                 )}
               </div>
             </div>
-            <div>
+            <div className="relative">
+              <label
+                htmlFor="message"
+                className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
+              >
+                Your Message
+              </label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Your Message"
                 rows={4}
-                className={`w-full rounded-lg px-4 py-3 bg-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-accent-gold hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 h-40 resize-none ${
+                className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 h-56 resize-none ${
                   localErrors.message ? "border border-red-600" : "border border-neutral-200"
                 }`}
                 onChange={() => {
