@@ -1,5 +1,5 @@
-/* Older style: */
 @import "tailwindcss";
+
 
 /* ─────────────────────────────
    Global design tokens
@@ -28,9 +28,10 @@ html {
 
 /* Default font for body text */
 body {
-  @apply font-sans leading-relaxed text-neutral-900;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  @apply bg-white text-neutral-900 leading-relaxed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Headings inherit system font with tight tracking */
@@ -40,12 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Anchor defaults */
 a {
-  @apply text-neutral-900 underline-offset-4 hover:text-neutral-700 hover:underline transition;
+  @apply underline-offset-4 hover:text-neutral-700 hover:underline transition;
 }
 
 /* Section block helper — top & bottom padding for consistent rhythm */
 .section-block {
   @apply py-24 md:py-32;
 }
-
-/* Remove test overrides */
