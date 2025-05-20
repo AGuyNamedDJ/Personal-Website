@@ -1,6 +1,4 @@
 import "./globals.css";
-import Footer from "@/components/Footer";
-
 export const metadata = {
   title: "Dalron J. Robertson",
   description: "AI Pharmacologist, Founder of NaS — designing biology’s future.",
@@ -10,11 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-red-500 text-neutral-900 antialiased">
-        <>
-          {children}
-          <Footer />
-        </>
+      <head />
+      <body className="bg-red-500 min-h-screen antialiased">
+        {children}
       </body>
     </html>
   );

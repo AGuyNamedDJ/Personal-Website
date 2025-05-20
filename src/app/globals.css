@@ -1,8 +1,5 @@
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Older style: */
+@import "tailwindcss";
 
 /* ─────────────────────────────
    Global design tokens
@@ -22,7 +19,7 @@ html {
 
 /* Utility class for the dark footer */
 .footer-dark {
-  @apply bg-neutral-950 text-neutral-100;
+  @apply bg-neutral-900 text-neutral-100;
 }
 
 /* ─────────────────────────────
@@ -36,7 +33,7 @@ body {
     Arial, sans-serif;
 }
 
-/* Headings inherit Inter but tighten tracking */
+/* Headings inherit system font with tight tracking */
 h1, h2, h3, h4, h5, h6 {
   @apply tracking-tight font-medium text-neutral-900;
 }
@@ -51,7 +48,4 @@ a {
   @apply py-24 md:py-32;
 }
 
-/* TEST — temporary: should turn entire background hotpink */
-body {
-  background: hotpink !important;
-}
+/* Remove test overrides */
