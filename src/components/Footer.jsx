@@ -36,9 +36,27 @@ export default function Footer() {
           <Link href="/connect" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">Connect</Link>
         </nav>
         <nav className="space-y-3 text-sm">
-          <Link href="/resume" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Resume</Link>
-          <Link href="/cv" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Curriculum Vitae</Link>
-          <Link href="/cover-letter" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Cover Letter</Link>
+          <a
+            href="/files/DJR-Resume.pdf"
+            download
+            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
+          >
+            Resume
+          </a>
+          <a
+            href="/files/DJR-CurriculumVitae.pdf"
+            download
+            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
+          >
+            Curriculum Vitae
+          </a>
+          <a
+            href="/files/DJR-Cover-Letter.pdf"
+            download
+            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
+          >
+            Cover Letter
+          </a>
         </nav>
         <div className="space-y-3 text-sm">
           <Link href="/legal#privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity">Privacy</Link>
