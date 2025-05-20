@@ -1,0 +1,44 @@
+# ───────────────────────────────────────────
+# Node & package managers
+# ───────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ───────────────────────────────────────────
+# Next.js build artifacts
+# ───────────────────────────────────────────
+.next/
+out/               # if you ever run `next export`
+
+# ───────────────────────────────────────────
+# Environment secrets
+# ───────────────────────────────────────────
+.env
+.env.*             # .env.local, .env.production, etc.
+
+# ───────────────────────────────────────────
+# Testing / coverage
+# ───────────────────────────────────────────
+coverage/
+*.lcov
+
+# ───────────────────────────────────────────
+# macOS clutter
+# ───────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ───────────────────────────────────────────
+# Editor / IDE settings
+# ───────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.sw?
+*.sln
+*.njsproj
+*.psd

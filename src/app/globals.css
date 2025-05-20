@@ -1,0 +1,57 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────
+   Global design tokens
+   ────────────────────────────*/
+:root {
+  --accent-gold: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--accent-gold);
+  color: #ffffff;
+}
+
+/* Utility class for the dark footer */
+.footer-dark {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+/* ─────────────────────────────
+   Typography & base elements
+   ────────────────────────────*/
+
+/* Default font for body text */
+body {
+  @apply font-sans leading-relaxed text-neutral-900;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* Headings inherit Inter but tighten tracking */
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight font-medium text-neutral-900;
+}
+
+/* Anchor defaults */
+a {
+  @apply text-neutral-900 underline-offset-4 hover:text-neutral-700 hover:underline transition;
+}
+
+/* Section block helper — top & bottom padding for consistent rhythm */
+.section-block {
+  @apply py-24 md:py-32;
+}
+
+/* TEST — temporary: should turn entire background hotpink */
+body {
+  background: hotpink !important;
+}
