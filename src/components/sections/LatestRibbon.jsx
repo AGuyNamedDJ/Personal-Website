@@ -44,6 +44,15 @@ export default function LatestRibbon() {
             View Article →
           </a>
         </div>
+      ) : index === 1 ? (
+        // Robertson Foundation custom background
+        <div className="absolute inset-0 flex items-center justify-center bg-[#181615]">
+          <img
+            src={bg.src}
+            alt="Robertson Foundation"
+            className="w-[65%] h-auto object-contain rounded-lg shadow-lg"
+          />
+        </div>
       ) : (
         // Other image backgrounds
         <img
