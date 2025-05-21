@@ -40,8 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Anchor defaults */
-a {
-  @apply underline-offset-4 hover:text-neutral-700 hover:underline transition;
+a:not(.no-underline) {
+  @apply underline-offset-4 transition;
 }
 
 /* Section block helper — top & bottom padding for consistent rhythm */

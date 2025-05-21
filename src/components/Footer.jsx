@@ -29,11 +29,11 @@ export default function Footer() {
           </Link>
         </div>
         <nav className="space-y-3 text-sm">
-          <Link href="/" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">Home</Link>
-          <Link href="/about" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">About</Link>
-          <Link href="/work" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">Work</Link>
-          <Link href="/writing" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">Writing</Link>
-          <Link href="/connect" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity">Connect</Link>
+          <Link href="/" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Home</Link>
+          <Link href="/about" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">About</Link>
+          <Link href="/work" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Work</Link>
+          <Link href="/writing" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Writing</Link>
+          <Link href="/connect" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Connect</Link>
         </nav>
         <nav className="space-y-3 text-sm">
           <a
@@ -59,9 +59,9 @@ export default function Footer() {
           </a>
         </nav>
         <div className="space-y-3 text-sm">
-          <Link href="/legal#privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity">Privacy</Link>
-          <Link href="/legal#terms" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity">Terms</Link>
-          <Link href="/sitemap" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity">Site Map</Link>
+          <Link href="/legal#privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
+          <Link href="/legal#terms" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Terms</Link>
+          <Link href="/sitemap" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Site Map</Link>
         </div>
         <div className="justify-self-end">
           <button
