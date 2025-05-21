@@ -45,22 +45,49 @@ export default function LatestRibbon() {
           </a>
         </div>
       ) : index === 1 ? (
-        // Robertson Foundation custom background
-        <div className="absolute inset-0 flex items-center justify-center bg-[#181615]">
+        <div className="absolute inset-0">
           <img
             src={bg.src}
             alt="Robertson Foundation"
-            className="w-[65%] h-auto object-contain rounded-lg shadow-lg"
+            className="absolute inset-0 w-full h-full object-cover"
           />
+          <a
+            href="/work/robertson-foundation"
+            className="absolute bottom-8 left-8 text-white text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+          >
+            Explore Robertson Foundation →
+          </a>
         </div>
-      ) : (
-        // Other image backgrounds
-        <img
-          src={bg.src}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      )}
+      ) : index === 2 ? (
+        <div className="absolute inset-0">
+          <img
+            src={bg.src}
+            alt="Book Cover"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <a
+            href="/files/CB.pdf"
+            download
+            className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+          >
+            Download Book →
+          </a>
+        </div>
+      ) : index === 3 ? (
+        <div className="absolute inset-0">
+          <img
+            src={bg.src}
+            alt="Graduation"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <a
+            href="/work/graduation-photos"
+            className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+          >
+            View Graduation Photos →
+          </a>
+        </div>
+      ) : null}
     </section>
   );
 }
