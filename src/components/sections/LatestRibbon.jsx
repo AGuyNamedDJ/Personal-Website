@@ -6,6 +6,7 @@ const backgrounds = [
   { type: "image", src: "/assets/images/NaSArticle.png" },
   { type: "image", src: "/assets/images/RobertsonFoundation.jpg" },
   { type: "image", src: "/assets/images/CB.png" },
+  { type: "image", src: "/assets/images/Graduation3.png" },
 ];
 
 export default function LatestRibbon() {
@@ -14,7 +15,7 @@ export default function LatestRibbon() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex(i => (i + 1) % backgrounds.length);
-    }, 4500);
+    }, 8000);
     return () => clearInterval(timer);
   }, []);
 
