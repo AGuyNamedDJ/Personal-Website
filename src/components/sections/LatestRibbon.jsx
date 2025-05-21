@@ -41,21 +41,21 @@ export default function LatestRibbon() {
             rel="noopener noreferrer"
             className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-900 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
           >
-            View Article →
+            View the White Paper →
           </a>
         </div>
       ) : index === 1 ? (
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{ backgroundColor: "#181615" }}>
           <img
             src={bg.src}
             alt="Robertson Foundation"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover scale-[0.8]"
           />
           <a
             href="/work/robertson-foundation"
             className="absolute bottom-8 left-8 text-white text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
           >
-            Explore Robertson Foundation →
+            Visit the Robertson Foundation →
           </a>
         </div>
       ) : index === 2 ? (
@@ -66,11 +66,16 @@ export default function LatestRibbon() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <a
-            href="/files/CB.pdf"
-            download
-            className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+            href="https://www.amazon.com/gp/product/B0F4XWYDJB?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks"
+            className="absolute bottom-8 left-8 transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Download Book →
+            <img
+              src="/assets/images/AmazonButton.png"
+              alt="Buy on Amazon"
+              className="h-8 rounded-2xl"
+            />
           </a>
         </div>
       ) : index === 3 ? (
@@ -84,7 +89,7 @@ export default function LatestRibbon() {
             href="/work/graduation-photos"
             className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
           >
-            View Graduation Photos →
+            View M.S. Graduation Shoot →
           </a>
         </div>
       ) : null}
