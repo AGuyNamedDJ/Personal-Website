@@ -36,12 +36,13 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Who I Am</h2>
           <p className="leading-relaxed text-neutral-800">
-            I’m Dalron, an AI/ML research engineer and Pharm.D. candidate with a
-            passion for biotech innovation. My work spans foundational white
-            papers, graduate research, and building interdisciplinary projects
-            that bridge data science and medicine. I’m driven by curiosity,
-            precision, and the belief that technology—used responsibly—can
-            transform healthcare for everyone.
+            I am Dalron J. Robertson, a researcher, engineer, and creator focused on developing intelligent systems for life sciences. My background combines biomedical science, clinical pharmacology, and software engineering, allowing me to tackle scientific questions with both technical rigor and biological understanding.
+
+My work emphasizes creation through computational modeling, writing, teaching, and visual storytelling. I build computational pipelines and specialized language models, author books, and deliver lectures, all grounded in clarity, intentionality, and practical relevance.
+
+Recently, I led a diverse research team employing computational modeling and bioinformatics to evaluate potential therapeutic compounds, earning recognition at my university’s research symposium. Currently, I am creating a specialized Mixture-of-Experts language model to assist life sciences research teams with ongoing knowledge management and discovery.
+
+Ultimately, I view research as a form of stewardship. My goal is to design systems and create experiences that help others think clearly, innovate confidently, and build lasting contributions in science and healthcare.
           </p>
         </div>
       </section>
@@ -53,19 +54,64 @@ export default function AboutPage() {
         <ol className="relative border-l-2 border-[#D2C2AA] ml-4 space-y-12">
           {[
             {
-              year: 2025,
-              title: "NaS Founding White Paper (May 2025)",
-              desc: "Published foundational white paper outlining an AI‑driven biotech research framework."
+              year: 2018,
+              title: "M.S. in Biology, Mississippi College (2018)",
+              desc: "Enrolled in graduate studies to explore advanced topics in molecular biology and bioinformatics."
             },
             {
-              year: 2025,
-              title: "M.S. Biological Sciences, Mississippi College (May 2025)",
-              desc: "Completed master’s studies with a focus on computational biology."
+              year: 2019,
+              title: "Doctor of Pharmacy Program Enrollment (2019)",
+              desc: "Began Pharm.D. coursework, laying the foundation for clinical practice and pharmaceutical research."
+            },
+            {
+              year: 2021,
+              title: "Professional Sabbatical (2021)",
+              desc: "Took intentional time away to reflect, plan next steps, and align career goals with personal vision."
+            },
+            {
+              year: 2022,
+              title: "Software Engineering Coursework Completion, University of Illinois at Chicago (2022)",
+              desc: "Finished key classes in algorithms, full-stack development, and systems design to bridge code with life sciences."
+            },
+            {
+              year: 2023,
+              title: "AI Software Engineer, Scale AI (2023)",
+              desc: "Joined the Scale AI team to apply machine-learning pipelines for annotating biological datasets and accelerating drug discovery."
             },
             {
               year: 2024,
-              title: "Circuit Breakers: Echoes of Innovation",
-              desc: "Authored a book exploring creativity and resilience in engineering."
+              title: "Master’s Coursework Resumption, Mississippi College (August 2024)",
+              desc: "Returned to complete remaining credits and move toward thesis research in cellular and molecular biology."
+            },
+            {
+              year: 2025,
+              title: "Publication: To Love Ignorantly (February 2025)",
+              desc: "Released my second book, a reflection on vulnerability, faith, and the courage to love without guarantees."
+            },
+            {
+              year: 2025,
+              title: "Publication: Circuit Breakers 2 (April 2025)",
+              desc: "Published the sequel to my tech memoir, examining resilience and creative problem-solving in high-pressure environments."
+            },
+            {
+              year: 2025,
+              title: "M.S. in Biology Conferred, Mississippi College (May 2025)",
+              desc: "Officially graduated, marking the culmination of advanced research and thesis defense in biological sciences."
+            },
+            {
+              year: 2025,
+              title: "NaS Foundational White Paper Release (May 25, 2025)",
+              desc: "Unveiled the strategic blueprint for NaS—outlining infrastructure, research pillars, and initial findings."
+            },
+            {
+              year: 2025,
+              title: "Pharm.D. P3 Re-enrollment & Chicago Relocation (Summer 2025)",
+              desc: "Re-entered the final year of pharmacy school and moved back to Chicago to begin clinical rotations."
+            },
+            {
+              year: 2028,
+              title: "Pharm.D. Graduation (Projected May 2028)",
+              desc: "Target date to earn my Doctor of Pharmacy and transition into patient-centered pharmaceutical care."
             }
           ].map((m) => (
             <li key={m.year + m.title} className="ml-6">
