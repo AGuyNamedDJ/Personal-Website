@@ -11,7 +11,7 @@ export default function HeroSection() {
       <style jsx>{`
         img {
           opacity: 0;
-          animation: fadeIn 2s ease-in-out forwards;
+          animation: fadeIn 3s ease-in-out forwards;
         }
         @keyframes fadeIn {
           from { opacity: 0; }
