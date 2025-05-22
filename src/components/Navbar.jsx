@@ -30,7 +30,7 @@ export default function Navbar() {
     <header className={`fixed inset-x-0 top-0 z-40 bg-transparent transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
           <Image
             src="/assets/images/IMG_6414.JPG"
             alt="Logo"
@@ -44,13 +44,13 @@ export default function Navbar() {
         {/* Individual pill links */}
         <ul className="ml-8 flex gap-3 text-sm font-medium">
           <li>
-            <Link href="/#about"   className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">About</Link>
+            <Link href="/about"   className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">About</Link>
           </li>
           <li>
-            <Link href="/#work"    className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Work</Link>
+            <Link href="/work"    className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Work</Link>
           </li>
           <li>
-            <Link href="/#writing" className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Writing</Link>
+            <Link href="/writing" className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Writing</Link>
           </li>
           <li>
             <Link href="/#contact" className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Connect</Link>
