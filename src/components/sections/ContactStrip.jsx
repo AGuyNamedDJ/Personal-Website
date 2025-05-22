@@ -48,18 +48,13 @@ export default function ContactStrip() {
           </p>
           <form onSubmit={onSubmit} className="space-y-4" noValidate>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="relative">
-                <label
-                  htmlFor="name"
-                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
-                >
-                  Your Name
-                </label>
+              <div>
                 <input
                   id="name"
                   type="text"
                   name="name"
-                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  placeholder="Your Name"
+                  className={`w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.name ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -72,18 +67,13 @@ export default function ContactStrip() {
                   <p className="mt-2 text-sm text-red-600">{localErrors.name}</p>
                 )}
               </div>
-              <div className="relative">
-                <label
-                  htmlFor="email"
-                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
-                >
-                  Your Email
-                </label>
+              <div>
                 <input
                   id="email"
                   type="email"
                   name="email"
-                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  placeholder="Your Email"
+                  className={`w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.email ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -96,18 +86,13 @@ export default function ContactStrip() {
                   <p className="mt-2 text-sm text-red-600">{localErrors.email}</p>
                 )}
               </div>
-              <div className="relative">
-                <label
-                  htmlFor="subject"
-                  className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
-                >
-                  Subject
-                </label>
+              <div>
                 <input
                   id="subject"
                   type="text"
                   name="subject"
-                  className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
+                  placeholder="Subject"
+                  className={`w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 ${
                     localErrors.subject ? "border border-red-600" : "border border-neutral-200"
                   }`}
                   onChange={() => {
@@ -121,18 +106,13 @@ export default function ContactStrip() {
                 )}
               </div>
             </div>
-            <div className="relative">
-              <label
-                htmlFor="message"
-                className="absolute left-4 top-3 text-neutral-500 text-sm transition-all peer-focus:top-1 peer-focus:text-xs peer-focus:text-accent-gold"
-              >
-                Your Message
-              </label>
+            <div>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
-                className={`peer w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 h-56 resize-none ${
+                placeholder="Your Message"
+                className={`w-full rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-accent-gold/30 focus:ring-offset-2 focus:ring-offset-[#F9F4EC] hover:shadow-sm transition ring-opacity-0 focus:ring-opacity-100 duration-150 h-56 resize-none ${
                   localErrors.message ? "border border-red-600" : "border border-neutral-200"
                 }`}
                 onChange={() => {
