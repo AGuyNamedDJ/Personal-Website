@@ -56,19 +56,19 @@ export default function AboutPage() {
           {[
             {
               year: 2025,
-              title: "NaS Founding White Paper",
-              desc: "Published the blueprint for an AI-driven biotech research institute.",
+              title: "NaS Founding White Paper (May 2025)",
+              desc: "Published foundational white paper outlining an AI‑driven biotech research framework."
             },
             {
-              year: 2023,
-              title: "“Circuit Breakers” Memoir",
-              desc: "Debut book reached Amazon #1 New Release in Engineering Biography.",
+              year: 2025,
+              title: "M.S. Computational Biology, Mississippi College (May 2025)",
+              desc: "Completed master’s studies with a focus on computational biology."
             },
             {
-              year: 2021,
-              title: "M.S. Biology, Mississippi College",
-              desc: "Graduated Summa Cum Laude, focus on computational genomics.",
-            },
+              year: 2024,
+              title: "Circuit Breakers: Echoes of Innovation",
+              desc: "Authored a book exploring creativity and resilience in engineering."
+            }
           ].map((m) => (
             <li key={m.year} className="ml-6">
               <span className="absolute -left-[46px] top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white border border-[#D2C2AA] shadow">
