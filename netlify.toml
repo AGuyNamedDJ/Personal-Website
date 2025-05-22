@@ -1,0 +1,7 @@
+# netlify.toml  – explicit Next.js deploy config
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/next"
