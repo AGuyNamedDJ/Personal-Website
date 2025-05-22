@@ -25,7 +25,7 @@ export default function NowSection() {
 
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-6">
           <motion.a
-            href="/files/Nicole-Whitepaper.pdf"
+            href="/files/Nas-White-Paper.pdf"
             download
             className="inline-block bg-black text-white rounded-lg border border-transparent px-5 py-2 text-sm font-medium transition hover:bg-white hover:text-black hover:border-black decoration-none hover:decoration-none focus:outline-none"
             whileTap={{ scale: 0.95 }}
