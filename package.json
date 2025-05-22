@@ -20,7 +20,7 @@
   "homepage": "https://github.com/AGuyNamedDJ/Personal-Website#readme",
   "description": "",
   "devDependencies": {
-    "@netlify/next": "^1.4.9",
+    "@netlify/plugin-nextjs": "^5.11.2",
     "@tailwindcss/postcss": "^4.1.7",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
