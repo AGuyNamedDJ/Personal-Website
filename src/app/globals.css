@@ -36,7 +36,7 @@ html {
 
 /* Default font for body text */
 body {
-  @apply bg-white text-neutral-900 leading-relaxed;
+  @apply bg-white text-neutral-900 leading-relaxed overflow-x-hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
