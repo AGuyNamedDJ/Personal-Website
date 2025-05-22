@@ -30,7 +30,7 @@ export default function ContactStrip() {
   }
 
   return (
-    <section className="py-16 bg-[#D2C2AA] text-center">
+    <section id="contact" className="py-16 bg-[#D2C2AA] text-center">
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
