@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 // ─────────────────────────────────────────────────────────
 // /about  – basic starter layout
@@ -11,10 +12,9 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="scroll-smooth">
-      {/* 1) Page hero  */}
-      <section className="relative h-[35vh] md:h-[45vh] overflow-hidden">
+      <section className="relative h-[24vh] md:h-[32vh] overflow-hidden">
         <Image
-          src="/assets/images/AboutHero.jpg" // drop any banner image here or replace with a gradient div
+          src="/assets/images/AboutHero.jpg"
           alt=""
           fill
           priority
@@ -25,10 +25,9 @@ export default function AboutPage() {
         </h1>
       </section>
 
-      {/* 2) Portrait + bio */}
-      <section className="mx-auto max-w-prose px-4 py-24 md:flex md:items-center md:gap-10">
+      <section className="mx-auto max-w-prose px-4 pt-0 pb-20 md:flex md:items-center md:gap-10">
         <Image
-          src="/assets/images/DalronPortrait.jpg"
+          src="/assets/images/Graduation.jpeg"
           alt="Dalron Robertson portrait"
           width={260}
           height={260}
@@ -47,7 +46,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3) Simple milestone timeline */}
       <section className="mx-auto max-w-3xl px-4 pb-24">
         <h2 className="text-2xl font-semibold mb-10 text-center">
           Key Milestones
@@ -61,7 +59,7 @@ export default function AboutPage() {
             },
             {
               year: 2025,
-              title: "M.S. Computational Biology, Mississippi College (May 2025)",
+              title: "M.S. Biological Sciences, Mississippi College (May 2025)",
               desc: "Completed master’s studies with a focus on computational biology."
             },
             {
@@ -70,7 +68,7 @@ export default function AboutPage() {
               desc: "Authored a book exploring creativity and resilience in engineering."
             }
           ].map((m) => (
-            <li key={m.year} className="ml-6">
+            <li key={m.year + m.title} className="ml-6">
               <span className="absolute -left-[46px] top-0 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white border border-[#D2C2AA] shadow">
                 {m.year}
               </span>
@@ -80,6 +78,7 @@ export default function AboutPage() {
           ))}
         </ol>
       </section>
+      <Footer />
     </main>
   );
 }
