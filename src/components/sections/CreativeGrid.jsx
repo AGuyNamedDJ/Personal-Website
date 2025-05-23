@@ -2,21 +2,33 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const albums = [
   {
+    title: "Masters Graduation",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION}.s3.${region}.amazonaws.com/IMG_6816+2.jpg`,
+    link: "/creative-studio/masters-graduation"
+  },
+  {
+    title: "Gatlinburg 25",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25}.s3.${region}.amazonaws.com/IMG_6617.JPG`,
+    link: "/creative-studio/gatlinburg-25"
+  },
+    {
     title: "Texas State Fair",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR}.s3.${region}.amazonaws.com/Texas-State-Fair-82.jpg`,
     link: "/creative-studio/texas-state-fair"
+  },
+    {
+    title: "9-1-2023",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023}.s3.${region}.amazonaws.com/P1100107.JPG`,
+    link: "/creative-studio/9-1-2023"
   }
 ];
 
-console.log(
-  "📦 BUCKET:", process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR,
-  "🌎 REGION:", process.env.NEXT_PUBLIC_AWS_REGION
-);
-
 export default function CreativeGrid() {
+  console.log("CreativeGrid config → region:", region, "albums:", albums);
   const [pageIndex, setPageIndex] = useState(0);
 
   const pages = React.useMemo(() => {
@@ -60,17 +72,22 @@ export default function CreativeGrid() {
               className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
               <div className="relative">
-                <div
-                  className="aspect-[4/5] w-full overflow-hidden bg-cover bg-center transition-opacity duration-200 group-hover:opacity-75"
-                  style={{ backgroundImage: `url(${album.cover})` }}
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span
-                    className="text-white text-xl font-semibold transition-colors duration-500 delay-[1000ms] group-hover:text-gray-200"
-                  >
-                    {album.title}
-                  </span>
-                </div>
+                {album.title === "9-1-2023" ? (
+                  <Image
+                    src={album.cover}
+                    alt={album.title}
+                    width={300}
+                    height={375}
+                    quality={70}
+                    className="w-full h-auto object-cover transition-opacity duration-200 group-hover:opacity-75"
+                    placeholder="empty"
+                  />
+                ) : (
+                  <div
+                    className="aspect-[4/5] w-full overflow-hidden bg-cover bg-center transition-opacity duration-200 group-hover:opacity-75"
+                    style={{ backgroundImage: `url(${album.cover})` }}
+                  />
+                )}
               </div>
             </Link>
           ))}
