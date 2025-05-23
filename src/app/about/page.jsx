@@ -36,7 +36,7 @@ export default function AboutPage() {
             My training spans biomedical science, clinical pharmacology and software engineering. As lead graduate researcher I guided a team of sixteen in evaluating phytochemicals for therapeutic use. We built structural models, ran molecular docking simulations and conducted bioinformatics analyses to identify the most promising candidates. That work earned second place at my university’s annual research symposium.
           </p>
           <p className="leading-relaxed text-neutral-800 mt-2">
-            I am currently developing a computational framework that ingests new biological data as it emerges, refines its models over time and scales to address diverse research challenges. I believe creation is a core human calling, to ask meaningful questions, design with care and build systems that deliver real impact. My clinical training, engineering expertise and commitment to thoughtful innovation equip me to advance scientific discovery.
+            Currently, as I work toward completing my Pharm.D., I am developing a specialized ecosystem of machine-learning models, domain-specific language models, and autonomous agents tailored to the life sciences. This integrated framework continuously ingests biological data and evolves dynamically to support biomedical research. My clinical background, engineering expertise, and dedication to meaningful innovation equip me to create intelligent systems that accelerate scientific discovery.
           </p>
           <div className="clear-left" />
         </div>

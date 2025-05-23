@@ -7,17 +7,8 @@ export default function HeroSection() {
         src="/assets/images/Hero.png"
         alt="Hero"
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0, animation: "fadeIn 3s ease-in-out forwards" }}
       />
-      <style jsx>{`
-        img {
-          opacity: 0;
-          animation: fadeIn 3s ease-in-out forwards;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-      `}</style>
     </section>
   );
 }

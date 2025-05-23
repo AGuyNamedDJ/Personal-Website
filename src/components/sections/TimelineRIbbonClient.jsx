@@ -88,7 +88,7 @@ export default function TimelineRibbonClient() {
   return (
     <div className="relative">
       <div className="sticky top-20 mb-4">
-        <span className="absolute -left-14 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#D2C2AA] text-sm shadow">
+        <span className="absolute -left-11 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#D2C2AA] text-sm shadow">
           {currentYear}
         </span>
       </div>

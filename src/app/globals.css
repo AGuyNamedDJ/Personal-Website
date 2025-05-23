@@ -56,3 +56,8 @@ a:not(.no-underline) {
 .section-block {
   @apply py-24 md:py-32;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
