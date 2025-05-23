@@ -44,26 +44,55 @@ export default function WorkPage() {
       </section>
 
       {/* NaS Overview */}
-      <section id="nas-overview" className="relative overflow-hidden pt-6 pb-6 min-h-[50vh] bg-[#181615]">
-        <div className="mx-auto max-w-5xl px-4">
-          <p className="text-4xl font-semibold mb-4 text-white">NaS Research</p>
-          <p className="text-lg text-neutral-300 mb-4">
-            NaS will be the global center for scientific discovery and innovation, powered by artificial intelligence, quantum computing, and advanced robotics. We’re building an infrastructure to equip researchers in physics, chemistry, biotechnology, agriculture, medicine, environmental science, and beyond with the tools they need for transformative breakthroughs.
-          </p>
-          <p className="text-lg text-neutral-300 mb-4">
-            Our plan includes four core divisions currently under development: a large-scale research and development hub, an institute to foster scientific talent and entrepreneurship, robotic manufacturing and automation facilities, and a secure biobank for deep scientific data analytics.
-          </p>
-          <p className="text-lg text-neutral-300 mb-4">
-            We’re designing NaS to offer exceptional support, compensation, and growth opportunities for our scientists, while investing in local communities through improvements in infrastructure, education, and economic development—starting in Hyde Park and expanding throughout Chicago.
-          </p>
-          <p className="text-lg text-neutral-300 mb-4">
-            By building NaS, we aim to fully embody science, leading innovation responsibly and ethically to shape the future of our world.
-          </p>
+      <section id="nas-overview" className="bg-[#181615] text-white py-16">
+        <div className="mx-auto max-w-5xl px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <p className="text-3xl md:text-4xl font-semibold mb-6 text-white text-center">
+              NaS Research
+            </p>
+            <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 text-neutral-300 text-center">
+              We’re building NaS to be the world’s first AI powered, quantum ready research campus, where every scientist has the compute, automation, and data scaffolding they need to turn bold ideas into reality.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              {[
+                'Large scale R&D hub for cross disciplinary teams',
+                'Institute to incubate tomorrow’s scientific leaders',
+                'Robotic manufacturing and automated experimentation',
+                'High security biobank and next generation data analytics'
+              ].map((item) => (
+                <p
+                  key={item}
+                  className="text-lg md:text-xl leading-relaxed text-neutral-300 pl-4 border-l-4 border-[#F9F4EC]"
+                >
+                  {item}
+                </p>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Illustration or mockup */}
+          <div className="flex items-center justify-center mt-8">
+            <div className="max-w-md">
+              <img
+                src="/assets/images/NaSHQ.png"
+                alt="NaS Campus Mockup"
+                className="w-full rounded-3xl shadow-xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* Transition into white paper */}
+      <section className="mx-auto max-w-4xl px-4 py-12 mt-12 mb-12 text-left">
+        <p className="text-3xl md:text-5xl font-semibold text-neutral-300">
+          Here’s the blueprint guiding<br />
+          NaS from vision to reality.
+        </p>
+      </section>
+
       {/* NaS White Paper */}
-      <section id="nas-white-paper" className="relative overflow-hidden py-6 min-h-[50vh]">
+      <section id="nas-white-paper" className="relative overflow-hidden py-8 min-h-[50vh]">
         <div className="mx-auto max-w-5xl px-4 flex flex-col items-center">
           <div className="mb-8">
             <img
