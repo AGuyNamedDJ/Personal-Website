@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import TimelineRibbonClient from "@/components/sections/TimelineRibbonClient";
+import DocumentsRibbon from "@/components/sections/DocumentsRibbon";
 
 export const metadata = {
   title: "About | Dalron Robertson",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="pt-14 scroll-smooth">
-      <section className="h-[15vh] md:h-[20vh] flex items-center justify-center mb-1">
+      <section className="h-[12vh] md:h-[16vh] flex items-center justify-center mb-0">
         <h1
           className="text-[6rem] md:text-[8rem] font-bold text-center"
           style={{ fontFamily: "Willington", color: "#5C3A21" }}
@@ -42,12 +43,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-4 pb-24">
+      <section className="mx-auto max-w-3xl px-4 pb-16">
         <h2 className="text-2xl font-semibold mb-10 text-center">
           Key Milestones
         </h2>
         <TimelineRibbonClient />
       </section>
+      <section className="mx-auto max-w-3xl px-4 pt-1 pb-0 text-center">
+        <h2 className="text-3xl font-semibold mb-0">Professional Credentials</h2>
+        <p className="text-neutral-700 mb-1">
+          Download the documents that outline my education, experience, and projects.
+        </p>
+      </section>
+      <div className="-mt-8">
+        <DocumentsRibbon />
+      </div>
 
       <Footer />
     </main>
