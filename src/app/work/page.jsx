@@ -126,7 +126,34 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {projects.map((p) => (
+      {/* Robertson Foundation */}
+      <section id="robertson-foundation" className="py-32">
+        <div className="flex items-center justify-center mb-8">
+          <img
+            src="/assets/images/RobertsonFoundation.jpg"
+            alt="Robertson Foundation"
+            className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-2xl border-none outline-none"
+            style={{ boxShadow: "0 40px 60px rgba(0,0,0,0.3)", border: "none" }}
+          />
+        </div>
+        <div className="mx-auto mt-12 max-w-3xl px-4 text-center">
+          <p className="text-lg md:text-xl leading-relaxed text-neutral-300 mb-6">
+            The Robertson Foundation champions the arts, humanities, and community vitality. Through targeted grants,  events, and collaborative initiatives, we nuture  creative expression across diverse cultural landscapes.
+          </p>
+          <a
+            href="https://robertsonfoundation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm md:text-base font-medium text-neutral-200 underline hover:text-white transition"
+          >
+            Visit the Robertson Foundation Website →
+          </a>
+        </div>
+      </section>
+
+      {projects
+        .filter(p => p.title !== "Robertson Foundation")
+        .map((p) => (
         <section
           key={p.title}
           id={p.title.replace(/\s+/g, "-").toLowerCase()}
