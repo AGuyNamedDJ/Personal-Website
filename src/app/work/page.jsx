@@ -20,6 +20,11 @@ const projects = [
     title: "Creative Studio",
     img: "/assets/images/CreativeStudioPreview.jpg",
     link: "/work/creative-studio"
+  },
+  {
+    title: "Upcoming Ventures",
+    img: "/assets/images/UpcomingVenturesPreview.jpg",
+    link: "/work/upcoming-ventures"
   }
 ];
 
@@ -34,15 +39,13 @@ export default function WorkPage() {
           My Work
         </h1>
       </section>
-      <section className="relative h-[35vh] md:h-[45vh] overflow-hidden">
-        <img
-          src="/assets/images/WorkHero.jpg"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover scale-110"
-        />
-        <h1 className="absolute inset-0 flex items-center justify-center text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-          Selected Work
-        </h1>
+      <section className="mx-auto max-w-3xl px-4 py-12 mt-0 md:mt-2 text-center">
+        <p className="text-2xl md:text-4xl font-semibold mb-4 text-neutral-300">
+          Everything Starts with Creation
+        </p>
+        <p className="text-lg md:text-xl text-neutral-200">
+          I build platforms, craft stories, and launch ventures, each designed to help others bring their boldest ideas to life and make the impossible possible.
+        </p>
       </section>
 
       {projects.map((p) => (
