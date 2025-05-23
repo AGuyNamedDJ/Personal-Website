@@ -83,8 +83,9 @@ export default function WorkPage() {
         </div>
       </section>
 
+      <div className="bg-black">
       {/* Transition into white paper */}
-      <section className="mx-auto max-w-4xl px-4 py-12 mt-12 mb-12 text-left">
+      <section className="mx-auto max-w-4xl px-4 pt-24 pb-12 mt-12 mb-12 text-left">
         <p className="text-3xl md:text-5xl font-semibold text-neutral-300">
           Here’s the blueprint guiding<br />
           NaS from vision to reality.
@@ -102,10 +103,10 @@ export default function WorkPage() {
               style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
             />
           </div>
-          <p className="text-xl text-neutral-300 mb-4 text-center">
+          <p className="text-xl text-neutral-300 mb-8 text-center">
             Our founding white paper introduces the vision, strategy, and technical infrastructure behind NaS. It details our initial design for a groundbreaking knowledge model and the pathway toward autonomous scientific innovation.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 pb-20">
             <a
               href="https://cdn.nas.com/papers"
               target="_blank"
@@ -125,6 +126,7 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Robertson Foundation */}
       <section id="robertson-foundation" className="py-32">
