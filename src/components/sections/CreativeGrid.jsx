@@ -1,16 +1,20 @@
-// src/components/CreativeGrid.jsx
-
- "use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
+const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const albums = [
-  { title: "Album One", cover: "/assets/images/Dummy.png", link: "/creative-studio/album-one" },
-  { title: "Album Two", cover: "/assets/images/Dummy.png", link: "/creative-studio/album-two" },
-  { title: "Album Three", cover: "/assets/images/Dummy.png", link: "/creative-studio/album-three" },
-  { title: "Album Four", cover: "/assets/images/Dummy.png", link: "/creative-studio/album-four" },
-  { title: "Album Five", cover: "/assets/images/DummyOne.png", link: "/creative-studio/album-five" },
+  {
+    title: "Texas State Fair",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR}.s3.${region}.amazonaws.com/Texas-State-Fair-82.jpg`,
+    link: "/creative-studio/texas-state-fair"
+  }
 ];
+
+console.log(
+  "📦 BUCKET:", process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR,
+  "🌎 REGION:", process.env.NEXT_PUBLIC_AWS_REGION
+);
 
 export default function CreativeGrid() {
   const [pageIndex, setPageIndex] = useState(0);
@@ -38,7 +42,7 @@ export default function CreativeGrid() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-20 bg-black">
-      <p className="text-4xl font-semibold mb-8 text-center text-white">Photography</p>
+      <p className="text-3xl font-semibold mb-8 text-center text-white">Photography</p>
       <div className="relative">
         <div className="absolute inset-y-0 left-0 w-1/5 group">
           <button
@@ -49,16 +53,25 @@ export default function CreativeGrid() {
           </button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {pages[pageIndex].map((album) => (
+          {pages[pageIndex].map((album, idx) => (
             <Link
-              key={album.title}
+              key={`${album.title}-${idx}`}
               href={album.link}
-              className="block transform transition-transform duration-200 hover:scale-[1.025]"
+              className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
-              <div
-                className="aspect-[4/5] w-full overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: `url(${album.cover})` }}
-              />
+              <div className="relative">
+                <div
+                  className="aspect-[4/5] w-full overflow-hidden bg-cover bg-center transition-opacity duration-200 group-hover:opacity-75"
+                  style={{ backgroundImage: `url(${album.cover})` }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span
+                    className="text-white text-xl font-semibold transition-colors duration-500 delay-[1000ms] group-hover:text-gray-200"
+                  >
+                    {album.title}
+                  </span>
+                </div>
+              </div>
             </Link>
           ))}
         </div>
