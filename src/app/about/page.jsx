@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="pt-14 scroll-smooth">
+    <main className="pt-20 scroll-smooth">
       <section className="h-[12vh] md:h-[16vh] flex items-center justify-center mb-0">
         <h1
           className="text-[6rem] md:text-[8rem] font-bold text-center"

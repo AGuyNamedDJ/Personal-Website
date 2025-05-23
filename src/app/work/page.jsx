@@ -1,37 +1,39 @@
-
-
 export const metadata = {
   title: "Work | Dalron Robertson",
   description: "Selected projects and professional work by Dalron Robertson"
 };
 
+import Footer from "@/components/Footer";
+
 const projects = [
   {
-    title: "NaS Research Agent",
-    year: "2025",
+    title: "NaS Research",
     img: "/assets/images/NaSArticle.png",
-    link: "/files/NaSArticle.pdf",
-    desc: "Foundational white paper establishing an AI‑driven biotech research framework"
+    link: "/files/NaSArticle.pdf"
   },
   {
     title: "Robertson Foundation",
-    year: "2024",
     img: "/assets/images/RobertsonFoundation.jpg",
-    link: "/work/robertson-foundation",
-    desc: "Non‑profit bridging medicine and technology to advance cultural innovation"
+    link: "/work/robertson-foundation"
   },
   {
-    title: "Circuit Breakers",
-    year: "2023",
-    img: "/assets/images/CB.png",
-    link: "https://www.amazon.com/gp/product/B0F4XWYDJB",
-    desc: "Memoir exploring imperfection and resilience in engineering culture"
+    title: "Creative Studio",
+    img: "/assets/images/CreativeStudioPreview.jpg",
+    link: "/work/creative-studio"
   }
 ];
 
 export default function WorkPage() {
   return (
-    <main className="scroll-smooth">
+    <main className="pt-20 scroll-smooth bg-[#181615] text-white">
+      <section className="h-[12vh] md:h-[16vh] flex items-center justify-center mb-0">
+        <h1
+          className="text-[6rem] md:text-[8rem] font-bold text-center"
+          style={{ fontFamily: "Willington", color: "#F9F4EC" }}
+        >
+          My Work
+        </h1>
+      </section>
       <section className="relative h-[35vh] md:h-[45vh] overflow-hidden">
         <img
           src="/assets/images/WorkHero.jpg"
@@ -43,32 +45,31 @@ export default function WorkPage() {
         </h1>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-24 grid gap-14 md:grid-cols-3">
-        {projects.map((p) => (
-          <a
-            key={p.title}
-            href={p.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-3xl bg-[#F9F4EC] border border-[#D2C2AA] shadow hover:shadow-lg transition-transform duration-150 ease-out hover:-translate-y-1"
-          >
-            <div className="relative h-48 rounded-t-3xl overflow-hidden">
-              <img
-                src={p.img}
-                alt={p.title}
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="font-semibold text-lg">{p.title}</h3>
-              <p className="text-sm text-neutral-600 mb-3">{p.desc}</p>
-              <span className="inline-block bg-[#D2C2AA] text-white text-xs px-3 py-1 rounded-full">
-                {p.year}
-              </span>
-            </div>
-          </a>
-        ))}
-      </section>
+      {projects.map((p) => (
+        <section
+          key={p.title}
+          id={p.title.replace(/\s+/g, "-").toLowerCase()}
+          className="relative overflow-hidden py-32 min-h-[85vh]"
+        >
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img
+              src={p.img}
+              alt={p.title}
+              className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-lg"
+              style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
+            />
+            <a
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-200 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+            >
+              View {p.title} →
+            </a>
+          </div>
+        </section>
+      ))}
+    <Footer />
     </main>
   );
 }
