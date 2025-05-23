@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import Footer from "@/components/Footer";
+import CreativeGrid from "@/components/sections/CreativeGrid";
 
 const projects = [
   {
@@ -111,7 +112,7 @@ export default function WorkPage() {
               href="https://cdn.nas.com/papers"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#F9F4EC] text-[#181615] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 transition"
+              className="inline-block bg-[#F9F4EC] text-[#181615] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 active:scale-95 transition-transform"
             >
               View All Papers →
             </a>
@@ -119,7 +120,7 @@ export default function WorkPage() {
               href="https://nas.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-transparent border border-[#F9F4EC] text-[#F9F4EC] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 transition"
+              className="inline-block bg-transparent border border-[#F9F4EC] text-[#F9F4EC] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 active:scale-95 transition-transform"
             >
               Visit NaS Website →
             </a>
@@ -146,39 +147,45 @@ export default function WorkPage() {
             href="https://robertsonfoundation.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-sm md:text-base font-medium text-neutral-200 underline hover:text-white transition"
+            className="inline-block text-sm md:text-base font-medium text-neutral-200 underline transition transform hover:text-white hover:scale-105 active:scale-95 focus:outline-none"
           >
             Visit the Robertson Foundation Website →
           </a>
         </div>
       </section>
 
+      {/* Creative Studio */}
+      <section id="creative-studio" className="py-32 bg-[#181615]">
+        <CreativeGrid />
+      </section>
+
+      {/* Upcoming Ventures */}
       {projects
-        .filter(p => p.title !== "Robertson Foundation")
+        .filter((p) => p.title === "Upcoming Ventures")
         .map((p) => (
-        <section
-          key={p.title}
-          id={p.title.replace(/\s+/g, "-").toLowerCase()}
-          className="relative overflow-hidden py-32 min-h-[85vh]"
-        >
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={p.img}
-              alt={p.title}
-              className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-lg"
-              style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
-            />
-            <a
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-200 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-            >
-              View {p.title} →
-            </a>
-          </div>
-        </section>
-      ))}
+          <section
+            key={p.title}
+            id={p.title.replace(/\s+/g, "-").toLowerCase()}
+            className="relative overflow-hidden py-32 min-h-[85vh]"
+          >
+            <div className="absolute inset-0 flex items-center justify-center">
+              <img
+                src={p.img}
+                alt={p.title}
+                className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-lg"
+                style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
+              />
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-200 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
+              >
+                View {p.title} →
+              </a>
+            </div>
+          </section>
+        ))}
     <Footer />
     </main>
   );
