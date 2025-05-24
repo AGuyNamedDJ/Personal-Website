@@ -6,24 +6,9 @@ import Image from "next/image";
 const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const albums = [
   {
-    title: "Masters Graduation",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION}.s3.${region}.amazonaws.com/IMG_6816+2.jpg`,
-    link: "/creative-studio/masters-graduation"
-  },
-  {
-    title: "Gatlinburg 25",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25}.s3.${region}.amazonaws.com/IMG_6617.JPG`,
-    link: "/creative-studio/gatlinburg-25"
-  },
-    {
-    title: "Texas State Fair",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR}.s3.${region}.amazonaws.com/Texas-State-Fair-82.jpg`,
-    link: "/creative-studio/texas-state-fair"
-  },
-    {
-    title: "9-1-2023",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023}.s3.${region}.amazonaws.com/P1100107.JPG`,
-    link: "/creative-studio/9-1-2023"
+    title: "Daddy Daughter Photoshoot",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT}.s3.${region}.amazonaws.com/E8-E.jpg`,
+    link: "/creative-studio/daddy-daughter-photoshoot"
   }
 ];
 
@@ -54,6 +39,7 @@ export default function CreativeGrid() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-20 bg-black">
+      <h1 className="text-4xl font-bold text-center mt-16 mb-10">Upcoming Ventures</h1>
       <p className="text-3xl font-semibold mb-8 text-center text-white">Photography</p>
       <div className="relative">
         <div className="absolute inset-y-0 left-0 w-1/5 group">
@@ -72,13 +58,14 @@ export default function CreativeGrid() {
               className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
               <div className="relative">
-                {album.title === "9-1-2023" ? (
+                {album.title === "Daddy Daughter Photoshoot" ? (
                   <Image
                     src={album.cover}
                     alt={album.title}
                     width={300}
                     height={375}
                     quality={70}
+                    unoptimized
                     className="w-full h-auto object-cover transition-opacity duration-200 group-hover:opacity-75"
                     placeholder="empty"
                   />
