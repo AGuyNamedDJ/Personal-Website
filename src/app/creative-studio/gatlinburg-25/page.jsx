@@ -10,11 +10,22 @@ async function listAlbumObjects() {
   if (!res.ok) return [];
 
   const xml = await res.text();
+
+  // If the bucket is still blocking list access, S3 returns an AccessDenied XML
+  // with sample keys like "JSHcreates.com". Detect that and bail early so no
+  // bogus placeholders reach the gallery.
+  if (xml.includes("<Code>AccessDenied</Code>")) {
+    return [];
+  }
+
   const keys = [...xml.matchAll(/<Key>([^<]+)<\/Key>/g)].map((m) => m[1]);
+
+  // Only include JPEG and PNG images; skip everything else (e.g., videos or placeholders)
+  const imageKeys = keys.filter((k) => /\.(jpe?g|png)$/i.test(k));
 
   // Group keys by numeric suffix; map.opt = optimized, map.full = full‑res
   const map = {};
-  for (const k of keys) {
+  for (const k of imageKeys) {
     const m = k.match(/^GAT(O?)-(\d+)\.(jpe?g)$/i);
     if (!m) continue;
     const [, optFlag, id] = m;
