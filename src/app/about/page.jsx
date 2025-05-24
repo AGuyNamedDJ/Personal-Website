@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Footer from "../../components/Footer";
-import TimelineRibbonClient from "../../components/sections/TimelineRibbonClient.jsx";
+import TimelineRibbonClient from "../../components/sections/TimelineRIbbonClient.jsx";
 import DocumentsRibbon from "../../components/sections/DocumentsRibbon.jsx";
 
 export const metadata = {
