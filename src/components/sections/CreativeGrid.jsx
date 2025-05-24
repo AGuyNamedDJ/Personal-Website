@@ -6,6 +6,11 @@ import Image from "next/image";
 const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const albums = [
   {
+    title: "Masters Graduation",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION}.s3.${region}.amazonaws.com/GRADO-6816.jpeg`,
+    link: "/creative-studio/masters-graduation"
+  },
+  {
     title: "Gatlinburg 2025",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25}.s3.${region}.amazonaws.com/GATO-6617.jpeg`,
     link: "/creative-studio/gatlinburg-25"
@@ -68,7 +73,7 @@ export default function CreativeGrid() {
               className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
               <div className="relative aspect-[4/5] w-full overflow-hidden">
-                {["Gatlinburg 2025", "Texas State Fair", "Daddy Daughter Photoshoot"].includes(album.title) ? (
+                {["Masters Graduation", "Gatlinburg 2025", "Texas State Fair", "Daddy Daughter Photoshoot"].includes(album.title) ? (
                   <Image
                     src={album.cover}
                     alt={album.title}
