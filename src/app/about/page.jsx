@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import TimelineRibbonClient from "@/components/sections/TimelineRibbonClient";
-import DocumentsRibbon from "@/components/sections/DocumentsRibbon";
+import TimelineRibbonClient from "../../components/sections/TimelineRibbonClient";
+import DocumentsRibbon from "../../components/sections/DocumentsRibbon";
 
 export const metadata = {
   title: "About | Dalron Robertson",
