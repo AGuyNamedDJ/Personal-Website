@@ -16,6 +16,11 @@ const albums = [
     link: "/creative-studio/gatlinburg-25"
   },
   {
+    title: "Chicago Marathon 2023",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_CHICAGO_MARATHON_23}.s3.${region}.amazonaws.com/CMO-21.png`,
+    link: "/creative-studio/chicago-marathon-23"
+  },
+  {
     title: "Texas State Fair",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR}.s3.${region}.amazonaws.com/Texas-State-Fair-82.jpg`,
     link: "/creative-studio/texas-state-fair"
@@ -53,7 +58,7 @@ export default function CreativeGrid() {
   useEffect(() => {
     const timer = setInterval(() => {
       setPageIndex((prev) => (prev + 1) % pages.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [pages.length, pageIndex]);
 

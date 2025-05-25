@@ -35,6 +35,17 @@ export default function ClientGallery({ images }) {
     return () => window.removeEventListener("keydown", handleKey);
   }, [selectedIndex, handleKey]);
 
+  // Hide page title while the viewer is open
+  useEffect(() => {
+    const cls = "viewer-open";
+    if (selectedIndex !== null) {
+      document.body.classList.add(cls);
+    } else {
+      document.body.classList.remove(cls);
+    }
+    return () => document.body.classList.remove(cls);
+  }, [selectedIndex]);
+
   const selectedSrc =
     selectedIndex !== null
       ? (hiRes && displayImages[selectedIndex].full
@@ -75,7 +86,7 @@ export default function ClientGallery({ images }) {
 
       {selectedIndex !== null && selectedSrc && (
         <div
-          className="group fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md"
+          className="group fixed inset-0 z-[70] flex items-center justify-center bg-black/90 backdrop-blur-md"
           onClick={() => {
             setSelectedIndex(null);
             setLoading(false);
@@ -83,7 +94,7 @@ export default function ClientGallery({ images }) {
         >
           {selectedIndex > 0 && (
             <button
-              className="absolute left-6 top-1/2 transform -translate-y-1/2 p-2 bg-black/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:scale-105 active:scale-95 hover:bg-black/70"
+              className="absolute left-6 top-1/2 -translate-y-1/2 p-2 bg-black/50 rounded-full hover:bg-black/70 hover:scale-105 active:scale-95 opacity-80"
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedIndex(selectedIndex - 1);
@@ -92,19 +103,6 @@ export default function ClientGallery({ images }) {
               }}
             >
               <FaChevronLeft className="text-white" size={24} />
-            </button>
-          )}
-          {selectedIndex < displayImages.length - 1 && (
-            <button
-              className="absolute right-6 top-1/2 transform -translate-y-1/2 p-2 bg-black/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:scale-105 active:scale-95 hover:bg-black/70"
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedIndex(selectedIndex + 1);
-                setHiRes(false);
-                setLoading(false);
-              }}
-            >
-              <FaChevronRight className="text-white" size={24} />
             </button>
           )}
           <Image
@@ -123,6 +121,19 @@ export default function ClientGallery({ images }) {
               loading ? "opacity-0" : "opacity-100"
             }`}
           />
+          {selectedIndex < displayImages.length - 1 && (
+            <button
+              className="absolute right-6 top-1/2 -translate-y-1/2 p-2 bg-black/50 rounded-full hover:bg-black/70 hover:scale-105 active:scale-95 opacity-80"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedIndex(selectedIndex + 1);
+                setHiRes(false);
+                setLoading(false);
+              }}
+            >
+              <FaChevronRight className="text-white" size={24} />
+            </button>
+          )}
           {loading && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="h-10 w-10 rounded-full border-4 border-white/40 border-t-transparent animate-spin" />
