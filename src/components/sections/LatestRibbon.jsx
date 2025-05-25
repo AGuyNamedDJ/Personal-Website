@@ -15,7 +15,7 @@ export default function LatestRibbon() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex(i => (i + 1) % backgrounds.length);
-    }, 8000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
@@ -109,7 +109,7 @@ export default function LatestRibbon() {
               className="absolute inset-0 w-full h-full object-cover"
             />
             <a
-              href="/work/graduation-photos"
+              href="/creative-studio/masters-graduation"
               className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
             >
               View M.S. Graduation Shoot →

@@ -21,6 +21,11 @@ const albums = [
     link: "/creative-studio/texas-state-fair"
   },
   {
+    title: "9-1-23",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023}.s3.${region}.amazonaws.com/Sep1O-107.jpeg`,
+    link: "/creative-studio/9-1-2023"
+  },
+  {
     title: "Daddy Daughter Photoshoot",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT}.s3.${region}.amazonaws.com/E8-E.jpg`,
     link: "/creative-studio/daddy-daughter-photoshoot"
