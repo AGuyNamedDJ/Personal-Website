@@ -30,7 +30,7 @@ export default function WorkPage() {
       <section className="bg-black">
         <div className="mx-auto max-w-6xl px-4 pt-40 pb-96 text-center">
           <p className="mt-2 text-2xl md:text-3xl font-semibold text-neutral-400 mb-0">
-            Everything Starts with
+            Everything starts with
           </p>
           <p className="text-[8rem] md:text-[10rem] leading-none font-bold text-center mb-1 text-white">
             Creation.
