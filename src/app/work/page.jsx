@@ -26,22 +26,19 @@ const projects = [
 
 export default function WorkPage() {
   return (
-    <main className="pt-20 scroll-smooth bg-[#181615] text-white">
-      <section className="h-[12vh] md:h-[16vh] flex items-center justify-center mb-0">
-        <h1
-          className="text-[6rem] md:text-[8rem] font-bold text-center"
-          style={{ fontFamily: "Willington", color: "#F9F4EC" }}
-        >
-          My Work
-        </h1>
-      </section>
-      <section className="mx-auto max-w-3xl px-4 py-12 mt-0 md:mt-2 text-center">
-        <p className="text-2xl md:text-4xl font-semibold mb-4 text-neutral-300">
-          Everything Starts with Creation
-        </p>
-        <p className="text-lg md:text-xl text-neutral-200">
-          I build platforms, craft stories, and launch ventures, each designed to help others bring their boldest ideas to life and make the impossible possible.
-        </p>
+    <main className="pt-20 scroll-smooth bg-black text-white">
+      <section className="bg-black">
+        <div className="mx-auto max-w-6xl px-4 pt-40 pb-96 text-center">
+          <p className="mt-2 text-2xl md:text-3xl font-semibold text-neutral-400 mb-0">
+            Everything Starts with
+          </p>
+          <p className="text-[8rem] md:text-[10rem] leading-none font-bold text-center mb-1 text-white">
+            Creation.
+          </p>
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-400 text-center mb-0">
+            I build platforms, craft stories, and launch ventures, each designed to help others bring their boldest ideas to life and make the impossible possible.
+          </p>
+        </div>
       </section>
 
       {/* NaS Overview */}
@@ -155,37 +152,23 @@ export default function WorkPage() {
       </section>
 
       {/* Creative Studio */}
-      <section id="creative-studio" className="py-32 bg-[#181615]">
+      <section id="creative-studio" className="py-32 bg-black">
         <CreativeGrid />
       </section>
 
-      {/* Upcoming Ventures */}
-      {projects
-        .filter((p) => p.title === "Upcoming Ventures")
-        .map((p) => (
-          <section
-            key={p.title}
-            id={p.title.replace(/\s+/g, "-").toLowerCase()}
-            className="relative overflow-hidden py-32 min-h-[85vh]"
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <img
-                src={p.img}
-                alt={p.title}
-                className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-lg"
-                style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
-              />
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-200 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-              >
-                View {p.title} →
-              </a>
-            </div>
-          </section>
-        ))}
+      <section className="bg-black">
+        <div className="mx-auto max-w-6xl px-4 pt-20 pb-48">
+          <p className="mt-6 text-2xl md:text-3xl font-semibold text-center text-neutral-400 mb-0">
+            Upcoming Ventures
+          </p>
+          <p className="text-[2.5rem] md:text-[4rem] font-bold text-center mb-6 text-white">
+            The best ideas are worth the wait.
+          </p>
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-400 text-center mb-0">
+            Thoughtful ideas take time to cultivate. I'm currently working on several exciting projects designed to make a meaningful impact. Stay tuned as I prepare to share what's next.
+          </p>
+        </div>
+      </section>
     <Footer />
     </main>
   );

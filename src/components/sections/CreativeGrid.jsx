@@ -78,7 +78,7 @@ export default function CreativeGrid() {
         Photo Galleries
       </p>
       <h1
-        className="text-[4rem] md:text-[6rem] font-bold text-center mb-16"
+        className="text-[4rem] md:text-[6rem] font-bold text-center mb-16 text-white"
         style={{ color: "#FFFFFF" }}
       >
         Life, Framed by Me.
