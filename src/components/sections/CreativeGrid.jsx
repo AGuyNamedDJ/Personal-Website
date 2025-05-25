@@ -31,6 +31,11 @@ const albums = [
     link: "/creative-studio/9-1-2023"
   },
   {
+    title: "Bachelors Graduation",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_BACHELORS_GRADUATION}.s3.${region}.amazonaws.com/GRAD-JSU-O-748.jpeg`,
+    link: "/creative-studio/bachelors-graduation"
+  },
+  {
     title: "Daddy Daughter Photoshoot",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT}.s3.${region}.amazonaws.com/E8-E.jpg`,
     link: "/creative-studio/daddy-daughter-photoshoot"
