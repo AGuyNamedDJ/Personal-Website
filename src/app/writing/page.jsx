@@ -1,30 +1,20 @@
+import ScrollTransition from "@/components/sections/ScrollTransition";
 import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Writing | Dalron Robertson",
-  description: "Essays, research papers, and reflections by Dalron Robertson"
+  description: "Essays, research papers, white papers, and reflections by Dalron Robertson"
 };
 
 export default function WritingPage() {
   return (
     <main className="pt-20 scroll-smooth bg-black text-white">
-      <section
-        className="relative bg-black bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/images/JadeCB.png')" }}
-      >
-        <div className="absolute inset-0 bg-black/80"></div>
-        <div className="relative z-10 mx-auto max-w-6xl px-4 pt-40 pb-96 text-center">
-          <p className="mt-2 text-2xl md:text-3xl font-semibold text-neutral-400 mb-0">
-            Every Word Matters.
-          </p>
-          <p className="text-[8rem] md:text-[10rem] leading-none font-bold text-center mb-1 text-white">
-            Every Idea, Powerful.
-          </p>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-400 text-center mb-0">
-            Books, research papers, white papers, and reflections, each crafted to inform, inspire, and make an impact.
-          </p>
-        </div>
-      </section>
+      <ScrollTransition
+        bgImage="/assets/images/JadeCB.png"
+        firstText="Every Word Matters."
+        secondText="Every Idea, Powerful."
+        thirdText="Books, research papers, white papers, and reflections, each crafted to inform, inspire, and make an impact."
+      />
       <Footer />
     </main>
   );
