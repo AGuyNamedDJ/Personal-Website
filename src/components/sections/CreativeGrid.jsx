@@ -16,6 +16,11 @@ const albums = [
     link: "/creative-studio/gatlinburg-25"
   },
   {
+    title: "Apple Day 2023",
+    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_APPLE_DAY_23}.s3.${region}.amazonaws.com/ADO-93.jpeg`,
+    link: "/creative-studio/apple-day-23"
+  },
+  {
     title: "Chicago Marathon 2023",
     cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_CHICAGO_MARATHON_23}.s3.${region}.amazonaws.com/CMO-21.png`,
     link: "/creative-studio/chicago-marathon-23"
