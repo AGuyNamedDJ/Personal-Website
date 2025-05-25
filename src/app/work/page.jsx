@@ -48,7 +48,7 @@ export default function WorkPage() {
       <section id="nas-overview" className="bg-[#181615] text-white py-16">
         <div className="mx-auto max-w-5xl px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <p className="text-3xl md:text-4xl font-semibold mb-6 text-white text-center">
+            <p className="text-3xl md:text-4xl font-semibold mb-6 text-neutral-300 text-center">
               NaS Research
             </p>
             <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-12 text-neutral-300 text-center">

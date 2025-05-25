@@ -53,9 +53,16 @@ export default function CreativeGrid() {
   }, [pages.length, pageIndex]);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-20 bg-black">
-      <h1 className="text-4xl font-bold text-center mt-16 mb-10">Upcoming Ventures</h1>
-      <p className="text-3xl font-semibold mb-8 text-center text-white">Photography</p>
+    <div className="mx-auto max-w-6xl px-4 pt-20 pb-3 bg-black">
+      <p className="mt-6 text-2xl md:text-3xl font-semibold mb-0 text-center text-neutral-400">
+        Photo Galleries
+      </p>
+      <h1
+        className="text-[4rem] md:text-[6rem] font-bold text-center mb-16"
+        style={{ color: "#FFFFFF" }}
+      >
+        Life, Framed by Me.
+      </h1>
       <div className="relative">
         <div className="absolute inset-y-0 left-0 w-1/5 group">
           <button
