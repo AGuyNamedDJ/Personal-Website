@@ -3,27 +3,18 @@ import ClientGallery from "./ClientGallery";
 const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const bucket = process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25;
 
-/** Publicly list all objects (requires bucket policy with s3:ListBucket Allow) */
 async function listAlbumObjects() {
   const url = `https://${bucket}.s3.${region}.amazonaws.com?list-type=2`;
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) return [];
 
   const xml = await res.text();
-
-  // If the bucket is still blocking list access, S3 returns an AccessDenied XML
-  // with sample keys like "JSHcreates.com". Detect that and bail early so no
-  // bogus placeholders reach the gallery.
-  if (xml.includes("<Code>AccessDenied</Code>")) {
-    return [];
-  }
+  if (!xml.trim().startsWith('<?xml')) return [];
+  if (xml.includes("<Code>AccessDenied</Code>")) return [];
 
   const keys = [...xml.matchAll(/<Key>([^<]+)<\/Key>/g)].map((m) => m[1]);
-
-  // Only include JPEG and PNG images; skip everything else (e.g., videos or placeholders)
   const imageKeys = keys.filter((k) => /\.(jpe?g|png)$/i.test(k));
 
-  // Group keys by numeric suffix; map.opt = optimized, map.full = full‑res
   const map = {};
   for (const k of imageKeys) {
     const m = k.match(/^GAT(O?)-(\d+)\.(jpe?g)$/i);
@@ -34,7 +25,6 @@ async function listAlbumObjects() {
     else map[id].full = k;
   }
 
-  // Keep only entries where an optimized image exists
   return Object.values(map)
     .filter((p) => p.opt)
     .map((p) => ({
@@ -45,7 +35,6 @@ async function listAlbumObjects() {
     }));
 }
 
-// Fisher‑Yates shuffle
 function shuffle(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -56,7 +45,7 @@ function shuffle(arr) {
 }
 
 export const metadata = {
-  title: "Gatlinburg 2025 | Photo Album",
+  title: "Gatlinburg | Photo Album",
   description: "Photo gallery of the Gatlinburg 2025 trip"
 };
 
@@ -69,9 +58,8 @@ export default async function GatlinburgAlbum() {
         className="whitespace-normal break-words leading-none text-[5rem] md:text-[7rem] font-bold text-center"
         style={{ fontFamily: "Willington", color: "#F9F4EC" }}
       >
-        Gatlinburg 2025
+        Gatlinburg
       </h1>
-
       <ClientGallery images={images} />
     </main>
   );
