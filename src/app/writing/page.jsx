@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 export const metadata = {
   title: "Writing | Dalron Robertson",
   description: "Essays, research papers, and reflections by Dalron Robertson"
@@ -6,8 +8,12 @@ export const metadata = {
 export default function WritingPage() {
   return (
     <main className="pt-20 scroll-smooth bg-black text-white">
-      <section className="bg-black">
-        <div className="mx-auto max-w-6xl px-4 pt-40 pb-96 text-center">
+      <section
+        className="relative bg-black bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/images/JadeCB.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="relative z-10 mx-auto max-w-6xl px-4 pt-40 pb-96 text-center">
           <p className="mt-2 text-2xl md:text-3xl font-semibold text-neutral-400 mb-0">
             Every Word Matters.
           </p>
@@ -19,6 +25,7 @@ export default function WritingPage() {
           </p>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
