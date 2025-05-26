@@ -30,25 +30,25 @@ export default function ClientWritingPage() {
         {
             text: "Books I've written to spark curiosity and inspire fresh perspectives.",
             className:
-            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+            "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
         },
         {
             text: "Articles that share what I've learned, clearly and thoughtfully.",
             className:
-            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+            "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
         },
         {
             text: "Original research born from careful study and meaningful insights.",
             className:
-            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+            "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
         },
         {
             text: "All my writing, together in one place, ready to explore.",
             className:
-            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+            "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
         },
         ]}
-          finalImage="/assets/images/finale.png"
+          finalImage="/assets/images/CB.png"
         />
 
         {/* Hero text overlay (visible on load, fades out) */}

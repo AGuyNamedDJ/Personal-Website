@@ -120,11 +120,14 @@ export default function ScrollTransition({
 
         {/* Chapter 3 — finale image */}
         {finalImage && (
-          <motion.div style={{ opacity: c3Opacity }} className="flex justify-center">
+          <motion.div
+            style={{ opacity: c3Opacity }}
+            className="absolute inset-0 z-20"
+          >
             <img
               src={finalImage}
               alt=""
-              className="w-auto h-[60vh] object-contain"
+              className="w-full h-screen object-cover"
             />
           </motion.div>
         )}
