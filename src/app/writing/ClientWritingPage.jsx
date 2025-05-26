@@ -26,23 +26,28 @@ export default function ClientWritingPage() {
         <ScrollTransition
           bgImage="/assets/images/JadeCB.png"
           firstLines={[]} // hero overlay provides the intro copy
-          secondLines={[
-            {
-              text: "Long-form essays that challenge convention.",
-              className:
-                "text-2xl md:text-3xl max-w-5xl mx-auto text-neutral-300",
-            },
-            {
-              text: "Technical deep dives that illuminate complex science.",
-              className:
-                "text-2xl md:text-3xl max-w-5xl mx-auto text-neutral-300",
-            },
-            {
-              text: "Letters capturing the human side of discovery.",
-              className:
-                "text-2xl md:text-3xl max-w-5xl mx-auto text-neutral-300",
-            },
-          ]}
+        secondLines={[
+        {
+            text: "Books I've written to spark curiosity and inspire fresh perspectives.",
+            className:
+            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+        },
+        {
+            text: "Articles that share what I've learned, clearly and thoughtfully.",
+            className:
+            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+        },
+        {
+            text: "Original research born from careful study and meaningful insights.",
+            className:
+            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+        },
+        {
+            text: "All my writing, together in one place, ready to explore.",
+            className:
+            "text-4xl md:text-5xl max-w-5xl text-neutral-300 pl-8 md:pl-16 text-left leading-normal mb-8",
+        },
+        ]}
           finalImage="/assets/images/finale.png"
         />
 
@@ -58,8 +63,7 @@ export default function ClientWritingPage() {
             Every Idea, Powerful.
           </p>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-200">
-            Books, research papers, white papers, and reflections—each crafted
-            to inform, inspire, and make an impact.
+            Thoughtful writing crafted to educate, inspire, and make a lasting impact, across various topics and formats.
           </p>
         </motion.div>
       </section>
