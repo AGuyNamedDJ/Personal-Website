@@ -7,8 +7,10 @@ export default function ScrollTransition({
   firstLines = [],
   secondLines = [],
   finalImage,
+  images = [],
 }) {
   const ref = useRef(null);
+  const viewportW = typeof window !== "undefined" ? window.innerWidth : 0;
   // Progress = 0 when the section top reaches the viewport top.
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -129,6 +131,29 @@ export default function ScrollTransition({
               alt=""
               className="w-full h-screen object-cover"
             />
+          </motion.div>
+        )}
+
+        {/* Chapter 4 — horizontal carousel */}
+        {images.length > 0 && (
+          <motion.div
+            className="absolute inset-0 flex"
+            style={{
+              x: useTransform(
+                scrollYProgress,
+                [0.9, 1],
+                [0, -viewportW * (images.length - 1)]
+              ),
+              opacity: useTransform(scrollYProgress, [0.88, 0.9], [0, 1]),
+            }}
+          >
+            {images.map((src, idx) => (
+              <div
+                key={idx}
+                className="flex-shrink-0 w-screen h-screen bg-center bg-cover"
+                style={{ backgroundImage: `url(${src})` }}
+              />
+            ))}
           </motion.div>
         )}
       </div>
