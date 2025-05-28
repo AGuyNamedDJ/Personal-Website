@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useLayoutEffect } from "react";
 import {
   motion,
   useScroll,
@@ -15,29 +15,30 @@ export default function ScrollTransition({
   finalImage,
   images = [],
 }) {
-  /* duplicate the images array so the loop is seamless */
-  const loopImgs = images.length > 0 ? [...images, ...images] : [];
+  /* keep a local copy of the loop images (starts with two sets for SSR) */
+  const [loopImgs, setLoopImgs] = useState(
+    images.length > 0 ? [...images, ...images] : []
+  );
+
+  /* distance the track must translate for one full native image set */
+  const distanceRef = useRef(1); // initialise non‑zero so % won't divide by 0
 
   /* seconds a single batch of slides should take to cross the screen */
   const [durationFactor, setDurationFactor] = useState(9.5);
 
   const ref = useRef(null);
 
-  /* viewport‑based slide sizing */
-  const viewportW = typeof window !== "undefined" ? window.innerWidth : 0;
-  const slideW = viewportW * 0.45;            // 45 % of the page width
-  const distance = slideW * images.length;    // pixels per full loop
-
   const x = useMotionValue(0);                // carousel translate‑X
   const controls = useAnimation();
 
   /* restart the infinite tween without a visual jump */
   const updateSpeed = (factor) => {
-    const loopOffset = x.get() % -distance;   // where we are inside the loop
-    controls.stop();                          // 1) kill current tween
-    controls.set({ x: loopOffset });          // 2) pin playhead to offset
-    controls.start({                          // 3) restart from offset
-      x: loopOffset - distance,
+    const dist = distanceRef.current;
+    const loopOffset = x.get() % -dist;
+    controls.stop();
+    controls.set({ x: loopOffset });
+    controls.start({
+      x: loopOffset - dist,
       transition: {
         duration: images.length * factor,
         ease: "linear",
@@ -60,8 +61,21 @@ export default function ScrollTransition({
       ? { text: line, className: fallback(idx) }
       : line;
 
-  /* fire the initial carousel animation once on mount */
-  useEffect(() => {
+  useLayoutEffect(() => {
+    if (typeof window === "undefined" || images.length === 0) return;
+
+    const vw = window.innerWidth;
+    const slideW = vw * 0.54;    // 20 % wider (was 45 vw → 54 vw)
+    const overlap = vw * 0.12;   // keep the overlap proportional (10 vw → 12 vw)
+    const effectiveW = slideW - overlap;
+    distanceRef.current = effectiveW * images.length;
+
+    const cardsPerScreen = Math.ceil(vw / effectiveW);
+    const setsNeeded = cardsPerScreen + 1; // always have one spare set
+    const newLoop = Array.from({ length: setsNeeded }).flatMap(() => images);
+    setLoopImgs(newLoop);
+
+    // kick off animation with correct distance
     updateSpeed(durationFactor);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -185,8 +199,8 @@ export default function ScrollTransition({
                   key={i}
                   className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden"
                   style={{
-                    width: "45vw",
-                    marginRight: "-10vw",
+                    width: "54vw",          // 20 % larger
+                    marginRight: "-12vw",   // proportional overlap
                     aspectRatio: "16/9",
                     backgroundImage: `url(${src})`,
                     backgroundSize: "cover",
