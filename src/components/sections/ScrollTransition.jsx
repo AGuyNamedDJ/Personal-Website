@@ -1,6 +1,12 @@
 "use client";
-import { useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useAnimation,
+  useMotionValue,
+} from "framer-motion";
 
 export default function ScrollTransition({
   bgImage,
@@ -9,33 +15,58 @@ export default function ScrollTransition({
   finalImage,
   images = [],
 }) {
+  /* duplicate the images array so the loop is seamless */
   const loopImgs = images.length > 0 ? [...images, ...images] : [];
 
-  // track speed factor (seconds per slide group); increases on hover
+  /* seconds a single batch of slides should take to cross the screen */
   const [durationFactor, setDurationFactor] = useState(9.5);
 
   const ref = useRef(null);
 
-  /* viewport width for slide math */
-  const viewportW =
-    typeof window !== "undefined" ? window.innerWidth : 0;
-  const slideW = viewportW * 0.45; // 45 % of page width
+  /* viewport‑based slide sizing */
+  const viewportW = typeof window !== "undefined" ? window.innerWidth : 0;
+  const slideW = viewportW * 0.45;            // 45 % of the page width
+  const distance = slideW * images.length;    // pixels per full loop
 
-  const distance = slideW * images.length;          // one full loop
+  const x = useMotionValue(0);                // carousel translate‑X
+  const controls = useAnimation();
 
-  /* ───────── scroll progress 0-1 ───────── */
+  /* restart the infinite tween without a visual jump */
+  const updateSpeed = (factor) => {
+    const loopOffset = x.get() % -distance;   // where we are inside the loop
+    controls.stop();                          // 1) kill current tween
+    controls.set({ x: loopOffset });          // 2) pin playhead to offset
+    controls.start({                          // 3) restart from offset
+      x: loopOffset - distance,
+      transition: {
+        duration: images.length * factor,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "loop",
+      },
+    });
+    setDurationFactor(factor);
+  };
+
+  /* ───── scroll progress 0 → 1 ───── */
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end end"],
   });
 
-  /* ───────── helper to normalise line props ───────── */
+  /* helper to normalise line props */
   const toObj = (line, idx, fallback) =>
     typeof line === "string"
       ? { text: line, className: fallback(idx) }
       : line;
 
-  /* ───────── Chapter 1 & 2 copy (unchanged) ───────── */
+  /* fire the initial carousel animation once on mount */
+  useEffect(() => {
+    updateSpeed(durationFactor);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /* ───── chapter copy ───── */
   const intro = firstLines.map((l, i) =>
     toObj(l, i, (n) =>
       n === 1
@@ -52,7 +83,7 @@ export default function ScrollTransition({
     )
   );
 
-  /* ───────── background zoom / fade ───────── */
+  /* ───── background zoom / fade ───── */
   const imgOpacity = useTransform(
     scrollYProgress,
     [0, 0.25, 0.3, 0.6, 0.8, 1],
@@ -67,7 +98,7 @@ export default function ScrollTransition({
     [0, 1, 1, 0]
   );
 
-  /* ───────── render ───────── */
+  /* ───── render ───── */
   return (
     <section ref={ref} className="relative h-[650vh] bg-black">
       {/* background plate */}
@@ -83,7 +114,7 @@ export default function ScrollTransition({
 
       {/* pinned stage */}
       <div className="sticky top-0 z-10 flex items-center justify-center w-full h-screen pointer-events-none">
-        {/* Chapter 1 */}
+        {/* chapter 1 */}
         <motion.div
           initial={{ opacity: 1 }}
           style={{ opacity: c1Opacity }}
@@ -96,7 +127,7 @@ export default function ScrollTransition({
           ))}
         </motion.div>
 
-        {/* Chapter 2 */}
+        {/* chapter 2 */}
         {detail.length > 0 && (
           <motion.div
             style={{ opacity: c2Opacity }}
@@ -110,73 +141,61 @@ export default function ScrollTransition({
           </motion.div>
         )}
 
-        {/* ───────── Phase 3 — full-screen book ➔ smooth shrink ───────── */}
+        {/* phase 3 — full‑screen visual that shrinks away */}
         {finalImage && (
-        <motion.div
+          <motion.div
             className="absolute inset-0 flex items-center justify-center"
             style={{
-            /* visible 80 %–96 %, fades at 97 % */
-            opacity: useTransform(
+              opacity: useTransform(
                 scrollYProgress,
-                [0.78, 0.80, 0.965, 0.98],
-                [0,    1,    1,     0]
-            ),
-            /* hold full-size to 90 %, then scale down to 40 % width by 96 % */
-            scale: useTransform(
-                scrollYProgress,
-                [0.80, 0.90, 0.965],
-                [1,    1,    0.45]
-            ),
+                [0.78, 0.8, 0.965, 0.98],
+                [0, 1, 1, 0]
+              ),
+              scale: useTransform(scrollYProgress, [0.8, 0.9, 0.965], [
+                1, 1, 0.45,
+              ]),
             }}
-        >
+          >
             <img
               src={finalImage}
               alt=""
               className="w-screen h-screen object-cover"
             />
-        </motion.div>
+          </motion.div>
         )}
 
-        {/* ───────── Phase 4 — 40 %-width carousel (arrow-controlled) ───────── */}
+        {/* phase 4 — 40 %‑width carousel */}
         {images.length > 0 && (
-        <motion.div
+          <motion.div
             className="absolute inset-0 flex items-center justify-center pointer-events-auto"
             style={{
-            /* fade in right after Phase 3 completes */
-            opacity: useTransform(scrollYProgress, [0.96, 0.975], [0, 1]),
+              opacity: useTransform(scrollYProgress, [0.96, 0.975], [0, 1]),
             }}
-        >
+          >
             {/* track */}
             <motion.div
               className="flex items-center"
-              animate={{ x: [0, -distance] }}
-              transition={{
-                duration: images.length * durationFactor,
-                ease: "linear",
-                repeat: Infinity,
-                repeatType: "loop",
-                repeatDelay: 0,
-                delay: 1,
-              }}
-              onHoverStart={() => setDurationFactor(19)}   /* 2× slower */
-              onHoverEnd={() => setDurationFactor(9.5)}    /* normal */
+              style={{ x }}
+              animate={controls}
+              onHoverStart={() => updateSpeed(19)} /* half‑speed */
+              onHoverEnd={() => updateSpeed(9.5)}  /* normal */
             >
-            {loopImgs.map((src, i) => (
+              {loopImgs.map((src, i) => (
                 <div
-                key={i}
-                className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden"
-                style={{
+                  key={i}
+                  className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden"
+                  style={{
                     width: "45vw",
                     marginRight: "-10vw",
                     aspectRatio: "16/9",
                     backgroundImage: `url(${src})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                }}
+                  }}
                 />
-            ))}
+              ))}
             </motion.div>
-        </motion.div>
+          </motion.div>
         )}
       </div>
     </section>
