@@ -199,12 +199,15 @@ export default function ScrollTransition({
                   key={i}
                   className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden"
                   style={{
-                    width: "54vw",          // 20 % larger
-                    marginRight: "-12vw",   // proportional overlap
-                    aspectRatio: "16/9",
+                    width: "54vw",          // keep the wider card
+                    marginRight: "-12vw",   // maintain overlap
+                    aspectRatio: "2/3",     // portrait ratio like a book
+                    padding: "3vw",         // inner padding so cover isn't cropped
                     backgroundImage: `url(${src})`,
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",   // show whole cover
+                    backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
+                    backgroundColor: "#000",     // neutral backdrop around the cover
                   }}
                 />
               ))}

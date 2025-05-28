@@ -48,11 +48,11 @@ export default function ClientWritingPage() {
                 "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
             },
           ]}
-          finalImage="/assets/images/CB.png"
+          finalImage="/assets/images/CB2.png"
           images={[
-            "/assets/images/CB.png",
-            "/assets/images/CB.png",
-            "/assets/images/CB.png",
+            "/assets/images/CB1.png",
+            "/assets/images/CB2.png",
+            "/assets/images/TLI.png",
           ]}
         />
 
