@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
           <Image
-            src="/assets/images/IMG_6414.JPG"
+            src="/assets/images/IMG_6414.jpeg"
             alt="Logo"
             width={40}
             height={40}

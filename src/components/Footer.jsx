@@ -18,7 +18,7 @@ export default function Footer() {
           <Link href="/">
             <div className="w-12 h-12 rounded-full overflow-hidden transform transition-transform duration-200 ease-out hover:scale-105">
               <Image
-                src="/assets/images/IMG_6414.JPG"
+                src="/assets/images/IMG_6414.jpeg"
                 alt="AGNDJ Logo"
                 width={48}
                 height={48}
