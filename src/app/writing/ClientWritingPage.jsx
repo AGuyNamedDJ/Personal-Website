@@ -51,8 +51,8 @@ export default function ClientWritingPage() {
           finalImage="/assets/images/CB.png"
           images={[
             "/assets/images/CB.png",
-            "/assets/images/Slide2.png",
-            "/assets/images/Slide3.png",
+            "/assets/images/CB.png",
+            "/assets/images/CB.png",
           ]}
         />
 
