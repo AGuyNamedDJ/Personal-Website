@@ -14,8 +14,9 @@ export default function ScrollTransition({
   firstLines = [],
   secondLines = [],
   finalImage,
-  images = [],
+  books = [],
 }) {
+  const images = books.map(book => book.image);
   /* keep a local copy of the loop images (starts with two sets for SSR) */
   const [loopImgs, setLoopImgs] = useState(
     images.length > 0 ? [...images, ...images] : []
@@ -254,6 +255,29 @@ export default function ScrollTransition({
             unoptimized
             className="max-h-[90vh] max-w-[90vw] object-contain"
           />
+          <div className="absolute bottom-8 flex space-x-4">
+            <a
+              href={books[selectedIndex % books.length].links.amazon}
+              target="_blank"
+              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
+            >
+              Amazon
+            </a>
+            <a
+              href={books[selectedIndex % books.length].links.barnesNoble}
+              target="_blank"
+              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
+            >
+              Barnes & Noble
+            </a>
+            <a
+              href={books[selectedIndex % books.length].links.googleBooks}
+              target="_blank"
+              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
+            >
+              Google Books
+            </a>
+          </div>
         </div>
       )}
     </section>

@@ -25,7 +25,7 @@ export default function ClientWritingPage() {
         {/* Background + later phases */}
         <ScrollTransition
           bgImage="/assets/images/JadeCB.png"
-          firstLines={[]} // hero overlay provides the intro copy
+          firstLines={[]}
           secondLines={[
             {
               text: "Books I've written to spark curiosity and inspire fresh perspectives.",
@@ -49,13 +49,32 @@ export default function ClientWritingPage() {
             },
           ]}
           finalImage="/assets/images/CB2.png"
-          images={[
-            "/assets/images/CB1.png",
-            "/assets/images/CB2.png",
-            "/assets/images/TLI.png",
+          books={[
+            {
+              image: "/assets/images/CB1.png",
+              links: {
+                amazon: "https://www.amazon.com/Circuit-Breakers-Innovation-Dalron-Robertson-ebook/dp/B0DQ5RCB3Z/?_encoding=UTF8&pd_rd_w=n7uTL&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=144-6969151-6856136&pd_rd_wg=8RZUK&pd_rd_r=7bc5fc46-9bad-41d7-bc02-3f6a768fd20c&ref_=aufs_ap_sc_dsk",
+                googleBooks: "https://books.google.com/books?id=6B83EQAAQBAJ&num=6",
+              },
+            },
+            {
+              image: "/assets/images/CB2.png",
+              links: {
+                amazon: "https://www.amazon.com/Circuit-Breakers-Imperfections-Dalron-Robertson/dp/B0F4XWYDJB/?_encoding=UTF8&pd_rd_w=n7uTL&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=144-6969151-6856136&pd_rd_wg=8RZUK&pd_rd_r=7bc5fc46-9bad-41d7-bc02-3f6a768fd20c&ref_=aufs_ap_sc_dsk",
+                barnesNoble: "https://www.barnesandnoble.com/w/circuit-breakers-dalron-robertson/1147282782",
+                googleBooks: "https://books.google.com/books?id=PU5I0QEACAAJ&newbks=1&newbks_redir=0&hl=en",
+              },
+            },
+            {
+              image: "/assets/images/TLI.png",
+              links: {
+                amazon: "https://www.amazon.com/Love-Ignorantly-Loves-Memoir-ebook/dp/B0DS1DBR58",
+                barnesNoble: "https://www.barnesandnoble.com/w/to-love-ignorantly-dalron-robertson/1146773973?ean=9798341897038",
+                googleBooks: "https://books.google.com/books/about/To_Love_Ignorantly_Loves_Memoir.html?id=Abg7EQAAQBAJ",
+              },
+            },
           ]}
         />
-
         {/* Hero text overlay (visible on load, fades out) */}
         <motion.div
           className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pointer-events-none z-20"
