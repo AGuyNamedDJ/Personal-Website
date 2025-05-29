@@ -202,6 +202,14 @@ export default function ScrollTransition({
               opacity: useTransform(scrollYProgress, [0.96, 0.975], [0, 1]),
             }}
           >
+            <div className="absolute top-4 w-full text-center px-8 md:px-16 z-50">
+              <p className="mt-6 text-[4rem] md:text-[6rem] font-bold text-center mb-0 text-white">
+                Written to Inspire.
+              </p>
+              <p className="text-xl md:text-2xl font-semibold text-center text-neutral-400">
+                A collection of ideas and stories I’ve written, meant to clarify my thinking, invite reflection, and encourage deeper conversations.
+              </p>
+            </div>
             {/* track */}
             <motion.div
               className="flex items-center"
@@ -256,27 +264,51 @@ export default function ScrollTransition({
             className="max-h-[90vh] max-w-[90vw] object-contain"
           />
           <div className="absolute bottom-8 flex space-x-4">
-            <a
-              href={books[selectedIndex % books.length].links.amazon}
-              target="_blank"
-              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
-            >
-              Amazon
-            </a>
-            <a
-              href={books[selectedIndex % books.length].links.barnesNoble}
-              target="_blank"
-              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
-            >
-              Barnes & Noble
-            </a>
-            <a
-              href={books[selectedIndex % books.length].links.googleBooks}
-              target="_blank"
-              className="px-4 py-2 bg-white text-black rounded-md shadow-md hover:bg-neutral-200 transition-colors"
-            >
-              Google Books
-            </a>
+            {books[selectedIndex % books.length].links.amazon && (
+              <a
+                href={books[selectedIndex % books.length].links.amazon}
+                target="_blank"
+                className="inline-block transform transition-transform hover:scale-105 active:scale-95 active:opacity-75"
+              >
+                <Image
+                  src="/assets/images/AmazonButton.png"
+                  alt="Buy on Amazon"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </a>
+            )}
+            {books[selectedIndex % books.length].links.barnesNoble && (
+              <a
+                href={books[selectedIndex % books.length].links.barnesNoble}
+                target="_blank"
+                className="inline-block transform transition-transform hover:scale-105 active:scale-95 active:opacity-75"
+              >
+                <Image
+                  src="/assets/images/BarnesandNobleButton.png"
+                  alt="Buy on Barnes & Noble"
+                  width={100}
+                  height={33}
+                  className="object-contain rounded-lg shadow-md"
+                />
+              </a>
+            )}
+            {books[selectedIndex % books.length].links.googleBooks && (
+              <a
+                href={books[selectedIndex % books.length].links.googleBooks}
+                target="_blank"
+                className="inline-block transform transition-transform hover:scale-105 active:scale-95 active:opacity-75"
+              >
+                <Image
+                  src="/assets/images/GooglePlayButton.png"
+                  alt="Buy on Google Books"
+                  width={120}
+                  height={40}
+                  className="object-contain rounded-lg shadow-md"
+                />
+              </a>
+            )}
           </div>
         </div>
       )}
