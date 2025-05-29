@@ -92,7 +92,8 @@ export default function ClientWritingPage() {
         </motion.div>
       </section>
 
-      <Footer />
+      <div className="h-screen"></div>
+
     </main>
   );
 }
