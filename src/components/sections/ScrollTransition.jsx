@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { useRef, useState, useEffect, useLayoutEffect, useCallback } from "react";
 import {
   motion,
   useScroll,
@@ -7,6 +7,7 @@ import {
   useAnimation,
   useMotionValue,
 } from "framer-motion";
+import Image from "next/image";
 
 export default function ScrollTransition({
   bgImage,
@@ -30,6 +31,20 @@ export default function ScrollTransition({
 
   const x = useMotionValue(0);                // carousel translate‑X
   const controls = useAnimation();
+
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const handleKey = useCallback(
+    (e) => {
+      if (e.key === "Escape") setSelectedIndex(null);
+    },
+    []
+  );
+
+  useEffect(() => {
+    if (selectedIndex !== null) window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [selectedIndex, handleKey]);
 
   /* restart the infinite tween without a visual jump */
   const updateSpeed = (factor) => {
@@ -197,7 +212,7 @@ export default function ScrollTransition({
               {loopImgs.map((src, i) => (
                 <div
                   key={i}
-                  className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden"
+                  className="flex-shrink-0 rounded-lg shadow-xl overflow-hidden cursor-pointer"
                   style={{
                     width: "54vw",          // keep the wider card
                     marginRight: "-12vw",   // maintain overlap
@@ -209,12 +224,38 @@ export default function ScrollTransition({
                     backgroundPosition: "center",
                     backgroundColor: "#000",     // neutral backdrop around the cover
                   }}
+                  onClick={() => setSelectedIndex(i)}
                 />
               ))}
             </motion.div>
           </motion.div>
         )}
       </div>
+      {selectedIndex !== null && loopImgs[selectedIndex] && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black cursor-pointer"
+          onClick={() => setSelectedIndex(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white text-3xl hover:opacity-70 transition-opacity"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedIndex(null);
+            }}
+          >
+            &times;
+          </button>
+          <Image
+            src={loopImgs[selectedIndex]}
+            alt="Enlarged book cover"
+            width={1200}
+            height={1800}
+            quality={90}
+            unoptimized
+            className="max-h-[90vh] max-w-[90vw] object-contain"
+          />
+        </div>
+      )}
     </section>
   );
 }
