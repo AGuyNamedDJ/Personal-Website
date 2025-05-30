@@ -93,7 +93,7 @@ This project is built using the following key technologies and libraries:
 
 ## Feedback & Contributions
 
-Your feedback and suggestions are welcome! Feel free to reach out through the Connect page on the website or submit a pull request for consideration.
+Your feedback and suggestions are welcome! Feel free to reach out through the Connect page on the website.
 
 **[Visit the Live Website →](https://dalronjrobertson.com)**
 

@@ -191,7 +191,7 @@ export default function ScrollTransition({
               <img
                 src={finalImage}
                 alt=""
-                className="w-screen h-screen object-cover"
+                className="max-w-[80vw] max-h-[80vh] object-contain"
               />
             </motion.div>
           )}
