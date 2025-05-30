@@ -4,7 +4,7 @@ This repository contains the official source code for the personal website of Da
 
 ---
 
-## 🚀 Website Overview
+## Website Overview
 
 The website elegantly highlights Dalron’s diverse expertise through clear, engaging narratives and carefully curated content across five core sections:
 
@@ -31,7 +31,7 @@ The website elegantly highlights Dalron’s diverse expertise through clear, eng
 
 ---
 
-## 🌟 Design Philosophy
+## Design Philosophy
 
 Inspired by the clarity and refinement of Apple’s design philosophy, combined with Chanel’s subtle luxury aesthetics, the website delivers a polished experience through meticulous micro-interactions, parallax effects, and thoughtful use of space and typography.
 
@@ -43,7 +43,7 @@ Key design principles include:
 
 ---
 
-## 🎨 Technical Stack & Structure
+## Technical Stack & Structure
 
 - Built with **Next.js** and **React** for optimal performance, flexibility, and scalability.
 - Styled with **Tailwind CSS** for consistent, maintainable, and responsive styling.
@@ -51,7 +51,7 @@ Key design principles include:
 
 ---
 
-## 📖 Site Map & Navigation Structure
+## Site Map & Navigation Structure
 
 ### Core Pages (Primary Navigation)
 - `/` – Home (scroll-driven narrative)
@@ -68,7 +68,7 @@ Key design principles include:
 ---
 
 
-## 🛠 Project Dependencies & Tools
+## Project Dependencies & Tools
 
 This project is built using the following key technologies and libraries:
 
@@ -91,7 +91,7 @@ This project is built using the following key technologies and libraries:
 
 ---
 
-## 📩 Feedback & Contributions
+## Feedback & Contributions
 
 Your feedback and suggestions are welcome! Feel free to reach out through the Connect page on the website or submit a pull request for consideration.
 
@@ -99,6 +99,6 @@ Your feedback and suggestions are welcome! Feel free to reach out through the Co
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
