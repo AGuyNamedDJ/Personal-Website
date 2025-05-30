@@ -39,7 +39,7 @@ export const metadata = {
     type: "profile",
     images: [
       {
-        url: "/og.png",      // 1200×630 image in /public
+        url: new URL("/og.png", new URL("https://dalronrobertson.com")).href,      // 1200×630 image in /public
         width: 1200,
         height: 630,
         alt: "Dalron J. Robertson site preview",
@@ -54,7 +54,7 @@ export const metadata = {
     description:
       "Building intelligent systems that advance discovery in biology and medicine.",
     creator: "@dalronrobertson",
-    images: ["/og.png"],
+    images: [new URL("/og.png", new URL("https://dalronrobertson.com")).href],
   },
 
   /* ---------- SEO helpers ---------- */

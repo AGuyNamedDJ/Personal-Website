@@ -1,8 +1,7 @@
-export const metadata = {
-  title: "Work | Dalron Robertson",
-  description: "Selected projects and professional work by Dalron Robertson"
-};
+"use client";
 
+import React, { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import CreativeGrid from "@/components/sections/CreativeGrid";
 
@@ -25,6 +24,22 @@ const projects = [
 ];
 
 export default function WorkPage() {
+  const videoIds = [
+    "tbJmPPaGwas",      // first video ID
+    "Wx_Ie2PwCDo?start=778", // second video ID with start param
+    "19PSU1ub-Ds"       // third video ID
+  ];
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const prevVideo = () =>
+    setCurrentIndex((currentIndex + videoIds.length - 1) % videoIds.length);
+  const nextVideo = () =>
+    setCurrentIndex((currentIndex + 1) % videoIds.length);
+
+  const getVideoSrc = (id, autoplay = false) => {
+    const delimiter = id.includes("?") ? "&" : "?";
+    return `https://www.youtube.com/embed/${id}${autoplay ? `${delimiter}autoplay=1&mute=1` : ""}`;
+  };
+
   return (
     <main className="pt-20 scroll-smooth bg-black text-white">
       <section className="bg-black">
@@ -156,17 +171,78 @@ export default function WorkPage() {
         <CreativeGrid />
       </section>
 
-      <section className="bg-black">
-        <div className="mx-auto max-w-6xl px-4 pt-20 pb-48">
-          <p className="mt-6 text-2xl md:text-3xl font-semibold text-center text-neutral-400 mb-0">
-            Upcoming Ventures
+      {/* YouTube Videos Carousel */}
+      <section id="youtube-videos" className="pt-6 pb-32 bg-black text-center">
+        <div className="mx-auto max-w-6xl px-4">
+          <p className="mt-6 text-2xl md:text-3xl font-semibold text-neutral-400">
+            My YouTube Channel
           </p>
-          <p className="text-[2.5rem] md:text-[4rem] font-bold text-center mb-6 text-white">
-            The best ideas are worth the wait.
+          <p className="text-[2.5rem] md:text-[4rem] font-bold text-white mb-6">
+            Moments Worth Capturing.
           </p>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-400 text-center mb-0">
-            Thoughtful ideas take time to cultivate. I'm currently working on several exciting projects designed to make a meaningful impact. Stay tuned as I prepare to share what's next.
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-neutral-400 mb-12">
+            Personal journeys, cinematic storytelling, gaming highlights, cooking explorations, and thoughtful product reviews. A curated collection of my experiences.
           </p>
+
+          <div className="flex items-center justify-between">
+            <button
+              onClick={prevVideo}
+              className="text-neutral-400 hover:text-white transition-transform hover:scale-125 active:scale-90"
+            >
+              <FaChevronLeft size={32} />
+            </button>
+
+            <div className="flex items-center justify-center gap-6 w-full mx-4">
+              {/* Left (previous) video */}
+              <div className="aspect-video w-1/4 rounded-lg overflow-hidden shadow-lg opacity-50 scale-90">
+                <iframe
+                  className="w-full h-full"
+                  src={getVideoSrc(videoIds[(currentIndex + videoIds.length - 1) % videoIds.length])}
+                  title="Previous YouTube video"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              {/* Current (main) video */}
+              <div className="aspect-video w-1/2 rounded-xl overflow-hidden shadow-2xl scale-110">
+                <iframe
+                  className="w-full h-full"
+                  src={getVideoSrc(videoIds[currentIndex], true)}
+                  title="Current YouTube video"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              {/* Right (next) video */}
+              <div className="aspect-video w-1/4 rounded-lg overflow-hidden shadow-lg opacity-50 scale-90">
+                <iframe
+                  className="w-full h-full"
+                  src={getVideoSrc(videoIds[(currentIndex + 1) % videoIds.length])}
+                  title="Next YouTube video"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+
+            <button
+              onClick={nextVideo}
+              className="text-neutral-400 hover:text-white transition-transform hover:scale-125 active:scale-90"
+            >
+              <FaChevronRight size={32} />
+            </button>
+          </div>
+
+          <a
+            href="https://www.youtube.com/@AGNDJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-block text-xl font-medium text-blue-500 hover:underline transition-transform hover:scale-105 active:scale-95"
+          >
+            Visit My YouTube Channel →
+          </a>
         </div>
       </section>
     <Footer />
