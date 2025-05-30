@@ -59,8 +59,8 @@ export default function Footer() {
           </a>
         </nav>
         <div className="space-y-3 text-sm">
-          <Link href="/legal#privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
-          <Link href="/legal#terms" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Terms</Link>
+          <Link href="/legal/privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
+          <Link href="/legal/terms" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Terms</Link>
           <Link href="/sitemap" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Site Map</Link>
         </div>
         <div className="justify-self-end">
