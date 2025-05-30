@@ -4,8 +4,22 @@ import TimelineRibbonClient from "../../components/sections/TimelineRIbbonClient
 import DocumentsRibbon from "../../components/sections/DocumentsRibbon.jsx";
 
 export const metadata = {
-  title: "About | Dalron Robertson",
-  description: "Bio and professional milestones for Dalron J. Robertson",
+  title: "About Dalron J. Robertson | Researcher, Engineer, and AI Innovator",
+  description: "Learn about Dalron J. Robertson, a researcher and engineer specializing in biomedical science, clinical pharmacology, AI-driven drug discovery, computational biology, and creative innovation.",
+  keywords: [
+    "Dalron J. Robertson",
+    "About Dalron Robertson",
+    "AI researcher",
+    "Pharm.D. candidate",
+    "biomedical scientist",
+    "clinical pharmacologist",
+    "computational biology",
+    "drug discovery",
+    "machine learning",
+    "bioinformatics",
+    "health technology",
+    "creative innovation"
+  ]
 };
 
 export default function AboutPage() {
