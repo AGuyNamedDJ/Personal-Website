@@ -121,7 +121,7 @@ export default function WorkPage() {
           </p>
           <div className="flex gap-4 pb-20">
             <a
-              href="https://cdn.nas.com/papers"
+              href="https://nasresearch.bio"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#F9F4EC] text-[#181615] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 active:scale-95 transition-transform"
@@ -129,7 +129,7 @@ export default function WorkPage() {
               View All Papers →
             </a>
             <a
-              href="https://nas.com"
+              href="https://nasresearch.bio"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-transparent border border-[#F9F4EC] text-[#F9F4EC] px-6 py-3 rounded-2xl font-medium shadow hover:scale-105 active:scale-95 transition-transform"
