@@ -76,6 +76,16 @@ const entries = [
     desc: "Returned to pharmacy school following my master's graduation, relocating to Chicago to resume clinical rotations and complete doctoral coursework."
   },
   {
+    year: 2025,
+    title: "Astellas Bridge to Industry Program (Oct 2025)",
+    desc: "Selected for the Astellas Bridge to Industry Mentor Intensive Program, engaging with senior pharmaceutical leadership and gaining insight into drug development, regulatory strategy, and industry research."
+  },
+  {
+    year: 2026,
+    title: "Pharmacy Intern, UChicago Medicine (March 2026)",
+    desc: "Joined UChicago Medicine as a Pharmacy Intern on the Meds2Beds transitions-of-care team, supporting hospital discharge medication management and patient counseling."
+  },
+  {
     year: 2028,
     title: "Doctor of Pharmacy (Pharm.D.) (Expected May 2028)",
     desc: "Anticipated completion of pharmacy doctoral training, positioning me to integrate clinical expertise and pharmaceutical science in patient care and research."

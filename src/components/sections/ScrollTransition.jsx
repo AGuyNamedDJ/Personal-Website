@@ -1,4 +1,4 @@
- "use client";
+"use client";
 import { useRef, useState, useEffect, useLayoutEffect, useCallback } from "react";
 import {
   motion,
@@ -199,7 +199,7 @@ export default function ScrollTransition({
           {/* phase 4 — 40 %‑width carousel */}
           {images.length > 0 && (
             <motion.div
-              className="absolute inset-0 flex items-center justify-center pointer-events-auto translate-y-20"
+              className="absolute inset-0 flex items-center justify-center pointer-events-auto translate-y-32"
               style={{
                 opacity: useTransform(scrollYProgress, [0.96, 0.975], [0, 1]),
               }}

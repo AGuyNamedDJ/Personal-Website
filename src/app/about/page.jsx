@@ -45,13 +45,16 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Who I Am</h2>
           <p className="leading-relaxed text-neutral-800">
-            I am Dalron J. Robertson, a researcher, engineer and creative problem solver in the life sciences. My early work in the arts taught me how structured discipline and creative insight spark innovation. Through composing music and writing books I learned to build systems that combine precision with expressive purpose.
+            I am Dalron J. Robertson, a scientist and builder working in the life sciences. My work is grounded in careful thinking, disciplined craft, and a deep curiosity about how biological systems function. Long before formal scientific training, the arts shaped how I approach problems. Writing and composing taught me that structure and creativity belong together, and that meaningful work is built patiently, piece by piece.
           </p>
           <p className="leading-relaxed text-neutral-800 mt-2">
-            My training spans biomedical science, clinical pharmacology and software engineering. As lead graduate researcher I guided a team of sixteen in evaluating phytochemicals for therapeutic use. We built structural models, ran molecular docking simulations and conducted bioinformatics analyses to identify the most promising candidates. That work earned second place at my university’s annual research symposium.
+            My academic foundation in biology and biomedical science led naturally into research. During my graduate work I led a team of sixteen students studying phytochemicals and their therapeutic potential. We used bioinformatics, structural modeling, and molecular docking to explore how naturally occurring compounds interact with biological targets. That work strengthened my belief that computation and biological insight together can reveal patterns that would otherwise remain hidden.
           </p>
           <p className="leading-relaxed text-neutral-800 mt-2">
-            Currently, as I work toward completing my Pharm.D., I am developing a specialized ecosystem of machine-learning models, domain-specific language models, and autonomous agents tailored to the life sciences. This integrated framework continuously ingests biological data and evolves dynamically to support biomedical research. My clinical background, engineering expertise, and dedication to meaningful innovation equip me to create intelligent systems that accelerate scientific discovery.
+            Clinical medicine is another part of that pursuit. Work within UChicago Medicine and collaboration with scientists and leaders at Astellas reflect my commitment to understanding how discoveries move from biological insight to real therapies. At the same time I continue building computational tools designed to organize and interpret complex biomedical data, allowing scientific knowledge to accumulate and evolve in more intelligent ways.
+          </p>
+          <p className="leading-relaxed text-neutral-800 mt-2">
+            Across research, medicine, and technology, the purpose remains steady. I study life carefully, build systems that extend our ability to understand it, and apply that understanding toward the improvement of human health.
           </p>
           <div className="clear-left" />
         </div>
