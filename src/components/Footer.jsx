@@ -50,13 +50,13 @@ export default function Footer() {
           >
             Curriculum Vitae
           </a>
-          <a
+          {/* <a
             href="/files/DJR-Cover-Letter.pdf"
             download
             className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
           >
             Cover Letter
-          </a>
+          </a> */}
         </nav>
         <div className="space-y-3 text-sm">
           <Link href="/legal/privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
