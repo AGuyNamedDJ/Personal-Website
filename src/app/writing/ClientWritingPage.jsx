@@ -70,9 +70,9 @@ const research = [
     linkLabel: "Read the paper",
   },
   {
-    title: "M.S. Thesis Research",
+    title: "Bioinformatics and Pharmacology of Nigella sativa",
     description:
-      "Bioinformatic profiling and pharmacological evaluation of phytochemical constituents from Nigella sativa.",
+      "A computational and experimental evaluation of Nigella sativa phytochemicals, biological targets, antioxidant and anti-inflammatory activity, and therapeutic potential.",
     image: "/assets/images/M.S.Article.png",
     href: "/assets/images/M.S.Article.png",
     linkLabel: "View the research abstract",
