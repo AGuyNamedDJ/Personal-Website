@@ -9,6 +9,7 @@ import {
   SiSubstack,
   SiYoutube
 } from "react-icons/si";
+import { MdRestaurantMenu } from "react-icons/md";
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
 
 export default function Footer() {
@@ -70,6 +71,9 @@ export default function Footer() {
       <div className="mt-12 border-t border-neutral-800 pt-8 text-center">
         <p className="mb-6 text-xs text-white">© {new Date().getFullYear()} Dalron J. Robertson. All rights reserved.</p>
         <div className="flex justify-center gap-6 text-white">
+          <a href="https://beliapp.co/profile/dalronrobertson" target="_blank" rel="noopener noreferrer" aria-label="Beli" title="Beli: @dalronrobertson" className="hover:opacity-90 active:opacity-50 transition-opacity">
+            <MdRestaurantMenu size={24} />
+          </a>
           <a href="https://github.com/AGuyNamedDJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiGithub size={24} />
           </a>
