@@ -186,11 +186,11 @@ export default function ClientWritingPage() {
               Essays &amp; Notes
             </p>
             <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
-              Ideas beyond the finished work.
+              Whatever is worth writing down.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#493421]">
-              Essays, reflections, and developing thoughts on science, life,
-              creativity, and the work still taking shape.
+              Personal reflections, observations, ideas, and the occasional
+              deep dive into whatever has my attention.
             </p>
           </div>
           <a

@@ -6,6 +6,7 @@ import {
   SiGithub,
   SiInstagram,
   SiLinkedin,
+  SiSubstack,
   SiYoutube
 } from "react-icons/si";
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
@@ -80,6 +81,9 @@ export default function Footer() {
           </a>
           <a href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiYoutube size={24} />
+          </a>
+          <a href="https://dalronrobertson.substack.com" target="_blank" rel="noopener noreferrer" aria-label="Substack" className="hover:opacity-90 active:opacity-50 transition-opacity">
+            <SiSubstack size={24} />
           </a>
         </div>
       </div>
