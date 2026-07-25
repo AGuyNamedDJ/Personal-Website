@@ -42,8 +42,6 @@ export default function NowSection() {
             </a>
             <a
               href="/files/Nas-White-Paper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-neutral-200 no-underline transition hover:border-white/40 hover:bg-white/10 hover:text-white"
             >
               Read the foundational paper
