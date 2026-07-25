@@ -13,7 +13,7 @@ export const metadata = {
 async function listAlbumObjects() {
   if (!bucket || !region) return [];
   const url = `https://${bucket}.s3.${region}.amazonaws.com?list-type=2`;
-  const res = await fetch(url, { cache: "no-store" });
+  const res = await fetch(url, { next: { revalidate: 3600 } });
   if (!res.ok) return [];
   const xml = await res.text();
 

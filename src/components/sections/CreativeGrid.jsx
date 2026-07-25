@@ -136,22 +136,14 @@ export default function CreativeGrid() {
               className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
               <div className="relative aspect-[4/5] w-full overflow-hidden">
-                {["Master's Graduation", "Gatlinburg 2025", "Texas State Fair", "Daddy-Daughter Photo Shoot"].includes(album.title) ? (
-                  <Image
-                    src={album.cover}
-                    alt={album.title}
-                    fill
-                    quality={70}
-                    unoptimized
-                    className="object-cover w-full h-full transition-opacity duration-200 group-hover:opacity-75"
-                    placeholder="empty"
-                  />
-                ) : (
-                  <div
-                    className="aspect-[4/5] w-full overflow-hidden bg-cover bg-center transition-opacity duration-200 group-hover:opacity-75"
-                    style={{ backgroundImage: `url(${album.cover})` }}
-                  />
-                )}
+                <Image
+                  src={album.cover}
+                  alt={album.title}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  quality={68}
+                  className="object-cover transition-opacity duration-200 group-hover:opacity-75"
+                />
               </div>
             </Link>
           ))}
