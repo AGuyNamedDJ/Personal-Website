@@ -62,6 +62,109 @@ a:not(.no-underline) {
   to   { opacity: 1; }
 }
 
+@keyframes bookCarousel {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.book-carousel {
+  overflow: hidden;
+  padding-block: 2rem 3rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+.book-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: bookCarousel 32s linear infinite;
+  will-change: transform;
+}
+
+.book-carousel-group {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.book-carousel-card {
+  width: clamp(17rem, 28vw, 21rem);
+  flex: none;
+  transform-origin: center;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.book-carousel:hover .book-carousel-track,
+.book-carousel:focus-within .book-carousel-track {
+  animation-play-state: paused;
+}
+
+.book-carousel-card:hover,
+.book-carousel-card:focus-within {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-0.5rem) scale(1.055);
+  box-shadow: 0 24px 50px rgb(36 20 8 / 20%);
+}
+
+@media (max-width: 767px) {
+  .book-carousel {
+    overflow-x: auto;
+    padding-inline: 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .book-carousel-track {
+    animation: none;
+  }
+
+  .book-carousel-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .book-carousel-card {
+    width: min(82vw, 21rem);
+    scroll-snap-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-carousel {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .book-carousel-track {
+    animation: none;
+  }
+
+  .book-carousel-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
 
 /* Hide page titles and subtitles when lightbox viewer is open */
 body.viewer-open h1,

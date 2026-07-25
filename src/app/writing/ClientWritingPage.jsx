@@ -79,6 +79,42 @@ const research = [
   },
 ];
 
+function BookCard({ book, duplicate = false }) {
+  return (
+    <article className="book-carousel-card overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white shadow-lg">
+      <div className="relative aspect-[2/3] bg-black">
+        <Image
+          src={book.image}
+          alt={`${book.title} cover`}
+          fill
+          sizes="(min-width: 768px) 320px, 82vw"
+          className="object-contain"
+        />
+      </div>
+      <div className="p-7">
+        <h3 className="text-2xl font-semibold text-[#241408]">{book.title}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+          {book.description}
+        </p>
+        <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
+          {book.links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex={duplicate ? -1 : undefined}
+              className="text-sm font-semibold text-[#5C3A21]"
+            >
+              {link.label} →
+            </a>
+          ))}
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default function ClientWritingPage() {
   return (
     <main className="bg-black pt-16 text-white">
@@ -114,43 +150,30 @@ export default function ClientWritingPage() {
           <h2 className="mt-4 text-4xl font-semibold text-[#241408] md:text-6xl">
             Published work
           </h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {books.map((book) => (
-              <article
-                key={book.title}
-                className="overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white"
+          <p className="mt-5 text-sm text-neutral-600">
+            Hover over a book to pause the carousel and explore.
+          </p>
+        </div>
+
+        <div
+          className="book-carousel mt-8"
+          aria-label="Published books"
+        >
+          <div className="book-carousel-track">
+            {[0, 1].map((groupIndex) => (
+              <div
+                key={groupIndex}
+                className="book-carousel-group"
+                aria-hidden={groupIndex === 1 ? "true" : undefined}
               >
-                <div className="relative aspect-[2/3] bg-black">
-                  <Image
-                    src={book.image}
-                    alt={`${book.title} cover`}
-                    fill
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                    className="object-contain"
+                {books.map((book) => (
+                  <BookCard
+                    key={`${groupIndex}-${book.title}`}
+                    book={book}
+                    duplicate={groupIndex === 1}
                   />
-                </div>
-                <div className="p-7">
-                  <h3 className="text-2xl font-semibold text-[#241408]">
-                    {book.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-                    {book.description}
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
-                    {book.links.map((link) => (
-                      <a
-                        key={link.label}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold text-[#5C3A21]"
-                      >
-                        {link.label} →
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </article>
+                ))}
+              </div>
             ))}
           </div>
         </div>
