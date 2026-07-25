@@ -70,12 +70,12 @@ const research = [
     linkLabel: "Read the paper",
   },
   {
-    title: "Graduate Research Poster",
+    title: "M.S. Thesis Research",
     description:
-      "Computational biology research involving bioinformatics, molecular modeling, and therapeutic targets.",
+      "Bioinformatic profiling and pharmacological evaluation of phytochemical constituents from Nigella sativa.",
     image: "/assets/images/M.S.Article.png",
     href: "/assets/images/M.S.Article.png",
-    linkLabel: "View the poster",
+    linkLabel: "View the research abstract",
   },
 ];
 
