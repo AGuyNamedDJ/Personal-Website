@@ -7,35 +7,34 @@ export default function NowSection() {
     >
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.75fr_1.25fr] md:items-start">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
-          Current focus
+          Current research
         </p>
         <div>
           <h2 className="text-4xl font-semibold tracking-tight text-white md:text-6xl">
-            Building NaS.
+            Meet Nicole, NaS&apos;s AI Research Agent.
           </h2>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
-            NaS is being developed as a precision-medicine company that turns
-            biomedical evidence into systems for better therapeutic decisions.
-            Oncology is the initial focus. The longer-term scope includes
-            infectious disease.
+            Nicole is being developed to organize biomedical literature and
+            support structured research across NaS. Her knowledge base draws
+            from published evidence and the broader NaS research systems.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              href="https://nasresearch.bio"
+              href="/files/Nas-White-Paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex justify-center rounded-full bg-[#F9F4EC] px-6 py-3 text-sm font-semibold text-[#181615] no-underline transition hover:bg-white"
             >
-              Explore NaS
+              Read the foundational paper
             </a>
             <a
-              href="https://nasresearch.bio/research"
+              href="https://github.com/NaS-Research"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
             >
-              Explore NaS research
+              View on GitHub
             </a>
           </div>
         </div>
