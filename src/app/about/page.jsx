@@ -68,23 +68,24 @@ export default function AboutPage() {
           <p className="mt-5 leading-relaxed text-neutral-800">
             The larger purpose is institution building. Through NaS, research,
             clinical practice, and future philanthropy, Dalron aims to create
-            systems that produce knowledge, develop people, and improve medicine.
+            systems that advance knowledge, develop people, and improve medicine.
           </p>
         </div>
       </section>
 
       <section className="bg-white px-6 py-24 sm:px-10">
         <div className="mx-auto max-w-4xl">
-        <h2 className="mb-12 text-3xl font-semibold text-[#241408] md:text-4xl">
-          Key Milestones
-        </h2>
-        <TimelineRibbonClient />
+          <h2 className="mb-12 text-3xl font-semibold text-[#241408] md:text-4xl">
+            Key Milestones
+          </h2>
+          <TimelineRibbonClient />
         </div>
       </section>
       <section className="mx-auto max-w-3xl px-6 pb-0 pt-24 text-center sm:px-10">
         <h2 className="mb-3 text-3xl font-semibold">Professional Credentials</h2>
         <p className="text-neutral-700">
-          Download the documents outlining Dalron&apos;s education, experience, and projects.
+          Download the documents outlining Dalron&apos;s education, experience,
+          and projects.
         </p>
       </section>
       <DocumentsRibbon />

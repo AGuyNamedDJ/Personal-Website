@@ -46,8 +46,8 @@ function shuffle(arr) {
 }
 
 export const metadata = {
-  title: "Masters Graduation | Photo Album",
-  description: "Photo gallery of the Masters Graduation ceremony"
+  title: "Master's Graduation | Photo Album",
+  description: "Photo gallery from Dalron's master's graduation ceremony."
 };
 
 export default async function MastersGraduationAlbum() {

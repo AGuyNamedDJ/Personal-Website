@@ -52,7 +52,7 @@ a:not(.no-underline) {
   @apply underline-offset-4 transition;
 }
 
-/* Section block helper — top & bottom padding for consistent rhythm */
+/* Section block helper with consistent vertical padding */
 .section-block {
   @apply py-24 md:py-32;
 }

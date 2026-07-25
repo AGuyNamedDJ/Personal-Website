@@ -44,9 +44,9 @@ export const metadata = {
     type: "profile",
     images: [
       {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
+        url: "/assets/images/Hero.png",
+        width: 1024,
+        height: 1024,
         alt: "Dalron J. Robertson site preview",
       },
     ],

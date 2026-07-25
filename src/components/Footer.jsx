@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="w-12 h-12 rounded-full overflow-hidden transform transition-transform duration-200 ease-out hover:scale-105">
               <Image
                 src="/assets/images/IMG_6414.jpeg"
-                alt="AGNDJ Logo"
+                alt="Dalron J. Robertson"
                 width={48}
                 height={48}
                 className="object-cover"
@@ -50,13 +50,6 @@ export default function Footer() {
           >
             Curriculum Vitae
           </a>
-          {/* <a
-            href="/files/DJR-Cover-Letter.pdf"
-            download
-            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
-          >
-            Cover Letter
-          </a> */}
         </nav>
         <div className="space-y-3 text-sm">
           <Link href="/legal/privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
@@ -76,18 +69,18 @@ export default function Footer() {
       <div className="mt-12 border-t border-neutral-800 pt-8 text-center">
         <p className="mb-6 text-xs text-white">© {new Date().getFullYear()} Dalron J. Robertson. All rights reserved.</p>
         <div className="flex justify-center gap-6 text-white">
-          <Link href="https://github.com/AGuyNamedDJ" aria-label="GitHub" className="hover:opacity-90 active:opacity-50 transition-opacity">
+          <a href="https://github.com/AGuyNamedDJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiGithub size={24} />
-          </Link>
-          <Link href="https://www.instagram.com/aguynameddj/" aria-label="Instagram" className="hover:opacity-90 active:opacity-50 transition-opacity">
+          </a>
+          <a href="https://www.instagram.com/aguynameddj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiInstagram size={24} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/dalronjrobertson/" aria-label="LinkedIn" className="hover:opacity-90 active:opacity-50 transition-opacity">
+          </a>
+          <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiLinkedin size={24} />
-          </Link>
-          <Link href="https://www.youtube.com/@AGNDJ" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
+          </a>
+          <a href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiYoutube size={24} />
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

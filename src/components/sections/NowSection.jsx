@@ -16,8 +16,8 @@ export default function NowSection() {
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
             NaS is being developed as a precision-medicine company that turns
             biomedical evidence into systems for better therapeutic decisions.
-            Oncology is the initial focus, with infectious disease planned as
-            the work expands.
+            Oncology is the initial focus. The longer-term scope includes
+            infectious disease.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -30,12 +30,12 @@ export default function NowSection() {
               Explore NaS
             </a>
             <a
-              href="https://github.com/NaS-Research/knowledge-model"
+              href="https://nasresearch.bio/research"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
             >
-              View research systems
+              Explore NaS research
             </a>
           </div>
         </div>

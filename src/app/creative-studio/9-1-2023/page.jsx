@@ -47,7 +47,7 @@ function shuffle(arr) {
 
 export const metadata = {
   title: "Chicago River at Sunset | Photo Album",
-  description: "Sunset skyline stroll along the Chicago River"
+  description: "A sunset skyline stroll along the Chicago River."
 };
 
 export default async function Sep1Album() {

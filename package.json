@@ -11,14 +11,19 @@
     "type": "git",
     "url": "git+https://github.com/AGuyNamedDJ/Personal-Website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Dalron J. Robertson",
+    "biomedical research",
+    "precision medicine",
+    "clinical pharmacy"
+  ],
+  "author": "Dalron J. Robertson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AGuyNamedDJ/Personal-Website/issues"
   },
-  "homepage": "https://github.com/AGuyNamedDJ/Personal-Website#readme",
-  "description": "",
+  "homepage": "https://dalronjrobertson.com",
+  "description": "Personal website for Dalron J. Robertson.",
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.11.2",
     "@tailwindcss/postcss": "^4.1.7",

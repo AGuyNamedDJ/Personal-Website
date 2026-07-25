@@ -68,12 +68,12 @@ export default function WorkPage() {
                 Visit NaS
               </a>
               <a
-                href="https://github.com/NaS-Research"
+                href="https://nasresearch.bio/research"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
               >
-                View the research systems
+                Explore the research
               </a>
             </div>
           </div>

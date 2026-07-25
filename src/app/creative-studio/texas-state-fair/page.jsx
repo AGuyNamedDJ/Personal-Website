@@ -28,7 +28,7 @@ function shuffle(arr) {
 
 export const metadata = {
   title: "Texas State Fair | Photo Album",
-  description: "Photo gallery of the Texas State Fair"
+  description: "Photo gallery from the Texas State Fair."
 };
 
 export default async function TexasStateFairAlbum() {

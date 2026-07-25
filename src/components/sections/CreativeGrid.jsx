@@ -11,7 +11,7 @@ const albumCover = (bucket, key, fallback) =>
 
 const albums = [
   {
-    title: "Masters Graduation",
+    title: "Master's Graduation",
     cover: albumCover(
       process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION,
       "GRADO-6816.jpeg",
@@ -65,7 +65,7 @@ const albums = [
     link: "/creative-studio/9-1-2023"
   },
   {
-    title: "Bachelors Graduation",
+    title: "Bachelor's Graduation",
     cover: albumCover(
       process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_BACHELORS_GRADUATION,
       "GRAD-JSU-O-748.jpeg",
@@ -74,7 +74,7 @@ const albums = [
     link: "/creative-studio/bachelors-graduation"
   },
   {
-    title: "Daddy Daughter Photoshoot",
+    title: "Daddy-Daughter Photo Shoot",
     cover: albumCover(
       process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT,
       "E8-E.jpg",
@@ -136,7 +136,7 @@ export default function CreativeGrid() {
               className="group block transform transition-transform duration-200 hover:scale-[1.025] active:scale-95 active:opacity-80"
             >
               <div className="relative aspect-[4/5] w-full overflow-hidden">
-                {["Masters Graduation", "Gatlinburg 2025", "Texas State Fair", "Daddy Daughter Photoshoot"].includes(album.title) ? (
+                {["Master's Graduation", "Gatlinburg 2025", "Texas State Fair", "Daddy-Daughter Photo Shoot"].includes(album.title) ? (
                   <Image
                     src={album.cover}
                     alt={album.title}

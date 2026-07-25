@@ -1,68 +1,85 @@
 export const metadata = {
-  title: "Privacy Policy | Dalron J. Robertson",
-  description: "Privacy policy detailing how user data is handled on Dalron J. Robertson's personal website.",
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for Dalron J. Robertson's personal website.",
 };
 
 import Footer from "@/components/Footer";
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="pt-24 pb-24 px-4 bg-black text-white">
-      <section className="max-w-3xl mx-auto">
-        <h1 className="text-5xl font-bold mb-10 text-left text-white" style={{ color: '#FFFFFF' }}>Privacy Policy</h1>
+    <main className="bg-black px-4 pb-24 pt-24 text-white">
+      <section className="mx-auto max-w-3xl">
+        <h1 className="mb-4 text-left text-5xl font-bold text-white">
+          Privacy Policy
+        </h1>
+        <p className="text-sm text-neutral-500">Last updated: July 24, 2026</p>
 
         <div className="border-b border-neutral-700 py-8">
-          <p className="mb-6 text-neutral-400 text-left">
-            This Privacy Policy explains how your personal data is collected and used when you visit dalronjrobertson.com.
+          <p className="text-left text-neutral-400">
+            This policy explains how information may be handled when you visit
+            dalronjrobertson.com.
           </p>
         </div>
 
         <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Information Collected</p>
-          <p className="text-neutral-400 text-left">
-            We collect minimal personal data, primarily through forms and analytics. Information collected may include your name, email address, and any details provided through contact forms or inquiries.
+          <h2 className="mb-4 text-left text-3xl font-semibold text-white">
+            Information Collected
+          </h2>
+          <p className="text-left text-neutral-400">
+            This website does not use a direct contact form or collect account
+            information. The hosting provider may collect basic technical data,
+            such as IP address, browser type, device type, and pages visited, for
+            security, reliability, and traffic measurement.
           </p>
         </div>
 
         <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Use of Your Information</p>
-          <p className="text-neutral-400 text-left">
-            Your data is used solely to respond to inquiries, improve the site experience, and for basic analytics purposes.
+          <h2 className="mb-4 text-left text-3xl font-semibold text-white">
+            External Links and Services
+          </h2>
+          <p className="text-left text-neutral-400">
+            The site links to third-party services, including email, social
+            media, booksellers, and related websites. Information you provide
+            after following those links is governed by the privacy policy of
+            that service.
           </p>
         </div>
 
         <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Third-Party Services</p>
-          <p className="text-neutral-400 text-left">
-            We may use third-party services such as analytics providers or form processing services (e.g., Formspree). These services handle data according to their privacy policies.
+          <h2 className="mb-4 text-left text-3xl font-semibold text-white">
+            Cookies
+          </h2>
+          <p className="text-left text-neutral-400">
+            The site itself does not set advertising cookies. The hosting
+            provider or linked third-party services may use cookies under their
+            own policies. You can control cookies through your browser settings.
           </p>
         </div>
 
         <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Cookies</p>
-          <p className="text-neutral-400 text-left">
-            Cookies may be used to track usage patterns and preferences to enhance site performance. You can manage or block cookies through your browser settings.
-          </p>
-        </div>
-
-        <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Your Rights</p>
-          <p className="text-neutral-400 text-left">
-            You have the right to access, modify, or request deletion of your personal data at any time. Please contact us via the Connect page to exercise these rights.
-          </p>
-        </div>
-
-        <div className="border-b border-neutral-700 py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Changes to This Policy</p>
-          <p className="text-neutral-400 text-left">
-            We may update this policy occasionally to reflect changes in practices or legal requirements. Updates will be clearly indicated on this page.
+          <h2 className="mb-4 text-left text-3xl font-semibold text-white">
+            Changes to This Policy
+          </h2>
+          <p className="text-left text-neutral-400">
+            This policy may be updated when the site or its services change. The
+            latest revision date will appear at the top of this page.
           </p>
         </div>
 
         <div className="py-8">
-          <p className="text-3xl font-semibold font-light mb-4 text-white text-left">Contact Information</p>
-          <p className="text-neutral-400 text-left">
-            For any questions regarding your privacy or this policy, please contact us through the Connect page.
+          <h2 className="mb-4 text-left text-3xl font-semibold text-white">
+            Contact
+          </h2>
+          <p className="text-left text-neutral-400">
+            Questions about this policy can be sent to{" "}
+            <a
+              href="mailto:dalronj.robertson@gmail.com"
+              className="text-white underline underline-offset-4"
+            >
+              dalronj.robertson@gmail.com
+            </a>
+            .
           </p>
         </div>
       </section>

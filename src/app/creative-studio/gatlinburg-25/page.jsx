@@ -46,8 +46,8 @@ function shuffle(arr) {
 }
 
 export const metadata = {
-  title: "Gatlinburg | Photo Album",
-  description: "Photo gallery of the Gatlinburg 2025 trip"
+  title: "Gatlinburg 2025 | Photo Album",
+  description: "Photo gallery from a 2025 trip to Gatlinburg."
 };
 
 export default async function GatlinburgAlbum() {

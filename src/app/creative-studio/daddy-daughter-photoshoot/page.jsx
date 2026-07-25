@@ -4,6 +4,11 @@ const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const bucket =
   process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT;
 
+export const metadata = {
+  title: "Daddy-Daughter Photo Shoot | Photo Album",
+  description: "A family photo gallery featuring Dalron and his daughter.",
+};
+
 /** Publicly list all objects (requires bucket policy with s3:ListBucket Allow) */
 async function listAlbumObjects() {
   if (!bucket || !region) return [];
@@ -26,7 +31,7 @@ export default async function DaddyDaughterAlbum() {
         className="whitespace-normal break-words leading-none text-[5rem] md:text-[7rem] font-bold text-center"
         style={{ fontFamily: "Willington", color: "#F9F4EC" }}
       >
-        Daddy Daughter Photoshoot
+        Daddy-Daughter Photo Shoot
       </h1>
 
       <ClientGallery files={files} bucket={bucket} region={region} />

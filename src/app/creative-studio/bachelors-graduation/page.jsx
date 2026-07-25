@@ -52,7 +52,7 @@ function shuffle(arr) {
 
 export const metadata = {
   title: "B.S. in Biology | Photo Album",
-  description: "Celebrating the Bachelors Graduation"
+  description: "Celebrating Dalron's bachelor's degree in biology."
 };
 
 export default async function BachelorsGraduationAlbum() {

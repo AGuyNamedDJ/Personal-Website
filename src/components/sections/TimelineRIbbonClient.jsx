@@ -38,7 +38,7 @@ const entries = [
     year: 2022,
     title: "Software Engineering",
     detail:
-      "Completed full-stack development, algorithms, and systems-design training at the University of Illinois Chicago.",
+      "Completed full-stack development, algorithms, and systems design training at the University of Illinois Chicago.",
   },
   {
     year: 2018,
@@ -49,20 +49,24 @@ const entries = [
 
 export default function TimelineRibbonClient() {
   return (
-      <ol className="space-y-0 border-l border-[#D2C2AA]">
-        {entries.map((entry) => (
-          <li
-            key={`${entry.year}-${entry.title}`}
-            className="relative grid gap-2 border-b border-[#E6DDD0] py-7 pl-8 md:grid-cols-[110px_1fr] md:gap-6"
-          >
-            <span className="absolute -left-2 top-9 h-4 w-4 rounded-full border-4 border-white bg-[#7A5B3A]" />
-            <p className="text-sm font-semibold text-[#7A5B3A]">{entry.year}</p>
-            <div>
-              <h3 className="text-lg font-semibold text-[#241408]">{entry.title}</h3>
-              <p className="mt-1 leading-relaxed text-neutral-700">{entry.detail}</p>
-            </div>
-          </li>
-        ))}
-      </ol>
+    <ol className="space-y-0 border-l border-[#D2C2AA]">
+      {entries.map((entry) => (
+        <li
+          key={`${entry.year}-${entry.title}`}
+          className="relative grid gap-2 border-b border-[#E6DDD0] py-7 pl-8 md:grid-cols-[110px_1fr] md:gap-6"
+        >
+          <span className="absolute -left-2 top-9 h-4 w-4 rounded-full border-4 border-white bg-[#7A5B3A]" />
+          <p className="text-sm font-semibold text-[#7A5B3A]">{entry.year}</p>
+          <div>
+            <h3 className="text-lg font-semibold text-[#241408]">
+              {entry.title}
+            </h3>
+            <p className="mt-1 leading-relaxed text-neutral-700">
+              {entry.detail}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
   );
 }

@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Sitemap | Dalron J. Robertson",
+  title: "Sitemap",
   description: "Website sitemap for Dalron J. Robertson.",
 };
 
@@ -18,39 +19,39 @@ export default function SitemapPage() {
 
         <ul className="text-neutral-400 list-disc pl-8 space-y-4 text-lg leading-relaxed">
           <li>
-            <a href="/" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/" className="hover:underline hover:text-white transition-colors duration-200">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/about" className="hover:underline hover:text-white transition-colors duration-200">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/work" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/work" className="hover:underline hover:text-white transition-colors duration-200">
               Work
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/writing" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/writing" className="hover:underline hover:text-white transition-colors duration-200">
               Writing
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#contact" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/#contact" className="hover:underline hover:text-white transition-colors duration-200">
               Connect
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/legal/privacy" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/legal/privacy" className="hover:underline hover:text-white transition-colors duration-200">
               Privacy Policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/legal/terms" className="hover:underline hover:text-white transition-colors duration-200">
+            <Link href="/legal/terms" className="hover:underline hover:text-white transition-colors duration-200">
               Terms of Service
-            </a>
+            </Link>
           </li>
         </ul>
       </section>

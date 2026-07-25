@@ -52,7 +52,7 @@ function shuffle(arr) {
 
 export const metadata = {
   title: "Apple Day 2023 | Photo Album",
-  description: "Photo gallery from Apple Day 2023"
+  description: "Photo gallery from Apple Day 2023."
 };
 
 export default async function AppleDayAlbum() {

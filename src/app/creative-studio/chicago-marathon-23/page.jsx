@@ -32,7 +32,7 @@ function shuffle(arr) {
 
 export const metadata = {
   title: "Chicago Marathon Week | Photo Album",
-  description: "Highlights from Chicago Marathon Week"
+  description: "Highlights from Chicago Marathon Week."
 };
 
 export default async function ChicagoMarathonAlbum() {

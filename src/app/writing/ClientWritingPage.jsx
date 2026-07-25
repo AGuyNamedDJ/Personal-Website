@@ -67,13 +67,15 @@ const research = [
       "The initial scientific, technical, and organizational direction behind NaS.",
     image: "/assets/images/NaSArticle.png",
     href: "/files/Nas-White-Paper.pdf",
+    linkLabel: "Read the paper",
   },
   {
-    title: "Graduate Research",
+    title: "Graduate Research Poster",
     description:
       "Computational biology research involving bioinformatics, molecular modeling, and therapeutic targets.",
     image: "/assets/images/M.S.Article.png",
     href: "/assets/images/M.S.Article.png",
+    linkLabel: "View the poster",
   },
 ];
 
@@ -162,6 +164,14 @@ export default function ClientWritingPage() {
           <h2 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
             Original scientific work
           </h2>
+          <a
+            href="https://nasresearch.bio/research"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-7 inline-flex rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
+          >
+            Explore NaS research
+          </a>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {research.map((paper) => (
               <a
@@ -174,7 +184,7 @@ export default function ClientWritingPage() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-black">
                   <Image
                     src={paper.image}
-                    alt=""
+                    alt={paper.title}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-contain p-6 transition duration-500 group-hover:scale-[1.02]"
@@ -188,7 +198,7 @@ export default function ClientWritingPage() {
                     {paper.description}
                   </p>
                   <p className="mt-6 text-sm font-semibold text-[#D2C2AA]">
-                    View work →
+                    {paper.linkLabel} →
                   </p>
                 </div>
               </a>

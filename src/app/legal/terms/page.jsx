@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Terms of Service | Dalron J. Robertson",
-  description: "Terms and conditions for using Dalron J. Robertson's personal website.",
+  title: "Terms of Service",
+  description:
+    "Terms and conditions for using Dalron J. Robertson's personal website.",
 };
 
 import Footer from "@/components/Footer";
@@ -15,6 +16,9 @@ export default function TermsPage() {
         >
           Terms of Service
         </h1>
+        <p className="text-center text-sm text-neutral-500">
+          Last updated: July 24, 2026
+        </p>
 
         <p className="text-lg md:text-xl text-white leading-relaxed">
           Below are the terms and conditions for using dalronjrobertson.com.
@@ -27,7 +31,9 @@ export default function TermsPage() {
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Use of Content</p>
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
-          All content is provided for personal, informational use. Reproducing, distributing, or commercial use without explicit permission is prohibited.
+          All content is provided for personal and informational purposes.
+          Commercial use, reproduction, or distribution without explicit
+          permission is prohibited.
         </p>
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Intellectual Property</p>
@@ -35,14 +41,15 @@ export default function TermsPage() {
           All website content, including text, images, graphics, and other materials, is owned by Dalron J. Robertson unless otherwise noted.
         </p>
 
-        <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Third-party Links</p>
+        <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Third-Party Links</p>
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
           This site may contain links to external websites. Dalron J. Robertson isn't responsible for the content or privacy practices of external websites.
         </p>
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Limitation of Liability</p>
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
-          Dalron J. Robertson is not liable for any damages arising from use or inability to use this website or its content.
+          Dalron J. Robertson is not liable for damages arising from the use of,
+          or inability to use, this website or its content.
         </p>
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Changes to These Terms</p>
@@ -52,7 +59,14 @@ export default function TermsPage() {
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Contact</p>
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
-          Any questions regarding these terms can be addressed through the Connect page.
+          Questions about these terms can be sent to{" "}
+          <a
+            href="mailto:dalronj.robertson@gmail.com"
+            className="text-white underline underline-offset-4"
+          >
+            dalronj.robertson@gmail.com
+          </a>
+          .
         </p>
       </section>
       <Footer />

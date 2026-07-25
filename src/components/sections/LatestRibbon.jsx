@@ -15,10 +15,10 @@ const features = [
     eyebrow: "Research",
     title: "Foundational paper",
     description:
-      "The initial scientific and technical direction behind NaS and its research systems.",
+      "Publications and ongoing research from NaS.",
     image: "/assets/images/NaSArticle.png",
-    href: "/files/Nas-White-Paper.pdf",
-    linkLabel: "Read the paper",
+    href: "https://nasresearch.bio/research",
+    linkLabel: "Explore the research",
     external: true,
   },
   {
@@ -58,7 +58,7 @@ export default function LatestRibbon() {
               <div className="relative aspect-[4/3] overflow-hidden bg-[#181615]">
                 <Image
                   src={feature.image}
-                  alt=""
+                  alt={feature.title}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
