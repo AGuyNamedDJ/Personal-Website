@@ -68,7 +68,8 @@ export default function AboutPage() {
           <p className="mt-5 leading-relaxed text-neutral-800">
             The larger purpose is institution building. Through NaS, research,
             clinical practice, and future philanthropy, Dalron aims to create
-            systems that advance knowledge, develop people, and improve medicine.
+            systems that advance knowledge, develop people, and move the life
+            sciences forward.
           </p>
         </div>
       </section>
