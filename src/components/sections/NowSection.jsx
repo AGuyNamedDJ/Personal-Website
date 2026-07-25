@@ -14,10 +14,13 @@ export default function NowSection() {
             Meet Nicole, NaS&apos;s biomedical research agent.
           </h2>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
-            Nicole is being built to organize scientific literature, connect
-            evidence across sources, and support structured investigation in
-            oncology and future disease areas. She is part of the research
-            infrastructure NaS is developing to improve therapeutic decisions.
+            NaS is being developed as a precision-medicine company that turns
+            biomedical evidence into systems for better therapeutic decisions.
+            Oncology is the first clinical focus, followed by infectious
+            disease. Over time, the company is intended to extend across eight
+            research domains, applying the same evidence-driven foundation to a
+            broader range of diseases and therapeutic questions. Nicole is one
+            part of that research infrastructure.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
