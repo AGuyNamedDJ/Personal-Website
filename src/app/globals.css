@@ -44,7 +44,7 @@ body {
 
 /* Headings inherit system font with tight tracking */
 h1, h2, h3, h4, h5, h6 {
-  @apply tracking-tight font-medium text-neutral-900;
+  @apply tracking-tight font-medium;
 }
 
 /* Anchor defaults */

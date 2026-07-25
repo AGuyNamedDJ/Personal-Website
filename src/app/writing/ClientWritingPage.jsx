@@ -1,99 +1,203 @@
-// src/app/writing/ClientWritingPage.jsx
-"use client";
-
-import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import ScrollTransition from "@/components/sections/ScrollTransition";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 
+const books = [
+  {
+    title: "Circuit Breakers: Echoes of Innovation",
+    description:
+      "A story about resilience, medicine, and preserving humanity amid rapid technological change.",
+    image: "/assets/images/CB1.png",
+    links: [
+      {
+        label: "Amazon",
+        href: "https://www.amazon.com/Circuit-Breakers-Innovation-Dalron-Robertson-ebook/dp/B0DQ5RCB3Z/",
+      },
+      {
+        label: "Google Books",
+        href: "https://books.google.com/books?id=6B83EQAAQBAJ&num=6",
+      },
+    ],
+  },
+  {
+    title: "Circuit Breakers: Imperfections",
+    description:
+      "A novel about ambition, ethics, and resilience as medicine and technology advance.",
+    image: "/assets/images/CB2.png",
+    links: [
+      {
+        label: "Amazon",
+        href: "https://www.amazon.com/Circuit-Breakers-Imperfections-Dalron-Robertson/dp/B0F4XWYDJB/",
+      },
+      {
+        label: "Barnes & Noble",
+        href: "https://www.barnesandnoble.com/w/circuit-breakers-dalron-robertson/1147282782",
+      },
+      {
+        label: "Google Books",
+        href: "https://books.google.com/books?id=PU5I0QEACAAJ",
+      },
+    ],
+  },
+  {
+    title: "To Love Ignorantly: Love's Memoir",
+    description:
+      "A personal exploration of vulnerability, faith, connection, and self-discovery.",
+    image: "/assets/images/TLI.png",
+    links: [
+      {
+        label: "Amazon",
+        href: "https://www.amazon.com/Love-Ignorantly-Loves-Memoir-ebook/dp/B0DS1DBR58",
+      },
+      {
+        label: "Barnes & Noble",
+        href: "https://www.barnesandnoble.com/w/to-love-ignorantly-dalron-robertson/1146773973",
+      },
+      {
+        label: "Google Books",
+        href: "https://books.google.com/books/about/To_Love_Ignorantly_Loves_Memoir.html?id=Abg7EQAAQBAJ",
+      },
+    ],
+  },
+];
+
+const research = [
+  {
+    title: "NaS Foundational Paper",
+    description:
+      "The initial scientific, technical, and organizational direction behind NaS.",
+    image: "/assets/images/NaSArticle.png",
+    href: "/files/Nas-White-Paper.pdf",
+  },
+  {
+    title: "Graduate Research",
+    description:
+      "Computational biology research involving bioinformatics, molecular modeling, and therapeutic targets.",
+    image: "/assets/images/M.S.Article.png",
+    href: "/assets/images/M.S.Article.png",
+  },
+];
+
 export default function ClientWritingPage() {
-  // Reference for the first viewport-height section
-  const wrapperRef = React.useRef(null);
-
-  // Fade the hero text out during the first 20 % of that section’s scroll
-  const { scrollYProgress } = useScroll({
-    target: wrapperRef,
-    offset: ["start start", "end start"],
-  });
-  // Text stays at full opacity until 5 % scroll, then fades to 0 by 20 %
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.05, 0.2], [1, 1, 0]);
-
   return (
-    <main className="pt-20 scroll-smooth bg-black text-white">
-      {/* ───── Hero + ScrollTransition share the same background ───── */}
-      <section ref={wrapperRef} className="relative h-screen">
-        {/* Background + later phases */}
-        <ScrollTransition
-          bgImage="/assets/images/JadeCB.png"
-          firstLines={[]}
-          secondLines={[
-            {
-              text: "Books I've written to spark curiosity and inspire fresh perspectives.",
-              className:
-                "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
-            },
-            {
-              text: "Articles that share what I've learned, clearly and thoughtfully.",
-              className:
-                "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
-            },
-            {
-              text: "Original research born from careful study and meaningful insights.",
-              className:
-                "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
-            },
-            {
-              text: "All my writing, together in one place, ready to explore.",
-              className:
-                "text-4xl md:text-5xl w-full max-w-none text-white pl-8 pr-8 md:pl-24 md:pr-24 text-left leading-normal mb-10",
-            },
-          ]}
-          finalImage="/assets/images/CB2.png"
-          books={[
-            {
-              image: "/assets/images/CB1.png",
-              links: {
-                amazon: "https://www.amazon.com/Circuit-Breakers-Innovation-Dalron-Robertson-ebook/dp/B0DQ5RCB3Z/?_encoding=UTF8&pd_rd_w=n7uTL&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=144-6969151-6856136&pd_rd_wg=8RZUK&pd_rd_r=7bc5fc46-9bad-41d7-bc02-3f6a768fd20c&ref_=aufs_ap_sc_dsk",
-                googleBooks: "https://books.google.com/books?id=6B83EQAAQBAJ&num=6",
-              },
-            },
-            {
-              image: "/assets/images/CB2.png",
-              links: {
-                amazon: "https://www.amazon.com/Circuit-Breakers-Imperfections-Dalron-Robertson/dp/B0F4XWYDJB/?_encoding=UTF8&pd_rd_w=n7uTL&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=144-6969151-6856136&pd_rd_wg=8RZUK&pd_rd_r=7bc5fc46-9bad-41d7-bc02-3f6a768fd20c&ref_=aufs_ap_sc_dsk",
-                barnesNoble: "https://www.barnesandnoble.com/w/circuit-breakers-dalron-robertson/1147282782",
-                googleBooks: "https://books.google.com/books?id=PU5I0QEACAAJ&newbks=1&newbks_redir=0&hl=en",
-              },
-            },
-            {
-              image: "/assets/images/TLI.png",
-              links: {
-                amazon: "https://www.amazon.com/Love-Ignorantly-Loves-Memoir-ebook/dp/B0DS1DBR58",
-                barnesNoble: "https://www.barnesandnoble.com/w/to-love-ignorantly-dalron-robertson/1146773973?ean=9798341897038",
-                googleBooks: "https://books.google.com/books/about/To_Love_Ignorantly_Loves_Memoir.html?id=Abg7EQAAQBAJ",
-              },
-            },
-          ]}
+    <main className="bg-black pt-16 text-white">
+      <section className="relative overflow-hidden px-6 py-28 sm:px-10 md:py-40">
+        <Image
+          src="/assets/images/JadeCB.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
         />
-        {/* Hero text overlay (visible on load, fades out) */}
-        <motion.div
-          className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pointer-events-none z-20"
-          style={{ opacity: heroOpacity }}
-        >
-          <p className="text-2xl md:text-3xl font-semibold text-neutral-200">
-            Every Word Matters.
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
+        <div className="relative mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#D2C2AA]">
+            Writing
           </p>
-          <p className="text-[8rem] md:text-[10rem] leading-none font-bold text-white">
-            Every Idea, Powerful.
+          <h1 className="mt-5 max-w-5xl text-6xl font-semibold leading-[0.95] tracking-[-0.045em] text-white md:text-8xl">
+            Ideas made clear through story and research.
+          </h1>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
+            Fiction, personal reflection, and original scientific work by
+            Dalron J. Robertson.
           </p>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-neutral-200">
-            Thoughtful writing crafted to educate, inspire, and make a lasting impact, across various topics and formats.
-          </p>
-        </motion.div>
+        </div>
       </section>
 
-      <div className="h-screen"></div>
+      <section className="bg-[#F9F4EC] px-6 py-24 text-[#241408] sm:px-10 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#7A5B3A]">
+            Books
+          </p>
+          <h2 className="mt-4 text-4xl font-semibold text-[#241408] md:text-6xl">
+            Published work
+          </h2>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {books.map((book) => (
+              <article
+                key={book.title}
+                className="overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white"
+              >
+                <div className="relative aspect-[2/3] bg-black">
+                  <Image
+                    src={book.image}
+                    alt={`${book.title} cover`}
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="object-contain"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-2xl font-semibold text-[#241408]">
+                    {book.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+                    {book.description}
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
+                    {book.links.map((link) => (
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-[#5C3A21]"
+                      >
+                        {link.label} →
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      <section className="px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
+            Research
+          </p>
+          <h2 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
+            Original scientific work
+          </h2>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {research.map((paper) => (
+              <a
+                key={paper.title}
+                href={paper.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group overflow-hidden rounded-3xl border border-white/15 bg-[#181615] no-underline"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                  <Image
+                    src={paper.image}
+                    alt=""
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-contain p-6 transition duration-500 group-hover:scale-[1.02]"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-2xl font-semibold text-white">
+                    {paper.title}
+                  </h3>
+                  <p className="mt-3 leading-relaxed text-neutral-400">
+                    {paper.description}
+                  </p>
+                  <p className="mt-6 text-sm font-semibold text-[#D2C2AA]">
+                    View work →
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }

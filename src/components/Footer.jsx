@@ -33,7 +33,7 @@ export default function Footer() {
           <Link href="/about" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">About</Link>
           <Link href="/work" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Work</Link>
           <Link href="/writing" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Writing</Link>
-          <Link href="/connect" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Connect</Link>
+          <Link href="/#contact" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Connect</Link>
         </nav>
         <nav className="space-y-3 text-sm">
           <a

@@ -1,122 +1,87 @@
-"use client";
+import Image from "next/image";
 
-import React, { useState, useEffect } from "react";
-
-const backgrounds = [
-  { type: "image", src: "/assets/images/NaSArticle.png" },
-  { type: "image", src: "/assets/images/RobertsonFoundation.jpg" },
-  { type: "image", src: "/assets/images/CB.png" },
-  { type: "image", src: "/assets/images/Graduation3.png" },
+const features = [
+  {
+    eyebrow: "Precision medicine",
+    title: "NaS",
+    description:
+      "A company being built to turn biomedical evidence into systems for better therapeutic decisions.",
+    image: "/assets/images/NaSHQ.png",
+    href: "https://nasresearch.bio",
+    linkLabel: "Explore NaS",
+    external: true,
+  },
+  {
+    eyebrow: "Research",
+    title: "Foundational paper",
+    description:
+      "The initial scientific and technical direction behind NaS and its research systems.",
+    image: "/assets/images/NaSArticle.png",
+    href: "/files/Nas-White-Paper.pdf",
+    linkLabel: "Read the paper",
+    external: true,
+  },
+  {
+    eyebrow: "Writing",
+    title: "Circuit Breakers",
+    description:
+      "Stories about medicine, ambition, ethics, resilience, and the choices that shape progress.",
+    image: "/assets/images/CB.png",
+    href: "/writing",
+    linkLabel: "Explore the books",
+    external: false,
+  },
 ];
 
 export default function LatestRibbon() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex(i => (i + 1) % backgrounds.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const bg = backgrounds[index];
-
   return (
-    <section
-      id="latest"
-      className="relative overflow-hidden py-32 min-h-[85vh]"
-    >
-      {index === 0 ? (
-        <>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={bg.src}
-              alt="Research Article"
-              className="max-w-4xl max-h-[65vh] object-contain rounded-lg"
-              style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
-            />
-            <a
-              href="/files/NaSArticle.pdf"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-8 left-8 inline-flex items-center text-sm font-medium text-neutral-900 underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-            >
-              View the White Paper →
-            </a>
-          </div>
-        </>
-      ) : index === 1 ? (
-        <div className="absolute inset-0" style={{ backgroundColor: '#171513' }}>
-          <img
-            src={bg.src}
-            alt="Robertson Foundation"
-            className="absolute inset-0 w-full h-full object-cover scale-[0.8]"
-          />
-          <a
-            href="/work/robertson-foundation"
-            className="absolute bottom-8 left-8 text-white text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-          >
-            Visit the Robertson Foundation →
-          </a>
+    <section id="latest" className="bg-[#F9F4EC] px-6 py-24 sm:px-10 md:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#7A5B3A]">
+            Selected work
+          </p>
+          <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#241408] md:text-6xl">
+            Research, systems, and stories built with purpose.
+          </h2>
         </div>
-      ) : index === 2 ? (
-        <>
-          <h2
-            className="absolute top-0 left-1/2 transform -translate-x-1/2 whitespace-nowrap text-[7rem] tracking-wide z-20"
-            style={{ fontFamily: "Willington", color: "#5C3A21" }}
-          >
-            My Latest Book
-          </h2>
-          <div className="absolute inset-0">
-            <img
-              src={bg.src}
-              alt="Book Cover"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map((feature) => (
             <a
-              href="https://www.amazon.com/gp/product/B0F4XWYDJB?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks"
-              className="absolute bottom-8 left-8 transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-              target="_blank"
-              rel="noopener noreferrer"
+              key={feature.title}
+              href={feature.href}
+              target={feature.external ? "_blank" : undefined}
+              rel={feature.external ? "noopener noreferrer" : undefined}
+              className="group overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white no-underline transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <img
-                src="/assets/images/AmazonButton.png"
-                alt="Buy on Amazon"
-                className="h-8 rounded-2xl"
-              />
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#181615]">
+                <Image
+                  src={feature.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                />
+              </div>
+              <div className="p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7A5B3A]">
+                  {feature.eyebrow}
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-[#241408]">
+                  {feature.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+                  {feature.description}
+                </p>
+                <p className="mt-6 text-sm font-semibold text-[#5C3A21]">
+                  {feature.linkLabel} →
+                </p>
+              </div>
             </a>
-          </div>
-        </>
-      ) : index === 3 ? (
-        <>
-          <h2
-            className="absolute top-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap text-[7rem] text-center leading-[0.8] z-20"
-            style={{
-              fontFamily: "Willington",
-              color: "#4B3018",
-              textShadow: "2px 2px 4px rgba(0,0,0,0.15)"
-            }}
-          >
-            Mississippi College
-            <br />
-            Graduation
-          </h2>
-          <div className="absolute inset-0">
-            <img
-              src={bg.src}
-              alt="Graduation"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <a
-              href="/creative-studio/masters-graduation"
-              className="absolute bottom-8 left-8 text-neutral-900 text-sm font-medium underline transform transition-transform hover:scale-105 active:scale-95 focus:outline-none"
-            >
-              View M.S. Graduation Shoot →
-            </a>
-          </div>
-        </>
-      ) : null}
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

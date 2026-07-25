@@ -17,7 +17,7 @@ export default function TermsPage() {
         </h1>
 
         <p className="text-lg md:text-xl text-white leading-relaxed">
-          Below are the terms and conditions for using dalronrobertson.com.
+          Below are the terms and conditions for using dalronjrobertson.com.
         </p>
 
         <p className="text-3xl font-semibold mt-12 mb-4 text-white border-b pb-2 border-neutral-700">Acceptance of Terms</p>

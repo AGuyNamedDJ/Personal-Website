@@ -4,6 +4,7 @@ const region = process.env.NEXT_PUBLIC_AWS_REGION;
 const bucket = process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION;
 
 async function listAlbumObjects() {
+  if (!bucket || !region) return [];
   const url = `https://${bucket}.s3.${region}.amazonaws.com?list-type=2`;
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) return [];

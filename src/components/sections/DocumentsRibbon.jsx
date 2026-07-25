@@ -1,62 +1,51 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 const documents = [
   {
     label: "Résumé",
     preview: "/assets/images/ResumePreview.png",
-    href: "/files/DJR-Resume.pdf"
+    href: "/files/DJR-Resume.pdf",
   },
   {
-    label: "CV",
+    label: "Curriculum Vitae",
     preview: "/assets/images/CVPreview.png",
-    href: "/files/DJR-CurriculumVitae.pdf"
-  }
+    href: "/files/DJR-CurriculumVitae.pdf",
+  },
 ];
 
-
 export default function DocumentsRibbon() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const t = setInterval(() => setIndex(i => (i + 1) % documents.length), 6000);
-    return () => clearInterval(t);
-  }, []);
-
-  const doc = documents[index];
-
   return (
-    <section className="relative overflow-hidden pt-0 pb-40 min-h-[85vh]">
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-10">
-        <img
-          src={doc.preview}
-          alt={`${doc.label} Preview`}
-          className="max-w-4xl max-h-[65vh] object-contain rounded-lg shadow-lg"
-          style={{ boxShadow: "0 24px 48px rgba(0,0,0,0.14)" }}
-        />
-        <div className="flex gap-8">
-          <motion.a
-            href={doc.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium underline transform transition-transform hover:scale-105"
-            whileTap={{ scale: 0.95, opacity: 0.7 }}
-            transition={{ type: "spring", stiffness: 300 }}
+    <section className="px-6 pb-24 pt-12 sm:px-10 md:pb-32">
+      <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+        {documents.map((document) => (
+          <article
+            key={document.label}
+            className="overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white shadow-sm"
           >
-            View {doc.label}
-          </motion.a>
-          <motion.a
-            href={doc.href}
-            download
-            className="text-sm font-medium underline transform transition-transform hover:scale-105"
-            whileTap={{ scale: 0.95, opacity: 0.7 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            Download {doc.label}
-          </motion.a>
-        </div>
+            <div className="relative aspect-[4/3] bg-[#F4EFE7]">
+              <Image
+                src={document.preview}
+                alt={`${document.label} preview`}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-contain p-5"
+              />
+            </div>
+            <div className="flex items-center justify-between gap-4 p-6">
+              <h3 className="text-xl font-semibold text-[#241408]">
+                {document.label}
+              </h3>
+              <div className="flex gap-4 text-sm font-semibold">
+                <a href={document.href} target="_blank" rel="noopener noreferrer">
+                  View
+                </a>
+                <a href={document.href} download>
+                  Download
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );

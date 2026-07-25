@@ -2,9 +2,9 @@
 import ClientWritingPage from "./ClientWritingPage";
 
 export const metadata = {
-  title: "Writing | Dalron Robertson",
+  title: "Writing",
   description:
-    "Essays, research papers, white papers, and reflections by Dalron Robertson",
+    "Books, research papers, and original writing by Dalron J. Robertson.",
 };
 
 export default function WritingPage() {

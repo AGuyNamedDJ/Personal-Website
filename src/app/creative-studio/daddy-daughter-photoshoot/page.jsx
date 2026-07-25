@@ -6,8 +6,11 @@ const bucket =
 
 /** Publicly list all objects (requires bucket policy with s3:ListBucket Allow) */
 async function listAlbumObjects() {
+  if (!bucket || !region) return [];
   const url = `https://${bucket}.s3.${region}.amazonaws.com?list-type=2`;
-  const xml = await fetch(url).then((r) => r.text());
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) return [];
+  const xml = await res.text();
 
   return [...xml.matchAll(/<Key>([^<]+)<\/Key>/g)]
     .map((m) => m[1])

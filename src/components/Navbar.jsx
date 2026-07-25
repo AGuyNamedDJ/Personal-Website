@@ -28,12 +28,12 @@ export default function Navbar() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-40 bg-transparent transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center h-16">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center px-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
           <Image
             src="/assets/images/IMG_6414.jpeg"
-            alt="Logo"
+            alt="Dalron J. Robertson"
             width={40}
             height={40}
             className="rounded-full object-cover"
@@ -42,18 +42,18 @@ export default function Navbar() {
         </Link>
 
         {/* Individual pill links */}
-        <ul className="ml-8 flex gap-3 text-sm font-medium">
+        <ul className="ml-auto flex items-center gap-1 text-xs font-medium sm:gap-2 sm:text-sm">
           <li>
-            <Link href="/about"   className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">About</Link>
+            <Link href="/about" className="rounded-md border border-black/10 bg-[#F9F4EC]/95 px-2.5 py-1.5 no-underline shadow transition hover:bg-[#D2C2AA] sm:px-4">About</Link>
           </li>
           <li>
-            <Link href="/work"    className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Work</Link>
+            <Link href="/work" className="rounded-md border border-black/10 bg-[#F9F4EC]/95 px-2.5 py-1.5 no-underline shadow transition hover:bg-[#D2C2AA] sm:px-4">Work</Link>
           </li>
           <li>
-            <Link href="/writing" className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Writing</Link>
+            <Link href="/writing" className="rounded-md border border-black/10 bg-[#F9F4EC]/95 px-2.5 py-1.5 no-underline shadow transition hover:bg-[#D2C2AA] sm:px-4">Writing</Link>
           </li>
-          <li>
-            <Link href="/#contact" className="px-4 py-1 rounded-md bg-[#F9F4EC]/90 border border-black/10 shadow hover:bg-[#D2C2AA] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 active:bg-[#BFAF8F] active:opacity-80">Connect</Link>
+          <li className="hidden sm:block">
+            <Link href="/#contact" className="rounded-md border border-black/10 bg-[#F9F4EC]/95 px-4 py-1.5 no-underline shadow transition hover:bg-[#D2C2AA]">Connect</Link>
           </li>
         </ul>
       </nav>

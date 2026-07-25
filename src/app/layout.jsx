@@ -1,34 +1,28 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 export const metadata = {
-  /* ---------- Basic identity ---------- */
-  title: "Dalron J. Robertson | AI/ML Researcher, Engineer & Founder of NaS",
+  title: {
+    default: "Dalron J. Robertson | Biomedical Researcher and Founder",
+    template: "%s | Dalron J. Robertson",
+  },
   description:
-    "AI/ML researcher, engineer, and founder advancing innovation across life sciences, healthcare technology, computational biology, pharmacology, and intelligent systems.",
+    "Biomedical researcher, software engineer, PharmD/MBA candidate, and founder of NaS, focused on precision medicine and better therapeutic decisions.",
   authors: [
     { name: "Dalron J. Robertson", url: "https://dalronjrobertson.com" },
   ],
   keywords: [
     "Dalron J. Robertson",
     "Dalron Robertson",
-    "AGNDJ",
-    "A Guy Named DJ",
     "NaS",
-    "Nicole Antoinette Shaw",
-    "Nicole",
-    "Dalron",
-    "AI pharmacology",
+    "biomedical research",
     "computational biology",
-    "machine learning",
+    "clinical pharmacy",
     "drug discovery",
-    "life-science research",
-    "high-performance computing",
-    "biomedical engineering",
-    "scientific research",
-    "health technology",
     "precision medicine",
-    "quantum computing",
-    "bioinformatics"
+    "translational science",
+    "bioinformatics",
+    "oncology",
+    "infectious disease",
   ],
   metadataBase: new URL("https://dalronjrobertson.com"),
 
@@ -43,14 +37,14 @@ export const metadata = {
   openGraph: {
     title: "Dalron J. Robertson",
     description:
-      "Researcher and engineer creating intelligent systems for groundbreaking discoveries in biology, medicine, and AI-driven pharmacology.",
+      "Biomedical researcher, software engineer, PharmD/MBA candidate, and founder of NaS.",
     url: "https://dalronjrobertson.com",
     siteName: "Dalron J. Robertson",
     locale: "en_US",
     type: "profile",
     images: [
       {
-        url: new URL("/og.png", new URL("https://dalronrobertson.com")).href,
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Dalron J. Robertson site preview",
@@ -61,58 +55,13 @@ export const metadata = {
 
   /* ---------- SEO helpers ---------- */
   alternates: {
-    canonical: "https://dalronrobertson.com",
+    canonical: "https://dalronjrobertson.com",
   },
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
   },
-
-  /* ---------- Structured Data (JSON-LD) ---------- */
-  structuredData: {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dalron J. Robertson",
-    "url": "https://dalronrobertson.com",
-    "sameAs": [
-      "https://linkedin.com/in/dalronjrobertson",
-      "https://instagram.com/AGuyNamedDJ"
-    ],
-    "jobTitle": "Researcher and Engineer",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "NaS"
-    },
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "Chicago State University"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "Jackson State University"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "Mississippi College"
-      }
-    ],
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Scale AI"
-      },
-      {
-        "@type": "Organization",
-        "name": "Medication Management Partners"
-      },
-      {
-        "@type": "Organization",
-        "name": "CVS Pharmacy"
-      }
-    ]
-  }
 };
 
 export const viewport = {
@@ -120,6 +69,28 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Dalron J. Robertson",
+    url: "https://dalronjrobertson.com",
+    sameAs: [
+      "https://github.com/AGuyNamedDJ",
+      "https://www.linkedin.com/in/dalronjrobertson/",
+      "https://www.instagram.com/aguynameddj/",
+      "https://www.youtube.com/@AGNDJ",
+    ],
+    jobTitle: "Biomedical Researcher and Pharmacy Intern",
+    worksFor: [
+      { "@type": "Organization", name: "UChicago Medicine" },
+      { "@type": "Organization", name: "NaS" },
+    ],
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Jackson State University" },
+      { "@type": "CollegeOrUniversity", name: "Mississippi College" },
+    ],
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -131,8 +102,12 @@ export default function RootLayout({ children }) {
         <link rel="mask-icon" href="/favicon.svg" color="#000000" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#000000" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
       </head>
-      <body className="bg-red-500 min-h-screen antialiased">
+      <body className="min-h-screen bg-white antialiased">
         <Navbar />
         {children}
       </body>

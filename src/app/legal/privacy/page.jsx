@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="border-b border-neutral-700 py-8">
           <p className="mb-6 text-neutral-400 text-left">
-            This Privacy Policy explains how your personal data is collected and used when you visit dalronrobertson.com.
+            This Privacy Policy explains how your personal data is collected and used when you visit dalronjrobertson.com.
           </p>
         </div>
 

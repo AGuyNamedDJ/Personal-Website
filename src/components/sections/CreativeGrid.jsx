@@ -4,51 +4,87 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 const region = process.env.NEXT_PUBLIC_AWS_REGION;
+const albumCover = (bucket, key, fallback) =>
+  bucket && region
+    ? `https://${bucket}.s3.${region}.amazonaws.com/${key}`
+    : fallback;
+
 const albums = [
   {
     title: "Masters Graduation",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION}.s3.${region}.amazonaws.com/GRADO-6816.jpeg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION,
+      "GRADO-6816.jpeg",
+      "/assets/images/Graduation3.png"
+    ),
     link: "/creative-studio/masters-graduation"
   },
   {
     title: "Gatlinburg 2025",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25}.s3.${region}.amazonaws.com/GATO-6617.jpeg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25,
+      "GATO-6617.jpeg",
+      "/assets/images/Graduation1.png"
+    ),
     link: "/creative-studio/gatlinburg-25"
   },
   {
     title: "Apple Day 2023",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_APPLE_DAY_23}.s3.${region}.amazonaws.com/ADO-93.jpeg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_APPLE_DAY_23,
+      "ADO-93.jpeg",
+      "/assets/images/IMG_6414.JPG"
+    ),
     link: "/creative-studio/apple-day-23"
   },
   {
     title: "Chicago Marathon 2023",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_CHICAGO_MARATHON_23}.s3.${region}.amazonaws.com/CMO-21.png`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_CHICAGO_MARATHON_23,
+      "CMO-21.png",
+      "/assets/images/Graduation2.png"
+    ),
     link: "/creative-studio/chicago-marathon-23"
   },
   {
     title: "Texas State Fair",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR}.s3.${region}.amazonaws.com/Texas-State-Fair-82.jpg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR,
+      "Texas-State-Fair-82.jpg",
+      "/assets/images/CB.png"
+    ),
     link: "/creative-studio/texas-state-fair"
   },
   {
     title: "9-1-23",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023}.s3.${region}.amazonaws.com/Sep1O-107.jpeg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023,
+      "Sep1O-107.jpeg",
+      "/assets/images/Hero.png"
+    ),
     link: "/creative-studio/9-1-2023"
   },
   {
     title: "Bachelors Graduation",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_BACHELORS_GRADUATION}.s3.${region}.amazonaws.com/GRAD-JSU-O-748.jpeg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_BACHELORS_GRADUATION,
+      "GRAD-JSU-O-748.jpeg",
+      "/assets/images/Graduation.jpeg"
+    ),
     link: "/creative-studio/bachelors-graduation"
   },
   {
     title: "Daddy Daughter Photoshoot",
-    cover: `https://${process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT}.s3.${region}.amazonaws.com/E8-E.jpg`,
+    cover: albumCover(
+      process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT,
+      "E8-E.jpg",
+      "/assets/images/RobertsonFoundation.jpg"
+    ),
     link: "/creative-studio/daddy-daughter-photoshoot"
   }
 ];
 
 export default function CreativeGrid() {
-  console.log("CreativeGrid config → region:", region, "albums:", albums);
   const [pageIndex, setPageIndex] = useState(0);
 
   const pages = React.useMemo(() => {
