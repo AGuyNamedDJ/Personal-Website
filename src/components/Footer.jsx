@@ -79,11 +79,11 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiLinkedin size={24} />
           </a>
-          <a href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiYoutube size={24} />
-          </a>
           <a href="https://dalronrobertson.substack.com" target="_blank" rel="noopener noreferrer" aria-label="Substack" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <SiSubstack size={24} />
+          </a>
+          <a href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
+            <SiYoutube size={24} />
           </a>
         </div>
       </div>
