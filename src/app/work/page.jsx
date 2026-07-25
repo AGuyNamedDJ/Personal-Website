@@ -161,26 +161,30 @@ export default function WorkPage() {
               </div>
             </div>
 
-            <div className="relative flex min-h-[360px] flex-col justify-between overflow-hidden bg-[#D2C2AA] p-8 text-[#241408] sm:p-12">
-              <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full border border-[#5C3A21]/25" />
-              <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full border border-[#5C3A21]/30" />
-              <p className="relative z-10 w-fit rounded-full border border-[#5C3A21]/30 bg-[#F9F4EC]/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]">
-                In development
+            <div className="relative overflow-hidden border-t border-white/15 bg-[#D2C2AA] px-8 py-12 text-[#241408] sm:px-12 md:py-16 lg:border-l lg:border-t-0">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6B4B30]">
+                The Robertson Foundation
               </p>
-              <div className="relative z-10">
-                <p
-                  className="text-5xl leading-none text-[#5C3A21] sm:text-6xl"
-                  style={{ fontFamily: "Willington" }}
-                >
-                  Robertson
-                </p>
-                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#5C3A21]">
-                  Foundation
-                </p>
-                <p className="mt-8 max-w-sm text-sm leading-relaxed text-[#5C3A21]/80">
-                  A future institution for creative expression, public culture,
-                  and stronger communities.
-                </p>
+              <p className="mt-6 max-w-xl text-3xl font-semibold leading-tight tracking-[-0.025em] sm:text-4xl">
+                A lasting home for creative work, shared history, and community
+                life.
+              </p>
+
+              <div className="mt-14 grid gap-8 border-t border-[#5C3A21]/30 pt-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6B4B30]">
+                    Status
+                  </p>
+                  <p className="mt-2 text-sm font-medium">In development</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6B4B30]">
+                    Purpose
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed">
+                    To help meaningful cultural and community work endure.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
