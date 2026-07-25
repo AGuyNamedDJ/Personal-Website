@@ -139,14 +139,6 @@ export default function ClientWritingPage() {
             Fiction, personal reflection, and original scientific work by
             Dalron J. Robertson.
           </p>
-          <a
-            href="https://dalronrobertson.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center rounded-full border border-[#D2C2AA]/60 bg-[#D2C2AA] px-6 py-3 text-sm font-semibold text-[#241408] no-underline transition hover:bg-[#F9F4EC]"
-          >
-            Read on Substack →
-          </a>
         </div>
       </section>
 
@@ -184,6 +176,31 @@ export default function ClientWritingPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#D2C2AA] px-6 py-24 text-[#241408] sm:px-10 md:py-28">
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_auto] md:items-end">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#6B4B30]">
+              Essays &amp; Notes
+            </p>
+            <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
+              Ideas beyond the finished work.
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#493421]">
+              Essays, reflections, and developing thoughts on science, life,
+              creativity, and the work still taking shape.
+            </p>
+          </div>
+          <a
+            href="https://dalronrobertson.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center rounded-full bg-[#241408] px-7 py-4 text-sm font-semibold text-white no-underline transition hover:bg-black"
+          >
+            Read on Substack →
+          </a>
         </div>
       </section>
 
