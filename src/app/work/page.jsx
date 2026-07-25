@@ -122,36 +122,68 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section id="robertson-foundation" className="bg-[#F9F4EC] px-6 py-24 text-[#241408] sm:px-10 md:py-32">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#7A5B3A]">
-              Community
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold text-[#241408] md:text-6xl">
-              Robertson Foundation
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-700">
-              The Robertson Foundation supports the arts, humanities, and
-              community vitality through grants, events, and collaborative
-              initiatives that nurture creative expression.
-            </p>
-            <a
-              href="https://robertsonfoundation.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-full border border-[#5C3A21] px-6 py-3 text-sm font-semibold text-[#5C3A21] no-underline transition hover:bg-[#5C3A21] hover:text-white"
-            >
-              Visit the foundation
-            </a>
+      <section
+        id="robertson-foundation"
+        className="bg-[#F9F4EC] px-6 py-24 text-[#241408] sm:px-10 md:py-32"
+      >
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-[#5C3A21]/15 bg-[#241408] text-white shadow-2xl">
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="px-8 py-12 sm:px-12 md:py-16 lg:px-16">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
+                Long-term institution building
+              </p>
+              <h2 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
+                Building enduring support for culture and community.
+              </h2>
+              <p className="mt-7 max-w-2xl text-lg leading-relaxed text-neutral-300">
+                The Robertson Foundation is being developed to support the arts,
+                humanities, and community vitality through grants, events, and
+                collaborative initiatives that help creative work and local
+                institutions endure.
+              </p>
+
+              <div className="mt-10 grid gap-4 sm:grid-cols-3">
+                {[
+                  ["01", "Arts"],
+                  ["02", "Humanities"],
+                  ["03", "Community vitality"],
+                ].map(([number, label]) => (
+                  <div
+                    key={number}
+                    className="border-t border-white/25 pt-4"
+                  >
+                    <p className="text-xs font-semibold text-[#D2C2AA]">
+                      {number}
+                    </p>
+                    <p className="mt-2 font-semibold text-white">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative flex min-h-[360px] flex-col justify-between overflow-hidden bg-[#D2C2AA] p-8 text-[#241408] sm:p-12">
+              <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full border border-[#5C3A21]/25" />
+              <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full border border-[#5C3A21]/30" />
+              <p className="relative z-10 w-fit rounded-full border border-[#5C3A21]/30 bg-[#F9F4EC]/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]">
+                In development
+              </p>
+              <div className="relative z-10">
+                <p
+                  className="text-5xl leading-none text-[#5C3A21] sm:text-6xl"
+                  style={{ fontFamily: "Willington" }}
+                >
+                  Robertson
+                </p>
+                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.35em] text-[#5C3A21]">
+                  Foundation
+                </p>
+                <p className="mt-8 max-w-sm text-sm leading-relaxed text-[#5C3A21]/80">
+                  A future institution for creative expression, public culture,
+                  and stronger communities.
+                </p>
+              </div>
+            </div>
           </div>
-          <Image
-            src="/assets/images/RobertsonFoundation.jpg"
-            alt="Robertson Foundation"
-            width={1000}
-            height={700}
-            className="w-full rounded-3xl object-cover shadow-xl"
-          />
         </div>
       </section>
 
