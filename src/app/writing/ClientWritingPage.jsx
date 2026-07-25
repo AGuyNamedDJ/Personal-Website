@@ -139,6 +139,14 @@ export default function ClientWritingPage() {
             Fiction, personal reflection, and original scientific work by
             Dalron J. Robertson.
           </p>
+          <a
+            href="https://dalronrobertson.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center rounded-full border border-[#D2C2AA]/60 bg-[#D2C2AA] px-6 py-3 text-sm font-semibold text-[#241408] no-underline transition hover:bg-[#F9F4EC]"
+          >
+            Read on Substack →
+          </a>
         </div>
       </section>
 
