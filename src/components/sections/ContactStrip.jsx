@@ -12,12 +12,22 @@ export default function ContactStrip() {
           Reach out about research, professional opportunities, speaking, or
           thoughtful collaboration.
         </p>
+        <p className="mt-5 text-sm text-neutral-600">
+          Email{" "}
+          <a
+            href="mailto:dalronj.robertson@gmail.com?subject=Professional%20Inquiry%20from%20dalronjrobertson.com"
+            className="font-semibold text-[#5C3A21] underline decoration-[#7A5B3A]/50 underline-offset-4 transition hover:text-[#241408]"
+          >
+            dalronj.robertson@gmail.com
+          </a>
+        </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
           <a
-            href="mailto:dalronj.robertson@gmail.com"
-            className="rounded-full bg-[#241408] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-black"
+            href="mailto:dalronj.robertson@gmail.com?subject=Professional%20Inquiry%20from%20dalronjrobertson.com"
+            aria-label="Send an email to Dalron J. Robertson"
+            className="inline-flex justify-center rounded-full bg-[#241408] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-black"
           >
-            Send an email
+            Email Dalron
           </a>
           <a
             href="https://www.linkedin.com/in/dalronjrobertson/"
