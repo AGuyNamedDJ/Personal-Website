@@ -81,7 +81,7 @@ const research = [
 
 function BookCard({ book, duplicate = false }) {
   return (
-    <article className="book-carousel-card overflow-hidden rounded-3xl border border-[#D2C2AA] bg-white shadow-lg">
+    <article className="book-carousel-card overflow-hidden rounded-3xl border border-white/10 bg-[#E8DCC9] shadow-2xl">
       <div className="relative aspect-[2/3] bg-black">
         <Image
           src={book.image}
@@ -117,7 +117,7 @@ function BookCard({ book, duplicate = false }) {
 
 export default function ClientWritingPage() {
   return (
-    <main className="bg-black pt-16 text-white">
+    <main className="bg-[#0B0908] pt-20 text-white">
       <section className="relative overflow-hidden px-6 py-28 sm:px-10 md:py-40">
         <Image
           src="/assets/images/JadeCB.png"
@@ -142,15 +142,15 @@ export default function ClientWritingPage() {
         </div>
       </section>
 
-      <section className="bg-[#F9F4EC] px-6 py-24 text-[#241408] sm:px-10 md:py-32">
+      <section className="border-y border-white/10 bg-[#15110E] px-6 py-24 text-[#F3EBDD] sm:px-10 md:py-32">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#7A5B3A]">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
             Books
           </p>
-          <h2 className="mt-4 text-4xl font-semibold text-[#241408] md:text-6xl">
+          <h2 className="mt-5 text-5xl font-semibold tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
             Published work
           </h2>
-          <p className="mt-5 text-sm text-neutral-600">
+          <p className="mt-5 text-sm text-[#AFA08D]">
             Hover over a book to pause the carousel and explore.
           </p>
         </div>
@@ -179,16 +179,16 @@ export default function ClientWritingPage() {
         </div>
       </section>
 
-      <section className="bg-[#D2C2AA] px-6 py-24 text-[#241408] sm:px-10 md:py-28">
+      <section className="bg-[#1C1510] px-6 py-24 text-[#F3EBDD] sm:px-10 md:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#6B4B30]">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
               Essays &amp; Notes
             </p>
-            <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
+            <h2 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
               Whatever is worth writing down.
             </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#493421]">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#BFAF9B]">
               Personal reflections, observations, ideas, and the occasional
               deep dive into whatever has my attention.
             </p>
@@ -197,14 +197,14 @@ export default function ClientWritingPage() {
             href="https://dalronrobertson.substack.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-fit items-center rounded-full bg-[#241408] px-7 py-4 text-sm font-semibold text-white no-underline transition hover:bg-black"
+            className="inline-flex w-fit items-center rounded-full bg-[#E8DCC9] px-7 py-4 text-sm font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]"
           >
             Read on Substack →
           </a>
         </div>
       </section>
 
-      <section className="px-6 py-24 sm:px-10 md:py-32">
+      <section id="research" className="px-6 py-24 sm:px-10 md:py-32">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
             Research

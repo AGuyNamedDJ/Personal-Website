@@ -13,7 +13,11 @@
    Global design tokens
    ────────────────────────────*/
 :root {
-  --accent-gold: #d4af37;
+  --accent-gold: #a99478;
+  --ink: #0b0908;
+  --espresso: #18130f;
+  --cream: #fff9f0;
+  --sand: #e8dcc9;
 }
 
 html {
@@ -22,7 +26,7 @@ html {
 
 ::selection {
   background-color: var(--accent-gold);
-  color: #ffffff;
+  color: #0b0908;
 }
 
 /* Utility class for the dark footer */
@@ -36,7 +40,9 @@ html {
 
 /* Default font for body text */
 body {
-  @apply bg-white text-neutral-900 leading-relaxed overflow-x-hidden;
+  @apply leading-relaxed overflow-x-hidden;
+  background: var(--ink);
+  color: var(--cream);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -50,6 +56,36 @@ h1, h2, h3, h4, h5, h6 {
 /* Anchor defaults */
 a:not(.no-underline) {
   @apply underline-offset-4 transition;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #d8c7af;
+  outline-offset: 4px;
+}
+
+* {
+  scrollbar-color: #6f5a43 #0b0908;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0908;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #0b0908;
+  border-radius: 999px;
+  background: #6f5a43;
 }
 
 /* Section block helper with consistent vertical padding */

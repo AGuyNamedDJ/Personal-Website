@@ -1,98 +1,211 @@
 import Image from "next/image";
-import Footer from "../../components/Footer";
-import TimelineRibbonClient from "../../components/sections/TimelineRIbbonClient.jsx";
-import DocumentsRibbon from "../../components/sections/DocumentsRibbon.jsx";
+import Footer from "@/components/Footer";
+import TimelineRibbonClient from "@/components/sections/TimelineRIbbonClient";
+import DocumentsRibbon from "@/components/sections/DocumentsRibbon";
 
 export const metadata = {
   title: "About",
-  description: "Dalron J. Robertson is a biomedical researcher, software engineer, PharmD/MBA candidate, and founder of NaS.",
+  description:
+    "Dalron J. Robertson is a scientist, founder, writer, and builder based in Chicago.",
   keywords: [
     "Dalron J. Robertson",
-    "About Dalron Robertson",
-    "Pharm.D. candidate",
-    "biomedical scientist",
-    "clinical pharmacologist",
-    "computational biology",
-    "drug discovery",
-    "bioinformatics",
+    "Dalron Robertson",
+    "scientist",
+    "founder",
+    "writer",
+    "clinical pharmacy",
     "precision medicine",
-    "translational science",
+    "institution building",
   ],
   alternates: {
     canonical: "https://dalronjrobertson.com/about",
   },
 };
 
+const principles = [
+  {
+    number: "01",
+    title: "Stay close to reality.",
+    body:
+      "Clinical work keeps larger decisions connected to patients, professionals, and the systems people depend on.",
+  },
+  {
+    number: "02",
+    title: "Build for continuity.",
+    body:
+      "The strongest work should remain useful after a job changes, a product evolves, or the founder steps away.",
+  },
+  {
+    number: "03",
+    title: "Create room for others.",
+    body:
+      "Knowledge, ownership, capital, and institutions matter most when they expand what other people can do.",
+  },
+  {
+    number: "04",
+    title: "Keep a whole life.",
+    body:
+      "Family, faith, beauty, rest, travel, culture, and play are not distractions from a meaningful life.",
+  },
+];
+
 export default function AboutPage() {
   return (
-    <main className="scroll-smooth bg-[#F9F4EC] pt-16">
-      <section className="mx-auto max-w-6xl px-6 pb-12 pt-20 sm:px-10 md:pb-16 md:pt-28">
-        <h1
-          className="text-6xl font-normal leading-none md:text-8xl"
-          style={{ fontFamily: "Willington", color: "#5C3A21" }}
-        >
-          About Dalron
-        </h1>
-      </section>
-
-      <section className="mx-auto grid max-w-6xl gap-10 px-6 pb-24 sm:px-10 md:grid-cols-[320px_1fr] md:gap-16">
-        <Image
-          src="/assets/images/Graduation.jpeg"
-          alt="Dalron J. Robertson"
-          width={640}
-          height={800}
-          className="aspect-[4/5] w-full rounded-3xl object-cover shadow-lg"
-        />
-        <div className="max-w-3xl">
-          <h2 className="text-3xl font-semibold text-[#241408] md:text-4xl">
-            Scientist, clinician in training, and builder.
-          </h2>
-          <p className="mt-6 leading-relaxed text-neutral-800">
-            Dalron J. Robertson is a biomedical researcher, software engineer,
-            PharmD/MBA candidate, and founder of NaS. His work focuses on
-            precision medicine, translational science, clinical pharmacy, and
-            computational approaches to biomedical research.
+    <main className="bg-[#0B0908] pt-20 text-[#F3EBDD]">
+      <section className="px-6 pb-24 pt-24 sm:px-10 md:pb-32 md:pt-36">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+            About Dalron
           </p>
-          <p className="mt-5 leading-relaxed text-neutral-800">
-            His background includes biological science, health-system pharmacy,
-            software engineering, molecular modeling, bioinformatics, and
-            business. Clinical work at UChicago Medicine provides a direct view
-            of patients, medication systems, and the consequences of therapeutic
-            decisions. Industry mentorship through Astellas has expanded his
-            understanding of translational medicine, applied safety, quality,
-            biomarkers, and drug development.
-          </p>
-          <p className="mt-5 leading-relaxed text-neutral-800">
-            Oncology is the initial clinical and scientific focus. Over time,
-            the work will extend into infectious disease and other areas where
-            biomarkers, real-world evidence, and biomedical data can improve
-            patient selection, treatment strategy, dosing, and response.
-          </p>
-          <p className="mt-5 leading-relaxed text-neutral-800">
-            The larger purpose is institution building. Through NaS, research,
-            clinical practice, and future philanthropy, Dalron aims to create
-            systems that advance knowledge, develop people, and move the life
-            sciences forward.
-          </p>
+          <h1 className="mt-6 max-w-6xl text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.86] tracking-[-0.065em] text-[#FFF9F0]">
+            A life organized around building.
+          </h1>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-24 sm:px-10">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-12 text-3xl font-semibold text-[#241408] md:text-4xl">
-            Key Milestones
-          </h2>
-          <TimelineRibbonClient />
+      <section className="border-y border-white/10 bg-[#15110E] px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.78fr_1.22fr]">
+          <div className="relative min-h-[660px] overflow-hidden rounded-[2rem]">
+            <Image
+              src="/assets/images/Graduation.jpeg"
+              alt="Dalron J. Robertson"
+              fill
+              priority
+              sizes="(min-width: 1024px) 42vw, 100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#FFF9F0] md:text-6xl">
+              Scientist by training. Builder by instinct.
+            </h2>
+            <p className="mt-7 text-xl leading-relaxed text-[#D2C4B1]">
+              Dalron J. Robertson is a scientist, founder, writer, and builder
+              based in Chicago. His current work is grounded in clinical
+              pharmacy, biomedical research, and precision medicine.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-[#B2A38F]">
+              That foundation supports a larger purpose: creating companies,
+              systems, bodies of work, and institutions that advance knowledge,
+              develop people, and produce value that can endure.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-[#B2A38F]">
+              His background spans biological science, health-system pharmacy,
+              software engineering, molecular modeling, bioinformatics,
+              business, writing, and photography. These are not separate
+              identities. They are different tools used to understand problems
+              and build responses.
+            </p>
+          </div>
         </div>
       </section>
-      <section className="mx-auto max-w-3xl px-6 pb-0 pt-24 text-center sm:px-10">
-        <h2 className="mb-3 text-3xl font-semibold">Professional Credentials</h2>
-        <p className="text-neutral-700">
-          Download the documents outlining Dalron&apos;s education, experience,
-          and projects.
-        </p>
+
+      <section className="bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <article className="rounded-[2rem] border border-white/10 bg-[#15110E] p-8 sm:p-12">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#A99478]">
+                The current chapter
+              </p>
+              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-[#FFF9F0]">
+                Learning deeply and building carefully.
+              </h2>
+              <p className="mt-6 leading-relaxed text-[#BFAF9B]">
+                Clinical work at UChicago Medicine provides a direct view of
+                patients, medication systems, and the consequences of
+                therapeutic decisions. PharmD/MBA training at Chicago State
+                University continues the clinical and business foundation.
+              </p>
+              <p className="mt-5 leading-relaxed text-[#968775]">
+                Industry mentorship through Astellas has expanded Dalron&apos;s
+                understanding of translational medicine, applied safety,
+                quality, biomarkers, and drug development. NaS is where those
+                lessons begin taking institutional form.
+              </p>
+            </article>
+
+            <article className="rounded-[2rem] border border-[#8E6745]/40 bg-[#21170F] p-8 sm:p-12">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#BFA98B]">
+                The long view
+              </p>
+              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-[#FFF9F0]">
+                A life larger than one profession.
+              </h2>
+              <p className="mt-6 leading-relaxed text-[#CDBEAA]">
+                Oncology is the first deep clinical focus, followed by
+                infectious disease. Beyond medicine, the longer horizon
+                includes companies, property, scholarship, philanthropy,
+                culture, and institutions capable of continuing useful work.
+              </p>
+              <p className="mt-5 leading-relaxed text-[#9F8E79]">
+                The aim is not to collect titles. It is to retain enough
+                independence to choose meaningful work, remain close to human
+                reality, and direct knowledge and resources toward a longer
+                future for other people.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
-      <DocumentsRibbon />
+
+      <section className="border-y border-white/10 bg-[#18130F] px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+            Working principles
+          </p>
+          <h2 className="mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+            The standard behind the work.
+          </h2>
+
+          <div className="mt-14 grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 md:grid-cols-2 xl:grid-cols-4">
+            {principles.map((principle) => (
+              <article key={principle.number} className="bg-[#0F0C0A] p-8">
+                <p className="text-xs font-semibold text-[#8E7457]">
+                  {principle.number}
+                </p>
+                <h3 className="mt-12 text-2xl font-semibold text-[#FFF9F0]">
+                  {principle.title}
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-[#AFA08D]">
+                  {principle.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+            Milestones
+          </p>
+          <h2 className="mt-5 text-5xl font-semibold tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+            The path so far.
+          </h2>
+          <div className="mt-14">
+            <TimelineRibbonClient />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#15110E] px-6 py-24 sm:px-10 md:py-32">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+            Professional documents
+          </p>
+          <h2 className="mt-5 text-5xl font-semibold tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+            The detailed record.
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-[#AFA08D]">
+            View or download the résumé and curriculum vitae for education,
+            experience, research, and professional work.
+          </p>
+        </div>
+        <DocumentsRibbon />
+      </section>
 
       <Footer />
     </main>

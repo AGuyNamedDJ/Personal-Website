@@ -14,8 +14,8 @@ import { HiOutlineArrowCircleUp } from "react-icons/hi";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="mx-auto px-6 max-w-6xl grid gap-12 md:grid-cols-5 justify-items-center items-start">
+    <footer className="border-t border-white/10 bg-[#080706] py-16 text-white">
+      <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-5 md:items-start md:justify-items-center">
         <div className="justify-self-start">
           <Link href="/">
             <div className="w-12 h-12 rounded-full overflow-hidden transform transition-transform duration-200 ease-out hover:scale-105">
@@ -35,6 +35,7 @@ export default function Footer() {
           <Link href="/about" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">About</Link>
           <Link href="/work" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Work</Link>
           <Link href="/writing" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Writing</Link>
+          <Link href="/life" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Life</Link>
           <Link href="/#contact" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Connect</Link>
         </nav>
         <nav className="space-y-3 text-sm">
@@ -68,8 +69,8 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="mt-12 border-t border-neutral-800 pt-8 text-center">
-        <p className="mb-6 text-xs text-white">© {new Date().getFullYear()} Dalron J. Robertson. All rights reserved.</p>
+      <div className="mt-12 border-t border-white/10 pt-8 text-center">
+        <p className="mb-6 text-xs text-[#A99478]">© {new Date().getFullYear()} Dalron J. Robertson. All rights reserved.</p>
         <div className="flex justify-center gap-6 text-white">
           <a href="https://beliapp.co/profile/dalronrobertson" target="_blank" rel="noopener noreferrer" aria-label="Beli" title="Beli: @dalronrobertson" className="hover:opacity-90 active:opacity-50 transition-opacity">
             <MdRestaurantMenu size={24} />

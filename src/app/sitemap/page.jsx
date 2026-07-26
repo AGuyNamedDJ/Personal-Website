@@ -39,6 +39,11 @@ export default function SitemapPage() {
             </Link>
           </li>
           <li>
+            <Link href="/life" className="hover:underline hover:text-white transition-colors duration-200">
+              Life
+            </Link>
+          </li>
+          <li>
             <Link href="/#contact" className="hover:underline hover:text-white transition-colors duration-200">
               Connect
             </Link>

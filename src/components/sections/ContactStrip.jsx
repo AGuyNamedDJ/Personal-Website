@@ -1,31 +1,32 @@
 export default function ContactStrip() {
   return (
-    <section id="contact" className="bg-[#D2C2AA] px-6 py-24 sm:px-10 md:py-32">
-      <div className="mx-auto max-w-5xl rounded-3xl border border-black/10 bg-[#F9F4EC] px-7 py-14 text-center shadow-lg sm:px-12 md:py-20">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#7A5B3A]">
+    <section id="contact" className="bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32">
+      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#18130F] px-7 py-16 text-center shadow-2xl sm:px-12 md:py-24">
+        <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8E6745]/20 blur-3xl" />
+        <p className="relative text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
           Connect
         </p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold leading-tight text-[#241408] md:text-6xl">
-          Research, pharmacy, and serious ideas worth building.
+        <h2 className="relative mx-auto mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+          For serious work and what comes next.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
-          Reach out about research, professional opportunities, speaking, or
-          thoughtful collaboration.
+        <p className="relative mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[#BFAF9B]">
+          Reach out about research, business, writing, speaking, partnerships,
+          or a project worth building.
         </p>
-        <p className="mt-5 text-sm text-neutral-600">
+        <p className="relative mt-5 text-sm text-[#A99478]">
           Email{" "}
           <a
             href="mailto:dalronj.robertson@gmail.com?subject=Professional%20Inquiry%20from%20dalronjrobertson.com"
-            className="font-semibold text-[#5C3A21] underline decoration-[#7A5B3A]/50 underline-offset-4 transition hover:text-[#241408]"
+            className="font-semibold text-[#E8DCC9] underline decoration-[#A99478]/50 underline-offset-4 transition hover:text-white"
           >
             dalronj.robertson@gmail.com
           </a>
         </p>
-        <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+        <div className="relative mt-10 flex flex-col justify-center gap-3 sm:flex-row">
           <a
             href="mailto:dalronj.robertson@gmail.com?subject=Professional%20Inquiry%20from%20dalronjrobertson.com"
             aria-label="Send an email to Dalron J. Robertson"
-            className="inline-flex justify-center rounded-full bg-[#241408] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-black"
+            className="inline-flex justify-center rounded-full bg-[#E8DCC9] px-7 py-3.5 text-sm font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]"
           >
             Email Dalron
           </a>
@@ -33,7 +34,7 @@ export default function ContactStrip() {
             href="https://www.linkedin.com/in/dalronjrobertson/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-[#5C3A21] px-6 py-3 text-sm font-semibold text-[#5C3A21] no-underline transition hover:bg-[#5C3A21] hover:text-white"
+            className="rounded-full border border-white/25 px-7 py-3.5 text-sm font-semibold text-[#E8DCC9] no-underline transition hover:bg-white/10 hover:text-white"
           >
             Connect on LinkedIn
           </a>

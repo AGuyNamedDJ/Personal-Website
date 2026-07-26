@@ -1,191 +1,272 @@
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "@/components/Footer";
-import CreativeGrid from "@/components/sections/CreativeGrid";
 
 export const metadata = {
   title: "Work",
   description:
-    "Explore Dalron J. Robertson's work in precision medicine, biomedical research, writing, and community development.",
+    "Companies, scientific work, writing, and institutions being built by Dalron J. Robertson.",
   alternates: {
     canonical: "https://dalronjrobertson.com/work",
   },
 };
 
-const nasPriorities = [
-  "Oncology as the initial proving ground",
-  "Biomarkers and patient stratification",
-  "Real-world evidence and biomedical data",
-  "Treatment strategy, dosing, and response",
+const areas = [
+  ["01", "Science and care", "#science"],
+  ["02", "Systems and companies", "#companies"],
+  ["03", "Writing and culture", "#culture"],
+  ["04", "Institutions and community", "#institutions"],
 ];
 
 export default function WorkPage() {
   return (
-    <main className="scroll-smooth bg-black pt-16 text-white">
-      <section className="px-6 py-28 sm:px-10 md:py-40">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#D2C2AA]">
-            Selected work
+    <main className="bg-[#0B0908] pt-20 text-[#F3EBDD]">
+      <section className="px-6 pb-24 pt-24 sm:px-10 md:pb-32 md:pt-36">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+            The work
           </p>
-          <h1 className="mt-5 max-w-5xl text-6xl font-semibold leading-[0.95] tracking-[-0.045em] text-white md:text-8xl">
-            Built to move ideas into practice.
+          <h1 className="mt-6 max-w-6xl text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.86] tracking-[-0.065em] text-[#FFF9F0]">
+            Different forms. One standard.
           </h1>
-          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
-            Scientific systems, writing, and institutions designed to make
-            knowledge useful and create lasting value.
+          <p className="mt-9 max-w-3xl text-xl leading-relaxed text-[#CDBEAA] md:text-2xl">
+            The work moves through science, software, companies, writing, and
+            institutions. Each form exists to make knowledge useful and create
+            value that can continue growing.
           </p>
-        </div>
-      </section>
 
-      <section id="nas-overview" className="bg-[#181615] px-6 py-24 sm:px-10 md:py-32">
-        <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
-              NaS
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
-              Turning evidence into better therapeutic decisions.
-            </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-300">
-              NaS is a precision-medicine company being built to turn real-world
-              evidence and multimodal biomedical data into systems that support
-              patient selection, treatment strategy, dosing, response
-              prediction, and drug-development decisions.
-            </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {nasPriorities.map((item) => (
-                <p
-                  key={item}
-                  className="border-l-2 border-[#D2C2AA] pl-4 text-sm leading-relaxed text-neutral-300"
-                >
-                  {item}
+          <div className="mt-16 grid gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {areas.map(([number, label, href]) => (
+              <a
+                key={number}
+                href={href}
+                className="group bg-[#15110E] p-6 no-underline transition hover:bg-[#211A15]"
+              >
+                <p className="text-xs font-semibold text-[#8E7457]">{number}</p>
+                <p className="mt-7 font-semibold text-[#F3EBDD]">{label}</p>
+                <p className="mt-3 text-[#A99478] transition group-hover:translate-x-1">
+                  ↓
                 </p>
-              ))}
-            </div>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a
-                href="https://nasresearch.bio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-[#F9F4EC] px-6 py-3 text-sm font-semibold text-[#181615] no-underline transition hover:bg-white"
-              >
-                Visit NaS
               </a>
-              <a
-                href="https://nasresearch.bio/research"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
-              >
-                Explore the research
-              </a>
-            </div>
-          </div>
-
-          <Image
-            src="/assets/images/NaSHQ.png"
-            alt="NaS"
-            width={900}
-            height={900}
-            className="aspect-square w-full rounded-3xl object-cover shadow-2xl"
-          />
-        </div>
-      </section>
-
-      <section className="px-6 py-24 sm:px-10 md:py-32">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.85fr_1.15fr] md:items-center">
-          <Image
-            src="/assets/images/NaSArticle.png"
-            alt="NaS founding paper"
-            width={800}
-            height={1000}
-            className="max-h-[680px] w-full rounded-3xl object-contain"
-          />
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
-              Foundational paper
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
-              The starting point, not the final form.
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-300">
-              The founding paper introduced the initial scientific and technical
-              direction. The work now centers on building practical research
-              systems and validating the evidence needed to improve therapeutic
-              decisions.
-            </p>
-            <a
-              href="/files/Nas-White-Paper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white/10"
-            >
-              Read the paper
-            </a>
+            ))}
           </div>
         </div>
       </section>
 
       <section
-        id="robertson-foundation"
-        className="bg-[#F9F4EC] px-6 py-24 text-[#241408] sm:px-10 md:py-32"
+        id="science"
+        className="border-t border-white/10 bg-[#15110E] px-6 py-24 sm:px-10 md:py-32"
       >
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-[#5C3A21]/15 bg-[#241408] text-white shadow-2xl">
-          <div className="grid lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="px-8 py-12 sm:px-12 md:py-16 lg:px-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
-                Long-term institution building
-              </p>
-              <h2 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
-                Building enduring support for culture and community.
-              </h2>
-              <p className="mt-7 max-w-2xl text-lg leading-relaxed text-neutral-300">
-                The Robertson Foundation is being developed to support the arts,
-                humanities, and community vitality through grants, events, and
-                collaborative initiatives that help creative work and local
-                institutions endure.
-              </p>
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="relative min-h-[640px] overflow-hidden rounded-[2rem]">
+            <Image
+              src="/assets/images/Graduation.jpeg"
+              alt="Dalron J. Robertson at Mississippi College"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            <p className="absolute bottom-7 left-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#E8DCC9]">
+              Clinical and scientific foundation
+            </p>
+          </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                {[
-                  ["01", "Arts"],
-                  ["02", "Humanities"],
-                  ["03", "Community vitality"],
-                ].map(([number, label]) => (
-                  <div
-                    key={number}
-                    className="border-t border-white/25 pt-4"
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+              01 / Science and care
+            </p>
+            <h2 className="mt-5 text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+              Serious work starts with reality.
+            </h2>
+            <p className="mt-7 text-lg leading-relaxed text-[#CDBEAA]">
+              Clinical pharmacy at UChicago Medicine provides direct experience
+              with patients, medication access, transitions of care,
+              compounding, and the daily systems behind treatment. Graduate
+              research and industry mentorship add depth in biology,
+              pharmacology, biomarkers, safety, quality, and drug development.
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-[#AFA08D]">
+              Oncology is the first long-term clinical focus. Infectious disease
+              follows. The goal is not to leave patient care behind, but to build
+              from a clearer understanding of what care requires.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                href="/about"
+                className="rounded-full bg-[#E8DCC9] px-6 py-3 text-sm font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]"
+              >
+                About the foundation
+              </Link>
+              <Link
+                href="/writing#research"
+                className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-[#E8DCC9] no-underline transition hover:bg-white/10"
+              >
+                View research
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="companies"
+        className="border-t border-white/10 bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+                02 / Systems and companies
+              </p>
+              <h2 className="mt-5 text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+                Ideas need structure to travel.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-lg leading-relaxed text-[#BFAF9B]">
+              Software, research systems, and ownership allow useful ideas to
+              reach farther than one role or one institution. NaS is the first
+              company built around that conviction.
+            </p>
+          </div>
+
+          <div className="mt-14 overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#15110E]">
+            <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
+              <div className="relative min-h-[620px]">
+                <Image
+                  src="/assets/images/NaSHQ.png"
+                  alt="Architectural drawing representing NaS"
+                  fill
+                  sizes="(min-width: 1024px) 55vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#A99478]">
+                  NaS
+                </p>
+                <h3 className="mt-5 text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#FFF9F0] md:text-5xl">
+                  A company first. An institution by design.
+                </h3>
+                <p className="mt-6 text-lg leading-relaxed text-[#BFAF9B]">
+                  NaS is being built to turn clinical and biological evidence
+                  into systems that support patient selection, treatment
+                  strategy, dosing, response, and drug development.
+                </p>
+                <p className="mt-5 leading-relaxed text-[#8F806E]">
+                  Nicole is one part of the research infrastructure. The larger
+                  aim is a company capable of producing knowledge, tools, jobs,
+                  training, and partnerships that continue creating value.
+                </p>
+                <div className="mt-9 flex flex-wrap gap-3">
+                  <a
+                    href="https://nasresearch.bio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-[#E8DCC9] px-6 py-3 text-sm font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]"
                   >
-                    <p className="text-xs font-semibold text-[#D2C2AA]">
-                      {number}
-                    </p>
-                    <p className="mt-2 font-semibold text-white">{label}</p>
-                  </div>
-                ))}
+                    Visit NaS
+                  </a>
+                  <a
+                    href="https://github.com/NaS-Research"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-[#E8DCC9] no-underline transition hover:bg-white/10"
+                  >
+                    View the work on GitHub
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="relative overflow-hidden border-t border-white/15 bg-[#D2C2AA] px-8 py-12 text-[#241408] sm:px-12 md:py-16 lg:border-l lg:border-t-0">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6B4B30]">
-                The Robertson Foundation
-              </p>
-              <p className="mt-6 max-w-xl text-3xl font-semibold leading-tight tracking-[-0.025em] sm:text-4xl">
-                A lasting home for creative work, shared history, and community
-                life.
-              </p>
+      <section
+        id="culture"
+        className="border-t border-white/10 bg-[#1C1510] px-6 py-24 sm:px-10 md:py-32"
+      >
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+              03 / Writing and culture
+            </p>
+            <h2 className="mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+              Some questions require a different kind of language.
+            </h2>
+            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#CDBEAA]">
+              Fiction, personal writing, photography, and film make room for
+              questions that data alone cannot settle. They are not side
+              projects. They are another way of examining the future and the
+              people expected to live in it.
+            </p>
+            <Link
+              href="/writing"
+              className="mt-9 inline-flex rounded-full bg-[#E8DCC9] px-6 py-3 text-sm font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]"
+            >
+              Explore the writing
+            </Link>
+          </div>
+          <div className="relative min-h-[600px] overflow-hidden rounded-[2rem] border border-white/10">
+            <Image
+              src="/assets/images/JadeCB.png"
+              alt="Circuit Breakers artwork"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+          </div>
+        </div>
+      </section>
 
-              <div className="mt-14 grid gap-8 border-t border-[#5C3A21]/30 pt-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+      <section
+        id="institutions"
+        className="border-t border-white/10 bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32"
+      >
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#15110E]">
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="relative min-h-[500px] border-b border-white/10 lg:border-b-0 lg:border-r">
+              <Image
+                src="/assets/images/RobertsonFoundation.jpg"
+                alt="Robertson Foundation"
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-contain p-8 sm:p-12"
+              />
+            </div>
+            <div className="p-8 sm:p-12 lg:p-16">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+                04 / Institutions and community
+              </p>
+              <h2 className="mt-5 text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-6xl">
+                Build beyond the founder.
+              </h2>
+              <p className="mt-7 text-lg leading-relaxed text-[#CDBEAA]">
+                The Robertson Foundation is in development as a future home for
+                work supporting the arts, humanities, education, and community
+                vitality.
+              </p>
+              <p className="mt-5 leading-relaxed text-[#968775]">
+                The vision is intentionally long term. It should grow from real
+                capacity, remain accountable to the people it serves, and help
+                meaningful work endure.
+              </p>
+              <div className="mt-10 grid gap-6 border-t border-white/10 pt-7 sm:grid-cols-2">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6B4B30]">
+                  <p className="text-xs uppercase tracking-[0.18em] text-[#8E7457]">
                     Status
                   </p>
-                  <p className="mt-2 text-sm font-medium">In development</p>
+                  <p className="mt-2 font-semibold text-[#F3EBDD]">
+                    In development
+                  </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6B4B30]">
-                    Purpose
+                  <p className="text-xs uppercase tracking-[0.18em] text-[#8E7457]">
+                    Long view
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed">
-                    To help meaningful cultural and community work endure.
+                  <p className="mt-2 font-semibold text-[#F3EBDD]">
+                    Culture, education, community
                   </p>
                 </div>
               </div>
@@ -194,29 +275,19 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section id="creative-studio" className="bg-black py-24 md:py-32">
-        <CreativeGrid />
-      </section>
-
-      <section className="border-t border-white/10 bg-black px-6 py-24 text-center sm:px-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D2C2AA]">
-          Film and life
+      <section className="bg-[#18130F] px-6 py-24 text-center sm:px-10 md:py-32">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
+          The person behind the work
         </p>
-        <h2 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
-          Stories beyond the laboratory.
+        <h2 className="mx-auto mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
+          The work matters. The life matters too.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
-          Personal journeys, cinematic storytelling, gaming, cooking, and
-          thoughtful reviews.
-        </p>
-        <a
-          href="https://www.youtube.com/@AGNDJ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-black no-underline transition hover:bg-neutral-200"
+        <Link
+          href="/life"
+          className="mt-9 inline-flex rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-[#E8DCC9] no-underline transition hover:bg-white/10 hover:text-white"
         >
-          Visit the YouTube channel
-        </a>
+          Visit the Life page
+        </Link>
       </section>
 
       <Footer />

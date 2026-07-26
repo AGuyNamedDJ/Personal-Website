@@ -2,11 +2,11 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 export const metadata = {
   title: {
-    default: "Dalron J. Robertson | Biomedical Researcher and Founder",
+    default: "Dalron J. Robertson | Scientist, Founder, Writer, Builder",
     template: "%s | Dalron J. Robertson",
   },
   description:
-    "Biomedical researcher, software engineer, PharmD/MBA candidate, and founder of NaS, focused on precision medicine and better therapeutic decisions.",
+    "Dalron J. Robertson is a scientist, founder, writer, and builder creating systems, companies, and institutions with a foundation in science and patient care.",
   authors: [
     { name: "Dalron J. Robertson", url: "https://dalronjrobertson.com" },
   ],
@@ -14,6 +14,10 @@ export const metadata = {
     "Dalron J. Robertson",
     "Dalron Robertson",
     "NaS",
+    "founder",
+    "writer",
+    "builder",
+    "institution building",
     "biomedical research",
     "computational biology",
     "clinical pharmacy",
@@ -37,7 +41,7 @@ export const metadata = {
   openGraph: {
     title: "Dalron J. Robertson, M.S.",
     description:
-      "Science with a clinical foundation. Biomedical researcher, PharmD/MBA candidate, and founder of NaS.",
+      "Building what should exist. Scientist, founder, writer, and builder.",
     url: "https://dalronjrobertson.com",
     siteName: "Dalron J. Robertson",
     locale: "en_US",
@@ -55,7 +59,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Dalron J. Robertson, M.S.",
     description:
-      "Science with a clinical foundation. Biomedical researcher, PharmD/MBA candidate, and founder of NaS.",
+      "Building what should exist. Scientist, founder, writer, and builder.",
     images: ["/og.png"],
   },
 
@@ -84,7 +88,7 @@ export default function RootLayout({ children }) {
       "https://beliapp.co/profile/dalronrobertson",
       "https://www.youtube.com/@AGNDJ",
     ],
-    jobTitle: "Biomedical Researcher and Pharmacy Intern",
+    jobTitle: ["Biomedical Researcher", "Pharmacy Intern", "Founder"],
     worksFor: [
       { "@type": "Organization", name: "UChicago Medicine" },
       { "@type": "Organization", name: "NaS" },
@@ -115,7 +119,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
-      <body className="min-h-screen bg-white antialiased">
+      <body className="min-h-screen bg-[#0B0908] antialiased">
         <Navbar />
         {children}
       </body>
