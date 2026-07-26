@@ -21,7 +21,7 @@ const selectedWork = [
     title: "NaS",
     description:
       "A precision-medicine company being built to turn biomedical evidence into better therapeutic decisions.",
-    image: "/assets/images/nas-eight-domain-sculpture.jpg",
+    image: "/assets/images/nas-lab-workflow.jpg",
     href: "https://nasresearch.bio",
     external: true,
   },
