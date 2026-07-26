@@ -6,6 +6,9 @@ export const metadata = {
   title: "Work",
   description:
     "Explore Dalron J. Robertson's work in precision medicine, biomedical research, writing, and community development.",
+  alternates: {
+    canonical: "https://dalronjrobertson.com/work",
+  },
 };
 
 const nasPriorities = [

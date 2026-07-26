@@ -17,7 +17,10 @@ export const metadata = {
     "bioinformatics",
     "precision medicine",
     "translational science",
-  ]
+  ],
+  alternates: {
+    canonical: "https://dalronjrobertson.com/about",
+  },
 };
 
 export default function AboutPage() {

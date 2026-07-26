@@ -4,6 +4,12 @@ import NowSection from "@/components/sections/NowSection";
 import ContactStrip from "@/components/sections/ContactStrip";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  alternates: {
+    canonical: "https://dalronjrobertson.com",
+  },
+};
+
 // Thin white bars on the left & right edges
 const EdgeSpacer = () => (
   <div className="relative h-px">

@@ -35,28 +35,30 @@ export const metadata = {
 
   /* ---------- Open Graph / social preview ---------- */
   openGraph: {
-    title: "Dalron J. Robertson",
+    title: "Dalron J. Robertson, M.S.",
     description:
-      "Biomedical researcher, software engineer, PharmD/MBA candidate, and founder of NaS.",
+      "Science with a clinical foundation. Biomedical researcher, PharmD/MBA candidate, and founder of NaS.",
     url: "https://dalronjrobertson.com",
     siteName: "Dalron J. Robertson",
     locale: "en_US",
     type: "profile",
     images: [
       {
-        url: "/assets/images/Hero.png",
-        width: 1024,
-        height: 1024,
+        url: "/og.png",
+        width: 1200,
+        height: 630,
         alt: "Dalron J. Robertson site preview",
       },
     ],
   },
-
-
-  /* ---------- SEO helpers ---------- */
-  alternates: {
-    canonical: "https://dalronjrobertson.com",
+  twitter: {
+    card: "summary_large_image",
+    title: "Dalron J. Robertson, M.S.",
+    description:
+      "Science with a clinical foundation. Biomedical researcher, PharmD/MBA candidate, and founder of NaS.",
+    images: ["/og.png"],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -78,6 +80,8 @@ export default function RootLayout({ children }) {
       "https://github.com/AGuyNamedDJ",
       "https://www.linkedin.com/in/dalronjrobertson/",
       "https://www.instagram.com/aguynameddj/",
+      "https://dalronrobertson.substack.com",
+      "https://beliapp.co/profile/dalronrobertson",
       "https://www.youtube.com/@AGNDJ",
     ],
     jobTitle: "Biomedical Researcher and Pharmacy Intern",
@@ -89,6 +93,10 @@ export default function RootLayout({ children }) {
       { "@type": "CollegeOrUniversity", name: "Jackson State University" },
       { "@type": "CollegeOrUniversity", name: "Mississippi College" },
     ],
+    affiliation: {
+      "@type": "CollegeOrUniversity",
+      name: "Chicago State University",
+    },
   };
 
   return (
