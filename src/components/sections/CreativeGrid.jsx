@@ -59,7 +59,7 @@ const albums = [
   },
   {
     title: "Texas State Fair",
-    date: "In photographs",
+    date: "2023",
     cover: albumCover(
       process.env.NEXT_PUBLIC_S3_BUCKET_ALBUM_TEXAS_STATE_FAIR,
       "Texas-State-Fair-82.jpg",
