@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -109,14 +108,49 @@ export default function BuilderScrollStory() {
           <motion.div
             className="pointer-events-none absolute bottom-[-10vh] right-[-18vw] h-[62vh] w-[88vw] opacity-30 md:relative md:bottom-auto md:right-auto md:h-[74vh] md:w-full md:opacity-70"
             style={{ scale: imageScale, rotate: imageRotate, y: imageY }}
+            aria-hidden="true"
           >
-            <Image
-              src="/assets/images/NaSHQ.png"
-              alt=""
-              fill
-              sizes="(min-width: 768px) 45vw, 90vw"
-              className="object-contain"
-            />
+            <div className="absolute inset-[4%] rounded-full border border-[#BFA98B]/15" />
+            <div className="absolute inset-[14%] rounded-full border border-[#8E7457]/25" />
+            <div className="absolute left-1/2 top-[7%] h-[86%] w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-[#BFA98B]/35 to-transparent" />
+            <div className="absolute left-[7%] top-1/2 h-px w-[86%] -translate-y-1/2 bg-gradient-to-r from-transparent via-[#BFA98B]/35 to-transparent" />
+
+            <div
+              className="absolute inset-[18%]"
+              style={{
+                perspective: "1200px",
+                transformStyle: "preserve-3d",
+              }}
+            >
+              {[0, 1, 2, 3, 4].map((layer) => (
+                <div
+                  key={layer}
+                  className="absolute inset-0 rounded-[2.2rem] border border-[#D9C5A8]/25 bg-[#5A402D]/10 shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-[1px]"
+                  style={{
+                    transform: `rotateX(60deg) rotateZ(-34deg) translateZ(${
+                      layer * 34
+                    }px) scale(${1 - layer * 0.075})`,
+                    transformOrigin: "center",
+                  }}
+                >
+                  <div className="absolute inset-[14%] rounded-[1.35rem] border border-[#BFA98B]/20" />
+                  <div className="absolute bottom-[13%] left-[13%] h-[18%] w-[18%] rounded-full bg-[#D7B68C]/20 blur-sm" />
+                </div>
+              ))}
+
+              <div
+                className="absolute left-1/2 top-1/2 h-[24%] w-[24%] rounded-3xl border border-[#F0DDC2]/50 bg-[radial-gradient(circle_at_35%_28%,rgba(244,221,190,0.72),rgba(144,94,57,0.35)_38%,rgba(21,17,14,0.15)_72%)] shadow-[0_0_90px_rgba(190,139,91,0.28)]"
+                style={{
+                  transform:
+                    "translate(-50%, -50%) rotateX(60deg) rotateZ(-34deg) translateZ(180px)",
+                }}
+              />
+            </div>
+
+            <div className="absolute bottom-[8%] right-[8%] flex items-center gap-3 text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-[#8E7457]">
+              <span className="h-px w-10 bg-[#8E7457]/70" />
+              <span>Built in layers</span>
+            </div>
           </motion.div>
         </div>
 

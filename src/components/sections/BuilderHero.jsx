@@ -41,15 +41,15 @@ export default function BuilderHero() {
         style={{ scale: imageScale, y: imageY, opacity: imageOpacity }}
       >
         <Image
-          src="/assets/images/NaSHQ.png"
+          src="/assets/images/Hero.png"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="scale-[1.08] object-contain object-[78%_52%] md:scale-100"
         />
       </motion.div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_45%,rgba(184,146,101,0.16),transparent_34%),linear-gradient(90deg,#0B0908_10%,rgba(11,9,8,0.94)_48%,rgba(11,9,8,0.42)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_45%,rgba(184,146,101,0.2),transparent_32%),linear-gradient(90deg,#0B0908_10%,rgba(11,9,8,0.96)_48%,rgba(11,9,8,0.48)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#0B0908] to-transparent" />
 
       <motion.div

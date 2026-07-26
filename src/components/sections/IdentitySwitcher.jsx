@@ -23,8 +23,8 @@ const areas = [
     title: "Ideas gain reach when they become infrastructure.",
     description:
       "NaS, Nicole, software, and future ventures reflect the same instinct: organize knowledge, build useful systems, and create value that can grow beyond one person.",
-    image: "/assets/images/NaSHQ.png",
-    imageAlt: "Architectural drawing representing NaS",
+    image: "/assets/images/nas-research-workbench.jpg",
+    imageAlt: "Biomedical evidence arranged across a research workbench",
     href: "/work#companies",
     linkLabel: "Explore the systems",
   },
