@@ -2,7 +2,7 @@ export const books = [
   {
     title: "Circuit Breakers: Echoes of Innovation",
     description:
-      "A story about resilience, medicine, and preserving humanity amid rapid technological change.",
+      "The first Circuit Breakers novel, about medicine and technological change.",
     image: "/assets/images/CB1.png",
     links: [
       {
@@ -18,7 +18,7 @@ export const books = [
   {
     title: "Circuit Breakers: Imperfections",
     description:
-      "A novel about ambition, ethics, and resilience as medicine and technology advance.",
+      "The second Circuit Breakers novel, about ambition and medical ethics.",
     image: "/assets/images/CB2.png",
     links: [
       {
@@ -37,8 +37,7 @@ export const books = [
   },
   {
     title: "To Love Ignorantly: Love's Memoir",
-    description:
-      "A personal exploration of vulnerability, faith, connection, and self-discovery.",
+    description: "A memoir about love and faith.",
     image: "/assets/images/TLI.png",
     links: [
       {
@@ -61,7 +60,7 @@ export const research = [
   {
     title: "NaS Foundational Paper",
     description:
-      "The initial scientific, technical, and organizational direction behind NaS.",
+      "An outline of the proposed research and company structure for NaS.",
     image: "/assets/images/NaSArticle.png",
     href: "/files/Nas-White-Paper.pdf",
     linkLabel: "Read the paper",
@@ -69,7 +68,7 @@ export const research = [
   {
     title: "Bioinformatics and Pharmacology of Nigella sativa",
     description:
-      "A computational and experimental evaluation of Nigella sativa phytochemicals, biological targets, antioxidant and anti-inflammatory activity, and therapeutic potential.",
+      "Research on Nigella sativa compounds, their biological targets, and their antioxidant and anti-inflammatory activity.",
     image: "/assets/images/M.S.Article.png",
     href: "/assets/images/M.S.Article.png",
     linkLabel: "View the research abstract",

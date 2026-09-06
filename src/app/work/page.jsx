@@ -8,7 +8,7 @@ import { Reveal, Parallax } from "@/components/editorial/Motion";
 export const metadata = {
   title: "Work",
   description:
-    "Biomedical research, precision medicine, software, and the companies and institutions Dalron J. Robertson is building.",
+    "Dalron J. Robertson’s research, pharmacy experience, and work on NaS.",
   alternates: { canonical: "https://dalronjrobertson.com/work" },
 };
 export default function Work() {
@@ -17,20 +17,20 @@ export default function Work() {
       <section className="work-hero shell">
         <p className="eyebrow">Selected work</p>
         <h1>
-          From science.
+          Research.
           <br />
-          <span className="metal-text">Into the world.</span>
+          <span className="metal-text">Practice.</span>
         </h1>
         <p>
-          Research, software, and company building.
+          NaS, biomedical research, and clinical pharmacy.
           <br />
-          Different ways to make knowledge useful.
+          Current projects and experience.
         </p>
         <nav className="chapter-nav" aria-label="Work chapters">
           <a href="#nas">NaS</a>
           <a href="#research">Research</a>
-          <a href="#clinical">Clinical foundation</a>
-          <a href="#institutions">The long view</a>
+          <a href="#clinical">Clinical pharmacy</a>
+          <a href="#institutions">Foundation</a>
         </nav>
       </section>
       <section id="nas" className="nas-chapter shell">
@@ -42,13 +42,13 @@ export default function Work() {
             </h2>
             <div>
               <h3>
-                Better evidence.
+                Precision
                 <br />
-                Better decisions.
+                medicine.
               </h3>
               <p>
-                A precision-medicine company in development, connecting clinical
-                and biological evidence to the decisions that shape treatment.
+                I founded NaS in 2025. The company is in development, with a
+                focus on biomedical research and personalized treatment.
               </p>
               <TextLink href="https://nasresearch.bio" external>
                 Explore NaS
@@ -66,24 +66,20 @@ export default function Work() {
         </Parallax>
         <div className="three-notes">
           <Reveal>
-            <h3>Understand.</h3>
+            <h3>Research.</h3>
             <p>
-              Study biological targets, biomarkers, and therapeutic context to
-              ask more useful questions.
+              I study biological targets and biomarkers relevant to treatment.
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h3>Translate.</h3>
-            <p>
-              Build research software and infrastructure, including Nicole, to
-              turn evidence into usable systems.
-            </p>
+            <h3>Software.</h3>
+            <p>I’m developing research software for NaS, including Nicole.</p>
           </Reveal>
           <Reveal delay={0.16}>
-            <h3>Build.</h3>
+            <h3>Company development.</h3>
             <p>
-              Develop a company capable of sustaining scientific work,
-              education, tools, and partnerships.
+              NaS is still in development. My work includes its research plans,
+              software, and educational material.
             </p>
           </Reveal>
         </div>
@@ -94,26 +90,24 @@ export default function Work() {
             label="02 / Research"
             title={
               <>
-                Every answer begins
+                Research papers
                 <br />
-                with a better question.
+                and abstracts.
               </>
             }
           >
-            A foundation in biological science, computational research, and
-            pharmacology.
+            Read my graduate research abstract and the NaS foundational paper.
           </SectionHeading>
           <div className="research-publications">
             <article>
               <span className="publication-kind">Foundational paper</span>
               <h3>
-                The scientific direction
+                The NaS
                 <br />
-                behind NaS.
+                foundational paper.
               </h3>
               <p>
-                The initial scientific, technical, and organizational framework
-                for the company.
+                The paper describes the proposed research and company structure.
               </p>
               <TextLink href="/files/Nas-White-Paper.pdf">
                 Read the paper
@@ -127,8 +121,8 @@ export default function Work() {
                 of <em>Nigella sativa.</em>
               </h3>
               <p>
-                Computational and experimental investigation of phytochemicals,
-                biological targets, and therapeutic potential.
+                Research on compounds in Nigella sativa and their biological
+                activity.
               </p>
               <TextLink href="/assets/images/M.S.Article.png">
                 View the research abstract
@@ -139,18 +133,17 @@ export default function Work() {
       </section>
       <section id="clinical" className="clinical-chapter shell">
         <Reveal>
-          <p className="eyebrow">03 / Clinical foundation</p>
+          <p className="eyebrow">03 / Clinical pharmacy</p>
           <h2>
-            Keep the person
+            UChicago
             <br />
-            <span className="muted">in the picture.</span>
+            <span className="muted">Medicine.</span>
           </h2>
         </Reveal>
         <div className="clinical-body">
           <p>
-            Clinical pharmacy at UChicago Medicine keeps the work close to
-            patients, medication access, and the systems behind treatment. It is
-            the foundation from which the larger work grows.
+            I work as a pharmacy intern at UChicago Medicine, including the
+            Discharge Medication Program and outpatient pharmacy.
           </p>
           <div className="clinical-details">
             <div>
@@ -180,23 +173,22 @@ export default function Work() {
           />
         </div>
         <Reveal>
-          <p className="eyebrow">04 / The long view</p>
+          <p className="eyebrow">04 / Foundation</p>
           <h2>
-            Make room
+            The Robertson
             <br />
-            for what follows.
+            Foundation.
           </h2>
           <p>
-            The Robertson Foundation is in development as a future home for work
-            supporting culture, education, and community. A long-term ambition,
-            to be built with care.
+            I’m planning the Robertson Foundation to support education, culture,
+            and community programs. It is still in development.
           </p>
           <span className="status-note">In development</span>
         </Reveal>
       </section>
       <NextChapter
-        label="Another expression"
-        title="The written work."
+        label="Writing"
+        title="My books."
         href="/writing"
         image="/assets/images/JadeCB.png"
       />

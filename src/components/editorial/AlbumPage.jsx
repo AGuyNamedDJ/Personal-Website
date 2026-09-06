@@ -56,7 +56,7 @@ export default async function AlbumPage({ slug }) {
         </div>
       )}
       <NextChapter
-        label="The next chapter"
+        label="Next album"
         title={next.name}
         href={`/creative-studio/${next.slug}`}
         image={next.cover}

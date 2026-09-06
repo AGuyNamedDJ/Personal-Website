@@ -124,7 +124,7 @@ export default function Navbar() {
               <span aria-hidden="true">↗</span>
             </Link>
           ))}
-          <p>Science. Stories. A life in progress.</p>
+          <p>Chicago, Illinois.</p>
         </nav>
       )}
     </header>

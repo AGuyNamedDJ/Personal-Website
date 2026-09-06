@@ -68,20 +68,20 @@ export function NextChapter({ label, title, href, image }) {
 export function Contact() {
   return (
     <section id="contact" className="contact-section">
-      <p className="eyebrow">A conversation can be a beginning.</p>
+      <p className="eyebrow">Contact</p>
       <h2>
-        What could we
+        Get in
         <br />
-        <span className="muted">make possible?</span>
+        <span className="muted">touch.</span>
       </h2>
       <div className="contact-row">
         <TextLink href="mailto:dalronj.robertson@gmail.com">
           Get in touch
         </TextLink>
         <p>
-          For research, writing, collaboration,
+          For questions about my research or books,
           <br />
-          and ideas worth pursuing.
+          email me directly.
         </p>
       </div>
     </section>

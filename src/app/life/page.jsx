@@ -7,7 +7,7 @@ import { Reveal, Parallax, DotCarousel } from "@/components/editorial/Motion";
 export const metadata = {
   title: "Life",
   description:
-    "People, places, and moments. A personal photographic journal from Dalron J. Robertson.",
+    "Photographs of family, Chicago, travel, and graduations by Dalron J. Robertson.",
   alternates: { canonical: "https://dalronjrobertson.com/life" },
 };
 export default function Life() {
@@ -23,11 +23,11 @@ export default function Life() {
         />
         <div className="image-vignette" />
         <div>
-          <p className="eyebrow">People. Places. The in-between.</p>
+          <p className="eyebrow">Family, travel, and Chicago.</p>
           <h1>
-            Life.
+            Photo
             <br />
-            Look closer.
+            journal.
           </h1>
           <a className="small-link" href="#collections">
             The photo journal ↓
@@ -37,18 +37,18 @@ export default function Life() {
       <section className="life-intro light-section shell-full">
         <div className="shell">
           <Reveal>
-            <p className="eyebrow">Outside the work</p>
+            <p className="eyebrow">Personal photographs</p>
             <h2>
-              Not everything
+              My family.
               <br />
-              needs a purpose.
+              My travels.
               <br />
-              <span className="muted">Some things are the point.</span>
+              <span className="muted">My photographs.</span>
             </h2>
           </Reveal>
           <p>
-            Family, travel, food, photography, and the small moments worth
-            remembering. A window into a life that keeps unfolding.
+            Photographs from trips, time with my daughter, and walks around
+            Chicago.
           </p>
         </div>
       </section>
@@ -83,11 +83,11 @@ export default function Life() {
           <div className="collection-heading">
             <p className="eyebrow">The photo journal</p>
             <h2>
-              A few chapters
+              Browse the
               <br />
-              from real life.
+              photo albums.
             </h2>
-            <span>Eight collections. One ongoing story.</span>
+            <span>Eight photo albums.</span>
           </div>
           <div className="collection-grid">
             {collections.map((c, i) => (
@@ -120,25 +120,21 @@ export default function Life() {
         </div>
       </section>
       <section className="elsewhere-section shell">
-        <p className="eyebrow">Other corners of my world</p>
-        <h2>Follow the curiosity.</h2>
+        <p className="eyebrow">Find me online</p>
+        <h2>Elsewhere.</h2>
         <div className="elsewhere-links">
           {[
             [
               "Beli",
-              "Good food. Places worth returning to.",
+              "Restaurants I’ve visited.",
               "https://beliapp.co/profile/dalronrobertson",
             ],
             [
               "Instagram",
-              "The visual notebook.",
+              "My photos and posts.",
               "https://www.instagram.com/aguynameddj/",
             ],
-            [
-              "YouTube",
-              "Film, play, and other interests.",
-              "https://www.youtube.com/@AGNDJ",
-            ],
+            ["YouTube", "My videos.", "https://www.youtube.com/@AGNDJ"],
           ].map(([name, desc, href]) => (
             <a href={href} key={name} target="_blank" rel="noopener noreferrer">
               <h3>{name}</h3>
@@ -148,9 +144,9 @@ export default function Life() {
           ))}
         </div>
         <p className="private-note">
-          The public record is only part of the life.
+          I enjoy photography, good food,
           <br />
-          The rest is lived for its own sake.
+          and spending time with family.
         </p>
       </section>
       <Contact />

@@ -3,12 +3,11 @@ const photo = (bucket, key) =>
 export const collections = [
   {
     slug: "9-1-2023",
-    title: "Chicago, after hours.",
+    title: "Chicago at dusk.",
     name: "Chicago River at Sunset",
     year: "September 2023",
     category: "Places",
-    description:
-      "An evening along the river. The light, the architecture, and the city between one day and the next.",
+    description: "Photographs along the Chicago River in September 2023.",
     cover: photo("9-1-2023", "Sep1O-215.jpeg"),
     bucket: "9-1-2023",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_9_1_2023",
@@ -16,12 +15,12 @@ export const collections = [
   },
   {
     slug: "masters-graduation",
-    title: "A chapter, earned.",
+    title: "Master’s graduation.",
     name: "Master’s Graduation",
     year: "May 2025",
     category: "Milestones",
     description:
-      "A Master of Science in Biological Sciences. A moment to celebrate the work—and the people who made it possible.",
+      "Graduation photographs from Mississippi College, where I earned my M.S. in Biological Sciences in May 2025.",
     cover: photo("masters-graduation", "GRADO-6793.jpeg"),
     bucket: "masters-graduation",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_MASTERS_GRADUATION",
@@ -29,12 +28,11 @@ export const collections = [
   },
   {
     slug: "daddy-daughter-photoshoot",
-    title: "My favorite kind of time.",
+    title: "My daughter and me.",
     name: "Daddy-Daughter Portraits",
     year: "Family",
     category: "People",
-    description:
-      "A few moments together, held still. Family photographs of Dalron and his daughter.",
+    description: "Portraits of my daughter and me.",
     cover: photo("daddy-daughter-photoshoot", "E13-E.jpg"),
     bucket: "daddy-daughter-photoshoot",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_DADDY_DAUGHTER_PHOTOSHOOT",
@@ -43,12 +41,11 @@ export const collections = [
   },
   {
     slug: "gatlinburg-25",
-    title: "A little further out.",
+    title: "Gatlinburg, 2025.",
     name: "Gatlinburg",
     year: "2025",
     category: "Places",
-    description:
-      "A collection from a trip to Gatlinburg. New surroundings, small discoveries, and a change of pace.",
+    description: "Photographs from my 2025 trip to Gatlinburg.",
     cover: photo("gatlinburg-25", "GATO-6612.jpeg"),
     bucket: "gatlinburg-25",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_GATLINBURG_25",
@@ -56,11 +53,11 @@ export const collections = [
   },
   {
     slug: "apple-day-23",
-    title: "An ordinary, lovely day.",
+    title: "Apple Day, 2023.",
     name: "Apple Day",
     year: "2023",
     category: "Moments",
-    description: "An autumn day, remembered in photographs.",
+    description: "Photographs from Apple Day in 2023.",
     cover: photo("apple-day-23", "ADO-83.jpeg"),
     bucket: "apple-day-23",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_APPLE_DAY_23",
@@ -68,12 +65,11 @@ export const collections = [
   },
   {
     slug: "chicago-marathon-23",
-    title: "A city in motion.",
+    title: "Chicago Marathon Week.",
     name: "Chicago Marathon Week",
     year: "2023",
     category: "Places",
-    description:
-      "The people, movement, and atmosphere of marathon week in Chicago.",
+    description: "Photographs taken during Chicago Marathon Week in 2023.",
     cover: photo("chicago-marathon-23", "CMO-40.png"),
     bucket: "chicago-marathon-23",
     env: "NEXT_PUBLIC_S3_BUCKET_ALBUM_CHICAGO_MARATHON_23",
@@ -92,7 +88,7 @@ export const collections = [
   },
   {
     slug: "bachelors-graduation",
-    title: "Where a path began.",
+    title: "Bachelor’s graduation.",
     name: "Bachelor’s Graduation",
     year: "Jackson State University",
     category: "Milestones",

@@ -8,8 +8,8 @@ export default function Sitemap() {
   return (
     <main className="sitemap-page light-section">
       <div className="shell">
-        <p className="eyebrow">Find your way</p>
-        <h1>The whole picture.</h1>
+        <p className="eyebrow">Site navigation</p>
+        <h1>Sitemap.</h1>
         <div className="sitemap-columns">
           <section>
             <h2>The site</h2>

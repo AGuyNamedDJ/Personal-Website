@@ -3,11 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 export const metadata = {
   title: {
-    default: "Dalron J. Robertson | Scientist, Founder, Writer, Builder",
+    default: "Dalron J. Robertson | Scientist, Author, Founder",
     template: "%s | Dalron J. Robertson",
   },
   description:
-    "Dalron J. Robertson is a scientist, founder, writer, and builder creating systems, companies, and institutions with a foundation in science and patient care.",
+    "Dalron J. Robertson is a scientist, author, pharmacy intern, and founder of NaS in Chicago.",
   authors: [
     { name: "Dalron J. Robertson", url: "https://dalronjrobertson.com" },
   ],
@@ -17,8 +17,6 @@ export const metadata = {
     "NaS",
     "founder",
     "writer",
-    "builder",
-    "institution building",
     "biomedical research",
     "computational biology",
     "clinical pharmacy",
@@ -42,7 +40,7 @@ export const metadata = {
   openGraph: {
     title: "Dalron J. Robertson, M.S.",
     description:
-      "Building what should exist. Scientist, founder, writer, and builder.",
+      "Dalron J. Robertson’s research, books, pharmacy experience, and photographs.",
     url: "https://dalronjrobertson.com",
     siteName: "Dalron J. Robertson",
     locale: "en_US",
@@ -60,7 +58,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Dalron J. Robertson, M.S.",
     description:
-      "Building what should exist. Scientist, founder, writer, and builder.",
+      "Dalron J. Robertson’s research, books, pharmacy experience, and photographs.",
     images: ["/opengraph-image"],
   },
 

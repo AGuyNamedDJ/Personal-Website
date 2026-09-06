@@ -15,7 +15,7 @@ export default function Footer() {
           <Link href="/" className="footer-name">
             Dalron J. Robertson<span>.</span>
           </Link>
-          <p>Science. Stories. A life in progress.</p>
+          <p>Chicago, Illinois.</p>
         </div>
         <nav aria-label="Explore the site">
           <span>Explore</span>

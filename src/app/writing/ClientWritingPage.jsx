@@ -10,13 +10,13 @@ export default function Writing() {
   return (
     <main className="writing-page">
       <section className="writing-hero light-section">
-        <p className="eyebrow">The written work</p>
+        <p className="eyebrow">Dalron J. Robertson</p>
         <h1>
-          A world in
+          Published
           <br />
-          <span className="muted">every question.</span>
+          <span className="muted">books.</span>
         </h1>
-        <p>Fiction. Reflection. Research.</p>
+        <p>Two novels and a memoir.</p>
         <Parallax className="studio-books" amount={28}>
           <Image
             src="/assets/editorial/books/collection.webp"
@@ -77,17 +77,14 @@ export default function Writing() {
         ))}
       </section>
       <section className="essay-section shell">
-        <p className="eyebrow">Beyond the books</p>
+        <p className="eyebrow">Essays</p>
         <h2>
-          Some thoughts
+          Read my essays
           <br />
-          <span className="muted">are still unfolding.</span>
+          <span className="muted">on Substack.</span>
         </h2>
         <div>
-          <p>
-            Personal essays and reflections on medicine, ambition, love,
-            technology, and progress.
-          </p>
+          <p>I also publish personal essays on Substack.</p>
           <TextLink href="https://dalronrobertson.substack.com" external>
             Read on Substack
           </TextLink>
@@ -100,9 +97,9 @@ export default function Writing() {
         <div className="shell">
           <p className="eyebrow">Scientific writing</p>
           <h2>
-            A different kind
+            Research papers
             <br />
-            of inquiry.
+            and abstracts.
           </h2>
           <div className="research-list">
             {research.map((item) => (
@@ -119,8 +116,8 @@ export default function Writing() {
         </div>
       </section>
       <NextChapter
-        label="Behind the words"
-        title="A life of curiosity."
+        label="About the author"
+        title="About Dalron."
         href="/about"
       />
     </main>

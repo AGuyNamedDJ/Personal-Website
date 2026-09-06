@@ -2,15 +2,15 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <main className="not-found-page">
-      <p className="eyebrow">404 / A small detour</p>
+      <p className="eyebrow">404</p>
       <h1>
-        Somewhere
+        Page not
         <br />
-        else, perhaps.
+        found.
       </h1>
-      <p>This page isn’t here. There’s plenty more to explore.</p>
+      <p>This address does not match a page on the site.</p>
       <Link className="text-link" href="/">
-        Back to the beginning ↗
+        Back to home ↗
       </Link>
     </main>
   );

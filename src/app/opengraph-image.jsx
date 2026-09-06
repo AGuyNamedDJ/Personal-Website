@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-export const alt = "Dalron J. Robertson. A mind for science. A life beyond it.";
+export const alt = "Dalron J. Robertson. Scientist. Author. Founder.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export default async function OpenGraphImage() {
@@ -44,8 +44,8 @@ export default async function OpenGraphImage() {
             lineHeight: 1.04,
           }}
         >
-          <span>A mind for science.</span>
-          <span style={{ color: "#c4b298" }}>A life beyond it.</span>
+          <span>Scientist.</span>
+          <span style={{ color: "#c4b298" }}>Author. Founder.</span>
         </div>
         <div style={{ fontSize: 24, color: "#b6b5b7", marginTop: 42 }}>
           Scientist. Founder. Writer.

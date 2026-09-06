@@ -5,7 +5,7 @@ import { portrait } from "@/lib/collections";
 export const metadata = {
   title: "About",
   description:
-    "Scientist, founder, writer, and a life beyond any one title. Meet Dalron J. Robertson.",
+    "Education, pharmacy experience, research, and personal interests of Dalron J. Robertson.",
   alternates: { canonical: "https://dalronjrobertson.com/about" },
 };
 const milestones = [
@@ -29,11 +29,7 @@ const milestones = [
     "Master of Science in Biological Sciences",
     "Mississippi College · Bioinformatics and molecular modeling",
   ],
-  [
-    "2025",
-    "Founded NaS",
-    "Establishing a precision-medicine company and its scientific direction",
-  ],
+  ["2025", "Founded NaS", "Precision-medicine company in development"],
   [
     "2023–25",
     "Software Engineer, Scale AI",
@@ -53,15 +49,16 @@ export default function About() {
         <div className="about-hero-copy">
           <p className="eyebrow">Dalron J. Robertson, M.S.</p>
           <h1>
-            Always curious.
+            About
             <br />
-            Never just
+            Dalron
             <br />
-            <span className="metal-text">one thing.</span>
+            <span className="metal-text">Robertson.</span>
           </h1>
           <p>
             Scientist. Founder. Writer.
-            <br />A person before all of them.
+            <br />
+            Based in Chicago.
           </p>
         </div>
         <div className="about-portrait">
@@ -78,31 +75,30 @@ export default function About() {
       <section className="about-intro light-section">
         <div className="shell">
           <Reveal>
-            <p className="eyebrow">The story so far</p>
+            <p className="eyebrow">Background</p>
             <h2>
-              Science opened the door.
+              Biology, pharmacy,
               <br />
-              <span className="muted">Curiosity kept it open.</span>
+              <span className="muted">and research.</span>
             </h2>
           </Reveal>
           <div className="biography-columns">
             <p>
-              I’m a scientist, founder, writer, and builder based in Chicago. My
-              work begins with clinical pharmacy and biomedical research, and
-              extends into software, companies, and stories.
+              I’m Dalron Robertson, a scientist, author, and founder of NaS. I
+              live in Chicago, where I work as a pharmacy intern at UChicago
+              Medicine.
             </p>
             <div>
               <p>
-                Biology gave me a way to understand living systems.
-                Computational research and software gave me ways to investigate
-                them. Clinical pharmacy keeps those questions connected to the
-                people on the other side of every decision.
+                I earned a bachelor’s in biology at Jackson State University and
+                a master’s in biological sciences at Mississippi College. My
+                graduate research involved bioinformatics and molecular
+                modeling.
               </p>
               <p>
-                Today, I’m continuing PharmD/MBA training at Chicago State
-                University, working in pharmacy at UChicago Medicine, and
-                developing NaS. Writing and photography remain part of the same
-                life: other ways to look carefully, ask questions, and create.
+                I’m completing PharmD/MBA training at Chicago State University
+                while developing NaS. Outside work and school, I write books,
+                take photographs, and spend time with my family.
               </p>
             </div>
           </div>
@@ -110,30 +106,30 @@ export default function About() {
       </section>
       <section className="about-beliefs shell">
         <Reveal>
-          <p className="eyebrow">What I come back to</p>
+          <p className="eyebrow">Personal priorities</p>
           <h2>
-            Depth matters.
+            What matters
             <br />
-            <span className="muted">So does the whole life.</span>
+            <span className="muted">to me.</span>
           </h2>
         </Reveal>
         <div className="belief-list">
           {[
             [
-              "Stay close to people.",
-              "Clinical work keeps large ambitions connected to human needs and real consequences.",
+              "Patient care.",
+              "My pharmacy work includes the Discharge Medication Program and outpatient pharmacy at UChicago Medicine.",
             ],
             [
-              "Build for the long term.",
-              "Create work that can remain useful as companies, roles, and circumstances change.",
+              "NaS.",
+              "I’m developing the company alongside my pharmacy training.",
             ],
             [
-              "Make room for others.",
-              "Knowledge and ownership matter when they expand what other people can do.",
+              "Education.",
+              "Education is part of my plans for NaS and the Robertson Foundation.",
             ],
             [
-              "Protect a full life.",
-              "Family, faith, beauty, travel, rest, and play belong alongside meaningful work.",
+              "Family and faith.",
+              "I value time with my family, my faith, travel, and rest.",
             ],
           ].map(([title, body], i) => (
             <Reveal key={title}>
@@ -151,12 +147,12 @@ export default function About() {
           <div>
             <p className="eyebrow">Education & experience</p>
             <h2>
-              The path
+              My experience
               <br />
-              so far.
+              and education.
             </h2>
             <p className="experience-note">
-              A foundation built across biology,
+              Degrees and roles in biology,
               <br />
               technology, and patient care.
             </p>
@@ -175,8 +171,8 @@ export default function About() {
         </div>
       </section>
       <section className="documents-section shell">
-        <p className="eyebrow">The complete record</p>
-        <h2>A little more detail.</h2>
+        <p className="eyebrow">Documents</p>
+        <h2>Résumé and CV.</h2>
         <div className="document-links">
           {[
             ["Résumé", "DJR-Resume.pdf", "A concise professional overview"],
@@ -204,11 +200,7 @@ export default function About() {
           ))}
         </div>
       </section>
-      <NextChapter
-        label="Away from the desk"
-        title="A life, in photographs."
-        href="/life"
-      />
+      <NextChapter label="Photo journal" title="My photographs." href="/life" />
     </main>
   );
 }

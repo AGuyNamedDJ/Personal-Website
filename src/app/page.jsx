@@ -12,9 +12,11 @@ import {
 } from "@/components/editorial/Motion";
 import { editorialImages } from "@/lib/editorial-images";
 export const metadata = {
-  title: { absolute: "Dalron J. Robertson — Scientist. Founder. Writer." },
+  title: {
+    absolute: "Dalron J. Robertson — Pharmacy intern at UChicago Medicine.",
+  },
   description:
-    "Science, stories, and a life in pursuit of possibility. The work and world of Dalron J. Robertson.",
+    "Dalron J. Robertson is a scientist, author, and founder of NaS in Chicago. Read about his research, books, and pharmacy training.",
   alternates: { canonical: "https://dalronjrobertson.com" },
 };
 export default function Home() {
@@ -35,14 +37,14 @@ export default function Home() {
         <div className="hero-content">
           <p className="hero-name">Dalron J. Robertson</p>
           <h1>
-            A mind for science.
+            Scientist.
             <br />
-            <span className="metal-text">A life beyond it.</span>
+            <span className="metal-text">Author. Founder.</span>
           </h1>
           <p className="hero-subtitle">
-            Scientist. Founder. Writer.
+            Pharmacy intern at UChicago Medicine.
             <br />
-            Building what I believe should exist.
+            Founder of NaS.
           </p>
           <div className="hero-links">
             <TextLink href="/work">Explore the work</TextLink>
@@ -50,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-bottom">
-          <span>Based in Chicago. Thinking beyond it.</span>
+          <span>Chicago, Illinois.</span>
           <a href="#introduction" aria-label="Continue to introduction">
             ↓
           </a>
@@ -58,22 +60,22 @@ export default function Home() {
       </section>
       <section id="introduction" className="home-intro shell">
         <Reveal>
-          <p className="eyebrow">A few things worth pursuing.</p>
+          <p className="eyebrow">What I do</p>
           <h2>
-            Better care.
+            Pharmacy.
             <br />
-            Bigger questions.
+            Research.
             <br />
-            <span className="muted">A fuller life.</span>
+            <span className="muted">Writing.</span>
           </h2>
         </Reveal>
         <Reveal className="intro-aside">
           <p>
-            I work at the intersection of clinical pharmacy, biomedical
-            research, and software. I’m building NaS, writing books, and making
-            room for the life around the work.
+            I’m a pharmacy intern at UChicago Medicine and a PharmD/MBA student
+            at Chicago State University. I founded NaS and have published two
+            novels and a memoir.
           </p>
-          <TextLink href="/about">The story so far</TextLink>
+          <TextLink href="/about">About me</TextLink>
         </Reveal>
       </section>
       <section className="science-feature">
@@ -89,15 +91,15 @@ export default function Home() {
         <Reveal className="science-feature-copy">
           <p className="eyebrow">NaS / Precision medicine</p>
           <h2>
-            Science should
+            My research
             <br />
-            <span>reach someone.</span>
+            <span>company.</span>
           </h2>
           <p>
-            A company in development, grounded in a simple ambition: turn
-            biomedical evidence into better therapeutic decisions.
+            I’m developing NaS, a precision-medicine company focused on
+            biomedical research and treatment decisions.
           </p>
-          <TextLink href="/work#nas">Inside the work</TextLink>
+          <TextLink href="/work#nas">About NaS</TextLink>
         </Reveal>
       </section>
       <section className="home-writing light-section">
@@ -105,13 +107,13 @@ export default function Home() {
           <Reveal>
             <p className="eyebrow">Books & writing</p>
             <h2>
-              Other worlds.
+              Two novels.
               <br />
-              <span className="muted">Human questions.</span>
+              <span className="muted">One memoir.</span>
             </h2>
             <p>
-              Medicine, ambition, love, and the futures we choose. Some
-              questions need a story.
+              I write the Circuit Breakers novels and the memoir To Love
+              Ignorantly.
             </p>
             <TextLink href="/writing">Discover the books</TextLink>
           </Reveal>
@@ -128,15 +130,15 @@ export default function Home() {
           />
         </Parallax>
         <Reveal className="home-person-copy">
-          <p className="eyebrow">The person behind it</p>
+          <p className="eyebrow">About me</p>
           <h2>
-            Still learning.
+            Dalron J.
             <br />
-            Still becoming.
+            Robertson.
           </h2>
           <p>
-            Biology led to research. Research led to new questions. The path has
-            kept widening.
+            I studied biology at Jackson State University and earned my master’s
+            at Mississippi College. I now live and study in Chicago.
           </p>
           <TextLink href="/about">Get to know me</TextLink>
         </Reveal>
@@ -150,13 +152,13 @@ export default function Home() {
         />
         <div className="image-vignette" />
         <Reveal className="home-life-copy">
-          <p className="eyebrow">Beyond the work</p>
+          <p className="eyebrow">Photo journal</p>
           <h2>
-            Life deserves
+            Family, travel,
             <br />
-            your attention.
+            and Chicago.
           </h2>
-          <TextLink href="/life">A look around</TextLink>
+          <TextLink href="/life">View photographs</TextLink>
         </Reveal>
       </section>
       <Contact />
