@@ -1,96 +1,58 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
-import {
-  SiGithub,
-  SiInstagram,
-  SiLinkedin,
-  SiSubstack,
-  SiYoutube
-} from "react-icons/si";
-import { MdRestaurantMenu } from "react-icons/md";
-import { HiOutlineArrowCircleUp } from "react-icons/hi";
-
+const social = [
+  ["LinkedIn", "https://www.linkedin.com/in/dalronjrobertson/"],
+  ["Instagram", "https://www.instagram.com/aguynameddj/"],
+  ["GitHub", "https://github.com/AGuyNamedDJ"],
+  ["Substack", "https://dalronrobertson.substack.com"],
+  ["YouTube", "https://www.youtube.com/@AGNDJ"],
+  ["Beli", "https://beliapp.co/profile/dalronrobertson"],
+];
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#080706] py-16 text-white">
-      <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-5 md:items-start md:justify-items-center">
-        <div className="justify-self-start">
-          <Link href="/">
-            <div className="w-12 h-12 rounded-full overflow-hidden transform transition-transform duration-200 ease-out hover:scale-105">
-              <Image
-                src="/assets/images/IMG_6414.jpeg"
-                alt="Dalron J. Robertson"
-                width={48}
-                height={48}
-                className="object-cover"
-                priority
-              />
-            </div>
+    <footer className="site-footer">
+      <div className="footer-main">
+        <div>
+          <Link href="/" className="footer-name">
+            Dalron J. Robertson<span>.</span>
           </Link>
+          <p>Science. Stories. A life in progress.</p>
         </div>
-        <nav className="space-y-3 text-sm">
-          <Link href="/" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Home</Link>
-          <Link href="/about" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">About</Link>
-          <Link href="/work" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Work</Link>
-          <Link href="/writing" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Writing</Link>
-          <Link href="/life" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Life</Link>
-          <Link href="/#contact" className="block text-white hover:opacity-75 active:opacity-50 transition-opacity hover:underline">Connect</Link>
+        <nav aria-label="Explore the site">
+          <span>Explore</span>
+          {[
+            ["Work", "/work"],
+            ["Writing", "/writing"],
+            ["About", "/about"],
+            ["Life", "/life"],
+          ].map(([name, href]) => (
+            <Link href={href} key={href}>
+              {name}
+            </Link>
+          ))}
         </nav>
-        <nav className="space-y-3 text-sm">
-          <a
-            href="/files/DJR-Resume.pdf"
-            download
-            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
-          >
-            Resume
-          </a>
-          <a
-            href="/files/DJR-CurriculumVitae.pdf"
-            download
-            className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline"
-          >
-            Curriculum Vitae
-          </a>
+        <nav aria-label="Elsewhere">
+          <span>Elsewhere</span>
+          {social.map(([name, href]) => (
+            <a key={href} href={href} target="_blank" rel="noopener noreferrer">
+              {name} ↗
+            </a>
+          ))}
         </nav>
-        <div className="space-y-3 text-sm">
-          <Link href="/legal/privacy" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Privacy</Link>
-          <Link href="/legal/terms" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Terms</Link>
-          <Link href="/sitemap" className="block text-white hover:opacity-90 active:opacity-50 transition-opacity hover:underline">Site Map</Link>
-        </div>
-        <div className="justify-self-end">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            aria-label="Back to top"
-            className="w-10 h-10 rounded-full border border-white flex items-center justify-center transform transition-transform duration-200 ease-out hover:scale-105 hover:bg-white/10 active:opacity-50"
-          >
-            <HiOutlineArrowCircleUp size={24} className="text-white" />
-          </button>
-        </div>
+        <nav aria-label="Professional documents">
+          <span>The details</span>
+          <a href="/files/DJR-Resume.pdf">Résumé ↗</a>
+          <a href="/files/DJR-CurriculumVitae.pdf">Curriculum vitae ↗</a>
+          <a href="mailto:dalronj.robertson@gmail.com">Email ↗</a>
+        </nav>
       </div>
-      <div className="mt-12 border-t border-white/10 pt-8 text-center">
-        <p className="mb-6 text-xs text-[#A99478]">© {new Date().getFullYear()} Dalron J. Robertson. All rights reserved.</p>
-        <div className="flex justify-center gap-6 text-white">
-          <a href="https://beliapp.co/profile/dalronrobertson" target="_blank" rel="noopener noreferrer" aria-label="Beli" title="Beli: @dalronrobertson" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <MdRestaurantMenu size={24} />
-          </a>
-          <a href="https://github.com/AGuyNamedDJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiGithub size={24} />
-          </a>
-          <a href="https://www.instagram.com/aguynameddj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiInstagram size={24} />
-          </a>
-          <a href="https://www.linkedin.com/in/dalronjrobertson/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiLinkedin size={24} />
-          </a>
-          <a href="https://dalronrobertson.substack.com" target="_blank" rel="noopener noreferrer" aria-label="Substack" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiSubstack size={24} />
-          </a>
-          <a href="https://www.youtube.com/@AGNDJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:opacity-90 active:opacity-50 transition-opacity">
-            <SiYoutube size={24} />
-          </a>
+      <div className="footer-base">
+        <p>© {new Date().getFullYear()} Dalron J. Robertson</p>
+        <div>
+          <Link href="/legal/privacy">Privacy</Link>
+          <Link href="/legal/terms">Terms</Link>
+          <Link href="/sitemap">Sitemap</Link>
         </div>
+        <a href="#site-content">Back to top ↑</a>
       </div>
     </footer>
   );

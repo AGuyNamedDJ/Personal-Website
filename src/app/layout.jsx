@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export const metadata = {
   title: {
     default: "Dalron J. Robertson | Scientist, Founder, Writer, Builder",
@@ -48,7 +49,7 @@ export const metadata = {
     type: "profile",
     images: [
       {
-        url: "/og.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Dalron J. Robertson site preview",
@@ -60,7 +61,7 @@ export const metadata = {
     title: "Dalron J. Robertson, M.S.",
     description:
       "Building what should exist. Scientist, founder, writer, and builder.",
-    images: ["/og.png"],
+    images: ["/opengraph-image"],
   },
 
   robots: {
@@ -107,10 +108,29 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>
         {/* Favicons & PWA assets */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="96x96"  href="/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/web-app-manifest-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/web-app-manifest-512x512.png"
+        />
         <link rel="mask-icon" href="/favicon.svg" color="#000000" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#000000" />
@@ -119,9 +139,12 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
-      <body className="min-h-screen bg-[#0B0908] antialiased">
+      <body className="antialiased">
         <Navbar />
-        {children}
+        <div id="site-content" tabIndex={-1}>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

@@ -1,66 +1,50 @@
 import Link from "next/link";
-import Footer from "@/components/Footer";
-
+import { collections } from "@/lib/collections";
 export const metadata = {
   title: "Sitemap",
-  description: "Website sitemap for Dalron J. Robertson.",
+  description: "Explore every part of Dalron J. Robertson’s website.",
 };
-
-export default function SitemapPage() {
+export default function Sitemap() {
   return (
-    <main className="min-h-screen flex flex-col bg-black text-white">
-      <section className="flex-grow max-w-4xl mx-auto px-6 py-20">
-        <h1
-          className="text-5xl font-extrabold mb-10 tracking-tight py-12"
-          style={{ color: "#FFFFFF" }}
-        >
-          Sitemap
-        </h1>
-
-        <ul className="text-neutral-400 list-disc pl-8 space-y-4 text-lg leading-relaxed">
-          <li>
-            <Link href="/" className="hover:underline hover:text-white transition-colors duration-200">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:underline hover:text-white transition-colors duration-200">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="/work" className="hover:underline hover:text-white transition-colors duration-200">
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link href="/writing" className="hover:underline hover:text-white transition-colors duration-200">
-              Writing
-            </Link>
-          </li>
-          <li>
-            <Link href="/life" className="hover:underline hover:text-white transition-colors duration-200">
-              Life
-            </Link>
-          </li>
-          <li>
-            <Link href="/#contact" className="hover:underline hover:text-white transition-colors duration-200">
-              Connect
-            </Link>
-          </li>
-          <li>
-            <Link href="/legal/privacy" className="hover:underline hover:text-white transition-colors duration-200">
-              Privacy Policy
-            </Link>
-          </li>
-          <li>
-            <Link href="/legal/terms" className="hover:underline hover:text-white transition-colors duration-200">
-              Terms of Service
-            </Link>
-          </li>
-        </ul>
-      </section>
-      <Footer />
+    <main className="sitemap-page light-section">
+      <div className="shell">
+        <p className="eyebrow">Find your way</p>
+        <h1>The whole picture.</h1>
+        <div className="sitemap-columns">
+          <section>
+            <h2>The site</h2>
+            {[
+              ["Home", "/"],
+              ["Work", "/work"],
+              ["Writing", "/writing"],
+              ["About", "/about"],
+              ["Life", "/life"],
+              ["Connect", "/#contact"],
+            ].map(([name, href]) => (
+              <Link href={href} key={href}>
+                {name}
+                <span>↗</span>
+              </Link>
+            ))}
+          </section>
+          <section>
+            <h2>The photo journal</h2>
+            {collections.map((c) => (
+              <Link key={c.slug} href={`/creative-studio/${c.slug}`}>
+                {c.name}
+                <span>↗</span>
+              </Link>
+            ))}
+          </section>
+          <section>
+            <h2>The details</h2>
+            <Link href="/legal/privacy">Privacy policy ↗</Link>
+            <Link href="/legal/terms">Terms of service ↗</Link>
+            <a href="/files/DJR-Resume.pdf">Résumé ↗</a>
+            <a href="/files/DJR-CurriculumVitae.pdf">Curriculum vitae ↗</a>
+          </section>
+        </div>
+      </div>
     </main>
   );
 }

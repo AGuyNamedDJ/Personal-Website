@@ -1,63 +1,132 @@
 "use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-
+import { usePathname } from "next/navigation";
+import { useState, useEffect, useRef } from "react";
+const links = [
+  ["Work", "/work"],
+  ["Writing", "/writing"],
+  ["About", "/about"],
+  ["Life", "/life"],
+];
 export default function Navbar() {
-  const [show, setShow] = useState(true);
-
+  const pathname = usePathname(),
+    [open, setOpen] = useState(false),
+    [scrolled, setScrolled] = useState(false),
+    menu = useRef(null);
+  useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
-    let lastY = window.scrollY;
-
-    function onScroll() {
-      const currentY = window.scrollY;
-      if (currentY > lastY + 10 && currentY > 100) {
-        // scrolling down
-        setShow(false);
-      } else if (currentY < lastY - 10) {
-        // scrolling up
-        setShow(true);
-      }
-      lastY = currentY;
-    }
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const check = () => setScrolled(window.scrollY > 20);
+    check();
+    window.addEventListener("scroll", check, { passive: true });
+    return () => window.removeEventListener("scroll", check);
   }, []);
-
+  useEffect(() => {
+    if (!open) return;
+    const old = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const background = [
+      document.getElementById("site-content"),
+      document.querySelector("footer"),
+    ].filter(Boolean);
+    const previousInert = background.map((el) => el.hasAttribute("inert"));
+    const previousHidden = background.map((el) =>
+      el.getAttribute("aria-hidden"),
+    );
+    background.forEach((el) => {
+      el.setAttribute("inert", "");
+      el.setAttribute("aria-hidden", "true");
+    });
+    const desktop = window.matchMedia("(min-width: 701px)");
+    const closeOnDesktop = () => {
+      if (desktop.matches) setOpen(false);
+    };
+    desktop.addEventListener("change", closeOnDesktop);
+    function keys(e) {
+      if (e.key === "Escape") {
+        setOpen(false);
+        document.getElementById("menu-toggle")?.focus();
+      }
+      if (e.key === "Tab") {
+        const items = [
+          document.getElementById("menu-toggle"),
+          ...menu.current.querySelectorAll("a"),
+        ];
+        const first = items[0],
+          last = items.at(-1);
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+    document.addEventListener("keydown", keys);
+    return () => {
+      document.body.style.overflow = old;
+      background.forEach((el, i) => {
+        if (!previousInert[i]) el.removeAttribute("inert");
+        if (previousHidden[i] === null) el.removeAttribute("aria-hidden");
+        else el.setAttribute("aria-hidden", previousHidden[i]);
+      });
+      desktop.removeEventListener("change", closeOnDesktop);
+      document.removeEventListener("keydown", keys);
+    };
+  }, [open]);
   return (
-    <header className={`fixed inset-x-0 top-0 z-40 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
-      <nav className="mx-auto mt-2 flex h-14 max-w-7xl items-center rounded-full border border-white/10 bg-[#0B0908]/80 px-2.5 shadow-2xl backdrop-blur-xl sm:px-4 lg:px-5">
-        <Link href="/" className="flex items-center transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
-          <Image
-            src="/assets/images/IMG_6414.jpeg"
-            alt="Dalron J. Robertson"
-            width={40}
-            height={40}
-            className="rounded-full object-cover"
-            priority
-          />
+    <header
+      className={`site-header ${scrolled ? "is-scrolled" : ""} ${open ? "menu-is-open" : ""}`}
+    >
+      <a href="#site-content" className="skip-link">
+        Skip to content
+      </a>
+      <nav className="site-nav" aria-label="Main navigation">
+        <Link
+          className="wordmark"
+          href="/"
+          aria-label="Dalron J. Robertson, home"
+        >
+          Dalron<span> Robertson</span>
+          <i>.</i>
         </Link>
-
-        <ul className="ml-auto flex items-center gap-0.5 text-[0.7rem] font-medium text-[#D8CCBC] sm:gap-1 sm:text-sm">
-          <li>
-            <Link href="/about" className="rounded-full px-2.5 py-2 no-underline transition hover:bg-white/10 hover:text-white sm:px-4">About</Link>
-          </li>
-          <li>
-            <Link href="/work" className="rounded-full px-2.5 py-2 no-underline transition hover:bg-white/10 hover:text-white sm:px-4">Work</Link>
-          </li>
-          <li>
-            <Link href="/writing" className="rounded-full px-2.5 py-2 no-underline transition hover:bg-white/10 hover:text-white sm:px-4">Writing</Link>
-          </li>
-          <li>
-            <Link href="/life" className="rounded-full px-2.5 py-2 no-underline transition hover:bg-white/10 hover:text-white sm:px-4">Life</Link>
-          </li>
-          <li className="hidden md:block">
-            <Link href="/#contact" className="rounded-full bg-[#E8DCC9] px-4 py-2 font-semibold text-[#18110C] no-underline transition hover:bg-[#FFF9F0]">Connect</Link>
-          </li>
-        </ul>
+        <div className="desktop-nav">
+          {links.map(([name, href]) => (
+            <Link
+              key={href}
+              href={href}
+              aria-current={pathname === href ? "page" : undefined}
+            >
+              {name}
+            </Link>
+          ))}
+        </div>
+        <Link href="/#contact" className="nav-contact">
+          Connect <span aria-hidden="true">↗</span>
+        </Link>
+        <button
+          id="menu-toggle"
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+        </button>
       </nav>
+      {open && (
+        <nav ref={menu} id="mobile-menu" aria-label="Mobile navigation">
+          {[...links, ["Connect", "/#contact"]].map(([name, href], i) => (
+            <Link onClick={() => setOpen(false)} href={href} key={href}>
+              <small>0{i + 1}</small>
+              {name}
+              <span aria-hidden="true">↗</span>
+            </Link>
+          ))}
+          <p>Science. Stories. A life in progress.</p>
+        </nav>
+      )}
     </header>
   );
 }

@@ -1,130 +1,159 @@
 import Image from "next/image";
-import CreativeGrid from "@/components/sections/CreativeGrid";
-import Footer from "@/components/Footer";
-
+import Link from "next/link";
+import { collections } from "@/lib/collections";
+import { editorialImages } from "@/lib/editorial-images";
+import { TextLink, Contact } from "@/components/editorial/Primitives";
+import { Reveal, Parallax, DotCarousel } from "@/components/editorial/Motion";
 export const metadata = {
   title: "Life",
   description:
-    "Photography, travel, food, film, books, play, and personal milestones from Dalron J. Robertson.",
-  alternates: {
-    canonical: "https://dalronjrobertson.com/life",
-  },
+    "People, places, and moments. A personal photographic journal from Dalron J. Robertson.",
+  alternates: { canonical: "https://dalronjrobertson.com/life" },
 };
-
-const outlets = [
-  {
-    label: "Food",
-    title: "Restaurants worth remembering",
-    description:
-      "A running record of meals, places, favorites, and the pleasure of finding somewhere worth returning to.",
-    href: "https://beliapp.co/profile/dalronrobertson",
-    linkLabel: "Follow on Beli",
-  },
-  {
-    label: "Film and play",
-    title: "Stories beyond the page",
-    description:
-      "Film, gaming, cooking, reviews, and the occasional record of whatever has made life more interesting.",
-    href: "https://www.youtube.com/@AGNDJ",
-    linkLabel: "Visit YouTube",
-  },
-  {
-    label: "In the moment",
-    title: "The visual notebook",
-    description:
-      "Photography, daily observations, places, people, and fragments of a life still being lived.",
-    href: "https://www.instagram.com/aguynameddj/",
-    linkLabel: "Visit Instagram",
-  },
-];
-
-export default function LifePage() {
+export default function Life() {
   return (
-    <main className="bg-[#0B0908] pt-20 text-[#F3EBDD]">
-      <section className="px-6 pb-24 pt-24 sm:px-10 md:pb-32 md:pt-36">
-        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
-              Life
-            </p>
-            <h1 className="mt-6 max-w-5xl text-[clamp(4rem,9vw,8rem)] font-semibold leading-[0.87] tracking-[-0.06em] text-[#FFF9F0]">
-              The work is not the whole life.
-            </h1>
-            <p className="mt-8 max-w-2xl text-xl leading-relaxed text-[#CDBEAA]">
-              Photography, travel, food, books, film, play, and personal
-              milestones. A record of the things that make the work worth doing.
-            </p>
-          </div>
-          <div className="relative min-h-[600px] overflow-hidden rounded-[2rem]">
-            <Image
-              src="/assets/images/Graduation.jpeg"
-              alt="Dalron J. Robertson"
-              fill
-              priority
-              sizes="(min-width: 1024px) 46vw, 100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
-          </div>
+    <main className="life-page">
+      <section className="life-hero">
+        <Image
+          src={editorialImages.lifeHero}
+          alt="The Chicago River and its bridges at dusk"
+          fill
+          priority
+          sizes="100vw"
+        />
+        <div className="image-vignette" />
+        <div>
+          <p className="eyebrow">People. Places. The in-between.</p>
+          <h1>
+            Life.
+            <br />
+            Look closer.
+          </h1>
+          <a className="small-link" href="#collections">
+            The photo journal ↓
+          </a>
         </div>
       </section>
-
-      <section className="border-y border-white/10 bg-[#15110E] px-6 py-24 sm:px-10 md:py-32">
-        <CreativeGrid />
-      </section>
-
-      <section className="bg-[#0B0908] px-6 py-24 sm:px-10 md:py-32">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
-            Elsewhere
+      <section className="life-intro light-section shell-full">
+        <div className="shell">
+          <Reveal>
+            <p className="eyebrow">Outside the work</p>
+            <h2>
+              Not everything
+              <br />
+              needs a purpose.
+              <br />
+              <span className="muted">Some things are the point.</span>
+            </h2>
+          </Reveal>
+          <p>
+            Family, travel, food, photography, and the small moments worth
+            remembering. A window into a life that keeps unfolding.
           </p>
-          <h2 className="mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
-            Other ways of keeping a record.
-          </h2>
-
-          <div className="mt-14 grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 lg:grid-cols-3">
-            {outlets.map((outlet) => (
-              <a
-                key={outlet.title}
-                href={outlet.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex min-h-[360px] flex-col justify-between bg-[#15110E] p-8 no-underline transition hover:bg-[#211A15]"
-              >
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#A99478]">
-                    {outlet.label}
-                  </p>
-                  <h3 className="mt-5 text-3xl font-semibold leading-tight text-[#FFF9F0]">
-                    {outlet.title}
-                  </h3>
-                  <p className="mt-5 leading-relaxed text-[#AFA08D]">
-                    {outlet.description}
-                  </p>
-                </div>
-                <p className="mt-10 text-sm font-semibold text-[#E8DCC9] transition group-hover:translate-x-1">
-                  {outlet.linkLabel} ↗
+        </div>
+      </section>
+      <section className="featured-moments light-section">
+        <DotCarousel label="Moments from the photo journal">
+          {[collections[2], collections[0], collections[1]].map((c) => (
+            <Link
+              key={c.slug}
+              href={`/creative-studio/${c.slug}`}
+              className="moment-slide"
+            >
+              <Image
+                src={editorialImages.featured[c.slug]}
+                alt={c.name}
+                fill
+                sizes="90vw"
+              />
+              <div className="image-vignette" />
+              <div>
+                <p>
+                  {c.category} / {c.year}
                 </p>
-              </a>
+                <h3>{c.title}</h3>
+                <span>Explore the photographs ↗</span>
+              </div>
+            </Link>
+          ))}
+        </DotCarousel>
+      </section>
+      <section id="collections" className="collections-section light-section">
+        <div className="shell">
+          <div className="collection-heading">
+            <p className="eyebrow">The photo journal</p>
+            <h2>
+              A few chapters
+              <br />
+              from real life.
+            </h2>
+            <span>Eight collections. One ongoing story.</span>
+          </div>
+          <div className="collection-grid">
+            {collections.map((c, i) => (
+              <Reveal
+                key={c.slug}
+                className={`collection-item collection-item-${i}`}
+              >
+                <Link href={`/creative-studio/${c.slug}`}>
+                  <div className="collection-image">
+                    <Image
+                      src={c.cover}
+                      alt={c.name}
+                      fill
+                      sizes="(max-width:700px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="collection-caption">
+                    <div>
+                      <p>
+                        {c.category} · {c.year}
+                      </p>
+                      <h3>{c.name}</h3>
+                    </div>
+                    <span aria-hidden="true">↗</span>
+                  </div>
+                </Link>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
-
-      <section className="bg-[#1C1510] px-6 py-24 text-center sm:px-10 md:py-32">
-        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#A99478]">
-          A private center
-        </p>
-        <h2 className="mx-auto mt-5 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-[#FFF9F0] md:text-7xl">
-          Not everything meaningful needs to become content.
-        </h2>
-        <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[#BFAF9B]">
-          The public record is only a portion of the life. The rest remains
-          protected, cultivated, and lived for its own sake.
+      <section className="elsewhere-section shell">
+        <p className="eyebrow">Other corners of my world</p>
+        <h2>Follow the curiosity.</h2>
+        <div className="elsewhere-links">
+          {[
+            [
+              "Beli",
+              "Good food. Places worth returning to.",
+              "https://beliapp.co/profile/dalronrobertson",
+            ],
+            [
+              "Instagram",
+              "The visual notebook.",
+              "https://www.instagram.com/aguynameddj/",
+            ],
+            [
+              "YouTube",
+              "Film, play, and other interests.",
+              "https://www.youtube.com/@AGNDJ",
+            ],
+          ].map(([name, desc, href]) => (
+            <a href={href} key={name} target="_blank" rel="noopener noreferrer">
+              <h3>{name}</h3>
+              <p>{desc}</p>
+              <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+        <p className="private-note">
+          The public record is only part of the life.
+          <br />
+          The rest is lived for its own sake.
         </p>
       </section>
-
-      <Footer />
+      <Contact />
     </main>
   );
 }
